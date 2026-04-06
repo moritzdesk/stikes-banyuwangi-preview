@@ -1,221 +1,116 @@
 <template>
-  <section 
-    ref="newsElement"
-    class="section-padding bg-gradient-to-b from-gray-50 to-white transform transition-all duration-1000"
-    :class="newsVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'"
-  >
+  <section class="py-16 md:py-24 bg-gray-50 font-sans">
     <div class="container-custom">
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-full mb-6">
-          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          BERITA & PRESTASI
+      <!-- Section 1: Berita (General News) -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4">
+            Berita
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Kumpulan berita umum dan informasi terkini.
+          </p>
         </div>
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Informasi Terkini & Prestasi Membanggakan
-        </h2>
-        <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-6">
-          Dapatkan informasi terbaru tentang prestasi, kegiatan, penelitian, dan pengumuman penting 
-          dari civitas akademika STIKes Banyuwangi
-        </p>
-        <router-link 
-          to="/artikel"
-          class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-        >
-          Lihat Semua Artikel
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
+        <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-semibold hover:text-orange-600 transition-colors mt-4 md:mt-0">
+          Lihat Semua Berita
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </router-link>
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-8">
-        <!-- Main News -->
-        <div class="lg:col-span-2">
-          <!-- Featured Article -->
-          <div class="bg-white rounded-3xl shadow-xl overflow-hidden mb-8 group hover:shadow-2xl transition-all duration-500">
-            <div class="relative h-64 md:h-80 bg-gradient-to-br from-blue-600 to-purple-600">
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white">
-                  <svg class="w-16 h-16 mx-auto mb-4 opacity-80" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <h3 class="text-2xl font-bold">10 Proposal PKM Lolos Pendanaan</h3>
-                  <p class="text-sm opacity-80">Prestasi Mahasiswa T.A. 2025</p>
-                </div>
-              </div>
-              <div class="absolute top-4 left-4">
-                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">PRESTASI</span>
-              </div>
-            </div>
-            <div class="p-8">
-              <div class="flex items-center text-sm text-gray-500 mb-4">
-                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                </svg>
-                15 Januari 2025
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-                10 Proposal PKM Mahasiswa STIKes Banyuwangi Lolos Pendanaan
-              </h3>
-              <p class="text-gray-600 leading-relaxed mb-6">
-                Sepuluh proposal Program Kreativitas Mahasiswa (PKM) dari STIKes Banyuwangi berhasil lolos pendanaan 
-                dalam seleksi nasional. Prestasi ini menunjukkan kualitas penelitian dan inovasi mahasiswa yang terus meningkat.
-              </p>
-              <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4">
-                  <div class="flex items-center text-blue-600 font-semibold">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-                    </svg>
-                    Mahasiswa
-                  </div>
-                  <div class="flex items-center text-green-600 font-semibold">
-                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    Prestasi
-                  </div>
-                </div>
-                <router-link 
-                  to="/artikel/1"
-                  class="text-blue-600 hover:text-blue-700 font-semibold flex items-center group"
-                >
-                  Baca Selengkapnya
-                  <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </router-link>
-              </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-20">
+        <article v-for="(news, index) in generalNews" :key="index" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden border border-gray-100 flex flex-col h-full">
+          <div class="relative h-52 overflow-hidden">
+            <img 
+              :src="news.image" 
+              :alt="news.title" 
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute top-4 left-4 bg-[#f9ac42] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              Berita
             </div>
           </div>
-
-          <!-- News Grid -->
-          <div class="grid md:grid-cols-2 gap-6">
-            <!-- News 1 -->
-            <div 
-              class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-500 group transform"
-              :class="newsVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'"
-              style="transition-delay: 200ms;"
-            >
-              <div class="flex items-center text-sm text-gray-500 mb-3">
-                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                </svg>
-                12 Januari 2025
-              </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                Gelar KKN 2025: Pengabdian Masyarakat
-              </h4>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Mahasiswa STIKes Banyuwangi melaksanakan Kuliah Kerja Nyata (KKN) dengan fokus pada peningkatan kesehatan masyarakat.
-              </p>
-              <div class="flex items-center justify-between">
-                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold">KEGIATAN</span>
-                <router-link 
-                  to="/artikel/2"
-                  class="text-blue-600 hover:text-blue-700 text-sm font-semibold"
-                >
-                  Baca →
-                </router-link>
-              </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-sm text-gray-500 mb-3 flex items-center font-medium">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              {{ news.date }}
             </div>
-
-            <!-- News 2 -->
-            <div 
-              class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-500 group transform"
-              :class="newsVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'"
-              style="transition-delay: 400ms;"
-            >
-              <div class="flex items-center text-sm text-gray-500 mb-3">
-                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                </svg>
-                10 Januari 2025
-              </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                Workshop Penelitian Kesehatan
-              </h4>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                Dosen dan mahasiswa mengikuti workshop metodologi penelitian kesehatan untuk meningkatkan kualitas riset.
-              </p>
-              <div class="flex items-center justify-between">
-                <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs font-semibold">WORKSHOP</span>
-                <router-link 
-                  to="/artikel/3"
-                  class="text-blue-600 hover:text-blue-700 text-sm font-semibold"
-                >
-                  Baca →
-                </router-link>
-              </div>
-            </div>
+            <h3 class="text-xl font-bold text-[#0b2b42] mb-3 group-hover:text-[#195682] transition-colors leading-snug">
+              {{ news.title }}
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+              {{ news.excerpt }}
+            </p>
+            <router-link to="/artikel" class="inline-flex items-center text-[#195682] font-bold text-sm hover:underline mt-auto">
+              Baca Selengkapnya
+            </router-link>
           </div>
+        </article>
+      </div>
+
+      <!-- Section 2: Informasi Unidsoe (Campus Specific) -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 pt-16 border-t border-gray-200">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4">
+            Informasi Unidsoe
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Inspirasi alumni, prestasi mahasiswa, opini dosen, dan tips kesehatan dari pakar UNIDSOE.
+          </p>
         </div>
+        <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-semibold hover:text-orange-600 transition-colors mt-4 md:mt-0">
+          Lihat Semua Informasi
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </router-link>
+      </div>
 
-        <!-- Sidebar -->
-        <div class="space-y-8">
-          <!-- Quick Stats -->
-          <div 
-            class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-6 text-white transform transition-all duration-500"
-            :class="newsVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'"
-            style="transition-delay: 600ms;"
-          >
-            <h3 class="text-xl font-bold mb-4">Prestasi Terkini</h3>
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="text-blue-100">PKM Lolos</span>
-                <span class="text-2xl font-bold">10</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-blue-100">Penelitian Aktif</span>
-                <span class="text-2xl font-bold">25</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-blue-100">Publikasi</span>
-                <span class="text-2xl font-bold">15</span>
-              </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article v-for="(info, index) in campusInfo" :key="index" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden border border-gray-100 flex flex-col h-full">
+          <div class="relative h-52 overflow-hidden">
+            <img 
+              :src="info.image" 
+              :alt="info.title" 
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute top-4 left-4 bg-[#58d1fd] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              {{ info.category }}
             </div>
           </div>
-
-          <!-- Recent News -->
-          <div 
-            class="bg-white rounded-2xl shadow-lg p-6 transform transition-all duration-500"
-            :class="newsVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'"
-            style="transition-delay: 800ms;"
-          >
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Berita Terbaru</h3>
-            <div class="space-y-4">
-              <div class="border-l-4 border-blue-500 pl-4">
-                <h4 class="font-semibold text-gray-900 text-sm mb-1">Penerimaan Mahasiswa Baru 2025</h4>
-                <p class="text-xs text-gray-500">8 Jan 2025</p>
-              </div>
-              <div class="border-l-4 border-green-500 pl-4">
-                <h4 class="font-semibold text-gray-900 text-sm mb-1">Akreditasi Program Studi</h4>
-                <p class="text-xs text-gray-500">5 Jan 2025</p>
-              </div>
-              <div class="border-l-4 border-purple-500 pl-4">
-                <h4 class="font-semibold text-gray-900 text-sm mb-1">Seminar Kesehatan Masyarakat</h4>
-                <p class="text-xs text-gray-500">3 Jan 2025</p>
-              </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="text-sm text-gray-500 mb-3 flex items-center font-medium">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              {{ info.date }}
             </div>
+            <h3 class="text-xl font-bold text-[#0b2b42] mb-3 group-hover:text-[#195682] transition-colors leading-snug">
+              {{ info.title }}
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+              {{ info.excerpt }}
+            </p>
+            <router-link to="/artikel" class="inline-flex items-center text-[#195682] font-bold text-sm hover:underline mt-auto">
+              Baca Selengkapnya
+            </router-link>
           </div>
+        </article>
+      </div>
 
-          <!-- CTA -->
-          <div 
-            class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-6 text-white text-center transform transition-all duration-500"
-            :class="newsVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'"
-            style="transition-delay: 1000ms;"
-          >
-            <h3 class="text-lg font-bold mb-2">Ikuti Perkembangan</h3>
-            <p class="text-sm mb-4">Dapatkan notifikasi berita terbaru</p>
-            <button class="bg-white text-orange-500 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Subscribe
-            </button>
-          </div>
-        </div>
+      <div class="mt-8 text-center md:hidden">
+        <router-link to="/artikel" class="inline-flex items-center text-[#f9ac42] font-semibold hover:text-orange-600 transition-colors">
+          Lihat Semua Berita
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </router-link>
+      </div>
+
+      <!-- View All Button -->
+      <div class="text-center mt-12">
+        <router-link 
+          to="/artikel" 
+          class="inline-flex items-center px-8 py-4 bg-[#195682] text-white font-bold rounded-full hover:bg-[#0b2b42] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 group"
+        >
+          Lihat Semua Berita
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </router-link>
       </div>
     </div>
   </section>
@@ -223,17 +118,55 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useIntersectionObserver } from '@vueuse/core'
 
-const newsElement = ref(null)
-const newsVisible = ref(false)
-
-// Intersection observer untuk news section
-useIntersectionObserver(
-  newsElement,
-  ([{ isIntersecting }]) => {
-    newsVisible.value = isIntersecting
+const generalNews = ref([
+  {
+    title: "Visi Al-Qur'an Menjawab Tantangan Zaman: Refleksi Akademik di Universitas Dr. Soekardjo Banyuwangi",
+    date: "9 Desember 2025",
+    image: "https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=800",
+    excerpt: "Seminar nasional yang membahas integrasi nilai-nilai spiritual dalam pendidikan kesehatan modern."
   },
-  { threshold: 0.2 }
-)
+  {
+    title: "International Day 2025: Tegaskan Komitmen sebagai Kampus Global",
+    date: "5 Desember 2025",
+    image: "https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800",
+    excerpt: "Perayaan budaya internasional yang menyatukan mahasiswa dari berbagai latar belakang global."
+  },
+  {
+    title: "Semarak Milad Ke-24: Donor Darah Peduli Sesama untuk Masyarakat",
+    date: "4 Desember 2025",
+    image: "https://images.pexels.com/photos/6812480/pexels-photo-6812480.jpeg?auto=compress&cs=tinysrgb&w=800",
+    excerpt: "Aksi kemanusiaan sebagai bentuk syukur institusi, melibatkan sivitas akademika dan masyarakat."
+  }
+])
+
+const campusInfo = ref([
+  {
+    title: "Opini Dosen: Peran Perawat dalam Menghadapi Era Digitalisasi Kesehatan",
+    date: "12 Januari 2025",
+    image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
+    category: "Opini",
+    excerpt: "Analisis mendalam mengenai adaptasi profesi kesehatan terhadap kemajuan teknologi medis masa kini."
+  },
+  {
+    title: "Tips Sehat: Cara Menjaga Kualitas Tidur di Tengah Padatnya Aktivitas Perkuliahan",
+    date: "05 Februari 2025",
+    image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+    category: "Tips",
+    excerpt: "Panduan praktis bagi mahasiswa untuk tetap bugar dan produktif dengan istirahat yang berkualitas."
+  },
+  {
+    title: "Luar Biasa! 10 Proposal PKM Mahasiswa Lolos Didanai Kemdikbud Nasional",
+    date: "20 Januari 2025",
+    image: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800",
+    category: "Prestasi",
+    excerpt: "Bukti nyata kualitas riset dan inovasi mahasiswa Universitas Dr. Soekardjo Banyuwangi di kancah nasional."
+  }
+])
 </script>
+
+<style scoped>
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+</style>

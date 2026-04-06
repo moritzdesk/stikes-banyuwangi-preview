@@ -1,6 +1,6 @@
-# SEO Checklist - STIKES Banyuwangi
+# SEO Checklist - Universitas Dr. Soekardjo Banyuwangi
 
-Checklist lengkap untuk optimasi SEO standar dan SEO AI (AI Search Optimization) untuk website STIKES Banyuwangi.
+Checklist lengkap untuk optimasi SEO standar dan SEO AI (AI Search Optimization) untuk website Universitas Dr. Soekardjo Banyuwangi.
 
 > **📌 Catatan:** Checklist ini telah dibagi menjadi 2 file terpisah:
 > - **[SEO_TEKNIS.md](./SEO_TEKNIS.md)** - SEO Teknis untuk implementasi di Demo UI
@@ -93,7 +93,7 @@ Checklist lengkap untuk optimasi SEO standar dan SEO AI (AI Search Optimization)
 
 - [ ] **Google Business Profile** - Setup dan optimasi lengkap
 - [ ] **NAP Consistency** - Name, Address, Phone konsisten di semua platform
-- [ ] **Local Keywords** - Keyword dengan lokasi (contoh: "STIKES Banyuwangi")
+- [ ] **Local Keywords** - Keyword dengan lokasi (contoh: "Universitas Dr. Soekardjo Banyuwangi")
 - [ ] **Local Content** - Konten yang relevan dengan lokasi
 - [ ] **Local Reviews** - Review dari mahasiswa/alumni
 
@@ -130,7 +130,7 @@ Checklist lengkap untuk optimasi SEO standar dan SEO AI (AI Search Optimization)
 
 #### Natural Language Processing (NLP)
 - [ ] **Natural Language** - Konten ditulis dengan bahasa natural, tidak keyword stuffing
-- [ ] **Entity Recognition** - Menggunakan nama entitas yang jelas (STIKES Banyuwangi, Banyuwangi, Jawa Timur)
+- [ ] **Entity Recognition** - Menggunakan nama entitas yang jelas (Universitas Dr. Soekardjo Banyuwangi, Banyuwangi, Jawa Timur)
 - [ ] **Contextual Keywords** - Keyword dalam konteks yang relevan
 - [ ] **Semantic Keywords** - Variasi keyword yang semantik terkait
 - [ ] **Topic Clusters** - Konten dikelompokkan berdasarkan topik
@@ -224,7 +224,7 @@ Checklist lengkap untuk optimasi SEO standar dan SEO AI (AI Search Optimization)
 
 ---
 
-## 🎯 Priority Actions untuk STIKES Banyuwangi
+## 🎯 Priority Actions untuk Universitas Dr. Soekardjo Banyuwangi
 
 ### High Priority (Lakukan Segera)
 1. [ ] Setup Google Search Console
@@ -275,5 +275,5 @@ Checklist lengkap untuk optimasi SEO standar dan SEO AI (AI Search Optimization)
 ---
 
 **Last Updated:** {{ current_date }}
-**Maintained by:** STIKES Banyuwangi Web Team
+**Maintained by:** Universitas Dr. Soekardjo Banyuwangi Web Team
 

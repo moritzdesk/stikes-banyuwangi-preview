@@ -1,0 +1,254 @@
+Kategori,No,Nama Fitur,Deskripsi,Status,Lokasi File/Route/Catatan
+FRONTEND & UI COMPONENTS,1.1,Hero Section dengan Carousel,Section utama dengan carousel otomatis animasi fade dan overlay gradient,✅ Implemented,src/components/HeroSection.vue
+FRONTEND & UI COMPONENTS,1.2,CTA Section (Call to Action),Section untuk beasiswa dan pendaftaran dengan glassmorphism effects,✅ Implemented,src/components/CTASection.vue
+FRONTEND & UI COMPONENTS,1.3,News Section,Section untuk menampilkan berita dan prestasi dengan grid layout,✅ Implemented,src/components/NewsSection.vue
+FRONTEND & UI COMPONENTS,1.4,Leadership Section,Section untuk menampilkan pimpinan institusi,✅ Implemented,src/components/LeadershipSection.vue
+FRONTEND & UI COMPONENTS,1.5,Partnership Section,Section untuk menampilkan kerja sama dan kemitraan,✅ Implemented,src/components/PartnershipSection.vue
+FRONTEND & UI COMPONENTS,1.6,Campus Showcase Section,Section untuk showcase fasilitas kampus,✅ Implemented,src/components/CampusShowcaseSection.vue
+FRONTEND & UI COMPONENTS,1.7,Header Navigation,Header dengan navigation menu mobile menu dan sticky behavior,✅ Implemented,src/components/Header.vue
+FRONTEND & UI COMPONENTS,1.8,Breadcrumbs Component,Komponen breadcrumb untuk navigasi hierarkis,✅ Implemented,src/components/Breadcrumbs.vue
+FRONTEND & UI COMPONENTS,1.9,FAQ Section,Section untuk Frequently Asked Questions,✅ Implemented,src/components/FAQSection.vue
+FRONTEND & UI COMPONENTS,1.10,How To Guide Section,Section untuk panduan/langkah-langkah,✅ Implemented,src/components/HowToGuide.vue
+FRONTEND & UI COMPONENTS,1.11,Lazy Image Loading,Komponen untuk lazy loading images dengan intersection observer,✅ Implemented,src/components/LazyImage.vue
+FRONTEND & UI COMPONENTS,1.12,Schema Markup Component,Komponen untuk structured data (Schema.org),✅ Implemented,src/components/SchemaMarkup.vue
+FRONTEND & UI COMPONENTS,1.13,Footer,Footer dengan informasi kontak quick links dan social media,✅ Implemented,src/views/Home.vue
+PAGES & ROUTING,2.1,Home Page,Halaman utama dengan semua section utama,✅ Implemented,/
+PAGES & ROUTING,2.2,Articles Index Page,Halaman daftar artikel/berita,✅ Implemented,/artikel
+PAGES & ROUTING,2.3,Article Detail Page,Halaman detail artikel dengan breadcrumbs,✅ Implemented,/artikel/:id
+PAGES & ROUTING,2.4,404 Not Found Page,Halaman error untuk route yang tidak ditemukan,✅ Implemented,/pathMatch(.*)*
+PAGES & ROUTING,2.5,Vue Router,Routing system dengan history mode,✅ Implemented,src/router/index.js
+SEO (Search Engine Optimization),3.1,SEO Meta Tags,Dynamic meta tags (title description keywords),✅ Implemented,src/composables/useSEO.js
+SEO (Search Engine Optimization),3.2,Open Graph Tags,OG tags untuk social media sharing (Facebook WhatsApp),✅ Implemented,src/composables/useSEO.js
+SEO (Search Engine Optimization),3.3,Twitter Card Tags,Twitter card meta tags,✅ Implemented,src/composables/useSEO.js
+SEO (Search Engine Optimization),3.4,Canonical URLs,Canonical URL untuk prevent duplicate content,✅ Implemented,src/composables/useSEO.js
+SEO (Search Engine Optimization),3.5,Robots Meta Tags,Robots meta tags (index noindex follow nofollow),✅ Implemented,src/composables/useSEO.js
+SEO (Search Engine Optimization),3.6,XML Sitemap,XML sitemap untuk search engines,✅ Implemented,public/sitemap.xml
+SEO (Search Engine Optimization),3.7,Robots.txt,Robots.txt file untuk crawler directives,✅ Implemented,public/robots.txt
+SEO (Search Engine Optimization),3.8,Schema.org Markup - Organization,Structured data untuk organization,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.9,Schema.org Markup - WebSite,Structured data untuk website,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.10,Schema.org Markup - LocalBusiness,Structured data untuk local business,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.11,Schema.org Markup - Article,Structured data untuk artikel,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.12,Schema.org Markup - BreadcrumbList,Structured data untuk breadcrumbs,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.13,Schema.org Markup - Course,Structured data untuk program studi,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.14,Schema.org Markup - Event,Structured data untuk event/acara,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.15,Schema.org Markup - Person,Structured data untuk pimpinan/dosen,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.16,Schema.org Markup - FAQPage,Structured data untuk FAQ,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.17,Schema.org Markup - HowTo,Structured data untuk panduan,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.18,Schema.org Markup - VideoObject,Structured data untuk video,✅ Implemented,src/composables/useSchema.js
+SEO (Search Engine Optimization),3.19,Schema.org Markup - Review,Structured data untuk testimoni/review,✅ Implemented,src/composables/useSchema.js
+PERFORMANCE & OPTIMIZATION,4.1,Lazy Image Loading,Lazy loading untuk images dengan intersection observer,✅ Implemented,src/components/LazyImage.vue
+PERFORMANCE & OPTIMIZATION,4.2,Image Optimization,Optimasi images dengan lazy loading composable,✅ Implemented,src/composables/useLazyImage.js
+PERFORMANCE & OPTIMIZATION,4.3,Code Splitting,Code splitting dengan Vue Router lazy loading,✅ Implemented,src/router/index.js
+PERFORMANCE & OPTIMIZATION,4.4,Vite Build Optimization,Build optimization dengan Vite,✅ Implemented,vite.config.js
+PERFORMANCE & OPTIMIZATION,4.5,Tailwind CSS Purging,CSS purging untuk mengurangi bundle size,✅ Implemented,tailwind.config.js
+RESPONSIVE DESIGN,5.1,Mobile-First Design,Design approach mobile-first,✅ Implemented,All components
+RESPONSIVE DESIGN,5.2,Responsive Breakpoints,Breakpoints untuk mobile tablet desktop,✅ Implemented,Tailwind config
+RESPONSIVE DESIGN,5.3,Mobile Navigation Menu,Mobile-friendly navigation dengan hamburger menu,✅ Implemented,src/components/Header.vue
+RESPONSIVE DESIGN,5.4,Responsive Grid Layouts,Grid layouts yang responsive,✅ Implemented,All components
+RESPONSIVE DESIGN,5.5,Touch-Friendly Buttons,Button dengan ukuran minimal 44x44px,✅ Implemented,All components
+RESPONSIVE DESIGN,5.6,Responsive Typography,Typography yang responsive dengan clamp,✅ Implemented,All components
+ANIMATIONS & INTERACTIONS,6.1,Fade In Animations,Animasi fade in untuk sections,✅ Implemented,Multiple components
+ANIMATIONS & INTERACTIONS,6.2,Hover Effects,Hover effects pada cards dan buttons,✅ Implemented,Multiple components
+ANIMATIONS & INTERACTIONS,6.3,Carousel Auto-Play,Carousel dengan auto-play functionality,✅ Implemented,src/components/HeroSection.vue
+ANIMATIONS & INTERACTIONS,6.4,Scroll Animations,Animasi saat scroll (intersection observer),✅ Implemented,Multiple components
+ANIMATIONS & INTERACTIONS,6.5,Glassmorphism Effects,Glassmorphism effects pada CTA cards,✅ Implemented,src/components/CTASection.vue
+ANIMATIONS & INTERACTIONS,6.6,Gradient Animations,Animated gradients,✅ Implemented,Multiple components
+ANIMATIONS & INTERACTIONS,6.7,Pulse Animations,Pulse animations untuk badges,✅ Implemented,Multiple components
+ANIMATIONS & INTERACTIONS,6.8,Transform Animations,Transform animations (scale translate),✅ Implemented,Multiple components
+ACCESSIBILITY (A11Y),7.1,Skip to Main Content,Link untuk skip ke main content,✅ Implemented,src/App.vue
+ACCESSIBILITY (A11Y),7.2,ARIA Labels,ARIA labels untuk screen readers,✅ Implemented,Multiple components
+ACCESSIBILITY (A11Y),7.3,Semantic HTML,Penggunaan semantic HTML elements,✅ Implemented,All components
+ACCESSIBILITY (A11Y),7.4,Keyboard Navigation,Support untuk keyboard navigation,✅ Implemented,Navigation components
+ACCESSIBILITY (A11Y),7.5,Focus States,Visible focus states untuk accessibility,✅ Implemented,All interactive elements
+CONTENT MANAGEMENT,8.1,Articles Data,Data structure untuk artikel/berita,✅ Implemented,src/data/articles.js
+CONTENT MANAGEMENT,8.2,How To Data,Data structure untuk panduan,✅ Implemented,src/data/howTo.js
+CONTENT MANAGEMENT,8.3,Dynamic Content Rendering,Rendering konten secara dinamis,✅ Implemented,Article views
+CONTENT MANAGEMENT,8.4,Content Filtering,Filtering konten berdasarkan kategori,✅ Implemented,ArticlesIndex
+CONTENT MANAGEMENT,8.5,Related Articles,Menampilkan artikel terkait berdasarkan kategori,✅ Implemented,src/views/ArticleDetail.vue
+CONTENT MANAGEMENT,8.6,Tags System,Sistem tag untuk artikel,✅ Implemented,src/views/ArticleDetail.vue
+CONTENT MANAGEMENT,8.7,Content Search,Pencarian konten artikel (text search),⏳ Planned,-
+CONTENT MANAGEMENT,8.8,Pagination,Pagination untuk daftar artikel,⏳ Planned,-
+CONTENT MANAGEMENT,8.9,Content Sorting,Sorting artikel (terbaru terpopuler A-Z),⏳ Planned,-
+CONTENT MANAGEMENT,8.10,Content Statistics,Statistik konten (views likes shares),⏳ Planned,-
+TECHNICAL FEATURES,9.1,Vue 3 Composition API,Penggunaan Composition API,✅ Implemented,All components
+TECHNICAL FEATURES,9.2,Vue Router,Client-side routing,✅ Implemented,src/router/index.js
+TECHNICAL FEATURES,9.3,Tailwind CSS,Utility-first CSS framework,✅ Implemented,All components
+TECHNICAL FEATURES,9.4,Vite Build Tool,Modern build tool untuk development,✅ Implemented,vite.config.js
+TECHNICAL FEATURES,9.5,PostCSS,CSS processing dengan PostCSS,✅ Implemented,postcss.config.js
+TECHNICAL FEATURES,9.6,@unhead/vue,Head management untuk Vue,✅ Implemented,src/composables/useSEO.js
+TECHNICAL FEATURES,9.7,@vueuse/core,Vue composition utilities,✅ Implemented,Dependencies
+TECHNICAL FEATURES,9.8,GSAP,Animation library (dependencies),✅ Available,package.json
+TECHNICAL FEATURES,9.9,Framer Motion,Animation library (dependencies),✅ Available,package.json
+TECHNICAL FEATURES,9.10,Swiper,Carousel/slider library (dependencies),✅ Available,package.json
+DESIGN SYSTEM,10.1,Color Palette,Color system dengan gradients,✅ Implemented,Tailwind config
+DESIGN SYSTEM,10.2,Typography System,Typography scale dan font system,✅ Implemented,All components
+DESIGN SYSTEM,10.3,Spacing System,Consistent spacing system,✅ Implemented,Tailwind config
+DESIGN SYSTEM,10.4,Component Patterns,Reusable component patterns,✅ Implemented,All components
+DESIGN SYSTEM,10.5,Container System,Container system untuk layout,✅ Implemented,All components
+INTEGRATION READY,11.1,Sanity CMS Integration,Ready untuk integrasi dengan Sanity CMS,🔄 Planned,Dokumentasi tersedia
+INTEGRATION READY,11.2,Semesta CMS Integration,Ready untuk integrasi dengan Semesta CMS,🔄 Planned,Dokumentasi tersedia
+INTEGRATION READY,11.3,API Integration,Structure ready untuk API integration,🔄 Ready,Dapat diintegrasikan
+INTEGRATION READY,11.4,Headless CMS Support,Support untuk headless CMS,🔄 Ready,Architecture ready
+INTEGRATION READY,11.5,GA4 Analytics Integration,Google Analytics 4 integration,⏳ Planned,-
+INTEGRATION READY,11.6,Social Media Integration,Integrasi dengan social media APIs,⏳ Planned,-
+USER INTERACTION FEATURES,12.1,Social Sharing Buttons,Tombol share ke social media (Facebook Twitter WhatsApp),⏳ Planned,-
+USER INTERACTION FEATURES,12.2,Contact Form,Form kontak untuk pengunjung,⏳ Planned,-
+USER INTERACTION FEATURES,12.3,Newsletter Subscription,Form subscribe newsletter,⏳ Planned,-
+USER INTERACTION FEATURES,12.4,Back to Top Button,Tombol untuk kembali ke atas halaman,⏳ Planned,-
+USER INTERACTION FEATURES,12.5,Reading Progress Indicator,Indikator progress membaca artikel,⏳ Planned,-
+USER INTERACTION FEATURES,12.6,Print Styles,Optimasi tampilan untuk print,⏳ Planned,-
+USER INTERACTION FEATURES,12.7,Comments System,Sistem komentar untuk artikel,⏳ Planned,-
+USER INTERACTION FEATURES,12.8,Bookmark/Favorite,Fitur bookmark artikel favorit,⏳ Planned,-
+MEDIA & MULTIMEDIA,13.1,Image Gallery,Gallery untuk menampilkan multiple images,⏳ Planned,-
+MEDIA & MULTIMEDIA,13.2,Lightbox,Lightbox untuk preview images,⏳ Planned,-
+MEDIA & MULTIMEDIA,13.3,Video Player,Video player component untuk embed video,⏳ Planned,-
+MEDIA & MULTIMEDIA,13.4,Audio Player,Audio player untuk podcast/audio content,⏳ Planned,-
+MEDIA & MULTIMEDIA,13.5,Image Zoom,Fitur zoom pada images,⏳ Planned,-
+MEDIA & MULTIMEDIA,13.6,Responsive Images,Images dengan srcset dan sizes,⏳ Planned,-
+USER EXPERIENCE ENHANCEMENTS,14.1,Loading States,Loading indicators dan skeleton screens,⏳ Partial,src/views/ArticleDetail.vue
+USER EXPERIENCE ENHANCEMENTS,14.2,Error Boundaries,Error handling dan error pages,⏳ Partial,src/views/NotFound.vue
+USER EXPERIENCE ENHANCEMENTS,14.3,Toast Notifications,Notifikasi untuk user actions,⏳ Planned,-
+USER EXPERIENCE ENHANCEMENTS,14.4,Confirmation Dialogs,Dialog konfirmasi untuk actions penting,⏳ Planned,-
+USER EXPERIENCE ENHANCEMENTS,14.5,Tooltips,Tooltips untuk informasi tambahan,⏳ Planned,-
+USER EXPERIENCE ENHANCEMENTS,14.6,Modal/Dialog Component,Reusable modal component,⏳ Planned,-
+INTERNATIONALIZATION & LOCALIZATION,15.1,Multi-language Support (i18n),Support untuk multiple languages,⏳ Planned,-
+INTERNATIONALIZATION & LOCALIZATION,15.2,Language Switcher,Komponen untuk switch bahasa,⏳ Planned,-
+INTERNATIONALIZATION & LOCALIZATION,15.3,RTL Support,Support untuk Right-to-Left languages,⏳ Planned,-
+INTERNATIONALIZATION & LOCALIZATION,15.4,Date/Time Localization,Format tanggal dan waktu sesuai locale,⏳ Planned,-
+ADVANCED FEATURES,16.1,Dark Mode,Tema gelap untuk website,⏳ Planned,-
+ADVANCED FEATURES,16.2,PWA Support,Progressive Web App features,⏳ Planned,-
+ADVANCED FEATURES,16.3,Offline Support,Support untuk offline browsing,⏳ Planned,-
+ADVANCED FEATURES,16.4,Service Worker,Service worker untuk caching,⏳ Planned,-
+ADVANCED FEATURES,16.5,Push Notifications,Push notifications untuk updates,⏳ Planned,-
+ADVANCED FEATURES,16.6,Advanced Search,Advanced search dengan filters,⏳ Planned,-
+ADVANCED FEATURES,16.7,Content Recommendations,Rekomendasi konten berdasarkan behavior,⏳ Planned,-
+,,,,
+NEXT STEPS SETELAH APPROVAL,,,,,
+FASE 1: APPROVAL & VALIDASI,,,,,
+Approval Menu & Section,,,,,
+NEXT STEPS,1.1,Menu Structure,Struktur menu navigasi utama,⏳ Pending Approval,-
+NEXT STEPS,1.2,Home Page Sections,Section yang akan ditampilkan di homepage,⏳ Pending Approval,Hero CTA News Leadership Partnership Campus Showcase
+NEXT STEPS,1.3,Article Pages,Struktur halaman artikel/berita,⏳ Pending Approval,Index & Detail pages
+NEXT STEPS,1.4,Footer Structure,Konten dan links di footer,⏳ Pending Approval,Contact Quick Links Social Media
+NEXT STEPS,1.5,Navigation Flow,Alur navigasi dan user journey,⏳ Pending Approval,-
+NEXT STEPS,1.6,Content Categories,Kategori konten yang akan digunakan,⏳ Pending Approval,Prestasi Kegiatan Workshop Pengumuman Seminar
+NEXT STEPS,1.7,Design System,Color palette typography spacing,⏳ Pending Approval,Brand guidelines
+Content Requirements,,,,,
+NEXT STEPS,1.8,Brand Guidelines,Logo colors fonts brand identity,⏳ Required,Client
+NEXT STEPS,1.9,Content Assets,Images videos documents,⏳ Required,Client
+NEXT STEPS,1.10,Initial Content,Artikel berita informasi awal,⏳ Required,Client
+NEXT STEPS,1.11,Contact Information,Alamat telepon email social media,⏳ Required,Client
+NEXT STEPS,1.12,Leadership Data,Data pimpinan institusi,⏳ Required,Client
+NEXT STEPS,1.13,Partnership Data,Data kerja sama dan kemitraan,⏳ Required,Client
+NEXT STEPS,1.14,Campus Photos,Foto-foto fasilitas kampus,⏳ Required,Client
+FASE 2: PREPARASI INTEGRASI CMS,,,,,
+Keputusan CMS,,,,,
+NEXT STEPS,2.1,Sanity CMS Decision,Pilih Sanity CMS atau tidak,⏳ Pending,-
+NEXT STEPS,2.2,Semesta CMS Decision,Pilih Semesta CMS atau tidak,⏳ Pending,-
+NEXT STEPS,2.3,Hybrid Approach Decision,Pilih kombinasi Sanity + Semesta,⏳ Pending,-
+Kebutuhan Teknis - SANITY CMS,,,,,
+NEXT STEPS,2.4,Sanity Account,Setup Sanity account dan project,⏳ Required,Week 1
+NEXT STEPS,2.5,Sanity Studio Setup,Install dan konfigurasi Sanity Studio,⏳ Required,Week 1
+NEXT STEPS,2.6,Content Schema Design,Desain struktur content schema,⏳ Required,Week 1-2
+NEXT STEPS,2.7,API Keys,Generate API keys (Read & Write),⏳ Required,Week 1
+NEXT STEPS,2.8,Environment Variables,Setup env variables untuk API,⏳ Required,Week 1
+NEXT STEPS,2.9,Content Migration,Migrasi konten existing ke Sanity,⏳ Required,Week 2-3
+NEXT STEPS,2.10,Developer Access,Akses developer untuk setup,⏳ Required,Week 1
+NEXT STEPS,2.11,Content Editor Training,Training untuk content editor,⏳ Required,Week 3-4
+Kebutuhan Teknis - SEMESTA CMS,,,,,
+NEXT STEPS,2.12,Semesta Account,Setup Semesta account dan subscription,⏳ Required,Week 1
+NEXT STEPS,2.13,Brand Voice Training,Training AI dengan brand voice,⏳ Required,Week 1-2
+NEXT STEPS,2.14,API Integration,Setup API untuk integrasi dengan frontend,⏳ Required,Week 2
+NEXT STEPS,2.15,GA4 Setup,Setup Google Analytics 4,⏳ Required,Week 1
+NEXT STEPS,2.16,Content Templates,Setup template untuk berbagai jenis konten,⏳ Required,Week 2
+NEXT STEPS,2.17,Topic Research Setup,Konfigurasi topic discovery,⏳ Required,Week 2
+NEXT STEPS,2.18,Content Editor Access,Akses untuk content editor team,⏳ Required,Week 1
+NEXT STEPS,2.19,Editor Training,Training penggunaan Semesta platform,⏳ Required,Week 2-3
+Kebutuhan Teknis - HYBRID APPROACH,,,,,
+NEXT STEPS,2.20,Semesta Account (Hybrid),Setup untuk content generation,⏳ Required,Week 1
+NEXT STEPS,2.21,Sanity Account (Hybrid),Setup untuk content management,⏳ Required,Week 1
+NEXT STEPS,2.22,Integration Script,Script untuk export Semesta → Sanity,⏳ Required,Week 2-3
+NEXT STEPS,2.23,Workflow Setup,Setup workflow content creation,⏳ Required,Week 2-3
+NEXT STEPS,2.24,Both Platform Training,Training untuk kedua platform,⏳ Required,Week 3-4
+FASE 3: DEVELOPMENT & INTEGRATION,,,,,
+Setup Development Environment,,,,,
+NEXT STEPS,3.1,Repository Setup,Setup Git repository dan branching strategy,⏳ Required,Week 1
+NEXT STEPS,3.2,Development Environment,Setup local development environment,⏳ Required,Week 1
+NEXT STEPS,3.3,Environment Variables,Setup .env files untuk development,⏳ Required,Week 1
+NEXT STEPS,3.4,CMS SDK Installation,Install SDK untuk CMS yang dipilih,⏳ Required,Week 1
+NEXT STEPS,3.5,API Client Setup,Setup API client untuk fetch data,⏳ Required,Week 1-2
+Integration Implementation,,,,,
+NEXT STEPS,3.6,API Integration,Integrasi API untuk fetch content,⏳ Required,Week 2-3
+NEXT STEPS,3.7,Content Fetching,Implementasi fetching content dari CMS,⏳ Required,Week 2-3
+NEXT STEPS,3.8,Dynamic Routing,Setup dynamic routes untuk content,⏳ Required,Week 3
+NEXT STEPS,3.9,Image Optimization,Integrasi image optimization dari CMS,⏳ Required,Week 3
+NEXT STEPS,3.10,SEO Integration,Integrasi SEO dengan CMS content,⏳ Required,Week 3-4
+NEXT STEPS,3.11,Error Handling,Error handling untuk API calls,⏳ Required,Week 3
+NEXT STEPS,3.12,Loading States,Loading states untuk content fetching,⏳ Required,Week 3
+NEXT STEPS,3.13,Caching Strategy,Implementasi caching untuk performance,⏳ Required,Week 4
+Content Management Setup,,,,,
+NEXT STEPS,3.14,Content Schema,Define content schema di CMS,⏳ Required,Week 2
+NEXT STEPS,3.15,Content Types,Setup content types (Article Page etc),⏳ Required,Week 2
+NEXT STEPS,3.16,Media Library,Setup media library untuk assets,⏳ Required,Week 2
+NEXT STEPS,3.17,Content Workflow,Setup workflow untuk content approval,⏳ Required,Week 3
+NEXT STEPS,3.18,User Roles,Setup user roles dan permissions,⏳ Required,Week 3
+NEXT STEPS,3.19,Content Migration,Migrasi existing content ke CMS,⏳ Required,Week 3-4
+FASE 4: TESTING & DEPLOYMENT,,,,,
+Testing Checklist,,,,,
+NEXT STEPS,4.1,Unit Testing,Test individual components,⏳ Required,Week 4-5
+NEXT STEPS,4.2,Integration Testing,Test CMS integration,⏳ Required,Week 5
+NEXT STEPS,4.3,Content Testing,Test content rendering dari CMS,⏳ Required,Week 5
+NEXT STEPS,4.4,Performance Testing,Test performance dengan CMS data,⏳ Required,Week 5
+NEXT STEPS,4.5,SEO Testing,Test SEO dengan dynamic content,⏳ Required,Week 5
+NEXT STEPS,4.6,Cross-browser Testing,Test di berbagai browser,⏳ Required,Week 5
+NEXT STEPS,4.7,Mobile Testing,Test di berbagai device,⏳ Required,Week 5
+NEXT STEPS,4.8,User Acceptance Testing,UAT dengan client,⏳ Required,Week 6
+Deployment Preparation,,,,,
+NEXT STEPS,4.9,Production Environment,Setup production environment,⏳ Required,Week 6
+NEXT STEPS,4.10,Production API Keys,Setup production API keys,⏳ Required,Week 6
+NEXT STEPS,4.11,Environment Variables,Setup production env variables,⏳ Required,Week 6
+NEXT STEPS,4.12,CDN Setup,Setup CDN untuk assets,⏳ Required,Week 6
+NEXT STEPS,4.13,Monitoring Setup,Setup monitoring dan error tracking,⏳ Required,Week 6
+NEXT STEPS,4.14,Backup Strategy,Setup backup strategy,⏳ Required,Week 6
+NEXT STEPS,4.15,Documentation,Finalisasi dokumentasi,⏳ Required,Week 6
+FASE 5: HANDOVER & TRAINING,,,,,
+Documentation Handover,,,,,
+NEXT STEPS,5.1,Technical Documentation,Dokumentasi teknis sistem,⏳ Required,Week 7
+NEXT STEPS,5.2,CMS User Guide,Panduan penggunaan CMS,⏳ Required,Week 7
+NEXT STEPS,5.3,Content Guidelines,Panduan penulisan konten,⏳ Required,Week 7
+NEXT STEPS,5.4,Troubleshooting Guide,Panduan troubleshooting,⏳ Required,Week 7
+NEXT STEPS,5.5,API Documentation,Dokumentasi API yang digunakan,⏳ Required,Week 7
+Training Sessions,,,,,
+NEXT STEPS,5.6,CMS Training,Training penggunaan CMS,⏳ Required,Week 7
+NEXT STEPS,5.7,Content Editor Training,Training untuk content editor,⏳ Required,Week 7
+NEXT STEPS,5.8,Admin Training,Training untuk admin,⏳ Required,Week 7
+NEXT STEPS,5.9,Technical Training,Training untuk technical team,⏳ Required,Week 7
+CHECKLIST SEBELUM START INTEGRASI,,,,,
+Approval & Requirements,,,,,
+NEXT STEPS,CHECKLIST.1,Menu Structure Approved,Menu structure sudah di-approve,⏳ Pending,-
+NEXT STEPS,CHECKLIST.2,Section Structure Approved,Section structure sudah di-approve,⏳ Pending,-
+NEXT STEPS,CHECKLIST.3,Design System Approved,Design system sudah di-approve,⏳ Pending,-
+NEXT STEPS,CHECKLIST.4,Brand Guidelines Received,Brand guidelines sudah diterima,⏳ Pending,-
+NEXT STEPS,CHECKLIST.5,Initial Content Available,Initial content sudah tersedia,⏳ Pending,-
+NEXT STEPS,CHECKLIST.6,Content Assets Available,Content assets (images videos) sudah tersedia,⏳ Pending,-
+NEXT STEPS,CHECKLIST.7,Contact Information Complete,Contact information sudah lengkap,⏳ Pending,-
+NEXT STEPS,CHECKLIST.8,Leadership Data Available,Leadership data sudah tersedia,⏳ Pending,-
+NEXT STEPS,CHECKLIST.9,Partnership Data Available,Partnership data sudah tersedia,⏳ Pending,-
+CMS Decision,,,,,
+NEXT STEPS,CHECKLIST.10,CMS Decision Final,Keputusan CMS sudah final (Sanity / Semesta / Hybrid),⏳ Pending,-
+NEXT STEPS,CHECKLIST.11,CMS Account Created,CMS account sudah dibuat,⏳ Pending,-
+NEXT STEPS,CHECKLIST.12,API Keys Generated,API keys sudah di-generate,⏳ Pending,-
+NEXT STEPS,CHECKLIST.13,Developer Access Granted,Akses developer sudah diberikan,⏳ Pending,-
+NEXT STEPS,CHECKLIST.14,CMS Budget Approved,Budget untuk CMS sudah approved,⏳ Pending,-
+Technical Setup,,,,,
+NEXT STEPS,CHECKLIST.15,Dev Environment Ready,Development environment sudah siap,⏳ Pending,-
+NEXT STEPS,CHECKLIST.16,Repository Setup,Repository sudah setup,⏳ Pending,-
+NEXT STEPS,CHECKLIST.17,Environment Variables Configured,Environment variables sudah dikonfigurasi,⏳ Pending,-
+NEXT STEPS,CHECKLIST.18,CMS SDK Installed,CMS SDK sudah di-install,⏳ Pending,-
+NEXT STEPS,CHECKLIST.19,API Client Setup,API client sudah setup,⏳ Pending,-
+Team & Resources,,,,,
+NEXT STEPS,CHECKLIST.20,Developer Team Ready,Developer team sudah ready,⏳ Pending,-
+NEXT STEPS,CHECKLIST.21,Content Editor Determined,Content editor sudah ditentukan,⏳ Pending,-
+NEXT STEPS,CHECKLIST.22,Project Timeline Approved,Project timeline sudah disetujui,⏳ Pending,-
+NEXT STEPS,CHECKLIST.23,Development Budget Approved,Budget development sudah approved,⏳ Pending,-
+

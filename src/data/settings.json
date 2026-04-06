@@ -1,0 +1,76 @@
+{
+  "contact": {
+    "phone": "(0333) 424-123",
+    "email": "info@unidsoe.ac.id",
+    "address": "Jl. Letkol Istiqlah No. 40, Lingkungan Mojoroto, Penataban, Kec. Giri, Kabupaten Banyuwangi, Jawa Timur 68422",
+    "pmbLink": "https://pmb.unidsoe.ac.id"
+  },
+  "downloads": [
+    {
+      "title": "Kalender Akademik 2024/2025",
+      "category": "Pedoman",
+      "file": ""
+    },
+    {
+      "title": "Buku Panduan Akademik",
+      "category": "Pedoman",
+      "file": ""
+    },
+    {
+      "title": "Formulir Pendaftaran Skripsi",
+      "category": "Formulir",
+      "file": ""
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Laboratorium Keperawatan Gawat Darurat",
+      "description": "Fasilitas simulasi dengan manekin canggih berstandar internasional.",
+      "category": "Laboratorium Terpadu",
+      "image": "https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Perpustakaan Digital",
+      "description": "Koleksi e-book medis dan ruang baca yang nyaman.",
+      "category": "Fasilitas Umum",
+      "image": "https://images.pexels.com/photos/1370216/pexels-photo-1370216.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "name": "Asrama Mahasiswa",
+      "description": "Akomodasi dengan pengawasan 24 jam dan fasilitas lengkap.",
+      "category": "Layanan Mahasiswa",
+      "image": "https://images.pexels.com/photos/2070033/pexels-photo-2070033.jpeg?auto=compress&cs=tinysrgb&w=800"
+    }
+  ],
+  "partners": [
+    {
+      "name": "RSUD Blambangan",
+      "category": "Nasional",
+      "logo": "https://images.pexels.com/photos/248671/pexels-photo-248671.jpeg?auto=compress&cs=tinysrgb&w=300"
+    },
+    {
+      "name": "RSUD Siloam Hospital",
+      "category": "Nasional",
+      "logo": "https://images.pexels.com/photos/208502/pexels-photo-208502.jpeg?auto=compress&cs=tinysrgb&w=300"
+    },
+    {
+      "name": "Kyoto Medical Center Japan",
+      "category": "Internasional",
+      "logo": "https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=300"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Maria Susanti",
+      "job": "Perawat Klinis, Kyoto Hospital Jepang",
+      "quote": "Banyak soft-skill dan ketekunan yang saya pelajari dari sini.",
+      "avatar": "https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&w=200"
+    },
+    {
+      "name": "Rudi Hartono",
+      "job": "Analis Kesehatan RSUD Blambangan",
+      "quote": "Fasilitas lab yang sangat memadai mendukung langsung di dunia kerja nyata.",
+      "avatar": "https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg?auto=compress&cs=tinysrgb&w=200"
+    }
+  ]
+}

@@ -8,8 +8,8 @@ Checklist ini mencakup semua aspek optimasi keyword dan konten yang memerlukan r
 ## 🔍 1. Keyword Research & Strategy
 
 ### Primary Keywords
-- [ ] **Main Brand Keyword** - "STIKES Banyuwangi"
-- [ ] **Location-Based Keywords** - "STIKES Banyuwangi", "Sekolah Tinggi Kesehatan Banyuwangi"
+- [ ] **Main Brand Keyword** - "Universitas Dr. Soekardjo Banyuwangi"
+- [ ] **Location-Based Keywords** - "Universitas Dr. Soekardjo Banyuwangi", "Sekolah Tinggi Kesehatan Banyuwangi"
 - [ ] **Program Studi Keywords** - Keyword untuk setiap program studi
 - [ ] **Service Keywords** - Keyword untuk layanan (pendaftaran, informasi, dll)
 

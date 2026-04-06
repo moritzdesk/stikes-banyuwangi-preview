@@ -11,7 +11,7 @@
             Pertanyaan yang Sering Diajukan
           </h2>
           <p class="text-xl text-gray-600">
-            Temukan jawaban untuk pertanyaan umum tentang STIKES Banyuwangi
+            Temukan jawaban untuk pertanyaan umum tentang Unidsoe (Universitas Dr. Soekardjo)
           </p>
         </div>
 
@@ -71,9 +71,9 @@ const toggleFAQ = (index) => {
 // FAQ Data
 const faqs = [
   {
-    question: 'Apa saja program studi yang tersedia di STIKES Banyuwangi?',
+    question: 'Apa saja program studi yang tersedia di Unidsoe?',
     answer: `
-      <p>STIKES Banyuwangi menawarkan berbagai program studi unggulan:</p>
+      <p>Unidsoe (Universitas Dr. Soekardjo) menawarkan berbagai program studi unggulan:</p>
       <ul class="list-disc list-inside mt-2 space-y-1">
         <li>S1 Keperawatan & Profesi Ners (Akreditasi Baik Sekali)</li>
         <li>S1 Kebidanan & Profesi Bidan</li>
@@ -94,19 +94,19 @@ const faqs = [
         <li>Jalur Beasiswa</li>
         <li>Jalur Prestasi</li>
       </ul>
-      <p class="mt-2">Pendaftaran dapat dilakukan secara online melalui website resmi STIKES Banyuwangi atau menghubungi panitia PMB di nomor (0333) 424-123.</p>
+      <p class="mt-2">Pendaftaran dapat dilakukan secara online melalui website resmi Unidsoe (Universitas Dr. Soekardjo) atau menghubungi panitia PMB di nomor (0333) 424-123.</p>
     `
   },
   {
-    question: 'Apakah STIKES Banyuwangi terakreditasi?',
+    question: 'Apakah Unidsoe terakreditasi?',
     answer: `
-      <p>Ya, STIKES Banyuwangi memiliki akreditasi institusi "Baik" dari BAN-PT. Program studi S1 Keperawatan juga terakreditasi "Baik Sekali" yang merupakan pencapaian tertinggi untuk program studi.</p>
+      <p>Ya, Unidsoe (Universitas Dr. Soekardjo) memiliki akreditasi institusi "Baik" dari BAN-PT. Program studi S1 Keperawatan juga terakreditasi "Baik Sekali" yang merupakan pencapaian tertinggi untuk program studi.</p>
     `
   },
   {
     question: 'Apakah tersedia program beasiswa?',
     answer: `
-      <p>Ya, STIKES Banyuwangi menyediakan berbagai program beasiswa untuk mahasiswa, termasuk:</p>
+      <p>Ya, Unidsoe (Universitas Dr. Soekardjo) menyediakan berbagai program beasiswa untuk mahasiswa, termasuk:</p>
       <ul class="list-disc list-inside mt-2 space-y-1">
         <li>BAKENAKES</li>
         <li>BHC</li>
@@ -117,9 +117,9 @@ const faqs = [
     `
   },
   {
-    question: 'Dimana lokasi kampus STIKES Banyuwangi?',
+    question: 'Dimana lokasi kampus Unidsoe?',
     answer: `
-      <p>Kampus STIKES Banyuwangi berlokasi di:</p>
+      <p>Kampus Unidsoe (Universitas Dr. Soekardjo) berlokasi di:</p>
       <p class="mt-2 font-semibold">Jl. Letkol Istiqlah No. 109<br>
       Singojuruh, Banyuwangi<br>
       Jawa Timur 68464</p>
@@ -128,11 +128,11 @@ const faqs = [
   {
     question: 'Apa saja fasilitas yang tersedia di kampus?',
     answer: `
-      <p>STIKES Banyuwangi dilengkapi dengan berbagai fasilitas modern:</p>
+      <p>Unidsoe (Universitas Dr. Soekardjo) dilengkapi dengan berbagai fasilitas modern:</p>
       <ul class="list-disc list-inside mt-2 space-y-1">
         <li>Laboratorium Terpadu</li>
         <li>Laboratorium CBT Center</li>
-        <li>Klinik STIKES Banyuwangi dengan layanan BPJS</li>
+        <li>Klinik Unidsoe dengan layanan BPJS</li>
         <li>Perpustakaan</li>
         <li>Asrama</li>
         <li>Fasilitas penunjang lainnya</li>

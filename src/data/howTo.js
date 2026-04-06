@@ -3,10 +3,10 @@
  */
 
 export const howToPendaftaran = {
-  name: 'Cara Mendaftar sebagai Mahasiswa Baru STIKES Banyuwangi',
-  title: 'Cara Mendaftar sebagai Mahasiswa Baru STIKES Banyuwangi',
-  description: 'Panduan lengkap langkah demi langkah untuk mendaftar sebagai mahasiswa baru di STIKES Banyuwangi melalui berbagai jalur yang tersedia.',
-  image: 'https://stikesbanyuwangi.ac.id/images/pendaftaran.jpg',
+  name: 'Cara Mendaftar sebagai Mahasiswa Baru Unidsoe',
+  title: 'Cara Mendaftar sebagai Mahasiswa Baru Unidsoe',
+  description: 'Panduan lengkap langkah demi langkah untuk mendaftar sebagai mahasiswa baru di Unidsoe (Universitas Dr. Soekardjo) melalui berbagai jalur yang tersedia.',
+  image: 'https://unidsoe.ac.id/images/pendaftaran.jpg',
   totalTime: 'PT30M', // 30 menit
   estimatedCost: {
     currency: 'IDR',
@@ -28,7 +28,7 @@ export const howToPendaftaran = {
     {
       name: 'Daftar Online',
       title: 'Daftar Secara Online',
-      text: 'Kunjungi website resmi STIKES Banyuwangi dan lakukan pendaftaran online. Isi formulir pendaftaran dengan lengkap dan benar, kemudian upload dokumen yang telah dipersiapkan.',
+      text: 'Kunjungi website resmi Unidsoe (Universitas Dr. Soekardjo) dan lakukan pendaftaran online. Isi formulir pendaftaran dengan lengkap dan benar, kemudian upload dokumen yang telah dipersiapkan.',
       description: 'Lakukan pendaftaran melalui website resmi'
     },
     {
@@ -53,10 +53,10 @@ export const howToPendaftaran = {
 }
 
 export const howToBeasiswa = {
-  name: 'Cara Mengajukan Beasiswa di STIKES Banyuwangi',
-  title: 'Cara Mengajukan Beasiswa di STIKES Banyuwangi',
-  description: 'Panduan lengkap untuk mengajukan beasiswa di STIKES Banyuwangi melalui berbagai program beasiswa yang tersedia.',
-  image: 'https://stikesbanyuwangi.ac.id/images/beasiswa.jpg',
+  name: 'Cara Mengajukan Beasiswa di Unidsoe',
+  title: 'Cara Mengajukan Beasiswa di Unidsoe',
+  description: 'Panduan lengkap untuk mengajukan beasiswa di Unidsoe (Universitas Dr. Soekardjo) melalui berbagai program beasiswa yang tersedia.',
+  image: 'https://unidsoe.ac.id/images/beasiswa.jpg',
   totalTime: 'PT1H', // 1 jam
   estimatedCost: {
     currency: 'IDR',

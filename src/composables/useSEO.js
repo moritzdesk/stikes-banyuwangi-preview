@@ -2,8 +2,8 @@ import { useHead } from '@unhead/vue'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-const siteName = 'STIKES Banyuwangi'
-const siteUrl = 'https://stikesbanyuwangi.ac.id' // Update dengan domain actual
+const siteName = 'Unidsoe - Universitas Dr. Soekardjo'
+const siteUrl = 'https://unidsoe.ac.id' // Update dengan domain actual
 const defaultImage = `${siteUrl}/og-image.jpg` // Update dengan OG image actual
 
 export function useSEO(options = {}) {
@@ -33,8 +33,8 @@ export function useSEO(options = {}) {
 
   const metaKeywords = computed(() => {
     const defaultKeywords = [
-      'STIKES Banyuwangi',
-      'Sekolah Tinggi Ilmu Kesehatan Banyuwangi',
+      'Unidsoe',
+      'Universitas Dr. Soekardjo',
       'Pendidikan Kesehatan',
       'Keperawatan',
       'Kebidanan',
@@ -52,7 +52,7 @@ export function useSEO(options = {}) {
       // Basic Meta
       {
         name: 'description',
-        content: description || 'STIKES Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".'
+        content: description || 'Unidsoe (Universitas Dr. Soekardjo) adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".'
       },
       {
         name: 'keywords',
@@ -78,7 +78,7 @@ export function useSEO(options = {}) {
       },
       {
         property: 'og:description',
-        content: description || 'STIKES Banyuwangi - Sekolah Tinggi Ilmu Kesehatan Banyuwangi'
+        content: description || 'Unidsoe - Universitas Dr. Soekardjo'
       },
       {
         property: 'og:image',
@@ -112,7 +112,7 @@ export function useSEO(options = {}) {
       },
       {
         name: 'twitter:description',
-        content: description || 'STIKES Banyuwangi - Sekolah Tinggi Ilmu Kesehatan Banyuwangi'
+        content: description || 'Unidsoe - Universitas Dr. Soekardjo'
       },
       {
         name: 'twitter:image',

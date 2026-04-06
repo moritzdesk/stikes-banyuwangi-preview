@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://stikesbanyuwangi.ac.id/sitemap.xml
+Sitemap: https://unidsoe.ac.id/sitemap.xml
 
 # Disallow specific paths if needed
 # Disallow: /admin/

@@ -1,0 +1,111 @@
+local_backend: true # Mengizinkan pengeditan secara lokal saat proses development (npn run dev)
+
+backend:
+  name: git-gateway # Nantinya saat dideploy (production), akan connect ke GitHub / GitLab
+  branch: main      # Branch repository utama
+
+logo_url: "https://stikesbanyuwangi.ac.id/wp-content/uploads/2023/02/LOGO-STIKES-BANYUWANGI.png" # Atau gunakan /assets/logo/logo_unidsoe_panjang.png
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  # -----------------------------------------------
+  # SINGLE PAGES (Halaman Statis Tunggal)
+  # -----------------------------------------------
+  - name: "pages"
+    label: "Halaman & Pengaturan Kampus"
+    editor:
+      preview: false # Nonaktifkan preview pane yang berantakan
+    files:
+      - label: "Homepage Settings"
+        name: "home"
+        file: "src/data/home.json"
+        description: "Pengaturan teks dan gambar untuk halaman utama (Home)"
+        fields:
+          - {label: "Hero Headline", name: "heroHeadline", widget: "string"}
+          - {label: "Hero Sub-headline", name: "heroSubheadline", widget: "text"}
+          - {label: "Hero Background", name: "heroImage", widget: "image", required: false}
+          - {label: "Teks Tombol CTA", name: "heroButtonText", widget: "string", default: "Daftar PMB Sekarang"}
+          
+      - label: "Profil Universitas"
+        name: "profil"
+        file: "src/data/profil.json"
+        description: "Pengaturan sejarah, visi & misi."
+        fields:
+          - {label: "Sejarah Panjang", name: "sejarah", widget: "text"}
+          - {label: "Visi Institusi", name: "visi", widget: "string"}
+          - {label: "Misi Institusi", name: "misi", widget: "list", field: {label: "Misi Item", name: "item", widget: "string"}}
+          - {label: "Sambutan Ketua (Nama)", name: "namaKetua", widget: "string"}
+          - {label: "Isi Sambutan", name: "sambutan", widget: "text"}
+          - {label: "Foto Ketua", name: "fotoKetua", widget: "image", required: false}
+
+      - label: "Pengaturan Global Kampus"
+        name: "settings"
+        file: "src/data/settings.json"
+        description: "Pengaturan kontak, alamat, layanan kampus, mitra, dll."
+        fields:
+          - label: "Kontak & Informasi"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Nomor Telepon", name: "phone", widget: "string"}
+              - {label: "Email Utama", name: "email", widget: "string"}
+              - {label: "Alamat Lengkap", name: "address", widget: "text"}
+              - {label: "Link Pendaftaran (PMB)", name: "pmbLink", widget: "string"}
+          
+          - label: "Pusat Unduhan (Downloads)"
+            name: "downloads"
+            widget: "list"
+            fields:
+              - {label: "Judul Berkas", name: "title", widget: "string"}
+              - {label: "Kategori", name: "category", widget: "string"}
+              - {label: "File PDF", name: "file", widget: "file"}
+
+          - label: "Galeri Fasilitas Kampus"
+            name: "facilities"
+            widget: "list"
+            fields:
+              - {label: "Nama Fasilitas", name: "name", widget: "string"}
+              - {label: "Deskripsi Singkat", name: "description", widget: "text"}
+              - {label: "Kategori", name: "category", widget: "string", default: "Akademik"}
+              - {label: "Foto", name: "image", widget: "image"}
+
+          - label: "Institusi Mitra / Kerja Sama"
+            name: "partners"
+            widget: "list"
+            fields:
+              - {label: "Nama Institusi", name: "name", widget: "string"}
+              - {label: "Kategori", name: "category", widget: "select", options: ["Nasional", "Internasional"]}
+              - {label: "Logo", name: "logo", widget: "image"}
+
+          - label: "Testimoni Alumni"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Nama Mahasiswa/Alumni", name: "name", widget: "string"}
+              - {label: "Profesi / Tempat Kerja", name: "job", widget: "string"}
+              - {label: "Kutipan Kesan", name: "quote", widget: "text"}
+              - {label: "Foto Profil", name: "avatar", widget: "image"}
+
+  # -----------------------------------------------
+  # MULTIPLE ENTITIES (Koleksi Dinamis Struktural)
+  # -----------------------------------------------
+  - name: "programs"
+    label: "Program Studi"
+    folder: "src/data/programs"
+    create: true
+    editor:
+      preview: false # Nonaktifkan preview pane
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Nama Program Studi", name: "title", widget: "string"}
+      - {label: "Jenjang", name: "level", widget: "select", options: ["S1", "D4", "D3", "Profesi"]}
+      - {label: "Gelar Lulusan", name: "degree", widget: "string"}
+      - {label: "Akreditasi", name: "accreditation", widget: "string"}
+      - {label: "Masa Studi", name: "duration", widget: "string"}
+      - {label: "Banner Gambar", name: "image", widget: "image", required: false}
+      - {label: "Deskripsi Singkat", name: "shortDescription", widget: "text"}
+      - {label: "Kompetensi Kelulusan (Teks Lanjutan)", name: "competence", widget: "text"}
+      - {label: "Prospek Karir (Teks)", name: "prospects", widget: "text"}

@@ -1,10 +1,10 @@
-# Overview STIKES Banyuwangi
+# Overview Universitas Dr. Soekardjo Banyuwangi
 
 ## Brand Name
 
-**STIKES Banyuwangi**
+**Universitas Dr. Soekardjo Banyuwangi**
 
-STIKES Banyuwangi adalah singkatan dari Sekolah Tinggi Ilmu Kesehatan Banyuwangi, sebuah institusi pendidikan tinggi kesehatan yang terletak di Banyuwangi, Jawa Timur. Nama brand ini mencerminkan identitas institusi sebagai lembaga pendidikan tinggi yang fokus pada bidang kesehatan dengan akreditasi institusi "Baik" dari BAN-PT dan program studi S1 Keperawatan terakreditasi "Baik Sekali".
+Universitas Dr. Soekardjo Banyuwangi adalah singkatan dari Sekolah Tinggi Ilmu Kesehatan Banyuwangi, sebuah institusi pendidikan tinggi kesehatan yang terletak di Banyuwangi, Jawa Timur. Nama brand ini mencerminkan identitas institusi sebagai lembaga pendidikan tinggi yang fokus pada bidang kesehatan dengan akreditasi institusi "Baik" dari BAN-PT dan program studi S1 Keperawatan terakreditasi "Baik Sekali".
 
 ---
 
@@ -34,15 +34,15 @@ STIKES Banyuwangi adalah singkatan dari Sekolah Tinggi Ilmu Kesehatan Banyuwangi
 
 ## Brand Description
 
-## STIKES Banyuwangi: Menghasilkan Tenaga Kesehatan Profesional Berkualitas
+## Universitas Dr. Soekardjo Banyuwangi: Menghasilkan Tenaga Kesehatan Profesional Berkualitas
 
-STIKES Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dari BAN-PT dan program studi S1 Keperawatan terakreditasi "Baik Sekali". 
+Universitas Dr. Soekardjo Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dari BAN-PT dan program studi S1 Keperawatan terakreditasi "Baik Sekali". 
 
-Sebagai Sekolah Tinggi Ilmu Kesehatan yang terdepan di wilayah Tapal Kuda, Jawa Timur, STIKES Banyuwangi menawarkan berbagai program studi unggulan termasuk S1 Keperawatan & Profesi Ners, S1 Kebidanan & Profesi Bidan, S1 Gizi, D4 Teknologi Laboratorium Medik, D3 Keperawatan, dan D3 Farmasi.
+Sebagai Sekolah Tinggi Ilmu Kesehatan yang terdepan di wilayah Tapal Kuda, Jawa Timur, Universitas Dr. Soekardjo Banyuwangi menawarkan berbagai program studi unggulan termasuk S1 Keperawatan & Profesi Ners, S1 Kebidanan & Profesi Bidan, S1 Gizi, D4 Teknologi Laboratorium Medik, D3 Keperawatan, dan D3 Farmasi.
 
-Institusi ini didukung oleh fasilitas modern seperti Laboratorium Terpadu, Laboratorium CBT Center, Klinik STIKES Banyuwangi dengan layanan BPJS, Perpustakaan, Asrama, dan berbagai fasilitas penunjang lainnya. STIKES Banyuwangi juga memiliki jaringan kemitraan strategis yang kuat dengan Pemerintah Daerah Tapal Kuda (Banyuwangi, Bondowoso, Situbondo, Lumajang), Organisasi Profesi (PPNI, IBI, PAFI), serta berbagai rumah sakit dan rumah bersalin yang menjamin kualitas praktik belajar klinik (PBK) bagi mahasiswa.
+Institusi ini didukung oleh fasilitas modern seperti Laboratorium Terpadu, Laboratorium CBT Center, Klinik Universitas Dr. Soekardjo Banyuwangi dengan layanan BPJS, Perpustakaan, Asrama, dan berbagai fasilitas penunjang lainnya. Universitas Dr. Soekardjo Banyuwangi juga memiliki jaringan kemitraan strategis yang kuat dengan Pemerintah Daerah Tapal Kuda (Banyuwangi, Bondowoso, Situbondo, Lumajang), Organisasi Profesi (PPNI, IBI, PAFI), serta berbagai rumah sakit dan rumah bersalin yang menjamin kualitas praktik belajar klinik (PBK) bagi mahasiswa.
 
-Dengan komitmen pada riset dan publikasi, STIKES Banyuwangi terus berkontribusi pada pengembangan ilmu kesehatan melalui berbagai penelitian, publikasi ilmiah, dan pengabdian masyarakat. Institusi ini juga menyediakan berbagai program beasiswa termasuk BAKENAKES, BHC, Tahfidz, dan KIP Kuliah untuk mendukung akses pendidikan tinggi kesehatan yang lebih luas.
+Dengan komitmen pada riset dan publikasi, Universitas Dr. Soekardjo Banyuwangi terus berkontribusi pada pengembangan ilmu kesehatan melalui berbagai penelitian, publikasi ilmiah, dan pengabdian masyarakat. Institusi ini juga menyediakan berbagai program beasiswa termasuk BAKENAKES, BHC, Tahfidz, dan KIP Kuliah untuk mendukung akses pendidikan tinggi kesehatan yang lebih luas.
 
-STIKES Banyuwangi berdedikasi untuk membentuk masa depan kesehatan Indonesia melalui pendidikan tinggi kesehatan yang berkualitas, relevan, dan berdaya saing global.
+Universitas Dr. Soekardjo Banyuwangi berdedikasi untuk membentuk masa depan kesehatan Indonesia melalui pendidikan tinggi kesehatan yang berkualitas, relevan, dan berdaya saing global.
 

@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="STIKES Banyuwangi - Sekolah Tinggi Ilmu Kesehatan Banyuwangi. Institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas." />
+    <meta name="description" content="Unidsoe - Universitas Dr. Soekardjo. Institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas." />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="id-ID" />
-    <title>STIKES Banyuwangi - Sekolah Tinggi Ilmu Kesehatan Banyuwangi</title>
+    <title>Unidsoe - Universitas Dr. Soekardjo</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

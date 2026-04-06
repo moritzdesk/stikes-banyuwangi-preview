@@ -4,20 +4,20 @@
 
 ### **5.1 Analisis Struktur dan Navigasi Situs Web Utama**
 
-Situs web resmi STIKES Banyuwangi ([https://stikesbanyuwangi.ac.id/](https://stikesbanyuwangi.ac.id/)) berfungsi sebagai portal informasi utama, dirancang untuk mengarahkan pengguna ke subsistem informasi yang lebih spesifik. Struktur menu bar yang ada umumnya efektif dalam menyediakan akses cepat ke konten inti seperti *Tentang Kami*, *Program Studi*, *Penerimaan Mahasiswa Baru (PMB)*, *Berita/Prestasi*, dan *Hubungi Kami*.  
-Pemanfaatan sistem informasi terpadu terlihat jelas dari keterkaitan antara situs utama dan sistem eksternal. Informasi PMB, misalnya, memberikan panduan dan tautan langsung ke sistem pendaftaran *SIAKAD Cloud*.7 Demikian pula, informasi mengenai Kerja Sama tidak hanya tersedia di laman publik 10 tetapi juga memiliki portal internal khusus untuk pengelolaan MoU di *mou.stikesbanyuwangi.ac.id*.15 Konten terkait pencapaian dan kegiatan terbaru terstruktur dalam kategori yang jelas seperti 'Prestasi' dan 'Berita Utama'.6
+Situs web resmi Universitas Dr. Soekardjo Banyuwangi ([https://unidsoe.ac.id/](https://unidsoe.ac.id/)) berfungsi sebagai portal informasi utama, dirancang untuk mengarahkan pengguna ke subsistem informasi yang lebih spesifik. Struktur menu bar yang ada umumnya efektif dalam menyediakan akses cepat ke konten inti seperti *Tentang Kami*, *Program Studi*, *Penerimaan Mahasiswa Baru (PMB)*, *Berita/Prestasi*, dan *Hubungi Kami*.  
+Pemanfaatan sistem informasi terpadu terlihat jelas dari keterkaitan antara situs utama dan sistem eksternal. Informasi PMB, misalnya, memberikan panduan dan tautan langsung ke sistem pendaftaran *SIAKAD Cloud*.7 Demikian pula, informasi mengenai Kerja Sama tidak hanya tersedia di laman publik 10 tetapi juga memiliki portal internal khusus untuk pengelolaan MoU di *mou.unidsoe.ac.id*.15 Konten terkait pencapaian dan kegiatan terbaru terstruktur dalam kategori yang jelas seperti 'Prestasi' dan 'Berita Utama'.6
 
 ### **5.2 Jabaran Struktur Menu Bar Saat Ini**
 
-Struktur menu bar utama situs web STIKES Banyuwangi terdiri dari enam kategori utama, yang masing-masing memiliki subsistem informasi yang mendalam, beberapa mencapai tiga level kedalaman. Pemetaan ini esensial untuk mengidentifikasi tata letak konten saat *redesign*.16  
-**Struktur Navigasi Utama STIKES Banyuwangi**
+Struktur menu bar utama situs web Universitas Dr. Soekardjo Banyuwangi terdiri dari enam kategori utama, yang masing-masing memiliki subsistem informasi yang mendalam, beberapa mencapai tiga level kedalaman. Pemetaan ini esensial untuk mengidentifikasi tata letak konten saat *redesign*.16  
+**Struktur Navigasi Utama Universitas Dr. Soekardjo Banyuwangi**
 
 | Menu Utama | Sub-Menu Level 1 | Sub-Menu Level 2 (Jika Ada) |
 | :---- | :---- | :---- |
 | **1\. Beranda** | (Tidak Ada Sub-Menu) |  |
-| **2\. Tentang Kami** | **Selayang Pandang** | Sejarah Stikes, Profil Stikes Banyuwangi, Sambutan Ketua, Visi & Misi, Logo Intitusi, Hymne dan Mars |
-|  | **Mengunjungi Stikes** | **Kunjungan Resmi:** Kerjasama STIKES Banyuwangi 10, Kunjungan Sekolah, Study Excursion |
-|  |  | **Fasilitas Kampus:** Asrama, Perpustakaan, Laboratorium CBT Center, Laboratorium Terpadu, Gedung Auditorium, Sarana Olahraga, Stikes Banyuwangi TV (SBTV), Laboratorium Bahasa, Tempat Ibadah, Transportasi, UKS, Kliniks 11, Stikes Mart |
+| **2\. Tentang Kami** | **Selayang Pandang** | Sejarah Stikes, Profil Universitas Dr. Soekardjo Banyuwangi, Sambutan Ketua, Visi & Misi, Logo Intitusi, Hymne dan Mars |
+|  | **Mengunjungi Stikes** | **Kunjungan Resmi:** Kerjasama Universitas Dr. Soekardjo Banyuwangi 10, Kunjungan Sekolah, Study Excursion |
+|  |  | **Fasilitas Kampus:** Asrama, Perpustakaan, Laboratorium CBT Center, Laboratorium Terpadu, Gedung Auditorium, Sarana Olahraga, Universitas Dr. Soekardjo Banyuwangi TV (SBTV), Laboratorium Bahasa, Tempat Ibadah, Transportasi, UKS, Kliniks 11, Stikes Mart |
 |  |  | **Organisasi:** Intitusi |
 | **3\. Akademik** | **Program Studi** | S1 Keperawatan & Profesi Ners 4, S1 Kebidanan, S1 Gizi 5, D4 Teknologi Laboratorium Medis 5, D3 Keperawatan, D3 Farmasi |
 |  | Lembaga dan UPT |  |
@@ -72,7 +72,7 @@ Untuk meningkatkan konversi PMB dan membangun kredibilitas, *homepage* harus men
 
 1. **Unique Selling Proposition (USP) Akreditasi:** *Section* besar dan terpisah yang menyoroti Akreditasi Institusi *Baik* 1 dan dan, yang lebih penting, Akreditasi **Baik Sekali** untuk S1 Keperawatan.4  
 2. **Prestasi Institusi Terbaru (T.A. 2025):** Menampilkan *highlight* pencapaian terkini, seperti **10 Proposal PKM Lolos Didanai** 6 dan pengakuan sebagai *Jajaran Elit Perguruan Tinggi 2025* 6, untuk membangun persepsi lingkungan akademik yang unggul.  
-3. **Video Profil/Tur Virtual Kampus:** Tampilkan aset terbaik kampus, termasuk Klinik STIKES Banyuwangi 12, Lab Terpadu, dan CBT Center.  
+3. **Video Profil/Tur Virtual Kampus:** Tampilkan aset terbaik kampus, termasuk Klinik Universitas Dr. Soekardjo Banyuwangi 12, Lab Terpadu, dan CBT Center.  
 4. **Jaringan Kemitraan:** Tampilkan logo-logo mitra strategis (Pemkab Banyuwangi, PPNI, IBI) 10 yang berfungsi sebagai jaminan ketersediaan lokasi Praktik Belajar Klinik (PBK) bagi lulusan.  
 5. **Section Testimoni:** Menggunakan testimoni dari alumni atau keluarga penerima Beasiswa Anggota Keluarga Tenaga Kesehatan (BAKENAKES) 8 untuk meningkatkan kepercayaan dan loyalitas komunitas kesehatan.
 
@@ -95,7 +95,7 @@ Strategi desain *homepage* harus berfokus pada visual yang menarik dan data yang
    * **Konten:** Tampilkan logo mitra strategis utama (Pemkab Tapal Kuda, PPNI, IBI 10) dalam format *logo slider* atau grid dengan *copy* yang berani: "Jaminan Lokasi Praktik Belajar Klinik di Jantung Jawa Timur."  
 4. **Campus Visual Showcase (Fasilitas 360):**  
    * **Fungsi:** Memvisualisasikan aset fisik kampus.  
-   * **Konten:** Gunakan galeri atau *section* visual yang didominasi oleh gambar berkualitas tinggi dari fasilitas unggulan: Laboratorium Terpadu, Laboratorium CBT Center, dan Klinik STIKES Banyuwangi 11 (disertai *pop-up* info layanan BPJS 11). Sertakan tautan yang jelas ke laman **Fasilitas Kampus** yang baru.  
+   * **Konten:** Gunakan galeri atau *section* visual yang didominasi oleh gambar berkualitas tinggi dari fasilitas unggulan: Laboratorium Terpadu, Laboratorium CBT Center, dan Klinik Universitas Dr. Soekardjo Banyuwangi 11 (disertai *pop-up* info layanan BPJS 11). Sertakan tautan yang jelas ke laman **Fasilitas Kampus** yang baru.  
 5. **Testimonial & Community Trust:**  
    * **Fungsi:** Membangun kepercayaan melalui bukti sosial (social proof).  
    * **Konten:** *Section* ini harus menampilkan *quotes* bergambar dari (a) Alumni yang sukses dan (b) Perwakilan keluarga penerima beasiswa **BAKENAKES** 8 atau *stakeholder* penting.
@@ -109,14 +109,14 @@ Berikut adalah detail lengkap mengenai menu bar yang diusulkan (*Proposed/After*
 | **Beranda** | (Tidak Ada) | Tautan ke halaman utama, mengarahkan ke Section CTA PMB dan USP utama. | \- |
 | **Tentang Kami** | **Selayang Pandang** (Visi & Misi, Sejarah, Profil) | Informasi identitas institusi yang diperbarui. | 16 |
 |  | **Pimpinan Institusi** (Sambutan Ketua) | Teks sambutan dan profil pimpinan. | 16 |
-|  | **Organisasi** (Institusi) | Struktur organisasi STIKES Banyuwangi. | 16 |
+|  | **Organisasi** (Institusi) | Struktur organisasi Universitas Dr. Soekardjo Banyuwangi. | 16 |
 | **Program Studi (BARU)** | **S1 Keperawatan & Profesi Ners** | Tampilkan status **Baik Sekali**.4 Termasuk kurikulum, profil lulusan, dan prospek karier. | 4 |
 |  | **S1 Kebidanan & Profesi Bidan** | Tampilkan informasi Akreditasi (perlu konfirmasi terbaru) dan detail praktik. | 16 |
 |  | **S1 Gizi** | Tampilkan status Akreditasi terbaru (berlaku hingga 2027).5 | 5 |
 |  | **D4 Teknologi Lab. Medik** | Tampilkan status Akreditasi terbaru (berlaku hingga 2027).5 | 5 |
 |  | **D3 Keperawatan, D3 Farmasi** | Detail program dan kurikulum. | 16 |
 | **Fasilitas Kampus (BARU)** | **Pusat Pembelajaran** | Laboratorium CBT Center, Laboratorium Terpadu, Perpustakaan, Laboratorium Bahasa. | 16 |
-|  | **Fasilitas Klinis** | **Klinik STIKES Banyuwangi** 11 (dengan info layanan BPJS), UKS. | 11 |
+|  | **Fasilitas Klinis** | **Klinik Universitas Dr. Soekardjo Banyuwangi** 11 (dengan info layanan BPJS), UKS. | 11 |
 |  | **Akomodasi & Penunjang** | Asrama, Gedung Auditorium, Tempat Ibadah, Stikes Mart, Transportasi. | 16 |
 | **Kerja Sama & Kemitraan (BARU)** | **Pemerintahan Daerah** | MoU dengan Pemkab Banyuwangi, Bondowoso, Situbondo, Lumajang.10 | 10 |
 |  | **Organisasi Profesi** | MoU dengan IBI, PPNI, PAFI.10 Fokus pada jaminan Praktek Belajar Klinik (PBK). | 10 |

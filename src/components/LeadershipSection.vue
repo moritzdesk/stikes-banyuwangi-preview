@@ -22,7 +22,7 @@
                       <span class="text-white text-4xl font-bold">DR</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900">DR. H. Soekardjo</h3>
-                    <p class="text-blue-600 font-semibold">Ketua STIKes Banyuwangi</p>
+                    <p class="text-blue-600 font-semibold">Ketua Unidsoe</p>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@
                 </div>
                 <div>
                   <p class="font-semibold text-gray-900">DR. H. Soekardjo</p>
-                  <p class="text-gray-600">Ketua STIKes Banyuwangi</p>
+                  <p class="text-gray-600">Ketua Unidsoe</p>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="flex-1">
                   <h4 class="font-bold text-gray-900 mb-2">Erk Toga</h4>
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
-                    "Prestasi Stikes, adalah Hasil Eksistensi dari Proses yang Telah Dilalui"
+                    "Prestasi Unidsoe, adalah Hasil Eksistensi dari Proses yang Telah Dilalui"
                   </p>
                   <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
                     Read More →
@@ -91,7 +91,7 @@
                 <div class="flex-1">
                   <h4 class="font-bold text-gray-900 mb-2">Ir. H. Suhartoyo, SH, M.Si</h4>
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
-                    "Sudah saatnya Stikes menjadi Institut"
+                    "Sudah saatnya menjadi Universitas"
                   </p>
                   <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
                     Read More →
@@ -108,7 +108,7 @@
                 <div class="flex-1">
                   <h4 class="font-bold text-gray-900 mb-2">dr. Juwana</h4>
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
-                    "Terima Kasih, Saya Bangga Menjadi Bagian dari Stikes Banyuwangi"
+                    "Terima Kasih, Saya Bangga Menjadi Bagian dari Unidsoe"
                   </p>
                   <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
                     Read More →
@@ -161,28 +161,28 @@ useIntersectionObserver(
 // Person Schema untuk Ketua
 const personSchema = computed(() => usePersonSchema({
   name: 'DR. H. Soekardjo',
-  jobTitle: 'Ketua STIKES Banyuwangi',
-  description: 'Ketua STIKES Banyuwangi yang berkomitmen dalam meningkatkan kualitas pendidikan kesehatan',
-  email: 'ketua@stikesbanyuwangi.ac.id'
+  jobTitle: 'Ketua Unidsoe',
+  description: 'Ketua Unidsoe (Universitas Dr. Soekardjo) yang berkomitmen dalam meningkatkan kualitas pendidikan kesehatan',
+  email: 'ketua@unidsoe.ac.id'
 }))
 
 // Review Schema untuk testimoni
 const reviews = [
   {
     author: 'Erk Toga',
-    text: 'Prestasi Stikes, adalah Hasil Eksistensi dari Proses yang Telah Dilalui',
+    text: 'Prestasi Unidsoe, adalah Hasil Eksistensi dari Proses yang Telah Dilalui',
     rating: 5,
     date: '2024-01-15'
   },
   {
     author: 'Ir. H. Suhartoyo, SH, M.Si',
-    text: 'Sudah saatnya Stikes menjadi Institut',
+    text: 'Sudah saatnya menjadi Universitas',
     rating: 5,
     date: '2024-01-15'
   },
   {
     author: 'dr. Juwana',
-    text: 'Terima Kasih, Saya Bangga Menjadi Bagian dari Stikes Banyuwangi',
+    text: 'Terima Kasih, Saya Bangga Menjadi Bagian dari Unidsoe',
     rating: 5,
     date: '2024-01-15'
   }

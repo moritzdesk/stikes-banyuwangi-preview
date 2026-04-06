@@ -1,13 +1,13 @@
 export const articles = [
   {
     id: 1,
-    title: '10 Proposal PKM Mahasiswa STIKes Banyuwangi Lolos Pendanaan',
+    title: '10 Proposal PKM Mahasiswa Unidsoe Lolos Pendanaan',
     category: 'PRESTASI',
     date: '15 Januari 2025',
     author: 'Mahasiswa',
-    excerpt: 'Sepuluh proposal Program Kreativitas Mahasiswa (PKM) dari STIKes Banyuwangi berhasil lolos pendanaan dalam seleksi nasional. Prestasi ini menunjukkan kualitas penelitian dan inovasi mahasiswa yang terus meningkat.',
+    excerpt: 'Sepuluh proposal Program Kreativitas Mahasiswa (PKM) dari Unidsoe (Universitas Dr. Soekardjo) berhasil lolos pendanaan dalam seleksi nasional. Prestasi ini menunjukkan kualitas penelitian dan inovasi mahasiswa yang terus meningkat.',
     content: `
-      <p>STIKes Banyuwangi kembali menorehkan prestasi membanggakan di tingkat nasional. Sepuluh proposal Program Kreativitas Mahasiswa (PKM) dari berbagai program studi berhasil lolos pendanaan dalam seleksi nasional tahun 2025.</p>
+      <p>Unidsoe (Universitas Dr. Soekardjo) kembali menorehkan prestasi membanggakan di tingkat nasional. Sepuluh proposal Program Kreativitas Mahasiswa (PKM) dari berbagai program studi berhasil lolos pendanaan dalam seleksi nasional tahun 2025.</p>
       
       <h2>Daftar Proposal yang Lolos</h2>
       <p>Dari total 25 proposal yang diajukan, sebanyak 10 proposal berhasil lolos seleksi dan mendapatkan pendanaan penuh. Proposal-proposal tersebut mencakup berbagai bidang:</p>
@@ -19,9 +19,9 @@ export const articles = [
       </ul>
       
       <h2>Prestasi yang Membanggakan</h2>
-      <p>Prestasi ini menunjukkan komitmen STIKes Banyuwangi dalam mengembangkan budaya penelitian dan inovasi di kalangan mahasiswa. Dengan dukungan penuh dari dosen pembimbing dan fasilitas laboratorium yang memadai, mahasiswa mampu menghasilkan karya-karya berkualitas tinggi.</p>
+      <p>Prestasi ini menunjukkan komitmen Unidsoe (Universitas Dr. Soekardjo) dalam mengembangkan budaya penelitian dan inovasi di kalangan mahasiswa. Dengan dukungan penuh dari dosen pembimbing dan fasilitas laboratorium yang memadai, mahasiswa mampu menghasilkan karya-karya berkualitas tinggi.</p>
       
-      <p>Kepala Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) STIKes Banyuwangi menyampaikan apresiasi kepada seluruh mahasiswa dan dosen pembimbing yang telah bekerja keras dalam menyusun proposal berkualitas.</p>
+      <p>Kepala Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) Unidsoe menyampaikan apresiasi kepada seluruh mahasiswa dan dosen pembimbing yang telah bekerja keras dalam menyusun proposal berkualitas.</p>
       
       <p>Diharapkan prestasi ini dapat memotivasi mahasiswa lainnya untuk terus berkarya dan berkontribusi pada pengembangan ilmu kesehatan di Indonesia.</p>
     `,
@@ -34,9 +34,9 @@ export const articles = [
     category: 'KEGIATAN',
     date: '12 Januari 2025',
     author: 'Tim KKN',
-    excerpt: 'Mahasiswa STIKes Banyuwangi melaksanakan Kuliah Kerja Nyata (KKN) dengan fokus pada peningkatan kesehatan masyarakat.',
+    excerpt: 'Mahasiswa Unidsoe melaksanakan Kuliah Kerja Nyata (KKN) dengan fokus pada peningkatan kesehatan masyarakat.',
     content: `
-      <p>Mahasiswa STIKes Banyuwangi melaksanakan Kuliah Kerja Nyata (KKN) dengan fokus pada peningkatan kesehatan masyarakat di berbagai desa di wilayah Tapal Kuda, Jawa Timur.</p>
+      <p>Mahasiswa Unidsoe (Universitas Dr. Soekardjo) melaksanakan Kuliah Kerja Nyata (KKN) dengan fokus pada peningkatan kesehatan masyarakat di berbagai desa di wilayah Tapal Kuda, Jawa Timur.</p>
       
       <h2>Program KKN 2025</h2>
       <p>Program KKN tahun 2025 diikuti oleh lebih dari 200 mahasiswa dari berbagai program studi. Kegiatan ini dilaksanakan selama 2 bulan dengan berbagai program unggulan:</p>
@@ -51,7 +51,7 @@ export const articles = [
       <h2>Dampak Positif</h2>
       <p>Program KKN ini memberikan dampak positif bagi masyarakat, terutama dalam meningkatkan kesadaran akan pentingnya kesehatan. Mahasiswa juga mendapatkan pengalaman berharga dalam mengaplikasikan ilmu yang telah dipelajari di kampus.</p>
       
-      <p>Kepala Desa menyampaikan terima kasih kepada STIKes Banyuwangi dan berharap program serupa dapat dilanjutkan di tahun-tahun mendatang.</p>
+      <p>Kepala Desa menyampaikan terima kasih kepada Unidsoe (Universitas Dr. Soekardjo) dan berharap program serupa dapat dilanjutkan di tahun-tahun mendatang.</p>
     `,
     image: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
     tags: ['KKN', 'Pengabdian Masyarakat', 'Kegiatan']
@@ -64,7 +64,7 @@ export const articles = [
     author: 'Tim Penelitian',
     excerpt: 'Dosen dan mahasiswa mengikuti workshop metodologi penelitian kesehatan untuk meningkatkan kualitas riset.',
     content: `
-      <p>STIKes Banyuwangi menyelenggarakan Workshop Metodologi Penelitian Kesehatan yang diikuti oleh dosen dan mahasiswa dari berbagai program studi.</p>
+      <p>Unidsoe (Universitas Dr. Soekardjo) menyelenggarakan Workshop Metodologi Penelitian Kesehatan yang diikuti oleh dosen dan mahasiswa dari berbagai program studi.</p>
       
       <h2>Materi Workshop</h2>
       <p>Workshop yang berlangsung selama 2 hari ini membahas berbagai topik penting:</p>
@@ -80,7 +80,7 @@ export const articles = [
       <p>Workshop menghadirkan narasumber berpengalaman dari berbagai universitas terkemuka di Indonesia, termasuk pakar metodologi penelitian kesehatan yang telah banyak menghasilkan publikasi internasional.</p>
       
       <h2>Hasil Workshop</h2>
-      <p>Peserta workshop mendapatkan pemahaman yang lebih baik tentang metodologi penelitian dan diharapkan dapat meningkatkan kualitas penelitian di STIKes Banyuwangi. Workshop ini juga menjadi ajang diskusi dan sharing pengalaman antar peserta.</p>
+      <p>Peserta workshop mendapatkan pemahaman yang lebih baik tentang metodologi penelitian dan diharapkan dapat meningkatkan kualitas penelitian di Unidsoe. Workshop ini juga menjadi ajang diskusi dan sharing pengalaman antar peserta.</p>
     `,
     image: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
     tags: ['Workshop', 'Penelitian', 'Metodologi']
@@ -91,9 +91,9 @@ export const articles = [
     category: 'PENGUMUMAN',
     date: '8 Januari 2025',
     author: 'Panitia PMB',
-    excerpt: 'Pendaftaran Penerimaan Mahasiswa Baru (PMB) STIKes Banyuwangi tahun akademik 2025/2026 telah dibuka.',
+    excerpt: 'Pendaftaran Penerimaan Mahasiswa Baru (PMB) Unidsoe tahun akademik 2025/2026 telah dibuka.',
     content: `
-      <p>Pendaftaran Penerimaan Mahasiswa Baru (PMB) STIKes Banyuwangi untuk tahun akademik 2025/2026 telah resmi dibuka. Calon mahasiswa dapat mendaftar melalui berbagai jalur yang tersedia.</p>
+      <p>Pendaftaran Penerimaan Mahasiswa Baru (PMB) Unidsoe (Universitas Dr. Soekardjo) untuk tahun akademik 2025/2026 telah resmi dibuka. Calon mahasiswa dapat mendaftar melalui berbagai jalur yang tersedia.</p>
       
       <h2>Jalur Penerimaan</h2>
       <ul>
@@ -104,7 +104,7 @@ export const articles = [
       </ul>
       
       <h2>Program Studi yang Tersedia</h2>
-      <p>STIKes Banyuwangi membuka pendaftaran untuk berbagai program studi:</p>
+      <p>Unidsoe membuka pendaftaran untuk berbagai program studi:</p>
       <ul>
         <li>S1 Keperawatan & Profesi Ners (Akreditasi Baik Sekali)</li>
         <li>S1 Kebidanan & Profesi Bidan</li>
@@ -115,7 +115,7 @@ export const articles = [
       </ul>
       
       <h2>Informasi Pendaftaran</h2>
-      <p>Pendaftaran dapat dilakukan secara online melalui website resmi STIKes Banyuwangi. Untuk informasi lebih lanjut, calon mahasiswa dapat menghubungi panitia PMB di nomor (0333) 424-123 atau melalui email pmb@stikesbanyuwangi.ac.id</p>
+      <p>Pendaftaran dapat dilakukan secara online melalui website resmi Unidsoe. Untuk informasi lebih lanjut, calon mahasiswa dapat menghubungi panitia PMB di nomor (0333) 424-123 atau melalui email pmb@unidsoe.ac.id</p>
     `,
     image: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
     tags: ['PMB', 'Penerimaan', 'Pengumuman']
@@ -126,9 +126,9 @@ export const articles = [
     category: 'PRESTASI',
     date: '5 Januari 2025',
     author: 'Tim Akreditasi',
-    excerpt: 'Program studi S1 Keperawatan STIKes Banyuwangi memperoleh akreditasi "Baik Sekali" dari BAN-PT.',
+    excerpt: 'Program studi S1 Keperawatan Unidsoe memperoleh akreditasi "Baik Sekali" dari BAN-PT.',
     content: `
-      <p>Program studi S1 Keperawatan STIKes Banyuwangi berhasil memperoleh akreditasi "Baik Sekali" dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT).</p>
+      <p>Program studi S1 Keperawatan Unidsoe (Universitas Dr. Soekardjo) berhasil memperoleh akreditasi "Baik Sekali" dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT).</p>
       
       <h2>Pencapaian Akreditasi</h2>
       <p>Akreditasi "Baik Sekali" ini merupakan pencapaian tertinggi yang dapat diraih oleh program studi. Penilaian akreditasi mencakup berbagai aspek:</p>
@@ -141,7 +141,7 @@ export const articles = [
       </ul>
       
       <h2>Komitmen Kualitas</h2>
-      <p>Pencapaian ini menunjukkan komitmen STIKes Banyuwangi dalam menjaga dan meningkatkan kualitas pendidikan. Program studi akan terus berupaya untuk mempertahankan dan meningkatkan kualitas pendidikan di masa mendatang.</p>
+      <p>Pencapaian ini menunjukkan komitmen Unidsoe dalam menjaga dan meningkatkan kualitas pendidikan. Program studi akan terus berupaya untuk mempertahankan dan meningkatkan kualitas pendidikan di masa mendatang.</p>
     `,
     image: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
     tags: ['Akreditasi', 'Prestasi', 'Kualitas']
@@ -152,9 +152,9 @@ export const articles = [
     category: 'SEMINAR',
     date: '3 Januari 2025',
     author: 'Tim Seminar',
-    excerpt: 'STIKes Banyuwangi menyelenggarakan seminar nasional tentang kesehatan masyarakat dengan menghadirkan pakar kesehatan terkemuka.',
+    excerpt: 'Unidsoe menyelenggarakan seminar nasional tentang kesehatan masyarakat dengan menghadirkan pakar kesehatan terkemuka.',
     content: `
-      <p>STIKes Banyuwangi berhasil menyelenggarakan Seminar Nasional Kesehatan Masyarakat dengan tema "Inovasi dalam Pelayanan Kesehatan Masyarakat di Era Digital".</p>
+      <p>Unidsoe (Universitas Dr. Soekardjo) berhasil menyelenggarakan Seminar Nasional Kesehatan Masyarakat dengan tema "Inovasi dalam Pelayanan Kesehatan Masyarakat di Era Digital".</p>
       
       <h2>Pembicara</h2>
       <p>Seminar menghadirkan pembicara-pembicara terkemuka dari berbagai institusi:</p>

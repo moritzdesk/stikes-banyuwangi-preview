@@ -18,7 +18,7 @@
           </h1>
           <p class="text-xl text-blue-100 max-w-3xl mx-auto">
             Dapatkan informasi terbaru tentang prestasi, kegiatan, penelitian, dan pengumuman penting 
-            dari civitas akademika STIKes Banyuwangi
+            dari civitas akademika Unidsoe (Universitas Dr. Soekardjo)
           </p>
         </div>
       </div>
@@ -130,8 +130,8 @@ import { useBreadcrumbSchema } from '../composables/useSchema'
 
 // SEO Meta Tags
 useSEO({
-  title: 'Berita & Artikel - STIKES Banyuwangi',
-  description: 'Dapatkan informasi terbaru tentang prestasi, kegiatan, penelitian, dan pengumuman penting dari civitas akademika STIKES Banyuwangi',
+  title: 'Berita & Artikel - Unidsoe',
+  description: 'Dapatkan informasi terbaru tentang prestasi, kegiatan, penelitian, dan pengumuman penting dari civitas akademika Unidsoe (Universitas Dr. Soekardjo)',
   type: 'website'
 })
 
@@ -142,8 +142,8 @@ const breadcrumbItems = [
 ]
 
 const breadcrumbSchema = useBreadcrumbSchema([
-  { name: 'Beranda', url: 'https://stikesbanyuwangi.ac.id/' },
-  { name: 'Artikel', url: 'https://stikesbanyuwangi.ac.id/artikel' }
+  { name: 'Beranda', url: 'https://unidsoe.ac.id/' },
+  { name: 'Artikel', url: 'https://unidsoe.ac.id/artikel' }
 ])
 
 const selectedCategory = ref('all')

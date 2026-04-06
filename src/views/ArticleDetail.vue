@@ -150,8 +150,8 @@ const article = computed(() => getArticleById(articleId.value))
 
 // SEO Meta Tags
 useSEO({
-  title: article.value ? article.value.title : 'Artikel - STIKES Banyuwangi',
-  description: article.value ? article.value.excerpt : 'Baca artikel lengkap dari STIKES Banyuwangi',
+  title: article.value ? article.value.title : 'Artikel - Unidsoe',
+  description: article.value ? article.value.excerpt : 'Baca artikel lengkap dari Unidsoe (Universitas Dr. Soekardjo)',
   type: 'article',
   image: article.value?.image,
   keywords: article.value?.tags || []
@@ -162,9 +162,9 @@ const articleSchema = computed(() => useArticleSchema(article.value))
 const breadcrumbSchema = computed(() => {
   if (!article.value) return null
   return useBreadcrumbSchema([
-    { name: 'Beranda', url: 'https://stikesbanyuwangi.ac.id/' },
-    { name: 'Artikel', url: 'https://stikesbanyuwangi.ac.id/artikel' },
-    { name: article.value.title, url: `https://stikesbanyuwangi.ac.id${route.path}` }
+    { name: 'Beranda', url: 'https://unidsoe.ac.id/' },
+    { name: 'Artikel', url: 'https://unidsoe.ac.id/artikel' },
+    { name: article.value.title, url: `https://unidsoe.ac.id${route.path}` }
   ])
 })
 
@@ -180,7 +180,7 @@ const eventSchema = computed(() => {
       endDate: article.value.date,
       image: article.value.image,
       location: {
-        name: 'STIKES Banyuwangi',
+        name: 'Unidsoe',
         address: 'Jl. Letkol Istiqlah No. 109',
         city: 'Singojuruh',
         region: 'Banyuwangi',

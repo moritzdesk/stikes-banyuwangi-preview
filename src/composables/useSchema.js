@@ -1,17 +1,17 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-const siteUrl = 'https://stikesbanyuwangi.ac.id' // Update dengan domain actual
+const siteUrl = 'https://unidsoe.ac.id' // Update dengan domain actual
 
 export function useOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
-    name: 'STIKES Banyuwangi',
-    alternateName: 'Sekolah Tinggi Ilmu Kesehatan Banyuwangi',
+    name: 'Unidsoe',
+    alternateName: 'Universitas Dr. Soekardjo',
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
-    description: 'STIKES Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".',
+    description: 'Unidsoe (Universitas Dr. Soekardjo) adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Letkol Istiqlah No. 109',
@@ -24,7 +24,7 @@ export function useOrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+62-333-424-123',
       contactType: 'Customer Service',
-      email: 'info@stikesbanyuwangi.ac.id'
+      email: 'info@unidsoe.ac.id'
     },
     sameAs: [
       // Social media links jika ada
@@ -55,11 +55,11 @@ export function useArticleSchema(article) {
     dateModified: article.date,
     author: {
       '@type': 'Person',
-      name: article.author || 'STIKES Banyuwangi'
+      name: article.author || 'Unidsoe'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'STIKES Banyuwangi',
+      name: 'Unidsoe',
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/logo.png`
@@ -97,7 +97,7 @@ export function useCourseSchema(course) {
     description: course.description,
     provider: {
       '@type': 'EducationalOrganization',
-      name: 'STIKES Banyuwangi',
+      name: 'Unidsoe',
       url: siteUrl
     },
     educationalCredentialAwarded: course.degree || 'Sarjana',
@@ -117,7 +117,7 @@ export function useWebSiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'STIKES Banyuwangi',
+    name: 'Unidsoe',
     url: siteUrl,
     potentialAction: {
       '@type': 'SearchAction',
@@ -134,12 +134,12 @@ export function useLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
-    name: 'STIKES Banyuwangi',
-    alternateName: 'Sekolah Tinggi Ilmu Kesehatan Banyuwangi',
+    name: 'Unidsoe',
+    alternateName: 'Universitas Dr. Soekardjo',
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     image: `${siteUrl}/og-image.jpg`,
-    description: 'STIKES Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".',
+    description: 'Unidsoe (Universitas Dr. Soekardjo) adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Letkol Istiqlah No. 109',
@@ -154,7 +154,7 @@ export function useLocalBusinessSchema() {
       longitude: '114.3694'
     },
     telephone: '+62-333-424-123',
-    email: 'info@stikesbanyuwangi.ac.id',
+    email: 'info@unidsoe.ac.id',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: [
@@ -196,7 +196,7 @@ export function useEventSchema(event) {
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
       '@type': 'Place',
-      name: event.location?.name || 'STIKES Banyuwangi',
+      name: event.location?.name || 'Unidsoe',
       address: {
         '@type': 'PostalAddress',
         streetAddress: event.location?.address || 'Jl. Letkol Istiqlah No. 109',
@@ -208,7 +208,7 @@ export function useEventSchema(event) {
     },
     organizer: {
       '@type': 'Organization',
-      name: 'STIKES Banyuwangi',
+      name: 'Unidsoe',
       url: siteUrl
     },
     image: event.image || `${siteUrl}/og-image.jpg`,
@@ -238,7 +238,7 @@ export function usePersonSchema(person) {
     jobTitle: person.jobTitle || person.position,
     worksFor: {
       '@type': 'EducationalOrganization',
-      name: 'STIKES Banyuwangi',
+      name: 'Unidsoe',
       url: siteUrl
     },
     description: person.description || person.bio,
@@ -343,7 +343,7 @@ export function useVideoObjectSchema(video) {
     embedUrl: video.embedUrl,
     publisher: {
       '@type': 'Organization',
-      name: 'STIKES Banyuwangi',
+      name: 'Unidsoe',
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/logo.png`
@@ -367,7 +367,7 @@ export function useReviewSchema(reviews) {
       '@type': 'Review',
       itemReviewed: {
         '@type': 'EducationalOrganization',
-        name: 'STIKES Banyuwangi',
+        name: 'Unidsoe',
         url: siteUrl
       },
       reviewRating: {
@@ -391,7 +391,7 @@ export function useReviewSchema(reviews) {
     '@type': 'Review',
     itemReviewed: {
       '@type': 'EducationalOrganization',
-      name: 'STIKES Banyuwangi',
+      name: 'Unidsoe',
       url: siteUrl
     },
     reviewRating: {

@@ -1,201 +1,79 @@
 <template>
-  <section 
-    ref="campusElement"
-    class="section-padding bg-white transform transition-all duration-1000"
-    :class="campusVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'"
-  >
-    <div class="container-custom">
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Fasilitas Kampus Unggulan</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Laboratorium modern, fasilitas klinis, dan infrastruktur terdepan untuk mendukung pembelajaran optimal
-        </p>
+  <section class="py-16 md:py-24 bg-gray-900 text-white relative font-sans overflow-hidden">
+    <!-- Dark overlay/pattern -->
+    <div class="absolute inset-0 bg-[#0b2b42]/90"></div>
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+
+    <div class="container-custom relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div class="max-w-2xl">
+          <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">Fasilitas Kampus</span>
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+            Lingkungan Belajar Modern
+          </h2>
+          <p class="text-gray-300 text-lg">
+            Jelajahi fasilitas pendidikan kesehatan berstandar nasional yang mendukung proses pembelajaran praktik dan teori.
+          </p>
+        </div>
+        <button class="hidden md:inline-flex items-center px-6 py-3 border border-[#58d1fd] text-[#58d1fd] rounded-lg hover:bg-[#58d1fd] hover:text-[#0b2b42] transition-all duration-300 font-bold mt-6 md:mt-0 group">
+          <svg class="w-5 h-5 mr-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          Virtual Tour 360°
+        </button>
       </div>
 
-      <!-- Campus Facilities Grid -->
-      <div class="grid lg:grid-cols-3 gap-8 mb-16">
-        <!-- Laboratorium Terpadu -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover">
-          <div class="relative overflow-hidden">
-            <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-blue-400 to-blue-600">
-              <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-16 h-16 text-white opacity-50" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="absolute top-4 left-4">
-              <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">LABORATORIUM</span>
-            </div>
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
-              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-              Laboratorium Terpadu
-            </h3>
-            <p class="text-gray-600 mb-4 leading-relaxed">
-              Fasilitas laboratorium modern dengan peralatan terdepan untuk praktikum 
-              keperawatan, kebidanan, dan teknologi laboratorium medis.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-gray-500">Fasilitas Utama</span>
-              <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                Lihat Detail →
-              </button>
-            </div>
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px] md:h-[500px]">
+        <!-- Large Item -->
+        <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl cursor-pointer">
+          <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gedung Utama" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-6 translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-xl font-bold text-white mb-1">Gedung Perkuliahan Terpadu</h3>
+            <p class="text-gray-300 text-sm opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">Ruang kelas nyaman ber-AC dengan multimedia lengkap</p>
           </div>
         </div>
 
-        <!-- CBT Center -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover">
-          <div class="relative overflow-hidden">
-            <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-green-400 to-green-600">
-              <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-16 h-16 text-white opacity-50" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="absolute top-4 left-4">
-              <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">CBT CENTER</span>
-            </div>
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
-              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-              </svg>
-            </div>
-          </div>
-          
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-              Laboratorium CBT Center
-            </h3>
-            <p class="text-gray-600 mb-4 leading-relaxed">
-              Pusat pembelajaran berbasis komputer dengan teknologi terdepan 
-              untuk simulasi dan praktik klinis yang realistis.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-gray-500">Teknologi Terdepan</span>
-              <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                Lihat Detail →
-              </button>
-            </div>
+        <!-- Small Item 1 -->
+        <div class="relative group overflow-hidden rounded-xl cursor-pointer">
+          <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Laboratorium" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"/>
+           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-lg font-bold text-white">Laboratorium Keperawatan</h3>
           </div>
         </div>
 
-        <!-- Klinik STIKes -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover">
-          <div class="relative overflow-hidden">
-            <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-red-400 to-red-600">
-              <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-16 h-16 text-white opacity-50" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="absolute top-4 left-4">
-              <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">KLINIK</span>
-            </div>
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
-              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-              </svg>
-            </div>
+        <!-- Small Item 2 -->
+        <div class="relative group overflow-hidden rounded-xl cursor-pointer">
+          <img src="https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Perpustakaan" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"/>
+           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-lg font-bold text-white">Perpustakaan Digital</h3>
           </div>
-          
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-              Klinik STIKes Banyuwangi
-            </h3>
-            <p class="text-gray-600 mb-4 leading-relaxed">
-              Fasilitas klinis modern dengan layanan BPJS untuk praktik klinis 
-              mahasiswa dan pelayanan kesehatan masyarakat.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-gray-500">Layanan BPJS</span>
-              <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                Lihat Detail →
-              </button>
-            </div>
+        </div>
+
+        <!-- Wide Item (spanning 2 cols on bottom right) -->
+        <div class="md:col-span-2 relative group overflow-hidden rounded-xl cursor-pointer">
+          <img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Auditorium" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"/>
+           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-xl font-bold text-white mb-1">Auditorium Kampus</h3>
+             <p class="text-gray-300 text-sm">Kapasitas 1000 orang untuk kegiatan seminar dan wisuda</p>
           </div>
         </div>
       </div>
-
-      <!-- Additional Facilities -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <div class="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl">
-          <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h4 class="font-semibold text-gray-900 mb-2">Perpustakaan</h4>
-          <p class="text-sm text-gray-600">Koleksi lengkap dan digital</p>
-        </div>
-
-        <div class="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl">
-          <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h4 class="font-semibold text-gray-900 mb-2">Asrama</h4>
-          <p class="text-sm text-gray-600">Akomodasi nyaman untuk mahasiswa</p>
-        </div>
-
-        <div class="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl">
-          <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h4 class="font-semibold text-gray-900 mb-2">Auditorium</h4>
-          <p class="text-sm text-gray-600">Fasilitas seminar dan acara</p>
-        </div>
-
-        <div class="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl">
-          <div class="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h4 class="font-semibold text-gray-900 mb-2">Sarana Olahraga</h4>
-          <p class="text-sm text-gray-600">Fasilitas olahraga lengkap</p>
-        </div>
-      </div>
-
-      <!-- CTA Button -->
-      <div class="text-center">
-        <button class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center mx-auto group">
-          <span>Jelajahi Semua Fasilitas</span>
-          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
+      
+       <div class="mt-8 text-center md:hidden">
+         <button class="inline-flex items-center px-6 py-3 border border-[#58d1fd] text-[#58d1fd] rounded-lg hover:bg-[#58d1fd] hover:text-[#0b2b42] transition-colors font-bold">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          Virtual Tour 360°
         </button>
       </div>
     </div>
   </section>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-import { useIntersectionObserver } from '@vueuse/core'
-
-const campusElement = ref(null)
-const campusVisible = ref(false)
-
-// Intersection observer untuk campus section
-useIntersectionObserver(
-  campusElement,
-  ([{ isIntersecting }]) => {
-    campusVisible.value = isIntersecting
-  },
-  { threshold: 0.2 }
-)
-</script>
+<style scoped>
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+</style>

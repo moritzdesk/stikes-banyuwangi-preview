@@ -70,7 +70,7 @@ import { computed } from 'vue'
 // SEO Meta Tags
 useSEO({
   title: '404 - Halaman Tidak Ditemukan',
-  description: 'Halaman yang Anda cari tidak ditemukan. Kembali ke beranda STIKES Banyuwangi.',
+  description: 'Halaman yang Anda cari tidak ditemukan. Kembali ke beranda Unidsoe (Universitas Dr. Soekardjo).',
   noindex: true
 })
 
@@ -80,7 +80,7 @@ const webPageSchema = computed(() => ({
   '@type': 'WebPage',
   name: '404 - Halaman Tidak Ditemukan',
   description: 'Halaman yang Anda cari tidak ditemukan',
-  url: 'https://stikesbanyuwangi.ac.id/404'
+  url: 'https://unidsoe.ac.id/404'
 }))
 </script>
 

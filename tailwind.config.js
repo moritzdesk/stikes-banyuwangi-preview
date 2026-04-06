@@ -13,11 +13,11 @@ export default {
                     200: '#bae6fd',
                     300: '#7dd3fc',
                     400: '#38bdf8',
-                    500: '#0ea5e9',
-                    600: '#0284c7',
-                    700: '#0369a1',
-                    800: '#075985',
-                    900: '#0c4a6e',
+                    500: '#195682', // Client Main Color
+                    600: '#164c73',
+                    700: '#124163',
+                    800: '#0f3653',
+                    900: '#0b2b42',
                 },
                 secondary: {
                     50: '#f8fafc',
@@ -30,6 +30,11 @@ export default {
                     700: '#334155',
                     800: '#1e293b',
                     900: '#0f172a',
+                },
+                brand: {
+                    orange: '#f9ac42', // Client Secondary Color
+                    blue: '#58d1fd',   // Client Secondary Color
+                    red: '#c01c0c',    // Client Secondary Color
                 },
                 accent: {
                     50: '#fef2f2',

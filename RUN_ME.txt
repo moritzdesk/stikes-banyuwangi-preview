@@ -1,0 +1,49 @@
+========================================
+SETUP SANITY STUDIO - COPY PASTE COMMANDS
+========================================
+
+Buka terminal/PowerShell di project folder ini, lalu jalankan command berikut:
+
+--------------------------------------------------
+STEP 1: LOGIN KE SANITY
+--------------------------------------------------
+npx sanity login
+
+→ Pilih: Google / GitHub / Email
+→ Browser akan terbuka untuk login
+→ Setelah login berhasil, lanjut ke Step 2
+
+--------------------------------------------------
+STEP 2: CREATE PROJECT
+--------------------------------------------------
+npx sanity init --template blog --project-id unidsoe-demo --dataset production --output-path sanity-studio
+
+ATAU (interactive, lebih mudah):
+npx sanity init
+
+→ Pilih:
+  - Project name: unidsoe-demo
+  - Use default dataset: Yes (Enter)
+  - Template: Blog (Enter)
+  - Output path: sanity-studio (Enter)
+
+--------------------------------------------------
+STEP 3: INSTALL DEPENDENCIES
+--------------------------------------------------
+cd sanity-studio
+npm install
+
+--------------------------------------------------
+STEP 4: START STUDIO
+--------------------------------------------------
+npm run dev
+
+→ Studio akan jalan di: http://localhost:3333
+→ Buka browser: http://localhost:3333
+
+========================================
+SETUP SELESAI! ✅
+========================================
+
+Studio siap untuk demo di: http://localhost:3333
+

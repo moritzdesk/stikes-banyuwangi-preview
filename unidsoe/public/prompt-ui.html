@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Assistant - Unidsoe CMS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 32px;
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+    
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    
+    .token-section {
+      background: #fef3c7;
+      border: 1px solid #fbbf24;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .token-section h3 {
+      color: #92400e;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    
+    .token-input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #fbbf24;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    
+    .btn-primary {
+      background: #0ea5e9;
+      color: white;
+    }
+    
+    .btn-primary:hover:not(:disabled) {
+      background: #0284c7;
+    }
+    
+    .btn-primary:disabled {
+      background: #cbd5e1;
+      cursor: not-allowed;
+    }
+    
+    .btn-secondary {
+      background: #10b981;
+      color: white;
+      margin-left: 8px;
+    }
+    
+    .btn-secondary:hover {
+      background: #059669;
+    }
+    
+    .prompt-section {
+      margin-bottom: 24px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 14px;
+      resize: vertical;
+    }
+    
+    textarea:focus {
+      outline: none;
+      border-color: #0ea5e9;
+      box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+    }
+    
+    .options {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .option-group {
+      flex: 1;
+      min-width: 150px;
+    }
+    
+    .option-group label {
+      font-size: 12px;
+      font-weight: 500;
+      color: #64748b;
+    }
+    
+    select, input[type="range"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .result {
+      margin-top: 24px;
+      padding: 20px;
+      background: #f0f9ff;
+      border: 2px solid #0ea5e9;
+      border-radius: 8px;
+      display: none;
+    }
+    
+    .result.show {
+      display: block;
+    }
+    
+    .result h3 {
+      color: #0ea5e9;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    
+    .result-content {
+      background: white;
+      padding: 16px;
+      border-radius: 4px;
+      border: 1px solid #e0e0e0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 14px;
+      line-height: 1.6;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    
+    .error {
+      margin-top: 16px;
+      padding: 12px;
+      background: #fee2e2;
+      color: #dc2626;
+      border-radius: 8px;
+      display: none;
+    }
+    
+    .error.show {
+      display: block;
+    }
+    
+    .examples {
+      margin-top: 24px;
+      padding: 16px;
+      background: #f8fafc;
+      border-radius: 8px;
+    }
+    
+    .examples h3 {
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: #0f172a;
+    }
+    
+    .example-btn {
+      display: inline-block;
+      margin: 4px 8px 4px 0;
+      padding: 6px 12px;
+      background: #e0f2fe;
+      color: #0284c7;
+      border: 1px solid #0ea5e9;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s;
+    }
+    
+    .example-btn:hover {
+      background: #0ea5e9;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💬 AI Prompt Assistant</h1>
+    <p class="subtitle">Generate ideas, suggestions, and analyze content with AI</p>
+    
+    <div class="token-section">
+      <h3>🔑 API Token Setup</h3>
+      <input 
+        type="text" 
+        id="tokenInput" 
+        class="token-input" 
+        placeholder="Paste your Sanity API token here"
+        value="skyrIPWW8egzpluLt04BkNALDspwHNaUWFQefkLbycUdgdexfbfXkCiIL9OxY1rGHzmTHDziZZI3nUSQMpThEMJ08fIIh2ruZD9Oy9xk3YrNDqpkXdta9lU6uRPVXuwO4XhOBHnCC6eno2Qva41GB2Y6Nu6AarQfLy2aFl3LbHJUdzDpsWKZ"
+      />
+      <button class="btn btn-secondary" onclick="saveToken()">💾 Save Token</button>
+      <div id="tokenStatus" style="margin-top: 8px; font-size: 12px; color: #059669;"></div>
+    </div>
+    
+    <div class="prompt-section">
+      <label for="promptInput">Enter your prompt:</label>
+      <textarea 
+        id="promptInput" 
+        placeholder="e.g., 'Give me 5 blog post ideas for Unidsoe university about health sciences education'"
+      ></textarea>
+    </div>
+    
+    <div class="options">
+      <div class="option-group">
+        <label>Output Format:</label>
+        <select id="formatSelect">
+          <option value="text">Text</option>
+          <option value="json">JSON</option>
+        </select>
+      </div>
+      <div class="option-group">
+        <label>Temperature: <span id="tempValue">0.7</span></label>
+        <input 
+          type="range" 
+          id="tempSlider" 
+          min="0" 
+          max="1" 
+          step="0.1" 
+          value="0.7"
+          oninput="document.getElementById('tempValue').textContent = this.value"
+        />
+        <div style="font-size: 11px; color: #64748b; margin-top: 4px;">
+          Higher = more creative
+        </div>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" onclick="generatePrompt()" id="generateBtn">
+      🚀 Generate Response
+    </button>
+    
+    <div class="error" id="errorDiv"></div>
+    
+    <div class="result" id="resultDiv">
+      <h3>✅ Response:</h3>
+      <div class="result-content" id="resultContent"></div>
+      <button class="btn btn-secondary" onclick="copyResult()" style="margin-top: 12px;">
+        📋 Copy to Clipboard
+      </button>
+    </div>
+    
+    <div class="examples">
+      <h3>💡 Example Prompts:</h3>
+      <button class="example-btn" onclick="setExample('Give me 5 blog post ideas for Unidsoe university about health sciences education')">
+        Blog Post Ideas
+      </button>
+      <button class="example-btn" onclick="setExample('Suggest 20 SEO keywords for a blog post about Keperawatan (Nursing) program')">
+        SEO Keywords
+      </button>
+      <button class="example-btn" onclick="setExample('Create 5 engaging Instagram captions for a post about student achievement')">
+        Social Media Captions
+      </button>
+      <button class="example-btn" onclick="setExample('Analyze this content and suggest improvements for better SEO and readability')">
+        Content Analysis
+      </button>
+    </div>
+  </div>
+  
+  <script type="module">
+    import { createClient } from 'https://esm.sh/@sanity/client@latest';
+    
+    const PROJECT_ID = 'iwtyom29';
+    const DATASET = 'production';
+    
+    let sanityClient = null;
+    
+    // Initialize client when token is available
+    function initClient(token) {
+      if (!token) return null;
+      
+      return createClient({
+        projectId: PROJECT_ID,
+        dataset: DATASET,
+        apiVersion: 'vX',
+        token: token,
+        useCdn: false,
+      });
+    }
+    
+    // Load saved token
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedToken = localStorage.getItem('sanity_api_token');
+      if (savedToken) {
+        document.getElementById('tokenInput').value = savedToken;
+        sanityClient = initClient(savedToken);
+        updateTokenStatus('Token loaded from storage');
+      }
+    });
+    
+    function saveToken() {
+      const token = document.getElementById('tokenInput').value.trim();
+      if (!token) {
+        alert('Please enter a token');
+        return;
+      }
+      localStorage.setItem('sanity_api_token', token);
+      sanityClient = initClient(token);
+      updateTokenStatus('✅ Token saved!');
+    }
+    
+    function updateTokenStatus(message) {
+      const status = document.getElementById('tokenStatus');
+      status.textContent = message;
+      status.style.color = '#059669';
+      setTimeout(() => {
+        status.textContent = '';
+      }, 3000);
+    }
+    
+    function showError(message) {
+      const errorDiv = document.getElementById('errorDiv');
+      errorDiv.textContent = `❌ ${message}`;
+      errorDiv.classList.add('show');
+    }
+    
+    function copyResult() {
+      const result = document.getElementById('resultContent').textContent;
+      navigator.clipboard.writeText(result).then(() => {
+        alert('Copied to clipboard!');
+      });
+    }
+    
+    function setExample(text) {
+      document.getElementById('promptInput').value = text;
+    }
+    
+    async function generatePrompt() {
+      const prompt = document.getElementById('promptInput').value.trim();
+      const format = document.getElementById('formatSelect').value;
+      const temperature = parseFloat(document.getElementById('tempSlider').value);
+      const token = localStorage.getItem('sanity_api_token') || document.getElementById('tokenInput').value.trim();
+      
+      if (!prompt) {
+        showError('Please enter a prompt');
+        return;
+      }
+      
+      if (!token) {
+        showError('Please set API token first');
+        return;
+      }
+      
+      const btn = document.getElementById('generateBtn');
+      const resultDiv = document.getElementById('resultDiv');
+      const errorDiv = document.getElementById('errorDiv');
+      
+      btn.disabled = true;
+      btn.textContent = '⏳ Generating...';
+      resultDiv.classList.remove('show');
+      errorDiv.classList.remove('show');
+      
+      try {
+        // Use @sanity/client for correct endpoint handling
+        if (!sanityClient) {
+          sanityClient = initClient(token);
+        }
+        
+        if (!sanityClient) {
+          throw new Error('Client not initialized. Please set token first.');
+        }
+        
+        const requestBody = {
+          instruction: prompt,
+        };
+        
+        if (format === 'json') {
+          requestBody.format = 'json';
+        }
+        
+        if (temperature !== 0.7) {
+          requestBody.temperature = temperature;
+        }
+        
+        const data = await sanityClient.agent.action.prompt(requestBody);
+        const result = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+        
+        document.getElementById('resultContent').textContent = result;
+        resultDiv.classList.add('show');
+        errorDiv.classList.remove('show');
+      } catch (error) {
+        console.error('Prompt error:', error);
+        const errorMessage = error.message || error.toString() || 'Failed to generate response';
+        showError(errorMessage);
+        resultDiv.classList.remove('show');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = '🚀 Generate Response';
+      }
+    }
+    
+    // Make functions available globally
+    window.saveToken = saveToken;
+    window.setExample = setExample;
+    window.generatePrompt = generatePrompt;
+    window.copyResult = copyResult;
+    window.showError = showError;
+  </script>
+</body>
+</html>
+

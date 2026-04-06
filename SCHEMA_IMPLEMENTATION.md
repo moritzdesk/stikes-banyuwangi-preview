@@ -1,4 +1,4 @@
-# Schema Implementation Guide - STIKES Banyuwangi
+# Schema Implementation Guide - Universitas Dr. Soekardjo Banyuwangi
 
 Dokumentasi lengkap implementasi semua Advanced Schema Types yang telah dibuat.
 
@@ -42,7 +42,7 @@ Dokumentasi lengkap implementasi semua Advanced Schema Types yang telah dibuat.
   endDate: '3 Januari 2025',
   image: 'https://...',
   location: {
-    name: 'STIKES Banyuwangi',
+    name: 'Universitas Dr. Soekardjo Banyuwangi',
     address: 'Jl. Letkol Istiqlah No. 109',
     city: 'Singojuruh',
     region: 'Banyuwangi',
@@ -62,16 +62,16 @@ Dokumentasi lengkap implementasi semua Advanced Schema Types yang telah dibuat.
 **Lokasi:** `src/components/LeadershipSection.vue`
 
 **Penggunaan:**
-- Schema untuk Ketua STIKES Banyuwangi (DR. H. Soekardjo)
+- Schema untuk Ketua Universitas Dr. Soekardjo Banyuwangi (DR. H. Soekardjo)
 - Otomatis ditambahkan di section Leadership
 
 **Contoh Data:**
 ```javascript
 {
   name: 'DR. H. Soekardjo',
-  jobTitle: 'Ketua STIKES Banyuwangi',
-  description: 'Ketua STIKES Banyuwangi yang berkomitmen...',
-  email: 'ketua@stikesbanyuwangi.ac.id'
+  jobTitle: 'Ketua Universitas Dr. Soekardjo Banyuwangi',
+  description: 'Ketua Universitas Dr. Soekardjo Banyuwangi yang berkomitmen...',
+  email: 'ketua@unidsoe.ac.id'
 }
 ```
 
@@ -101,7 +101,7 @@ const personSchema2 = computed(() => usePersonSchema({
 const faqs = [
   {
     question: 'Apa saja program studi yang tersedia?',
-    answer: '<p>STIKES Banyuwangi menawarkan...</p>'
+    answer: '<p>Universitas Dr. Soekardjo Banyuwangi menawarkan...</p>'
   },
   // ... lebih banyak FAQ
 ]
@@ -122,7 +122,7 @@ import FAQSection from '../components/FAQSection.vue'
 **FAQ yang Tersedia:**
 1. Program studi yang tersedia
 2. Cara mendaftar sebagai mahasiswa baru
-3. Akreditasi STIKES Banyuwangi
+3. Akreditasi Universitas Dr. Soekardjo Banyuwangi
 4. Program beasiswa
 5. Lokasi kampus
 6. Fasilitas kampus
@@ -194,7 +194,7 @@ const reviews = [
 **Review yang Tersedia:**
 1. Erk Toga - "Prestasi Stikes, adalah Hasil Eksistensi dari Proses yang Telah Dilalui"
 2. Ir. H. Suhartoyo, SH, M.Si - "Sudah saatnya Stikes menjadi Institut"
-3. dr. Juwana - "Terima Kasih, Saya Bangga Menjadi Bagian dari Stikes Banyuwangi"
+3. dr. Juwana - "Terima Kasih, Saya Bangga Menjadi Bagian dari Universitas Dr. Soekardjo Banyuwangi"
 
 ---
 
