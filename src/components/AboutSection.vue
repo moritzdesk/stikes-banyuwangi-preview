@@ -37,7 +37,7 @@
             Universitas Dr. Soekardjo Banyuwangi
           </h2>
           <p class="text-gray-600 text-lg leading-relaxed mb-4">
-            Sekolah Tinggi Ilmu Kesehatan (STIKES) Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas tinggi, berakhlak mulia, dan berdaya saing global.
+            Universitas Dr. Soekardjo Banyuwangi Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas tinggi, berakhlak mulia, dan berdaya saing global.
           </p>
           <p class="text-gray-600 text-lg leading-relaxed mb-4">
             Dengan akreditasi institusi <strong class="text-[#195682]">"Baik"</strong> dan program studi S1 Keperawatan terakreditasi <strong class="text-green-600">"Baik Sekali"</strong>, kami telah mencetak ribuan alumni yang tersebar di seluruh Indonesia dan luar negeri.

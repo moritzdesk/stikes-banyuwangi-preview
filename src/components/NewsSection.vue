@@ -1,113 +1,116 @@
 <template>
   <section class="py-16 md:py-24 bg-gray-50 font-sans">
     <div class="container-custom">
-      <!-- Section 1: Berita (General News) -->
+      <!-- Section 1: Berita Terbaru (Blog/Update) -->
       <div class="flex flex-col md:flex-row justify-between items-end mb-12">
         <div class="max-w-2xl">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4">
-            Berita
+          <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4 text-shadow-sm">
+            Berita Terbaru
           </h2>
           <p class="text-gray-600 text-lg">
-            Kumpulan berita umum dan informasi terkini.
+            Kumpulan kabar terbaru dan artikel menarik dari Blog UNIDSOE.
           </p>
         </div>
-        <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-semibold hover:text-orange-600 transition-colors mt-4 md:mt-0">
-          Lihat Semua Berita
+        <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-extrabold hover:text-orange-600 transition-colors mt-4 md:mt-0 uppercase tracking-widest text-xs">
+          Semua Berita
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </router-link>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8 mb-20">
-        <article v-for="(news, index) in generalNews" :key="index" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden border border-gray-100 flex flex-col h-full">
-          <div class="relative h-52 overflow-hidden">
-            <img 
-              :src="news.image" 
-              :alt="news.title" 
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-            />
-            <div class="absolute top-4 left-4 bg-[#f9ac42] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-              Berita
-            </div>
+      <!-- Loading for Section 1 -->
+      <div v-if="loading" class="grid md:grid-cols-3 gap-8 mb-20">
+        <div v-for="i in 3" :key="i" class="bg-white rounded-2xl h-80 animate-pulse shadow-sm"></div>
+      </div>
+
+      <!-- Grid for Section 1: Blog -->
+      <div v-else-if="blogNews.length > 0" class="grid md:grid-cols-3 gap-8 mb-20">
+        <article v-for="(news, index) in blogNews" :key="index" class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-gray-100 flex flex-col h-full transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img :src="news.image" :alt="news.title" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">BLOG</div>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="text-sm text-gray-500 mb-3 flex items-center font-medium">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="text-[10px] text-gray-400 mb-4 font-bold uppercase tracking-widest flex items-center">
+              <i class="far fa-calendar-alt mr-2 text-[#f9ac42]"></i>
               {{ news.date }}
             </div>
-            <h3 class="text-xl font-bold text-[#0b2b42] mb-3 group-hover:text-[#195682] transition-colors leading-snug">
+            <h3 class="text-lg font-bold text-[#0b2b42] mb-4 group-hover:text-[#195682] transition-colors leading-tight line-clamp-2">
               {{ news.title }}
             </h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
               {{ news.excerpt }}
             </p>
-            <router-link to="/artikel" class="inline-flex items-center text-[#195682] font-bold text-sm hover:underline mt-auto">
+            <router-link :to="`/artikel/${news.slug}`" class="inline-flex items-center text-[#195682] font-bold text-sm hover:text-[#f9ac42] transition-colors mt-auto">
               Baca Selengkapnya
+              <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </router-link>
           </div>
         </article>
       </div>
 
-      <!-- Section 2: Informasi Unidsoe (Campus Specific) -->
-      <div class="flex flex-col md:flex-row justify-between items-end mb-12 pt-16 border-t border-gray-200">
-        <div class="max-w-2xl">
-          <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4">
-            Informasi Unidsoe
-          </h2>
-          <p class="text-gray-600 text-lg">
-            Inspirasi alumni, prestasi mahasiswa, opini dosen, dan tips kesehatan dari pakar UNIDSOE.
-          </p>
-        </div>
-        <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-semibold hover:text-orange-600 transition-colors mt-4 md:mt-0">
-          Lihat Semua Informasi
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-        </router-link>
+      <!-- Empty State for Section 1 -->
+      <div v-else class="py-12 bg-gray-100/50 rounded-2xl text-center border-2 border-dashed border-gray-200 mb-20">
+         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Belum ada artikel Blog</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <article v-for="(info, index) in campusInfo" :key="index" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden border border-gray-100 flex flex-col h-full">
-          <div class="relative h-52 overflow-hidden">
-            <img 
-              :src="info.image" 
-              :alt="info.title" 
-              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-            />
-            <div class="absolute top-4 left-4 bg-[#58d1fd] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+      <!-- Section 2: Informasi Kampus (Prestasi, Pengumuman, Kegiatan) -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 pt-16 border-t border-gray-200">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4 text-shadow-sm">
+            Informasi Kampus
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Prestasi membanggakan, pengumuman penting, dan agenda kegiatan mahasiswa.
+          </p>
+        </div>
+      </div>
+
+      <!-- Loading for Section 2 -->
+      <div v-if="loading" class="grid md:grid-cols-3 gap-8">
+        <div v-for="i in 3" :key="i" class="bg-white rounded-2xl h-80 animate-pulse shadow-sm"></div>
+      </div>
+
+      <!-- Grid for Section 2: Informasi Kampus -->
+      <div v-else-if="campusInfo.length > 0" class="grid md:grid-cols-3 gap-8">
+        <article v-for="(info, index) in campusInfo" :key="index" class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-gray-100 flex flex-col h-full transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img :src="info.image" :alt="info.title" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+            <div class="absolute top-4 left-4 bg-[#f9ac42] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">
               {{ info.category }}
             </div>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="text-sm text-gray-500 mb-3 flex items-center font-medium">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          <div class="p-8 flex-1 flex flex-col">
+            <div class="text-[10px] text-gray-400 mb-4 font-bold uppercase tracking-widest flex items-center">
+              <i class="far fa-calendar-alt mr-2 text-[#195682]"></i>
               {{ info.date }}
             </div>
-            <h3 class="text-xl font-bold text-[#0b2b42] mb-3 group-hover:text-[#195682] transition-colors leading-snug">
+            <h3 class="text-lg font-bold text-[#0b2b42] mb-4 group-hover:text-[#195682] transition-colors leading-tight line-clamp-2">
               {{ info.title }}
             </h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
               {{ info.excerpt }}
             </p>
-            <router-link to="/artikel" class="inline-flex items-center text-[#195682] font-bold text-sm hover:underline mt-auto">
+            <router-link :to="`/artikel/${info.slug}`" class="inline-flex items-center text-[#195682] font-bold text-sm hover:text-[#f9ac42] transition-colors mt-auto">
               Baca Selengkapnya
+              <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </router-link>
           </div>
         </article>
       </div>
 
-      <div class="mt-8 text-center md:hidden">
-        <router-link to="/artikel" class="inline-flex items-center text-[#f9ac42] font-semibold hover:text-orange-600 transition-colors">
-          Lihat Semua Berita
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-        </router-link>
+      <!-- Empty State for Section 2 -->
+      <div v-else class="py-12 bg-gray-100/50 rounded-2xl text-center border-2 border-dashed border-gray-200">
+         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Belum ada berita prestasi, pengumuman, atau kegiatan</p>
       </div>
 
-      <!-- View All Button -->
-      <div class="text-center mt-12">
+      <!-- Full Portal Button -->
+      <div class="text-center mt-20">
         <router-link 
           to="/artikel" 
-          class="inline-flex items-center px-8 py-4 bg-[#195682] text-white font-bold rounded-full hover:bg-[#0b2b42] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 group"
+          class="inline-flex items-center px-10 py-5 bg-[#195682] text-white font-bold rounded-full hover:bg-black transition-all duration-500 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 group"
         >
-          Lihat Semua Berita
-          <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          Masuk ke Portal Berita & Pengumuman
+          <svg class="w-6 h-6 ml-3 group-hover:translate-x-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
         </router-link>
@@ -117,56 +120,70 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
-const generalNews = ref([
-  {
-    title: "Visi Al-Qur'an Menjawab Tantangan Zaman: Refleksi Akademik di Universitas Dr. Soekardjo Banyuwangi",
-    date: "9 Desember 2025",
-    image: "https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=800",
-    excerpt: "Seminar nasional yang membahas integrasi nilai-nilai spiritual dalam pendidikan kesehatan modern."
-  },
-  {
-    title: "International Day 2025: Tegaskan Komitmen sebagai Kampus Global",
-    date: "5 Desember 2025",
-    image: "https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800",
-    excerpt: "Perayaan budaya internasional yang menyatukan mahasiswa dari berbagai latar belakang global."
-  },
-  {
-    title: "Semarak Milad Ke-24: Donor Darah Peduli Sesama untuk Masyarakat",
-    date: "4 Desember 2025",
-    image: "https://images.pexels.com/photos/6812480/pexels-photo-6812480.jpeg?auto=compress&cs=tinysrgb&w=800",
-    excerpt: "Aksi kemanusiaan sebagai bentuk syukur institusi, melibatkan sivitas akademika dan masyarakat."
-  }
-])
+const blogNews = ref([])
+const campusInfo = ref([])
+const loading = ref(true)
 
-const campusInfo = ref([
-  {
-    title: "Opini Dosen: Peran Perawat dalam Menghadapi Era Digitalisasi Kesehatan",
-    date: "12 Januari 2025",
-    image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Opini",
-    excerpt: "Analisis mendalam mengenai adaptasi profesi kesehatan terhadap kemajuan teknologi medis masa kini."
-  },
-  {
-    title: "Tips Sehat: Cara Menjaga Kualitas Tidur di Tengah Padatnya Aktivitas Perkuliahan",
-    date: "05 Februari 2025",
-    image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Tips",
-    excerpt: "Panduan praktis bagi mahasiswa untuk tetap bugar dan produktif dengan istirahat yang berkualitas."
-  },
-  {
-    title: "Luar Biasa! 10 Proposal PKM Mahasiswa Lolos Didanai Kemdikbud Nasional",
-    date: "20 Januari 2025",
-    image: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800",
-    category: "Prestasi",
-    excerpt: "Bukti nyata kualitas riset dan inovasi mahasiswa Universitas Dr. Soekardjo Banyuwangi di kancah nasional."
+const fetchNews = async () => {
+  try {
+    loading.value = true
+    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
+    const data = await response.json()
+    const allArticles = data.data || []
+    
+    // Section 1: Kategori Blog
+    blogNews.value = allArticles
+      .filter(item => item.category?.slug === 'blog')
+      .slice(0, 3)
+      .map(item => ({
+        title: item.title,
+        slug: item.slug,
+        date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
+        image: item.image_path || item.large_image_path,
+        excerpt: item.description
+      }))
+    
+    // Section 2: Kategori Prestasi, Pengumuman, Kegiatan
+    const campusSlugs = ['prestasi', 'pengumuman', 'kegiatan']
+    campusInfo.value = allArticles
+      .filter(item => campusSlugs.includes(item.category?.slug))
+      .slice(0, 3)
+      .map(item => ({
+        title: item.title,
+        slug: item.slug,
+        date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
+        image: item.image_path || item.large_image_path,
+        excerpt: item.description,
+        category: item.category?.name || 'Informasi'
+      }))
+  } catch (error) {
+    console.error('Error fetching news:', error)
+  } finally {
+    loading.value = false
   }
-])
+}
+
+onMounted(() => {
+  fetchNews()
+})
 </script>
 
 <style scoped>
 .container-custom {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>

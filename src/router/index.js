@@ -58,7 +58,7 @@ const routes = [
     component: ArticlesIndex
   },
   {
-    path: '/artikel/:id',
+    path: '/artikel/:slug',
     name: 'ArticleDetail',
     component: ArticleDetail,
     props: true

@@ -1,133 +1,99 @@
 <template>
   <div class="min-h-screen bg-gray-50">
     <!-- Loading State -->
-    <div v-if="!article" class="flex items-center justify-center min-h-screen">
-      <div class="text-center">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-        <p class="text-gray-600">Memuat artikel...</p>
+    <div v-if="loading" class="flex flex-col items-center justify-center min-h-[70vh]">
+      <div class="w-16 h-16 border-4 border-blue-100 border-t-[#195682] rounded-full animate-spin"></div>
+      <p class="mt-8 text-gray-500 font-bold tracking-widest uppercase text-xs">Memuat Artikel...</p>
+    </div>
+
+    <!-- Error State -->
+    <div v-else-if="error" class="flex flex-col items-center justify-center min-h-[70vh] px-4 text-center">
+      <div class="w-24 h-24 bg-red-50 text-red-500 rounded-3xl flex items-center justify-center mb-6">
+        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
       </div>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Waduh! Artikel Tidak Ditemukan</h2>
+      <p class="text-gray-500 mb-8 max-w-md">Sepertinya artikel yang Anda cari tidak ada atau sudah dipindahkan.</p>
+      <router-link to="/artikel" class="px-8 py-3 bg-[#195682] text-white font-bold rounded-full hover:bg-black transition-colors">
+        Kembali ke Daftar Berita
+      </router-link>
     </div>
 
     <!-- Article Content -->
-    <div v-else>
-      <!-- Schema Markup -->
-      <SchemaMarkup v-if="articleSchema" :schema="articleSchema" />
-      <SchemaMarkup v-if="breadcrumbSchema" :schema="breadcrumbSchema" />
-      <!-- Event Schema untuk artikel dengan kategori SEMINAR/WORKSHOP -->
-      <SchemaMarkup v-if="eventSchema" :schema="eventSchema" />
-      
-      <!-- Hero Image -->
-      <div class="relative h-96 bg-gradient-to-br from-blue-600 to-purple-600 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="text-center text-white px-4">
-            <div class="mb-4">
-              <span 
-                :class="getCategoryColor(article.category)"
-                class="px-4 py-2 rounded-full text-sm font-semibold text-white inline-block"
-              >
-                {{ article.category }}
-              </span>
-            </div>
-            <h1 class="text-3xl md:text-5xl font-bold mb-4 max-w-4xl mx-auto">
-              {{ article.title }}
-            </h1>
-            <div class="flex items-center justify-center space-x-6 text-blue-100">
-              <div class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-                </svg>
-                {{ article.date }}
-              </div>
-              <div class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-                </svg>
-                {{ article.author }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div v-else-if="article">
+      <!-- Breadcrumbs Component -->
+      <PageHeader 
+        :title="article.title" 
+        :breadcrumbs="[{ label: 'Berita', path: '/artikel' }, { label: article.category }]"
+        bgImage="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+      />
 
       <!-- Article Body -->
-      <article class="section-padding">
+      <article class="py-16 md:py-24">
         <div class="container-custom">
           <div class="max-w-4xl mx-auto">
-            <!-- Breadcrumbs -->
-            <Breadcrumbs :items="breadcrumbItems" />
             
-            <!-- Back Button -->
-            <router-link 
-              to="/artikel"
-              class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mb-8 group"
-            >
-              <svg class="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-              </svg>
-              Kembali ke Daftar Artikel
-            </router-link>
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+               <!-- Main Image -->
+               <div class="relative h-64 md:h-[500px] overflow-hidden">
+                 <img :src="article.image" :alt="article.title" class="w-full h-full object-cover">
+                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+               </div>
 
-            <!-- Article Content -->
-            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
-              <div 
-                class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-ul:text-gray-700 prose-li:text-gray-700"
-                v-html="article.content"
-              ></div>
-
-              <!-- Tags -->
-              <div class="mt-12 pt-8 border-t border-gray-200">
-                <div class="flex flex-wrap gap-2">
-                  <span 
-                    v-for="tag in article.tags"
-                    :key="tag"
-                    class="px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-semibold"
-                  >
-                    #{{ tag }}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Related Articles -->
-            <div class="mt-16">
-              <h2 class="text-3xl font-bold text-gray-900 mb-8">Artikel Terkait</h2>
-              <div class="grid md:grid-cols-3 gap-6">
-                <article 
-                  v-for="relatedArticle in relatedArticles"
-                  :key="relatedArticle.id"
-                  class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
-                >
-                  <div class="relative h-40 bg-gradient-to-br from-blue-600 to-purple-600">
-                    <div class="absolute top-4 left-4">
-                      <span 
-                        :class="getCategoryColor(relatedArticle.category)"
-                        class="px-3 py-1 rounded-full text-xs font-semibold text-white"
-                      >
-                        {{ relatedArticle.category }}
-                      </span>
+               <!-- Content Inner -->
+               <div class="p-8 md:p-16">
+                  <!-- Meta Header -->
+                  <div class="flex flex-wrap items-center gap-4 mb-8 text-sm font-bold uppercase tracking-widest text-gray-400">
+                    <span class="px-4 py-1.5 bg-gray-100 text-[#195682] rounded-full">{{ article.category }}</span>
+                    <span>•</span>
+                    <div class="flex items-center">
+                      <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      {{ article.date }}
                     </div>
                   </div>
-                  <div class="p-6">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
-                      {{ relatedArticle.title }}
-                    </h3>
-                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {{ relatedArticle.excerpt }}
-                    </p>
-                    <router-link 
-                      :to="`/artikel/${relatedArticle.id}`"
-                      class="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center group/link"
-                    >
-                      Baca Selengkapnya
-                      <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                      </svg>
-                    </router-link>
+
+                  <!-- Actual Body Content -->
+                  <div 
+                    class="prose prose-lg md:prose-xl max-w-none prose-headings:text-[#0b2b42] prose-headings:font-bold prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#195682] prose-img:rounded-3xl prose-img:shadow-lg"
+                    v-html="article.content"
+                  ></div>
+
+                  <!-- Share Section & Footer -->
+                  <div class="mt-16 pt-12 border-t border-gray-100 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-center gap-4">
+                      <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Penulis:</span>
+                      <span class="text-sm font-bold text-[#195682] uppercase">{{ article.author }}</span>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                      <!-- Basic Share Buttons -->
+                      <button @click="share('facebook')" class="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                      </button>
+                      <button @click="share('twitter')" class="w-10 h-10 rounded-full bg-blue-50 text-blue-400 flex items-center justify-center hover:bg-blue-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                      </button>
+                      <button @click="share('whatsapp')" class="w-10 h-10 rounded-full bg-green-50 text-green-500 flex items-center justify-center hover:bg-green-500 hover:text-white transition-colors">
+                        <i class="fab fa-whatsapp"></i>
+                      </button>
+                    </div>
                   </div>
-                </article>
-              </div>
+               </div>
             </div>
+
+            <!-- Back navigation -->
+            <div class="mt-12 text-center">
+              <router-link to="/artikel" class="inline-flex items-center text-[#195682] font-bold hover:text-[#f9ac42] transition-colors group">
+                <svg class="w-5 h-5 mr-3 group-hover:-translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Semua Berita UNIDSOE
+              </router-link>
+            </div>
+
           </div>
         </div>
       </article>
@@ -136,94 +102,76 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { getArticleById, articles } from '../data/articles'
-import SchemaMarkup from '../components/SchemaMarkup.vue'
-import Breadcrumbs from '../components/Breadcrumbs.vue'
+import PageHeader from '../components/PageHeader.vue'
 import { useSEO } from '../composables/useSEO'
-import { useArticleSchema, useBreadcrumbSchema, useEventSchema } from '../composables/useSchema'
 
 const route = useRoute()
-const articleId = computed(() => parseInt(route.params.id))
-const article = computed(() => getArticleById(articleId.value))
+const article = ref(null)
+const loading = ref(true)
+const error = ref(false)
 
-// SEO Meta Tags
-useSEO({
-  title: article.value ? article.value.title : 'Artikel - Unidsoe',
-  description: article.value ? article.value.excerpt : 'Baca artikel lengkap dari Unidsoe (Universitas Dr. Soekardjo)',
-  type: 'article',
-  image: article.value?.image,
-  keywords: article.value?.tags || []
-})
+const fetchArticleDetail = async (slug) => {
+  try {
+    loading.value = true
+    const response = await fetch(`https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/articles/${slug}`)
+    
+    if (!response.ok) throw new Error('Not found')
+    
+    const data = await response.json()
+    const item = data.data
+    
+    article.value = {
+      title: item.title,
+      slug: item.slug,
+      date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
+      image: item.image_path || item.large_image_path,
+      summary: item.description,
+      content: item.content || item.body || '<p>Tidak ada konten.</p>',
+      category: item.category?.name || 'Berita',
+      author: item.created_by?.name || 'Humas UNIDSOE'
+    }
 
-// Schema Markup
-const articleSchema = computed(() => useArticleSchema(article.value))
-const breadcrumbSchema = computed(() => {
-  if (!article.value) return null
-  return useBreadcrumbSchema([
-    { name: 'Beranda', url: 'https://unidsoe.ac.id/' },
-    { name: 'Artikel', url: 'https://unidsoe.ac.id/artikel' },
-    { name: article.value.title, url: `https://unidsoe.ac.id${route.path}` }
-  ])
-})
-
-// Event Schema untuk artikel dengan kategori SEMINAR/WORKSHOP
-const eventSchema = computed(() => {
-  if (!article.value) return null
-  const eventCategories = ['SEMINAR', 'WORKSHOP', 'KEGIATAN']
-  if (eventCategories.includes(article.value.category)) {
-    return useEventSchema({
-      name: article.value.title,
-      description: article.value.excerpt,
-      startDate: article.value.date,
-      endDate: article.value.date,
-      image: article.value.image,
-      location: {
-        name: 'Unidsoe',
-        address: 'Jl. Letkol Istiqlah No. 109',
-        city: 'Singojuruh',
-        region: 'Banyuwangi',
-        postalCode: '68464'
-      }
-    })
+    error.value = false
+  } catch (err) {
+    console.error('Error fetching article detail:', err)
+    error.value = true
+  } finally {
+    loading.value = false
   }
-  return null
-})
-
-// Breadcrumbs
-const breadcrumbItems = computed(() => [
-  { label: 'Beranda', to: '/' },
-  { label: 'Artikel', to: '/artikel' },
-  ...(article.value ? [{ label: article.value.title, to: route.path }] : [])
-])
-
-const relatedArticles = computed(() => {
-  if (!article.value) return []
-  return articles
-    .filter(a => a.id !== article.value.id && a.category === article.value.category)
-    .slice(0, 3)
-})
-
-const getCategoryColor = (category) => {
-  const colors = {
-    'PRESTASI': 'bg-green-500',
-    'KEGIATAN': 'bg-blue-500',
-    'WORKSHOP': 'bg-purple-500',
-    'PENGUMUMAN': 'bg-yellow-500',
-    'SEMINAR': 'bg-pink-500'
-  }
-  return colors[category] || 'bg-gray-500'
 }
+
+const share = (platform) => {
+  const url = encodeURIComponent(window.location.href)
+  const text = encodeURIComponent(article.value?.title || '')
+  let shareUrl = ''
+  
+  if (platform === 'facebook') shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`
+  if (platform === 'twitter') shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`
+  if (platform === 'whatsapp') shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`
+  
+  window.open(shareUrl, '_blank')
+}
+
+// Initial fetch
+onMounted(() => {
+  fetchArticleDetail(route.params.slug)
+})
+
+// Watch for slug changes (if user clicks related links)
+watch(() => route.params.slug, (newSlug) => {
+  if (newSlug) fetchArticleDetail(newSlug)
+})
 </script>
 
 <style scoped>
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom shadow to give premium feel */
+.shadow-xl {
+  shadow-box: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
 }
 </style>
-
