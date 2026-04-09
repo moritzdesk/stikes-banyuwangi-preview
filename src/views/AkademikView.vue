@@ -46,23 +46,34 @@
       <div class="flex flex-col lg:flex-row gap-10">
         <!-- Pengumuman Akademik -->
         <main class="w-full lg:w-2/3">
+          <!-- News Section (Tetap menggunakan Semesta API) -->
           <div class="bg-white rounded-2xl shadow-md p-8">
             <div class="flex items-center justify-between mb-8 border-b pb-4">
               <h2 class="text-2xl font-bold text-[#0b2b42]">Berita & Pengumuman Akademik</h2>
               <router-link to="/artikel" class="text-sm font-bold text-[#195682] hover:text-[#f9ac42] transition-colors">Lihat Semua →</router-link>
             </div>
             
-            <div class="space-y-6">
-              <!-- Item -->
-              <div v-for="i in 4" :key="i" class="flex gap-4 group">
-                <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#195682] to-[#0b2b42] text-white rounded-xl flex flex-col justify-center items-center shadow-md">
-                  <span class="text-2xl font-black leading-none">{{ i + 10 }}</span>
-                  <span class="text-xs font-medium uppercase">Sep</span>
+            <div v-if="newsLoading" class="space-y-6">
+              <div v-for="i in 3" :key="i" class="h-20 bg-gray-100 animate-pulse rounded-xl"></div>
+            </div>
+            <div v-else class="space-y-6">
+              <div v-for="(news, index) in academicNews" :key="index" class="flex gap-4 group">
+                <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#195682] to-[#0b2b42] text-white rounded-xl flex flex-col justify-center items-center shadow-md overflow-hidden">
+                   <img v-if="news.image" :src="news.image" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform" />
+                   <div v-else class="flex flex-col items-center">
+                    <span class="text-xl font-black leading-none">{{ index + 1 }}</span>
+                    <span class="text-[10px] font-medium uppercase">News</span>
+                   </div>
                 </div>
                 <div>
-                  <a href="#" class="text-lg font-bold text-gray-900 group-hover:text-[#195682] transition-colors leading-tight block mb-1">Pemberitahuan KRS dan Bimbingan Perwalian Semester Ganjil TA 2025/2026</a>
-                  <p class="text-sm text-gray-500">Biro Akademik (BAA) menginformasikan jadwal perwalian dibuka mulai tanggal 15 September hingga...</p>
+                  <router-link :to="`/artikel/${news.slug}`" class="text-lg font-bold text-gray-900 group-hover:text-[#195682] transition-colors leading-tight block mb-1">
+                    {{ news.title }}
+                  </router-link>
+                  <p class="text-sm text-gray-500 line-clamp-2">{{ news.excerpt }}</p>
                 </div>
+              </div>
+              <div v-if="academicNews.length === 0" class="text-center py-10 text-gray-400 font-bold">
+                Belum ada pengumuman akademik terbaru.
               </div>
             </div>
           </div>
@@ -77,11 +88,17 @@
             </h2>
             
             <ul class="space-y-3">
-              <li v-for="(doc, idx) in settings.downloads" :key="idx">
+              <li v-for="(doc, idx) in uploadedDocuments" :key="idx">
                 <a :href="doc.file" target="_blank" class="flex items-center justify-between p-3 rounded-lg border border-gray-100 bg-gray-50 hover:bg-[#195682] hover:text-white transition-colors group">
-                  <span class="font-medium text-sm text-gray-700 group-hover:text-white truncate pr-4">{{ doc.title }}</span>
+                  <div class="flex flex-col truncate pr-4">
+                    <span class="font-bold text-sm truncate group-hover:text-white">{{ doc.title }}</span>
+                    <span class="text-[10px] uppercase tracking-widest opacity-60">{{ doc.category }}</span>
+                  </div>
                   <svg class="w-5 h-5 text-gray-400 group-hover:text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 </a>
+              </li>
+              <li v-if="uploadedDocuments.length === 0" class="text-center py-4 text-gray-400 text-xs italic">
+                Belum ada dokumen yang diunggah.
               </li>
             </ul>
           </div>
@@ -93,8 +110,59 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
-import settings from '../data/settings.json'
+
+const academicNews = ref([])
+const newsLoading = ref(true)
+const uploadedDocuments = ref([])
+
+// 1. Fetch Academic News from Semesta API
+const fetchAcademicNews = async () => {
+  try {
+    newsLoading.value = true
+    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
+    const data = await response.json()
+    // Kategori akademik atau pengumuman
+    academicNews.value = (data.data || [])
+      .filter(a => a.category?.slug === 'pengumuman')
+      .slice(0, 5)
+      .map(item => ({
+        title: item.title,
+        slug: item.slug,
+        excerpt: item.description,
+        image: item.image_path || item.small_image_path
+      }))
+  } catch (error) {
+    console.error('Error news:', error)
+  } finally {
+    newsLoading.value = false
+  }
+}
+
+// 2. Load Documents uploaded via Decap CMS
+const loadUploadedDocuments = async () => {
+  try {
+    // In Vite/Vue, we can use import.meta.glob to read JSON files from a folder
+    const modules = import.meta.glob('../data/documents/*.json')
+    const docs = []
+    
+    for (const path in modules) {
+      const mod = await modules[path]()
+      docs.push(mod.default || mod)
+    }
+    
+    // Sort by date if available
+    uploadedDocuments.value = docs.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
+  } catch (error) {
+    console.error('Error docs:', error)
+  }
+}
+
+onMounted(() => {
+  fetchAcademicNews()
+  loadUploadedDocuments()
+})
 </script>
 
 <style scoped>
