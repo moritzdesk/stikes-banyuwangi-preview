@@ -1,4 +1,4 @@
-local_backend: true # Mengizinkan pengeditan secara lokal saat proses development (npn run dev)
+# local_backend: true # Mengizinkan pengeditan secara lokal saat proses development (npn run dev)
 
 backend:
   name: git-gateway # Nantinya saat dideploy (production), akan connect ke GitHub / GitLab
