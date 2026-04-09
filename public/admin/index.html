@@ -7,11 +7,12 @@
     <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <style>
-        /* Custom Styling for the sidebar to add a "Smart Link" */
-        @keyframes rainbow {
-            0% { border-color: #195682; }
-            50% { border-color: #f9ac42; }
-            100% { border-color: #195682; }
+        /* Styling tambahan agar menu roket terlihat menonjol */
+        a[href="#/collections/semesta_link"] {
+            color: #195682 !important;
+            font-weight: bold !important;
+            border-left: 4px solid #f9ac42 !important;
+            background: rgba(249, 172, 66, 0.05) !important;
         }
     </style>
 </head>
@@ -20,16 +21,31 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     
     <script>
-        // Custom UI logic to add an external link to the sidebar
-        CMS.registerEventListener({
-            name: 'prePublish',
-            handler: ({ entry }) => {
-                console.log('Publishing:', entry.get('label'));
-            },
-        });
+        // TRICK: Intercept sidebar clicks to force open external URL in new tab
+        document.addEventListener('click', function(e) {
+            // Check if user clicked the "Semesta" menu item or its icon/text
+            const semestaLink = e.target.closest('a[href="#/collections/semesta_link"]');
+            
+            if (semestaLink) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Open the specific external URL
+                window.open('https://platform-semesta.sclstudio.id', '_blank');
+                
+                // Keep the active state visually but don't navigate internally
+                return false;
+            }
+        }, true);
 
-        // We can add a custom preview or a simple instructional note
-        // but the best way to handle "External Link" in Decap is through a dedicated instructional page
+        // Optional: Also check on hash change if they directly accessed the URL
+        window.addEventListener('hashchange', function() {
+            if (window.location.hash === '#/collections/semesta_link') {
+                window.open('https://platform-semesta.sclstudio.id', '_blank');
+                // Auto go back to previous page or home to avoid empty screen
+                history.back();
+            }
+        });
     </script>
 </body>
 </html>
