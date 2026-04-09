@@ -70,8 +70,6 @@ collections:
               - {label: "Link Pendaftaran (PMB)", name: "pmbLink", widget: "string"}
           
           - label: "Galeri Fasilitas Kampus"
-
-          - label: "Galeri Fasilitas Kampus"
             name: "facilities"
             widget: "list"
             fields:
