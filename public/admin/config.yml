@@ -69,13 +69,7 @@ collections:
               - {label: "Alamat Lengkap", name: "address", widget: "text"}
               - {label: "Link Pendaftaran (PMB)", name: "pmbLink", widget: "string"}
           
-          - label: "Pusat Unduhan (Downloads)"
-            name: "downloads"
-            widget: "list"
-            fields:
-              - {label: "Judul Berkas", name: "title", widget: "string"}
-              - {label: "Kategori", name: "category", widget: "string"}
-              - {label: "File PDF", name: "file", widget: "file"}
+          - label: "Galeri Fasilitas Kampus"
 
           - label: "Galeri Fasilitas Kampus"
             name: "facilities"
@@ -106,6 +100,22 @@ collections:
   # -----------------------------------------------
   # MULTIPLE ENTITIES (Koleksi Dinamis Struktural)
   # -----------------------------------------------
+  - name: "documents"
+    label: "📄 Dokumen & Formulir"
+    folder: "src/data/documents"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    description: "Upload PDF Kalender Akademik, Buku Panduan, Formulir, dll di sini."
+    fields:
+      - {label: "Judul Berkas", name: "title", widget: "string"}
+      - {label: "Kategori", name: "category", widget: "select", options: ["Akademik", "Kemahasiswaan", "Umum", "SDM"]}
+      - {label: "Upload PDF / File", name: "file", widget: "file"}
+      - {label: "Tanggal Berkas", name: "date", widget: "datetime", format: "DD-MM-YYYY"}
+
   - name: "programs"
     label: "Program Studi"
     folder: "src/data/programs"
