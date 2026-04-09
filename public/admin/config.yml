@@ -10,6 +10,22 @@ public_folder: "/assets/uploads"
 
 collections:
   # -----------------------------------------------
+  # EXTERNAL PORTAL (Link ke Semesta)
+  # -----------------------------------------------
+  - name: "semesta_link"
+    label: "🚀 Kelola Berita (Semesta)"
+    editor:
+      preview: false
+    files:
+      - label: "Klik untuk Buka Semesta"
+        name: "semesta_portal"
+        file: "src/data/semesta_portal.json" # File dummy saja
+        description: "PENTING: Berita dan artikel dikelola di platform Semesta. Klik link di bawah ini untuk membuka dashboard Semesta di TAB BARU."
+        fields:
+          - {label: "Alamat Portal", name: "url", widget: "hidden", default: "https://platform-semesta.sclstudio.id"}
+          - {label: "INSTRUKSI", name: "instruction", widget: "markdown", default: "## 🔗 [KLIK DISINI UNTUK BUKA DASHBOARD SEMESTA](https://platform-semesta.sclstudio.id)\n\nSilakan login menggunakan akun Semesta Anda untuk mengelola artikel, berita, dan kanal kampus."}
+
+  # -----------------------------------------------
   # SINGLE PAGES (Halaman Statis Tunggal)
   # -----------------------------------------------
   - name: "pages"
