@@ -20,7 +20,7 @@
             Semua
           </button>
           <button 
-            v-for="category in categories"
+            v-for="category in activeCategories"
             :key="category.slug"
             @click="selectedCategory = category.slug"
             :class="selectedCategory === category.slug 
@@ -28,7 +28,7 @@
               : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'"
             class="px-8 py-3 rounded-full font-bold transition-all duration-300 uppercase text-xs tracking-wider"
           >
-            {{ category.name }}
+            {{ category.displayName }}
           </button>
         </div>
 
@@ -62,7 +62,7 @@
             
             <!-- Article Content -->
             <div class="p-6 flex-1 flex flex-col">
-              <div class="flex items-center text-sm text-gray-400 mb-4 font-medium">
+              <div v-if="globalSettings.articleSettings?.showPublishDate && article.date" class="flex items-center text-sm text-gray-400 mb-4 font-medium">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                 </svg>
@@ -111,6 +111,7 @@
 import { ref, computed, onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
 import { useSEO } from '../composables/useSEO'
+import globalSettings from '../data/settings.json'
 
 // SEO Meta Tags
 useSEO({
@@ -124,21 +125,63 @@ const categories = ref([])
 const selectedCategory = ref('all')
 const loading = ref(true)
 
+// Read CMS configurations
+const cmsCategories = globalSettings.articleSettings?.categories || []
+const activeSlugs = cmsCategories.filter(c => c.show).map(c => c.slug)
+const wordLimit = globalSettings.articleSettings?.excerptWordLimit || 15
+
+// Excerpt helper
+const getTruncatedExcerpt = (text) => {
+  if (!text) return ''
+  const words = text.trim().split(/\s+/)
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(' ') + '...'
+  }
+  return text
+}
+
+// Compute active categories for filtering based on CMS settings
+const activeCategories = computed(() => {
+  return categories.value
+    .filter(cat => activeSlugs.includes(cat.slug))
+    .map(cat => {
+      const cmsCat = cmsCategories.find(c => c.slug === cat.slug)
+      return {
+        slug: cat.slug,
+        displayName: cmsCat ? cmsCat.displayName : cat.name
+      }
+    })
+})
+
 const fetchArticles = async () => {
   try {
     const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
     const data = await response.json()
-    // Correct mapping for Semesta API structure
-    articles.value = (data.data || []).map(item => ({
-      title: item.title,
-      slug: item.slug,
-      date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-      image: item.image_path || item.large_image_path,
-      excerpt: item.description,
-      category: item.category?.name || 'Berita',
-      category_slug: item.category?.slug || '',
-      author: item.created_by?.name || 'Humas UNIDSOE'
-    }))
+    
+    articles.value = (data.data || [])
+      .filter(item => {
+        const slug = item.category?.slug || ''
+        // If it's a dynamic blog category, verify it is allowed in active slugs.
+        // Otherwise, allow other main categories like 'prestasi', 'pengumuman', 'kegiatan'
+        const isCampSlug = ['prestasi', 'pengumuman', 'kegiatan'].includes(slug)
+        return activeSlugs.includes(slug) || isCampSlug
+      })
+      .map(item => {
+        const slug = item.category?.slug || ''
+        const cmsCat = cmsCategories.find(c => c.slug === slug)
+        const categoryName = cmsCat ? cmsCat.displayName : (item.category?.name || 'Berita')
+
+        return {
+          title: item.title,
+          slug: item.slug,
+          date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
+          image: item.image_path || item.large_image_path,
+          excerpt: getTruncatedExcerpt(item.description),
+          category: categoryName,
+          category_slug: slug,
+          author: item.created_by?.name || 'Humas UNIDSOE'
+        }
+      })
   } catch (error) {
     console.error('Error fetching articles:', error)
   }
@@ -148,7 +191,9 @@ const fetchCategories = async () => {
   try {
     const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories')
     const data = await response.json()
-    categories.value = data.data || []
+    // Append standard categories as well
+    const allCategories = data.data || []
+    categories.value = allCategories
   } catch (error) {
     console.error('Error fetching categories:', error)
   }

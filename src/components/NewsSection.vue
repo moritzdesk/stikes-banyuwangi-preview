@@ -1,18 +1,18 @@
 <template>
   <section class="py-16 md:py-24 bg-gray-50 font-sans">
     <div class="container-custom">
-      <!-- Section 1: Berita Terbaru (Blog/Update) -->
+      <!-- Section 1: Artikel Terbaru (Blog/Update) -->
       <div class="flex flex-col md:flex-row justify-between items-end mb-12">
         <div class="max-w-2xl">
           <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4 text-shadow-sm">
-            Berita Terbaru
+            {{ globalSettings.articleSettings?.sectionTitle || 'Artikel Terbaru' }}
           </h2>
           <p class="text-gray-600 text-lg">
             Kumpulan kabar terbaru dan artikel menarik dari Blog UNIDSOE.
           </p>
         </div>
         <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-extrabold hover:text-orange-600 transition-colors mt-4 md:mt-0 uppercase tracking-widest text-xs">
-          Semua Berita
+          Semua Artikel
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </router-link>
       </div>
@@ -27,10 +27,12 @@
         <article v-for="(news, index) in blogNews" :key="index" class="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-gray-100 flex flex-col h-full transform hover:-translate-y-2">
           <div class="relative h-56 overflow-hidden">
             <img :src="news.image" :alt="news.title" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">BLOG</div>
+            <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+              {{ news.category }}
+            </div>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <div class="text-[10px] text-gray-400 mb-4 font-bold uppercase tracking-widest flex items-center">
+            <div v-if="globalSettings.articleSettings?.showPublishDate && news.date" class="text-[10px] text-gray-400 mb-4 font-bold uppercase tracking-widest flex items-center">
               <i class="far fa-calendar-alt mr-2 text-[#f9ac42]"></i>
               {{ news.date }}
             </div>
@@ -50,7 +52,7 @@
 
       <!-- Empty State for Section 1 -->
       <div v-else class="py-12 bg-gray-100/50 rounded-2xl text-center border-2 border-dashed border-gray-200 mb-20">
-         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Belum ada artikel Blog</p>
+         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Belum ada artikel terbaru</p>
       </div>
 
       <!-- Section 2: Informasi Kampus (Prestasi, Pengumuman, Kegiatan) -->
@@ -80,7 +82,7 @@
             </div>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <div class="text-[10px] text-gray-400 mb-4 font-bold uppercase tracking-widest flex items-center">
+            <div v-if="globalSettings.articleSettings?.showPublishDate && info.date" class="text-[10px] text-gray-400 mb-4 font-bold uppercase tracking-widest flex items-center">
               <i class="far fa-calendar-alt mr-2 text-[#195682]"></i>
               {{ info.date }}
             </div>
@@ -121,6 +123,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import globalSettings from '../data/settings.json'
 
 const blogNews = ref([])
 const campusInfo = ref([])
@@ -133,17 +136,37 @@ const fetchNews = async () => {
     const data = await response.json()
     const allArticles = data.data || []
     
-    // Section 1: Kategori Blog
+    // Read category settings
+    const activeCategories = globalSettings.articleSettings?.categories?.filter(c => c.show) || []
+    const activeSlugs = activeCategories.map(c => c.slug)
+    const wordLimit = globalSettings.articleSettings?.excerptWordLimit || 15
+
+    // Helper to truncate excerpts by word limit
+    const getTruncatedExcerpt = (text) => {
+      if (!text) return ''
+      const words = text.trim().split(/\s+/)
+      if (words.length > wordLimit) {
+        return words.slice(0, wordLimit).join(' ') + '...'
+      }
+      return text
+    }
+    
+    // Section 1: Dynamic Article Categories mapped from Semesta
     blogNews.value = allArticles
-      .filter(item => item.category?.slug === 'blog')
+      .filter(item => activeSlugs.includes(item.category?.slug))
       .slice(0, 3)
-      .map(item => ({
-        title: item.title,
-        slug: item.slug,
-        date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-        image: item.image_path || item.large_image_path,
-        excerpt: item.description
-      }))
+      .map(item => {
+        const catObj = activeCategories.find(c => c.slug === item.category?.slug)
+        const displayName = catObj ? catObj.displayName : (item.category?.name || 'Artikel')
+        return {
+          title: item.title,
+          slug: item.slug,
+          date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
+          image: item.image_path || item.large_image_path,
+          excerpt: getTruncatedExcerpt(item.description),
+          category: displayName
+        }
+      })
     
     // Section 2: Kategori Prestasi, Pengumuman, Kegiatan
     const campusSlugs = ['prestasi', 'pengumuman', 'kegiatan']
@@ -155,7 +178,7 @@ const fetchNews = async () => {
         slug: item.slug,
         date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
         image: item.image_path || item.large_image_path,
-        excerpt: item.description,
+        excerpt: getTruncatedExcerpt(item.description),
         category: item.category?.name || 'Informasi'
       }))
   } catch (error) {

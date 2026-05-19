@@ -1,0 +1,72 @@
+{
+  "title": "Program Beasiswa Pendidikan Unggulan",
+  "subtitle": "Mewujudkan mimpi kuliah tanpa hambatan finansial dengan beragam program beasiswa unggulan di Universitas Dr. Soekardjo.",
+  "heroImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200",
+  "introTitle": "Akses Pendidikan Tinggi Seluas-Luasnya",
+  "introText": "Kami percaya bahwa keterbatasan finansial tidak boleh menjadi penghalang bagi mimpi besar Anda. Universitas Dr. Soekardjo menyediakan berbagai jalur beasiswa penuh maupun parsial untuk mendukung perjalanan akademik Anda dan melahirkan generasi berprestasi.",
+  "scholarships": [
+    {
+      "name": "Beasiswa KIP Kuliah",
+      "icon": "🎓",
+      "description": "Program bantuan biaya pendidikan dari pemerintah bagi lulusan SMA/SMK/MA sederajat yang memiliki potensi akademik baik tetapi memiliki keterbatasan ekonomi.",
+      "benefits": [
+        "Pembebasan biaya kuliah 100% (SPP & UKT)",
+        "Bantuan biaya hidup bulanan langsung ke rekening mahasiswa",
+        "Pembinaan karakter dan kepemimpinan berkala"
+      ],
+      "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/"
+    },
+    {
+      "name": "Beasiswa Tahfidz Qur'an",
+      "icon": "📖",
+      "description": "Apresiasi khusus bagi penghafal Al-Qur'an (minimal 5 juz) untuk melanjutkan studi tinggi di prodi manapun di lingkungan universitas.",
+      "benefits": [
+        "Bebas biaya kuliah penuh (100% SPP) hingga lulus",
+        "Kesempatan menjadi mentor kajian keagamaan kampus",
+        "Akses prioritas asrama mahasiswa"
+      ],
+      "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/"
+    },
+    {
+      "name": "Beasiswa BHC (Banyuwangi Health Center)",
+      "icon": "🏥",
+      "description": "Jalur beasiswa prestasi khusus untuk program studi kesehatan, bekerja sama dengan jejaring fasilitas kesehatan dan rumah sakit mitra.",
+      "benefits": [
+        "Subsidi biaya SPP & praktikum laboratorium",
+        "Jaminan magang klinis di rumah sakit & klinik jejaring",
+        "Peluang ikatan dinas setelah lulus"
+      ],
+      "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/"
+    },
+    {
+      "name": "Beasiswa BAKENAKES",
+      "icon": "👩‍⚕️",
+      "description": "Beasiswa Bakti Kader Kesehatan Nasional untuk mencetak tenaga medis profesional di daerah terpencil dan perbatasan.",
+      "benefits": [
+        "Bantuan uang kuliah tunggal (UKT) setiap semester",
+        "Program mentoring klinis eksklusif dari praktisi senior",
+        "Penempatan pengabdian kesehatan di akhir studi"
+      ],
+      "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/"
+    },
+    {
+      "name": "Beasiswa BISKO (Bisnis & Ekonomi)",
+      "icon": "📈",
+      "description": "Beasiswa pengembangan kewirausahaan untuk melahirkan inovator bisnis muda yang siap bersaing secara global.",
+      "benefits": [
+        "Subsidi biaya pendidikan jalur FISTEK",
+        "Pendampingan intensif dari Inkubator Bisnis Universitas",
+        "Peluang pendanaan proyek startup mahasiswa"
+      ],
+      "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/"
+    },
+    {
+      "name": "besiswa baru",
+      "description": "faded",
+      "benefits": [
+        "fads"
+      ],
+      "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/"
+    }
+  ]
+}

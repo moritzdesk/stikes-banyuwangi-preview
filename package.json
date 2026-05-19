@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "tinacms dev -c \"vite\"",
+    "build": "tinacms build --local --skip-cloud-checks && vite build",
+    "preview": "tinacms build --local --skip-cloud-checks && vite preview"
   },
   "dependencies": {
     "@unhead/vue": "^2.0.19",
@@ -22,8 +22,11 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.19",
+    "@tinacms/cli": "^2.3.1",
+    "@types/node": "^25.9.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "tailwindcss": "^3.4.18",
+    "tinacms": "^3.8.1",
     "vite": "^7.1.7"
   }
 }

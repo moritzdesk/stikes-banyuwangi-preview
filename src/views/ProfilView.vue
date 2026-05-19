@@ -140,11 +140,12 @@
 </template>
 
 <script setup>
-import { ref as vueRef, computed as vueComputed } from 'vue'
+import { ref as vueRef, computed as vueComputed, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'
 import profilData from '../data/profil.json'
 
-// Avoid 'import' conflict, use explicit vue ref
+const route = useRoute()
 const activeTab = vueRef('sejarah')
 
 const tabs = [
@@ -153,6 +154,21 @@ const tabs = [
   { id: 'struktur', label: 'Struktur Organisasi' },
   { id: 'sambutan', label: 'Sambutan Ketua' }
 ]
+
+const updateTabFromQuery = () => {
+  const queryTab = route.query.tab
+  if (queryTab && tabs.some(t => t.id === queryTab)) {
+    activeTab.value = queryTab
+  }
+}
+
+onMounted(() => {
+  updateTabFromQuery()
+})
+
+watch(() => route.query.tab, () => {
+  updateTabFromQuery()
+})
 
 const activeTabLabel = vueComputed(() => {
   const tab = tabs.find(t => t.id === activeTab.value)

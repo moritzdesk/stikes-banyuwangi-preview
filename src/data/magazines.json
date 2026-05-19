@@ -1,0 +1,230 @@
+{
+  "title": "Majalah & Tabloid Kampus",
+  "subtitle": "Kumpulan edisi majalah dan tabloid kampus resmi. Temukan artikel inspiratif, liputan prestasi mahasiswa, laporan kegiatan, serta informasi akademik terkini.",
+  "magazines": [
+    {
+      "id": "30",
+      "title": "SMART Magazine 30",
+      "edition": "Edisi Ke-30",
+      "date": "Mei 2025",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan MART 30.pdf"
+    },
+    {
+      "id": "29",
+      "title": "SMART Magazine 29",
+      "edition": "Edisi Ke-29",
+      "date": "April 2025",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 29.pdf"
+    },
+    {
+      "id": "28",
+      "title": "SMART Magazine 28",
+      "edition": "Edisi Ke-28",
+      "date": "Maret 2025",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 28.pdf"
+    },
+    {
+      "id": "27",
+      "title": "SMART Magazine 27",
+      "edition": "Edisi Ke-27",
+      "date": "Februari 2025",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 27.pdf"
+    },
+    {
+      "id": "25",
+      "title": "SMART Magazine 25",
+      "edition": "Edisi Ke-25",
+      "date": "Desember 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 25.pdf"
+    },
+    {
+      "id": "23",
+      "title": "SMART Magazine 23",
+      "edition": "Edisi Ke-23",
+      "date": "Oktober 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 23.pdf"
+    },
+    {
+      "id": "22",
+      "title": "SMART Magazine 22",
+      "edition": "Edisi Ke-22",
+      "date": "September 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 22.pdf"
+    },
+    {
+      "id": "21",
+      "title": "SMART Magazine 21",
+      "edition": "Edisi Ke-21",
+      "date": "Agustus 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 21.pdf"
+    },
+    {
+      "id": "20",
+      "title": "SMART Magazine 20",
+      "edition": "Edisi Ke-20",
+      "date": "Juli 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 20.pdf"
+    },
+    {
+      "id": "19",
+      "title": "SMART Magazine 19",
+      "edition": "Edisi Ke-19",
+      "date": "Juni 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 19.pdf"
+    },
+    {
+      "id": "18",
+      "title": "SMART Magazine 18",
+      "edition": "Edisi Ke-18",
+      "date": "Mei 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 18.pdf"
+    },
+    {
+      "id": "17",
+      "title": "SMART Magazine 17",
+      "edition": "Edisi Ke-17",
+      "date": "April 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 17.pdf"
+    },
+    {
+      "id": "16",
+      "title": "SMART Magazine 16",
+      "edition": "Edisi Ke-16",
+      "date": "Maret 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 16.pdf"
+    },
+    {
+      "id": "15",
+      "title": "SMART Magazine 15",
+      "edition": "Edisi Ke-15",
+      "date": "Februari 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 15.pdf"
+    },
+    {
+      "id": "14",
+      "title": "SMART Magazine 14",
+      "edition": "Edisi Ke-14",
+      "date": "Januari 2024",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 14.pdf"
+    },
+    {
+      "id": "13",
+      "title": "SMART Magazine 13",
+      "edition": "Edisi Ke-13",
+      "date": "Desember 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 13.pdf"
+    },
+    {
+      "id": "12",
+      "title": "SMART Magazine 12",
+      "edition": "Edisi Ke-12",
+      "date": "November 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 12.pdf"
+    },
+    {
+      "id": "11",
+      "title": "SMART Magazine 11",
+      "edition": "Edisi Ke-11",
+      "date": "Oktober 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 11.pdf"
+    },
+    {
+      "id": "10",
+      "title": "SMART Magazine 10",
+      "edition": "Edisi Ke-10",
+      "date": "September 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 10.pdf"
+    },
+    {
+      "id": "9",
+      "title": "SMART Magazine 9",
+      "edition": "Edisi Ke-9",
+      "date": "Agustus 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 9.pdf"
+    },
+    {
+      "id": "8",
+      "title": "SMART Magazine 8",
+      "edition": "Edisi Ke-8",
+      "date": "Juli 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 8.pdf"
+    },
+    {
+      "id": "7",
+      "title": "SMART Magazine 7",
+      "edition": "Edisi Ke-7",
+      "date": "Juni 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 7.pdf"
+    },
+    {
+      "id": "6",
+      "title": "SMART Magazine 6",
+      "edition": "Edisi Ke-6",
+      "date": "Mei 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 6.pdf"
+    },
+    {
+      "id": "4",
+      "title": "SMART Magazine 4",
+      "edition": "Edisi Ke-4",
+      "date": "Maret 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 4.pdf"
+    },
+    {
+      "id": "3",
+      "title": "SMART Magazine 3",
+      "edition": "Edisi Ke-3",
+      "date": "Februari 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 3.pdf"
+    },
+    {
+      "id": "2",
+      "title": "SMART Magazine 2",
+      "edition": "Edisi Ke-2",
+      "date": "Januari 2023",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 2.pdf"
+    },
+    {
+      "id": "1",
+      "title": "SMART Magazine 1",
+      "edition": "Edisi Ke-1",
+      "date": "Desember 2022",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan SMART 1.pdf"
+    },
+    {
+      "id": "tabloid",
+      "title": "TABLOID SMART",
+      "edition": "Edisi Tabloid Khusus",
+      "date": "Edisi Khusus",
+      "cover": "",
+      "pdfUrl": "/assets/magazines/Salinan TABLOID SMART.pdf"
+    }
+  ]
+}

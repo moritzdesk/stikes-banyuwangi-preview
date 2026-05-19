@@ -5,14 +5,14 @@
         <!-- Logo & Description -->
         <div class="md:col-span-2">
           <div class="flex items-center mb-6">
-             <img src="/assets/logo/logo_unidsoe_kotak.png" alt="Universitas Dr. Soekardjo Banyuwangi" class="h-12 w-auto mr-3 brightness-0 invert" onerror="this.src='https://via.placeholder.com/50?text=STIKES'"/>
+             <img src="/assets/logo/logo_unidsoe_kotak.png" alt="Universitas Dr. Soekardjo" class="h-12 w-auto mr-3 brightness-0 invert" onerror="this.src='https://via.placeholder.com/50?text=STIKES'"/>
             <div>
-              <h3 class="text-xl font-bold">Universitas Dr. Soekardjo Banyuwangi</h3>
-              <p class="text-gray-400 text-sm">Sekolah Tinggi Ilmu Kesehatan Banyuwangi</p>
+              <h3 class="text-xl font-bold">Universitas Dr. Soekardjo</h3>
+              <p class="text-gray-400 text-xs font-semibold italic mt-0.5">"We Create Graduates Who Serve The World"</p>
             </div>
           </div>
-          <p class="text-gray-300 leading-relaxed mb-6">
-            Institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas, berakhlak mulia, dan berdaya saing global.
+          <p class="text-gray-300 leading-relaxed mb-6 text-sm">
+            Institusi pendidikan tinggi berdaya saing global, berlandaskan spiritualitas. Menyediakan pendidikan berkualitas berwawasan dunia, penelitian inovatif, pengabdian transformatif, serta tata kelola prima dengan jejaring strategis nasional-internasional.
           </p>
           <div class="flex space-x-4">
             <a href="https://www.instagram.com/unidsoe" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-[#195682] rounded-lg flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 transition-all duration-300" title="Instagram">
@@ -38,6 +38,7 @@
           <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">Menu Utama</h4>
           <ul class="space-y-3 font-medium">
             <li><router-link to="/profil" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Tentang Kami</router-link></li>
+            <li><router-link to="/identitas" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Identitas Kampus</router-link></li>
             <li><router-link to="/program-studi" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Program Studi</router-link></li>
             <li><router-link to="/fasilitas" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Fasilitas Kampus</router-link></li>
             <li><router-link to="/kerja-sama" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Kerja Sama</router-link></li>
@@ -72,7 +73,7 @@
           <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">Lokasi Kampus</h4>
           <div class="rounded-xl overflow-hidden shadow-lg">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.8376!2d114.3695!3d-8.2195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTMnMTAuMiJTIDExNMKwMjInMTAuMiJF!5e0!3m2!1sen!2sid!4v1234567890" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.834771239857!2d114.3575275!3d-8.2064118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145395a7b1b69%3A0x5be904a98d74cbb6!2sKampus+STIKes+Banyuwangi!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
               width="100%" 
               height="200" 
               style="border:0;" 
@@ -88,7 +89,7 @@
       <!-- Bottom Bar -->
       <div class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
         <p class="text-gray-400">
-          © 2025 Universitas Dr. Soekardjo Banyuwangi. All Rights Reserved.
+          © 2025 Universitas Dr. Soekardjo. All Rights Reserved.
         </p>
         <div class="flex items-center space-x-6 mt-4 md:mt-0">
           <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>

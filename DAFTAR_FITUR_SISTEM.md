@@ -35,8 +35,10 @@
 | 2.1 | Home Page | Halaman utama dengan semua section utama | ✅ Implemented | `/` | `src/views/Home.vue` |
 | 2.2 | Articles Index Page | Halaman daftar artikel/berita | ✅ Implemented | `/artikel` | `src/views/ArticlesIndex.vue` |
 | 2.3 | Article Detail Page | Halaman detail artikel dengan breadcrumbs | ✅ Implemented | `/artikel/:id` | `src/views/ArticleDetail.vue` |
-| 2.4 | 404 Not Found Page | Halaman error untuk route yang tidak ditemukan | ✅ Implemented | `/:pathMatch(.*)*` | `src/views/NotFound.vue` |
-| 2.5 | Vue Router | Routing system dengan history mode | ✅ Implemented | - | `src/router/index.js` |
+| 2.4 | Beasiswa Page | Halaman daftar info beasiswa institusi | ✅ Implemented | `/beasiswa` | `src/views/BeasiswaView.vue` |
+| 2.5 | Info PMB Page | Halaman panduan & alur penerimaan mahasiswa baru | ✅ Implemented | `/infopmb` | `src/views/InfoPmbView.vue` |
+| 2.6 | 404 Not Found Page | Halaman error untuk route yang tidak ditemukan | ✅ Implemented | `/:pathMatch(.*)*` | `src/views/NotFound.vue` |
+| 2.7 | Vue Router | Routing system dengan history mode | ✅ Implemented | - | `src/router/index.js` |
 
 ---
 
@@ -168,8 +170,8 @@
 
 | No | Nama Fitur | Deskripsi | Status | Catatan |
 |---|---|---|---|---|
-| 11.1 | Sanity CMS Integration | Ready untuk integrasi dengan Sanity CMS | 🔄 Planned | Dokumentasi tersedia |
-| 11.2 | Semesta CMS Integration | Ready untuk integrasi dengan Semesta CMS | 🔄 Planned | Dokumentasi tersedia |
+| 11.1 | Decap CMS Integration | Pengelolaan halaman statis, profil, program studi, dan dokumen secara lokal/production | ✅ Implemented | `public/admin/config.yml` |
+| 11.2 | Semesta CMS Integration | Portal eksternal terintegrasi untuk pengelolaan artikel dan berita | ✅ Implemented | `public/admin/index.html` |
 | 11.3 | API Integration | Structure ready untuk API integration | 🔄 Ready | Dapat diintegrasikan |
 | 11.4 | Headless CMS Support | Support untuk headless CMS | 🔄 Ready | Architecture ready |
 | 11.5 | GA4 Analytics Integration | Google Analytics 4 integration | ⏳ Planned | - |
@@ -264,9 +266,9 @@
 - ✅ Performance Optimization
 - ✅ Accessibility Features
 - ✅ Core Components
+- ✅ CMS Integration (Decap CMS & Semesta)
 
 ### Medium Priority (Planned/Ready)
-- 🔄 CMS Integration (Sanity/Semesta)
 - 🔄 API Integration
 - 🔄 Search Functionality
 - 🔄 Social Sharing
@@ -316,473 +318,55 @@ Dokumen dan konten yang diperlukan:
 
 ---
 
-### 📋 FASE 2: PREPARASI INTEGRASI CMS
+### 📋 DOKUMENTASI & PROSEDUR CMS
+ 
+#### 1. Cara Menjalankan Decap CMS secara Lokal
+Untuk mengelola konten, halaman statis, profil kampus, program studi, dan berkas/dokumen secara lokal menggunakan Decap CMS, ikuti prosedur berikut:
 
-#### 2.1 Keputusan CMS
-Pilih platform CMS yang akan digunakan:
+##### Step 1: Jalankan Local Proxy Server
+Decap CMS membutuhkan proxy server lokal agar bisa menulis perubahan data secara langsung ke file git lokal (`src/data/`). Jalankan command berikut di terminal:
+```bash
+npx decap-cms-proxy-server
+```
+*Proxy server akan aktif dan mendengarkan pada port `8081`.*
 
-| Opsi | Keputusan | Status | Catatan |
-|------|-----------|--------|---------|
-| **Sanity CMS** | ⬜ Dipilih / ⬜ Tidak | ⏳ Pending | - |
-| **Semesta CMS** | ⬜ Dipilih / ⬜ Tidak | ⏳ Pending | - |
-| **Hybrid Approach** | ⬜ Dipilih / ⬜ Tidak | ⏳ Pending | Kombinasi Sanity + Semesta |
+##### Step 2: Jalankan Frontend Dev Server
+Buka terminal baru di folder project, lalu jalankan server development Vite:
+```bash
+npm run dev
+```
 
-**Timeline Decision:** [Tentukan deadline untuk keputusan CMS]
+##### Step 3: Akses Panel Dashboard Admin
+Buka browser dan navigasikan ke alamat website lokal Anda:
+`http://localhost:5173/admin/` atau `http://localhost:3000/admin/` (sesuaikan port dengan output Vite).
 
-#### 2.2 Kebutuhan Teknis untuk Integrasi
-
-##### A. Jika Memilih **SANITY CMS**:
-
-| Kebutuhan | Deskripsi | Status | Timeline |
-|-----------|-----------|--------|----------|
-| **Sanity Account** | Setup Sanity account dan project | ⏳ Required | Week 1 |
-| **Sanity Studio Setup** | Install dan konfigurasi Sanity Studio | ⏳ Required | Week 1 |
-| **Content Schema Design** | Desain struktur content schema | ⏳ Required | Week 1-2 |
-| **API Keys** | Generate API keys (Read & Write) | ⏳ Required | Week 1 |
-| **Environment Variables** | Setup env variables untuk API | ⏳ Required | Week 1 |
-| **Content Migration** | Migrasi konten existing ke Sanity | ⏳ Required | Week 2-3 |
-| **Developer Access** | Akses developer untuk setup | ⏳ Required | Week 1 |
-| **Content Editor Training** | Training untuk content editor | ⏳ Required | Week 3-4 |
-
-**Dokumentasi yang Diperlukan:**
-- ✅ Sanity CMS Setup: `SETUP_SANITY_STEP_BY_STEP.md`
-- ✅ Sanity Demo: `SANITY_DEMO_SETUP.md`
-- ✅ Presentasi Sanity: `PRESENTASI_SANITY_CMS.md`
-
-##### B. Jika Memilih **SEMESTA CMS**:
-
-| Kebutuhan | Deskripsi | Status | Timeline |
-|-----------|-----------|--------|----------|
-| **Semesta Account** | Setup Semesta account dan subscription | ⏳ Required | Week 1 |
-| **Brand Voice Training** | Training AI dengan brand voice | ⏳ Required | Week 1-2 |
-| **API Integration** | Setup API untuk integrasi dengan frontend | ⏳ Required | Week 2 |
-| **GA4 Setup** | Setup Google Analytics 4 | ⏳ Required | Week 1 |
-| **Content Templates** | Setup template untuk berbagai jenis konten | ⏳ Required | Week 2 |
-| **Topic Research Setup** | Konfigurasi topic discovery | ⏳ Required | Week 2 |
-| **Content Editor Access** | Akses untuk content editor team | ⏳ Required | Week 1 |
-| **Editor Training** | Training penggunaan Semesta platform | ⏳ Required | Week 2-3 |
-
-**Dokumentasi yang Diperlukan:**
-- ⏳ Semesta API Documentation (dari vendor)
-- ⏳ Semesta Integration Guide (dari vendor)
-
-##### C. Jika Memilih **HYBRID APPROACH**:
-
-| Kebutuhan | Deskripsi | Status | Timeline |
-|-----------|-----------|--------|----------|
-| **Semesta Account** | Setup untuk content generation | ⏳ Required | Week 1 |
-| **Sanity Account** | Setup untuk content management | ⏳ Required | Week 1 |
-| **Integration Script** | Script untuk export Semesta → Sanity | ⏳ Required | Week 2-3 |
-| **Workflow Setup** | Setup workflow content creation | ⏳ Required | Week 2-3 |
-| **Both Platform Training** | Training untuk kedua platform | ⏳ Required | Week 3-4 |
+Anda kini bisa mengedit konten secara visual. Hasil edit akan langsung tersimpan di file JSON lokal di folder `src/data/` secara otomatis.
 
 ---
 
-### 📋 FASE 3: DEVELOPMENT & INTEGRATION
-
-#### 3.1 Setup Development Environment
-
-| Task | Deskripsi | Status | Timeline |
-|------|-----------|--------|----------|
-| **Repository Setup** | Setup Git repository dan branching strategy | ⏳ Required | Week 1 |
-| **Development Environment** | Setup local development environment | ⏳ Required | Week 1 |
-| **Environment Variables** | Setup .env files untuk development | ⏳ Required | Week 1 |
-| **CMS SDK Installation** | Install SDK untuk CMS yang dipilih | ⏳ Required | Week 1 |
-| **API Client Setup** | Setup API client untuk fetch data | ⏳ Required | Week 1-2 |
-
-#### 3.2 Integration Implementation
-
-| Task | Deskripsi | Status | Timeline |
-|------|-----------|--------|----------|
-| **API Integration** | Integrasi API untuk fetch content | ⏳ Required | Week 2-3 |
-| **Content Fetching** | Implementasi fetching content dari CMS | ⏳ Required | Week 2-3 |
-| **Dynamic Routing** | Setup dynamic routes untuk content | ⏳ Required | Week 3 |
-| **Image Optimization** | Integrasi image optimization dari CMS | ⏳ Required | Week 3 |
-| **SEO Integration** | Integrasi SEO dengan CMS content | ⏳ Required | Week 3-4 |
-| **Error Handling** | Error handling untuk API calls | ⏳ Required | Week 3 |
-| **Loading States** | Loading states untuk content fetching | ⏳ Required | Week 3 |
-| **Caching Strategy** | Implementasi caching untuk performance | ⏳ Required | Week 4 |
-
-#### 3.3 Content Management Setup
-
-| Task | Deskripsi | Status | Timeline |
-|------|-----------|--------|----------|
-| **Content Schema** | Define content schema di CMS | ⏳ Required | Week 2 |
-| **Content Types** | Setup content types (Article, Page, etc) | ⏳ Required | Week 2 |
-| **Media Library** | Setup media library untuk assets | ⏳ Required | Week 2 |
-| **Content Workflow** | Setup workflow untuk content approval | ⏳ Required | Week 3 |
-| **User Roles** | Setup user roles dan permissions | ⏳ Required | Week 3 |
-| **Content Migration** | Migrasi existing content ke CMS | ⏳ Required | Week 3-4 |
+#### 2. Integrasi Semesta CMS (Portal Artikel & Berita)
+Untuk berita dan artikel berkala, sistem terintegrasi dengan platform eksternal Semesta:
+* Sidebar Decap CMS telah dikonfigurasi dengan menu roket khusus (**🚀 Kelola Berita (Semesta)**).
+* Saat diklik, menu ini akan langsung mengarahkan admin ke portal eksternal Semesta di tab baru (`https://platform-semesta.sclstudio.id`) untuk penulisan artikel berbasis AI.
 
 ---
 
-### 📋 FASE 4: TESTING & DEPLOYMENT
+### 📂 STRUKTUR DOKUMENTASI PROJECT (TATA ULANG)
+Berikut adalah daftar file dokumentasi `.md` yang tersedia di root folder project ini setelah dilakukan pembersihan file-file Sanity:
 
-#### 4.1 Testing Checklist
-
-| Task | Deskripsi | Status | Timeline |
-|------|-----------|--------|----------|
-| **Unit Testing** | Test individual components | ⏳ Required | Week 4-5 |
-| **Integration Testing** | Test CMS integration | ⏳ Required | Week 5 |
-| **Content Testing** | Test content rendering dari CMS | ⏳ Required | Week 5 |
-| **Performance Testing** | Test performance dengan CMS data | ⏳ Required | Week 5 |
-| **SEO Testing** | Test SEO dengan dynamic content | ⏳ Required | Week 5 |
-| **Cross-browser Testing** | Test di berbagai browser | ⏳ Required | Week 5 |
-| **Mobile Testing** | Test di berbagai device | ⏳ Required | Week 5 |
-| **User Acceptance Testing** | UAT dengan client | ⏳ Required | Week 6 |
-
-#### 4.2 Deployment Preparation
-
-| Task | Deskripsi | Status | Timeline |
-|------|-----------|--------|----------|
-| **Production Environment** | Setup production environment | ⏳ Required | Week 6 |
-| **Production API Keys** | Setup production API keys | ⏳ Required | Week 6 |
-| **Environment Variables** | Setup production env variables | ⏳ Required | Week 6 |
-| **CDN Setup** | Setup CDN untuk assets | ⏳ Required | Week 6 |
-| **Monitoring Setup** | Setup monitoring dan error tracking | ⏳ Required | Week 6 |
-| **Backup Strategy** | Setup backup strategy | ⏳ Required | Week 6 |
-| **Documentation** | Finalisasi dokumentasi | ⏳ Required | Week 6 |
+1. **[DAFTAR_FITUR_SISTEM.md](file:///Users/titomoritz/Development/moritzdesk/stikes_banyuwangi/DAFTAR_FITUR_SISTEM.md)**
+   * *Deskripsi:* File ini, yang berisi seluruh pemetaan fitur sistem, integrasi CMS, dan struktur arsitektur.
+2. **[SCHEMA_IMPLEMENTATION.md](file:///Users/titomoritz/Development/moritzdesk/stikes_banyuwangi/SCHEMA_IMPLEMENTATION.md)**
+   * *Deskripsi:* Panduan lengkap implementasi Schema Markup (Schema.org) tingkat lanjut seperti Event, Person, FAQPage, HowTo, dan Review untuk optimalisasi Google Rich Results.
+3. **[SEO_CHECKLIST.md](file:///Users/titomoritz/Development/moritzdesk/stikes_banyuwangi/SEO_CHECKLIST.md)**
+   * *Deskripsi:* Checklist komprehensif optimasi SEO halaman per halaman, meta tags, Open Graph, dan struktur HTML.
+4. **[SEO_TEKNIS.md](file:///Users/titomoritz/Development/moritzdesk/stikes_banyuwangi/SEO_TEKNIS.md)**
+   * *Deskripsi:* Dokumentasi teknis konfigurasi SEO, penanganan robots.txt, dynamic canonicals, sitemap, dan indexing.
+5. **[SEO_KEYWORD.md](file:///Users/titomoritz/Development/moritzdesk/stikes_banyuwangi/SEO_KEYWORD.md)**
+   * *Deskripsi:* Strategi kata kunci (keyword research) dan optimasi konten bertema institusi pendidikan tinggi kesehatan di wilayah Jawa Timur.
+6. **[overview.md](file:///Users/titomoritz/Development/moritzdesk/stikes_banyuwangi/overview.md)**
+   * *Deskripsi:* Ringkasan identitas brand, brand voice pillars, brand personality, dan deskripsi institusi Universitas Dr. Soekardjo Banyuwangi.
 
 ---
-
-### 📋 FASE 5: HANDOVER & TRAINING
-
-#### 5.1 Documentation Handover
-
-| Document | Deskripsi | Status | Timeline |
-|----------|-----------|--------|----------|
-| **Technical Documentation** | Dokumentasi teknis sistem | ⏳ Required | Week 7 |
-| **CMS User Guide** | Panduan penggunaan CMS | ⏳ Required | Week 7 |
-| **Content Guidelines** | Panduan penulisan konten | ⏳ Required | Week 7 |
-| **Troubleshooting Guide** | Panduan troubleshooting | ⏳ Required | Week 7 |
-| **API Documentation** | Dokumentasi API yang digunakan | ⏳ Required | Week 7 |
-
-#### 5.2 Training Sessions
-
-| Session | Deskripsi | Status | Timeline |
-|---------|-----------|--------|----------|
-| **CMS Training** | Training penggunaan CMS | ⏳ Required | Week 7 |
-| **Content Editor Training** | Training untuk content editor | ⏳ Required | Week 7 |
-| **Admin Training** | Training untuk admin | ⏳ Required | Week 7 |
-| **Technical Training** | Training untuk technical team | ⏳ Required | Week 7 |
-
----
-
-### 📊 TIMELINE ESTIMASI
-
-| Fase | Durasi | Start Date | End Date |
-|------|--------|------------|----------|
-| **Fase 1: Approval & Validasi** | 1-2 weeks | TBD | TBD |
-| **Fase 2: Preparasi Integrasi CMS** | 1-2 weeks | TBD | TBD |
-| **Fase 3: Development & Integration** | 3-4 weeks | TBD | TBD |
-| **Fase 4: Testing & Deployment** | 2 weeks | TBD | TBD |
-| **Fase 5: Handover & Training** | 1 week | TBD | TBD |
-| **TOTAL ESTIMASI** | **8-11 weeks** | TBD | TBD |
-
----
-
-### ✅ CHECKLIST SEBELUM START INTEGRASI
-
-#### Approval & Requirements
-- [ ] Menu structure sudah di-approve
-- [ ] Section structure sudah di-approve
-- [ ] Design system sudah di-approve
-- [ ] Brand guidelines sudah diterima
-- [ ] Initial content sudah tersedia
-- [ ] Content assets (images, videos) sudah tersedia
-- [ ] Contact information sudah lengkap
-- [ ] Leadership data sudah tersedia
-- [ ] Partnership data sudah tersedia
-
-#### CMS Decision
-- [ ] Keputusan CMS sudah final (Sanity / Semesta / Hybrid)
-- [ ] CMS account sudah dibuat
-- [ ] API keys sudah di-generate
-- [ ] Developer access sudah diberikan
-- [ ] Budget untuk CMS sudah approved
-
-#### Technical Setup
-- [ ] Development environment sudah siap
-- [ ] Repository sudah setup
-- [ ] Environment variables sudah dikonfigurasi
-- [ ] CMS SDK sudah di-install
-- [ ] API client sudah setup
-
-#### Team & Resources
-- [ ] Developer team sudah ready
-- [ ] Content editor sudah ditentukan
-- [ ] Project timeline sudah disetujui
-- [ ] Budget development sudah approved
-
----
-
-## 📝 CATATAN
-
-1. **Tech Stack:** Vue.js 3, Vite, Tailwind CSS, Vue Router
-2. **Build Tool:** Vite untuk fast development dan optimized builds
-3. **Styling:** Tailwind CSS dengan custom configuration
-4. **SEO:** Comprehensive SEO dengan Schema.org structured data
-5. **Performance:** Optimized dengan lazy loading dan code splitting
-6. **Accessibility:** WCAG compliant dengan ARIA labels dan semantic HTML
-
----
-
-## 🔗 REFERENSI DOKUMENTASI
-
-- **SEO Checklist:** `SEO_CHECKLIST.md`
-- **SEO Teknis:** `SEO_TEKNIS.md`
-- **SEO Keywords:** `SEO_KEYWORD.md`
-- **Sanity CMS Setup:** `SETUP_SANITY_STEP_BY_STEP.md`
-- **Sanity Demo:** `SANITY_DEMO_SETUP.md`
-- **Presentasi Sanity:** `PRESENTASI_SANITY_CMS.md`
-
----
-
----
-
-## 🔄 PERBANDINGAN CMS: SANITY vs SEMESTA
-
-### 📋 RINGKASAN PERBANDINGAN
-
-| Aspek | Sanity CMS | Semesta CMS |
-|-------|-----------|-------------|
-| **Tipe Platform** | Headless CMS | AI-Powered Content Creation Platform |
-| **Target User** | Developers & Content Teams | Publishers & Content Creators |
-| **Fokus Utama** | Content Management & Delivery | Content Generation & Optimization |
-| **Pricing Model** | Freemium (Free tier available) | Subscription-based |
-| **Setup Complexity** | Medium-High (requires coding) | Low (5 minutes setup) |
-| **Content Creation** | Manual content creation | AI-assisted content generation |
-| **API** | REST & GraphQL APIs | API Integration available |
-| **Real-time Collaboration** | ✅ Yes | ❌ Limited |
-| **Custom Schema** | ✅ Fully customizable | ⚠️ Limited customization |
-| **AI Features** | ❌ No built-in AI | ✅ AI-powered (generation, research) |
-| **Analytics Integration** | Via third-party | ✅ Built-in GA4 integration |
-| **Multi-channel Publishing** | ✅ Excellent | ⚠️ Limited |
-| **Learning Curve** | Steep (developer knowledge needed) | Low (user-friendly) |
-
----
-
-### ✅ SANITY CMS - PROS & CONS
-
-#### ✅ **KELEBIHAN (PROS)**
-
-1. **Fleksibilitas Tinggi**
-   - Custom schema sesuai kebutuhan proyek
-   - Full control atas content model
-   - Dapat diintegrasikan dengan berbagai frontend framework
-
-2. **Real-time Collaboration**
-   - Multiple users dapat edit secara bersamaan
-   - Live preview saat editing
-   - Version control dan history
-
-3. **Developer-Friendly**
-   - REST & GraphQL APIs
-   - Excellent documentation
-   - Strong community support
-   - Modern development workflow
-
-4. **Performance & Scalability**
-   - Content Lake architecture untuk performa tinggi
-   - CDN untuk delivery cepat
-   - Scalable untuk traffic besar
-
-5. **Multi-channel Publishing**
-   - Write once, publish anywhere
-   - Support untuk web, mobile, IoT, digital displays
-   - Headless architecture
-
-6. **Customizable Editor**
-   - Custom input components
-   - Rich text editor dengan plugins
-   - Custom validation rules
-
-7. **Free Tier Available**
-   - Generous free tier untuk proyek kecil
-   - Good untuk development dan testing
-
-#### ❌ **KELEMAHAN (CONS)**
-
-1. **Kurva Pembelajaran**
-   - Membutuhkan pengetahuan coding
-   - Setup schema memerlukan developer
-   - Tidak plug-and-play seperti WordPress
-
-2. **Tidak Ada Built-in AI**
-   - Content creation manual
-   - Tidak ada AI untuk generate content
-   - Tidak ada topic research tools
-
-3. **Biaya Skalabilitas**
-   - Biaya meningkat dengan usage
-   - API calls, storage, dan users berpengaruh
-   - Bisa mahal untuk high-traffic sites
-
-4. **Hosting Terpisah**
-   - Frontend harus di-host terpisah
-   - Perlu setup infrastructure tambahan
-   - Maintenance lebih kompleks
-
-5. **Ekosistem Lebih Kecil**
-   - Plugin ecosystem lebih kecil dari WordPress
-   - Integrasi pihak ketiga lebih terbatas
-   - Perlu build custom integrations
-
-6. **Tidak Ada Built-in Analytics**
-   - Perlu integrasi third-party untuk analytics
-   - Tidak ada built-in content performance tracking
-   - Perlu setup GA4 sendiri
-
-7. **Content Creation Time**
-   - Semua content dibuat manual
-   - Tidak ada AI assistance
-   - Lebih lambat untuk generate banyak content
-
----
-
-### ✅ SEMESTA CMS - PROS & CONS
-
-#### ✅ **KELEBIHAN (PROS)**
-
-1. **AI-Powered Content Generation**
-   - Generate artikel lengkap dalam 5 menit
-   - Menghemat 8+ jam kerja manual per minggu
-   - AI-assisted writing
-
-2. **Topic Discovery**
-   - Real-time trending topic alerts
-   - Industry-specific keyword suggestions
-   - Competitor content gap analysis
-   - Stay ahead of trends
-
-3. **Brand Voice Training**
-   - Maintain consistent editorial voice
-   - Train AI sesuai publication style
-   - Switch between content types instantly
-   - Perfect editorial consistency
-
-4. **Built-in GA4 Analytics**
-   - Track article traffic dan engagement
-   - Identify high-converting topics
-   - Generate performance reports
-   - Built-in analytics dashboard
-
-5. **SEO Optimization**
-   - SEO-optimized content generation
-   - Automatic SEO best practices
-   - Content yang siap untuk ranking
-
-6. **User-Friendly**
-   - Setup dalam 5 menit
-   - No coding required
-   - Intuitive interface
-   - Low learning curve
-
-7. **Built for Publishers**
-   - Specifically designed for publishers
-   - Scale from 2 to 20 articles per week
-   - Content production workflow optimized
-
-8. **Indonesia Support**
-   - Built for Indonesia market
-   - 24-hour support
-   - Local language support
-
-#### ❌ **KELEMAHAN (CONS)**
-
-1. **Ketergantungan pada AI**
-   - Content quality bergantung pada AI
-   - Perlu review dan editing manual
-   - Mungkin perlu adjustment untuk accuracy
-
-2. **Kustomisasi Terbatas**
-   - Tidak sefleksibel Sanity untuk custom schema
-   - Limited customization options
-   - Kurang cocok untuk complex content structures
-
-3. **Vendor Lock-in**
-   - Platform proprietary
-   - Data dan content di platform Semesta
-   - Migrasi bisa lebih sulit
-
-4. **Tidak Headless Murni**
-   - Lebih ke content creation platform
-   - Bukan pure headless CMS
-   - Integrasi dengan frontend mungkin lebih terbatas
-
-5. **Real-time Collaboration Terbatas**
-   - Tidak sebaik Sanity untuk collaboration
-   - Workflow collaboration lebih sederhana
-
-6. **Multi-channel Publishing Terbatas**
-   - Fokus pada web publishing
-   - Tidak sefleksibel Sanity untuk multi-channel
-
-7. **Pricing**
-   - Subscription-based pricing
-   - Tidak ada free tier yang jelas
-   - Biaya bisa lebih tinggi untuk scale besar
-
-8. **Ekosistem Lebih Kecil**
-   - Platform relatif baru
-   - Community lebih kecil
-   - Integrasi pihak ketiga lebih terbatas
-
----
-
-### 🎯 REKOMENDASI PENGGUNAAN
-
-#### **Pilih SANITY CMS jika:**
-- ✅ Memiliki developer team yang kuat
-- ✅ Butuh fleksibilitas tinggi untuk custom schema
-- ✅ Perlu multi-channel publishing (web, mobile, IoT)
-- ✅ Butuh real-time collaboration yang advanced
-- ✅ Ingin full control atas content model
-- ✅ Budget untuk infrastructure dan hosting terpisah
-- ✅ Content creation dilakukan manual oleh team
-
-#### **Pilih SEMESTA CMS jika:**
-- ✅ Fokus pada content generation yang cepat
-- ✅ Butuh AI assistance untuk create content
-- ✅ Ingin topic research dan trending topics
-- ✅ Perlu built-in analytics (GA4)
-- ✅ Team non-technical yang perlu user-friendly interface
-- ✅ Butuh scale content production dengan cepat
-- ✅ Fokus pada web publishing (bukan multi-channel)
-- ✅ Ingin maintain consistent editorial voice dengan AI
-
----
-
-### 💡 HYBRID APPROACH (OPSI 3)
-
-**Kombinasi Sanity + Semesta:**
-- Gunakan **Semesta** untuk content generation dan topic research
-- Export content ke **Sanity** untuk management dan delivery
-- Dapatkan best of both worlds:
-  - AI-powered content creation dari Semesta
-  - Flexible content management dari Sanity
-  - Multi-channel publishing dari Sanity
-  - Built-in analytics dari Semesta
-
-**Catatan:** Perlu integrasi custom antara kedua platform.
-
----
-
-### 📊 MATRIX KEPUTUSAN
-
-| Kebutuhan | Sanity | Semesta | Hybrid |
-|-----------|--------|---------|--------|
-| **Content Generation Speed** | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Content Management Flexibility** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **AI Features** | ⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Multi-channel Publishing** | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Real-time Collaboration** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Analytics Built-in** | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Ease of Use** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
-| **Cost Efficiency** | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
-| **Scalability** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-
----
-
-**Catatan:** File ini dapat dikonversi ke Excel dengan format tabel yang sudah disediakan. Setiap kategori dapat dijadikan sheet terpisah di Excel.
-
+**Last Updated:** Mei 2026  
+**Status:** ✅ Dokumentasi bersih dari Sanity CMS, berfokus penuh pada Decap CMS & Semesta Portal!

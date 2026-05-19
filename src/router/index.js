@@ -9,6 +9,11 @@ import AkademikView from '../views/AkademikView.vue'
 import FasilitasView from '../views/FasilitasView.vue'
 import KerjaSamaView from '../views/KerjaSamaView.vue'
 import KontakView from '../views/KontakView.vue'
+import BeasiswaView from '../views/BeasiswaView.vue'
+import InfoPmbView from '../views/InfoPmbView.vue'
+import AsosiasiView from '../views/AsosiasiView.vue'
+import IdentitasView from '../views/IdentitasView.vue'
+import MagazinesIndex from '../views/MagazinesIndex.vue'
 
 const routes = [
   {
@@ -20,6 +25,31 @@ const routes = [
     path: '/profil',
     name: 'Profil',
     component: ProfilView
+  },
+  {
+    path: '/identitas',
+    name: 'Identitas',
+    component: IdentitasView
+  },
+  {
+    path: '/majalah',
+    name: 'MagazinesIndex',
+    component: MagazinesIndex
+  },
+  {
+    path: '/beasiswa',
+    name: 'Beasiswa',
+    component: BeasiswaView
+  },
+  {
+    path: '/infopmb',
+    name: 'InfoPmb',
+    component: InfoPmbView
+  },
+  {
+    path: '/asosiasi',
+    name: 'Asosiasi',
+    component: AsosiasiView
   },
   {
     path: '/program-studi',

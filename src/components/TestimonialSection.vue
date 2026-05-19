@@ -12,7 +12,7 @@
         <!-- Text Content -->
         <div class="md:w-1/2">
             <span class="inline-block py-1 px-3 rounded-full bg-[#58d1fd]/20 text-[#58d1fd] text-sm font-bold mb-6 tracking-wider uppercase">
-                Kata Alumni
+                Kata Mereka
             </span>
           <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
              Cerita Sukses Alumni Universitas Dr. Soekardjo Banyuwangi

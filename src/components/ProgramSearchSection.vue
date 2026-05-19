@@ -93,7 +93,7 @@
 import { ref, computed } from 'vue'
 
 const searchQuery = ref('')
-const modules = import.meta.glob('../data/programs/*.json', { eager: true, import: 'default' })
+const modules = import.meta.glob('../data/programs/**/*.json', { eager: true, import: 'default' })
 
 const programs = computed(() => {
   return Object.keys(modules).map(key => {

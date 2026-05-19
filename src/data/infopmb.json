@@ -1,0 +1,60 @@
+{
+  "title": "Penerimaan Mahasiswa Baru 2026/2027",
+  "subtitle": "Bergabunglah bersama Universitas Dr. Soekardjo (UNIDSOE) untuk menjadi profesional unggul, inovatif, dan berakhlak mulia.",
+  "heroImage": "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  "openDate": "1 Desember 2025 - 31 Agustus 2026",
+  "contactPhone": "(0333) 424-123",
+  "contactWhatsapp": "0812-3456-7890",
+  "requirements": [
+    "Warga Negara Indonesia (WNI)",
+    "Lulusan SMA/SMK/MA/Sederajat (semua jurusan)",
+    "Fotokopi Ijazah / SKL yang telah dilegalisir (2 lembar)",
+    "Fotokopi Kartu Keluarga (KK) & KTP (2 lembar)",
+    "Pas Foto terbaru ukuran 3x4 & 4x6 berlatar merah (masing-masing 3 lembar)",
+    "Surat Keterangan Sehat & tidak buta warna dari fasilitas kesehatan resmi (khusus program studi kesehatan)"
+  ],
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Pendaftaran Online",
+      "description": "Mengisi formulir registrasi awal secara online melalui portal resmi PMB UNIDSOE."
+    },
+    {
+      "stepNumber": "02",
+      "title": "Pembayaran Biaya",
+      "description": "Melakukan pembayaran biaya pendaftaran sebesar Rp 250.000 melalui transfer bank mitra."
+    },
+    {
+      "stepNumber": "03",
+      "title": "Unggah Berkas",
+      "description": "Melengkapi biodata dan mengunggah pindaian (scan) berkas administrasi pendukung."
+    },
+    {
+      "stepNumber": "04",
+      "title": "Ujian Seleksi (CBT)",
+      "description": "Mengikuti ujian berbasis komputer secara online atau offline sesuai jadwal yang dipilih."
+    },
+    {
+      "stepNumber": "05",
+      "title": "Pengumuman & Daftar Ulang",
+      "description": "Melihat hasil kelulusan dan melakukan daftar ulang administrasi serta keuangan."
+    }
+  ],
+  "registrationPaths": [
+    {
+      "name": "Jalur Reguler (CBT)",
+      "badge": "Jalur Tes",
+      "description": "Jalur penerimaan mahasiswa baru menggunakan ujian tertulis berbasis komputer (Computer Based Test)."
+    },
+    {
+      "name": "Jalur Kemitraan & Prestasi",
+      "badge": "Non-Tes",
+      "description": "Jalur masuk bebas tes tertulis bagi siswa berprestasi di bidang akademik, olahraga, seni, keagamaan, atau utusan mitra."
+    },
+    {
+      "name": "Jalur Beasiswa Penuh",
+      "badge": "Bebas Biaya",
+      "description": "Jalur seleksi khusus bagi calon mahasiswa penerima Beasiswa KIP Kuliah, Tahfidz Qur'an, dan beasiswa unggulan yayasan."
+    }
+  ]
+}

@@ -133,12 +133,13 @@ import PageHeader from '../components/PageHeader.vue'
 const route = useRoute()
 const slug = computed(() => route.params.slug || 'program-studi')
 
-// Load all JSON files dynamically from Vite
-const modules = import.meta.glob('../data/programs/*.json', { eager: true, import: 'default' })
+// Load all JSON files dynamically from Vite recursively to support sub-folders
+const modules = import.meta.glob('../data/programs/**/*.json', { eager: true, import: 'default' })
 
 const programData = computed(() => {
-  const path = `../data/programs/${slug.value}.json`
-  return modules[path] || null
+  const pathEnding = `/${slug.value}.json`
+  const foundPath = Object.keys(modules).find(key => key.endsWith(pathEnding))
+  return foundPath ? modules[foundPath] : null
 })
 
 const activeTab = ref('kompetensi')

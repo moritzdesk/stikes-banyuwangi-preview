@@ -1,6 +1,24 @@
 {
-  "heroHeadline": "Universitas Dr. Soekardjo Banyuwangi",
-  "heroSubheadline": "Mempersiapkan Generasi Hebat untuk Menyongsong Masa Depan. Temukan Program Studi yang Tepat untuk Karir Anda. gas ya",
-  "heroImage": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "heroButtonText": "Daftar PMB 2025"
+  "slides": [
+    {
+      "tag": "Penerimaan Mahasiswa Baru 2026/2027",
+      "tagBgColor": "#f9ac42",
+      "headline": "Universitas Dr. Soekardjo Banyuwangi (UNIDSOE)",
+      "subheadline": "Saatnya jadi bagian dari generasi unggul di Universitas Dr. Soekardjo (UNIDSOE). Dibuka PMB\nTahun Ajaran 2026/2027",
+      "image": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      "buttonText": "Daftar PMB 2026/2027",
+      "buttonLink": "https://pmb.unidsoe.ac.id",
+      "isExternal": true
+    },
+    {
+      "tag": "Penghargaan Rektor",
+      "tagBgColor": "#c01c0c",
+      "headline": "Penerima Penghargaan Rektor:<br/><span class=\"text-[#f9ac42]\">Dosen & Mahasiswa Berprestasi</span>",
+      "subheadline": "Apresiasi tertinggi atas dedikasi luar biasa civitas akademika dalam publikasi riset bereputasi global, inovasi teknologi kesehatan, dan pengabdian masyarakat unggulan.",
+      "image": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      "buttonText": "Lihat Selengkapnya",
+      "buttonLink": "/artikel",
+      "isExternal": false
+    }
+  ]
 }

@@ -2,7 +2,6 @@
 import HeroSection from '../components/HeroSection.vue'
 import QuickAccessSection from '../components/QuickAccessSection.vue'
 import AboutSection from '../components/AboutSection.vue'
-import ProgramSearchSection from '../components/ProgramSearchSection.vue'
 import PartnershipSection from '../components/PartnershipSection.vue'
 import NewsSection from '../components/NewsSection.vue'
 import NewsHighlightSection from '../components/NewsHighlightSection.vue'
@@ -42,9 +41,6 @@ const localBusinessSchema = useLocalBusinessSchema()
     
     <!-- About STIKES -->
     <AboutSection />
-    
-    <!-- Program Search -->
-    <ProgramSearchSection />
     
     <!-- News Highlight Section (General News) -->
     <NewsHighlightSection />

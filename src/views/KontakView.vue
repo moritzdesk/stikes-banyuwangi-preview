@@ -101,7 +101,7 @@
       <!-- Peta Besar -->
       <div class="mt-12 bg-white rounded-2xl shadow-md p-4 h-[500px] border border-gray-100">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.8376!2d114.3695!3d-8.2195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTMnMTAuMiJTIDExNMKwMjInMTAuMiJF!5e0!3m2!1sen!2sid!4v1234567890" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.834771239857!2d114.3575275!3d-8.2064118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145395a7b1b69%3A0x5be904a98d74cbb6!2sKampus+STIKes+Banyuwangi!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
           width="100%" 
           height="100%" 
           style="border:0; border-radius: 0.75rem;" 

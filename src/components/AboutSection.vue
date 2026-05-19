@@ -3,99 +3,78 @@
     <div class="container-custom px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <!-- Left: Image -->
-        <div class="relative">
+        <div class="relative animate-fade-in">
           <div class="absolute -inset-4 bg-gradient-to-r from-[#195682] to-[#58d1fd] rounded-3xl blur-2xl opacity-20"></div>
           <div class="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80" 
               alt="Kampus Universitas Dr. Soekardjo Banyuwangi" 
-              class="w-full h-[400px] md:h-[500px] object-cover"
+              class="w-full h-[400px] md:h-[500px] object-cover transform hover:scale-105 transition-transform duration-700"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-[#195682]/50 to-transparent"></div>
-            
-            <!-- Floating Badge -->
-            <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
-              <div class="flex items-center justify-between">
-                <div>
-                  <div class="text-sm text-gray-600 mb-1">Akreditasi Institusi</div>
-                  <div class="text-2xl font-bold text-[#195682]">BAIK</div>
-                </div>
-                <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center">
-                  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
         <!-- Right: Content -->
-        <div>
-          <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">Tentang Kami</span>
-          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-            Universitas Dr. Soekardjo Banyuwangi
-          </h2>
-          <p class="text-gray-600 text-lg leading-relaxed mb-4">
-            Universitas Dr. Soekardjo Banyuwangi Banyuwangi adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas tinggi, berakhlak mulia, dan berdaya saing global.
-          </p>
-          <p class="text-gray-600 text-lg leading-relaxed mb-4">
-            Dengan akreditasi institusi <strong class="text-[#195682]">"Baik"</strong> dan program studi S1 Keperawatan terakreditasi <strong class="text-green-600">"Baik Sekali"</strong>, kami telah mencetak ribuan alumni yang tersebar di seluruh Indonesia dan luar negeri.
-          </p>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            Didukung oleh fasilitas modern, dosen berkualifikasi tinggi, dan kerjasama dengan rumah sakit serta institusi kesehatan terkemuka, Universitas Dr. Soekardjo Banyuwangi menjadi pilihan utama untuk meraih masa depan cerah di bidang kesehatan.
-          </p>
+        <div class="space-y-6">
+          <div>
+            <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">Tentang Kami</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+              Universitas Dr. Soekardjo
+            </h2>
+          </div>
+          
+          <div class="space-y-4 text-gray-600 text-base md:text-lg leading-relaxed">
+            <p>
+              Universitas Dr. Soekardjo (UNIDSOE) merupakan transformasi dari STIKES Banyuwangi, sebuah langkah strategis untuk memperluas keilmuan dan memperkuat dampak bagi masyarakat. Berawal dari kekuatan di bidang kesehatan, UNIDSOE kini berkembang dengan mengintegrasikan ilmu kesehatan, sosial, dan teknologi dalam sistem pendidikan yang adaptif dan relevan dengan kebutuhan global.
+            </p>
+            <p>
+              Didukung fasilitas pembelajaran yang lengkap dan modern, serta program studi terakreditasi dengan mayoritas meraih predikat Baik Sekali, UNIDSOE berkomitmen menjaga kualitas pendidikan yang unggul. Berbagai prestasi telah diraih hingga tingkat internasional, dan para alumni telah berkiprah di berbagai sektor, baik nasional maupun global.
+            </p>
+            <p class="font-semibold italic text-[#195682] border-l-4 border-[#f9ac42] pl-4 py-1">
+              “We Create Graduates Who Serve The World” — UNIDSOE hadir untuk mencetak lulusan yang kompeten, profesional, dan siap memberi dampak nyata bagi dunia.
+            </p>
+          </div>
 
-          <!-- Key Points -->
-          <div class="grid grid-cols-2 gap-4 mb-8">
+          <!-- Key Points Grid -->
+          <div class="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
             <div class="flex items-start">
-             <svg class="w-6 h-6 text-[#f9ac42] mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
+              <div class="w-10 h-10 bg-blue-50 text-[#195682] rounded-lg flex items-center justify-center mr-3 shrink-0">
+                🎓
+              </div>
               <div>
                 <div class="font-bold text-gray-900">11 Program Studi</div>
-                <div class="text-sm text-gray-600">Terakreditasi</div>
+                <div class="text-xs text-gray-500">Terakreditasi</div>
               </div>
             </div>
             <div class="flex items-start">
-              <svg class="w-6 h-6 text-[#f9ac42] mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
+              <div class="w-10 h-10 bg-yellow-50 text-[#f9ac42] rounded-lg flex items-center justify-center mr-3 shrink-0">
+                🏆
+              </div>
               <div>
-                <div class="font-bold text-gray-900">50+ Lokasi Praktik</div>
-                <div class="text-sm text-gray-600">Jaminan PBK</div>
+                <div class="font-bold text-gray-900">100+ Prestasi</div>
+                <div class="text-xs text-gray-500">Nasional & Internasional</div>
               </div>
             </div>
             <div class="flex items-start">
-              <svg class="w-6 h-6 text-[#f9ac42] mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
+              <div class="w-10 h-10 bg-green-50 text-emerald-600 rounded-lg flex items-center justify-center mr-3 shrink-0">
+                💰
+              </div>
               <div>
                 <div class="font-bold text-gray-900">Beasiswa Lengkap</div>
-                <div class="text-sm text-gray-600">BAKENAKES, KIP, dll</div>
+                <div class="text-xs text-gray-500">KIP, Yayasan, & Mitra</div>
               </div>
             </div>
             <div class="flex items-start">
-              <svg class="w-6 h-6 text-[#f9ac42] mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
+              <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center mr-3 shrink-0">
+                🌍
+              </div>
               <div>
-                <div class="font-bold text-gray-900">Alumni Tersebar</div>
-                <div class="text-sm text-gray-600">Indonesia & Luar Negeri</div>
+                <div class="font-bold text-gray-900">Alumni Mendunia</div>
+                <div class="text-xs text-gray-500">Kiprah Nasional & Global</div>
               </div>
             </div>
           </div>
-
-          <!-- CTA Button -->
-          <router-link 
-            to="/profil" 
-            class="inline-flex items-center px-8 py-4 bg-[#195682] text-white font-bold rounded-full hover:bg-[#0b2b42] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 group"
-          >
-            Selengkapnya
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </router-link>
         </div>
       </div>
     </div>

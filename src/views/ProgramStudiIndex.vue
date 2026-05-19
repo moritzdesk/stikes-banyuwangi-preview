@@ -8,19 +8,46 @@
 
     <div class="container-custom py-16">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold text-[#0b2b42] mb-4">Pilihan Jenjang Karir Kesehatan</h2>
+        <h2 class="text-3xl font-bold text-[#0b2b42] mb-4">Program Pendidikan Unggulan Kami</h2>
         <p class="text-gray-600 text-lg">
-          Universitas Dr. Soekardjo Banyuwangi menyelenggarakan berbagai program studi tersertifikasi dan terakreditasi untuk mencetak tenaga kesehatan profesional yang tangguh.
+          Mencetak lulusan profesional yang andal, berwawasan global, dan siap berdaya saing di kancah nasional maupun internasional.
         </p>
+      </div>
+
+      <!-- Tab Buttons / Filter (FISTEK vs FKES) -->
+      <div class="flex justify-center space-x-4 mb-12">
+        <button 
+          @click="activeFaculty = 'ALL'"
+          :class="[activeFaculty === 'ALL' ? 'bg-[#195682] text-white' : 'bg-white text-[#195682] border border-[#195682]/20 hover:bg-gray-50']"
+          class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm"
+        >
+          Semua Program Studi
+        </button>
+        <button 
+          @click="activeFaculty = 'FKES'"
+          :class="[activeFaculty === 'FKES' ? 'bg-[#195682] text-white' : 'bg-white text-[#195682] border border-[#195682]/20 hover:bg-gray-50']"
+          class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm flex items-center"
+        >
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+          Fakultas Kesehatan (FKES)
+        </button>
+        <button 
+          @click="activeFaculty = 'FISTEK'"
+          :class="[activeFaculty === 'FISTEK' ? 'bg-[#195682] text-white' : 'bg-white text-[#195682] border border-[#195682]/20 hover:bg-gray-50']"
+          class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm flex items-center"
+        >
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          Fakultas Sosial & Teknologi (FISTEK)
+        </button>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Loop Programs -->
         <article 
-          v-for="(program, index) in programs" 
+          v-for="(program, index) in filteredPrograms" 
           :key="program.slug"
           class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col border border-gray-100 group"
-          :style="{ animationDelay: `${index * 100}ms` }"
+          :style="{ animationDelay: `${index * 50}ms` }"
         >
           <div class="relative h-56 overflow-hidden">
             <img :src="program.image" :alt="program.title" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
@@ -33,7 +60,7 @@
             </div>
             
             <div class="absolute top-4 right-4">
-              <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm shadow-black/20 flex items-center">
+              <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm shadow-black/20 flex items-center">
                 Akreditasi: {{ program.accreditation }}
               </span>
             </div>
@@ -45,6 +72,11 @@
           
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
+              <div class="mb-3">
+                <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md" :class="[program.faculty === 'FKES' ? 'bg-red-50 text-red-700' : 'bg-blue-50 text-blue-700']">
+                  {{ program.faculty === 'FKES' ? 'Fakultas Kesehatan' : 'Fakultas Ilmu Sosial & Teknologi' }}
+                </span>
+              </div>
               <p class="text-gray-600 mb-4 line-clamp-3 text-sm leading-relaxed">
                 {{ program.description }}
               </p>
@@ -77,13 +109,13 @@
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="relative z-10 w-full max-w-2xl mx-auto">
           <h3 class="text-3xl font-bold text-white mb-4">Siap Memulai Langkah Anda?</h3>
-          <p class="text-blue-100 mb-8 text-lg">Pendaftaran Mahasiswa Baru Tahun Akademik 2025/2026 telah dibuka. Raih masa depan cemerlang bersama Universitas Dr. Soekardjo Banyuwangi.</p>
+          <p class="text-blue-100 mb-8 text-lg">Pendaftaran Mahasiswa Baru Tahun Akademik 2025/2026 telah dibuka. Raih masa depan cemerlang bersama kami.</p>
           <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a href="https://pmb.unidsoe.ac.id" target="_blank" class="px-8 py-3 bg-[#f9ac42] text-white font-bold rounded-lg hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30 transform hover:-translate-y-1">
               Daftar Sekarang
             </a>
             <router-link to="/kontak" class="px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[#195682] transition-colors">
-              Hubungi Brosur
+              Hubungi Kami
             </router-link>
           </div>
         </div>
@@ -93,15 +125,53 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
 
-// Dummy Data for Programs
+const activeFaculty = ref('ALL')
+
 const programs = ref([
+  // FISTEK Programs
+  {
+    title: 'S1 Sistem Informasi',
+    slug: 's1-sistem-informasi',
+    level: 'Sarjana (S1)',
+    faculty: 'FISTEK',
+    accreditation: 'Baik',
+    duration: '8 Semester',
+    degree: 'S.Kom',
+    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Menghasilkan profesional TI yang andal dalam merancang, menganalisis, dan mengembangkan sistem informasi terintegrasi untuk mendukung keputusan bisnis strategis.'
+  },
+  {
+    title: 'S1 Manajemen Bisnis Internasional',
+    slug: 's1-manajemen-bisnis',
+    level: 'Sarjana (S1)',
+    faculty: 'FISTEK',
+    accreditation: 'Baik',
+    duration: '8 Semester',
+    degree: 'S.M',
+    image: 'https://images.pexels.com/photos/3182811/pexels-photo-3182811.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Mempersiapkan wirausahawan dan manajer global dengan penguasaan manajemen strategis lintas negara, ekspansi pasar, dan investasi internasional.'
+  },
+  {
+    title: 'S1 Perdagangan Internasional',
+    slug: 's1-perdagangan-internasional',
+    level: 'Sarjana (S1)',
+    faculty: 'FISTEK',
+    accreditation: 'Baik',
+    duration: '8 Semester',
+    degree: 'S.Bns',
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Fokus pada hukum niaga internasional, logistik global, ekspor-impor, negosiasi bisnis antarnegara, serta pengelolaan kepabeanan modern.'
+  },
+
+  // FKES Programs
   {
     title: 'S1 Keperawatan',
     slug: 's1-keperawatan',
     level: 'Sarjana (S1)',
+    faculty: 'FKES',
     accreditation: 'Baik Sekali',
     duration: '8 Semester',
     degree: 'S.Kep',
@@ -112,6 +182,7 @@ const programs = ref([
     title: 'Profesi Ners',
     slug: 'profesi-ners',
     level: 'Profesi',
+    faculty: 'FKES',
     accreditation: 'Baik Sekali',
     duration: '2 Semester',
     degree: 'Ners (Ns)',
@@ -122,6 +193,7 @@ const programs = ref([
     title: 'S1 Kebidanan',
     slug: 's1-kebidanan',
     level: 'Sarjana (S1)',
+    faculty: 'FKES',
     accreditation: 'Baik',
     duration: '8 Semester',
     degree: 'S.Keb',
@@ -132,6 +204,7 @@ const programs = ref([
     title: 'Profesi Bidan',
     slug: 'profesi-bidan',
     level: 'Profesi',
+    faculty: 'FKES',
     accreditation: 'Baik',
     duration: '2 Semester',
     degree: 'Bdn.',
@@ -142,6 +215,7 @@ const programs = ref([
     title: 'S1 Gizi',
     slug: 's1-gizi',
     level: 'Sarjana (S1)',
+    faculty: 'FKES',
     accreditation: 'Baik',
     duration: '8 Semester',
     degree: 'S.Gz',
@@ -152,9 +226,10 @@ const programs = ref([
     title: 'D4 Teknologi Laboratorium Medis',
     slug: 'd4-tlm',
     level: 'Sarjana Terapan (D4)',
+    faculty: 'FKES',
     accreditation: 'Baik',
     duration: '8 Semester',
-    degree: 'S.Tr.A.K.',
+    degree: 'S.Tr.Kes',
     image: 'https://images.pexels.com/photos/3735957/pexels-photo-3735957.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Mencetak ATLM (Ahli Teknologi Laboratorium Medik) spesialis yang andal dalam pemeriksaan patologi klinis, mikrobiologi, biomolekuler (PCR), diagnostik di Rumah Sakit.'
   },
@@ -162,9 +237,10 @@ const programs = ref([
     title: 'D3 Keperawatan',
     slug: 'd3-keperawatan',
     level: 'Ahli Madya (D3)',
-    accreditation: 'Unggul',
+    faculty: 'FKES',
+    accreditation: 'Baik Sekali',
     duration: '6 Semester',
-    degree: 'Amd.Kep',
+    degree: 'A.Md.Kep',
     image: 'https://images.pexels.com/photos/3952044/pexels-photo-3952044.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Program vokasi keperawatan legendaris yang memadukan teori terapan (30%) dan praktik langsung (70%). Lulusan sangat diminati oleh klinik dan rumah sakit seluruh Indonesia.'
   },
@@ -172,13 +248,21 @@ const programs = ref([
     title: 'D3 Farmasi',
     slug: 'd3-farmasi',
     level: 'Ahli Madya (D3)',
-    accreditation: 'Baik',
+    faculty: 'FKES',
+    accreditation: 'Baik Sekali',
     duration: '6 Semester',
-    degree: 'Amd.Far',
+    degree: 'A.Md.Farm',
     image: 'https://images.pexels.com/photos/3683053/pexels-photo-3683053.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Membangun Tenaga Teknis Kefarmasian (TTK) yang terampil meracik obat, mengelola instalasi farmasi RS/Apotek, dan QA QC di industri obat/kosmetik.'
   }
 ])
+
+const filteredPrograms = computed(() => {
+  if (activeFaculty.value === 'ALL') {
+    return programs.value
+  }
+  return programs.value.filter(p => p.faculty === activeFaculty.value)
+})
 </script>
 
 <style scoped>
@@ -187,7 +271,7 @@ const programs = ref([
 }
 
 article {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.6s ease-out forwards;
   opacity: 0;
 }
 

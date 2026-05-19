@@ -1,9 +1,90 @@
 {
+  "articleSettings": {
+    "sectionTitle": "Artikel Terbaru",
+    "excerptWordLimit": 15,
+    "showPublishDate": true,
+    "categories": [
+      {
+        "slug": "blog",
+        "displayName": "Edukasi",
+        "show": true
+      },
+      {
+        "slug": "opini",
+        "displayName": "Opini",
+        "show": true
+      },
+      {
+        "slug": "agenda",
+        "displayName": "Agenda",
+        "show": true
+      }
+    ]
+  },
+  "achievementsSettings": {
+    "sectionTitle": "🏆 Sertifikasi & Prestasi Unggul",
+    "items": [
+      {
+        "category": "Regional",
+        "title": "Pengabdian Masyarakat",
+        "icon": "fas fa-map-marked-alt",
+        "description": "Menjadi pusat rujukan kesehatan di wilayah Tapal Kuda melalui inovasi keperawatan dan pemberdayaan kesehatan komunitas."
+      },
+      {
+        "category": "Nasional",
+        "title": "Prestasi PKM Nasional",
+        "icon": "fas fa-trophy",
+        "description": "Meraih pendanaan Program Kreativitas Mahasiswa (PKM) secara konsisten oleh Kemdikbudristek RI setiap tahunnya."
+      },
+      {
+        "category": "Internasional",
+        "title": "Jejaring Kerja Global",
+        "icon": "fas fa-globe-americas",
+        "description": "Sukses menyalurkan lulusan bekerja di Kyoto Hospital Jepang serta kerjasama riset dengan institusi global."
+      }
+    ]
+  },
+  "associationsSettings": {
+    "sectionTitle": "Assurance of Practice",
+    "description": "Jaminan Lokasi Praktik Belajar Klinik. Kami bermitra dengan pemerintah daerah dan organisasi profesi untuk memastikan setiap mahasiswa mendapatkan pengalaman praktik terbaik dan kompetensi yang diakui.",
+    "items": [
+      {
+        "name": "Pemkab Banyuwangi",
+        "url": "https://banyuwangikab.go.id",
+        "iconType": "pemkab"
+      },
+      {
+        "name": "PPNI",
+        "url": "https://ppni-inna.org",
+        "iconType": "ppni"
+      },
+      {
+        "name": "IBI",
+        "url": "https://ibi.or.id",
+        "iconType": "ibi"
+      },
+      {
+        "name": "PAFI",
+        "url": "https://pafi.or.id",
+        "iconType": "pafi"
+      },
+      {
+        "name": "IDI",
+        "url": "https://idionline.org",
+        "iconType": "idi"
+      },
+      {
+        "name": "Kemenkes RI",
+        "url": "https://kemkes.go.id",
+        "iconType": "kemenkes"
+      }
+    ]
+  },
   "contact": {
     "phone": "(0333) 424-123",
     "email": "info@unidsoe.ac.id",
     "address": "Jl. Letkol Istiqlah No. 40, Lingkungan Mojoroto, Penataban, Kec. Giri, Kabupaten Banyuwangi, Jawa Timur 68422",
-    "pmbLink": "https://pmb.unidsoe.ac.id"
+    "pmbLink": "https://unidsoe.ac.id/infopmb"
   },
   "downloads": [
     {
