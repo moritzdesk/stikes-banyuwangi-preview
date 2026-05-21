@@ -57,7 +57,7 @@
 
                   <!-- Actual Body Content -->
                   <div 
-                    class="prose prose-lg md:prose-xl max-w-none prose-headings:text-[#0b2b42] prose-headings:font-bold prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#195682] prose-img:rounded-3xl prose-img:shadow-lg"
+                    class="prose prose-lg md:prose-xl max-w-none prose-headings:text-[#0b2b42] prose-headings:font-bold prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#195682] prose-img:rounded-2xl prose-img:shadow-md prose-img:mx-auto"
                     v-html="article.content"
                   ></div>
 
@@ -130,7 +130,7 @@ const fetchArticleDetail = async (slug) => {
       summary: item.description,
       content: item.content || item.body || '<p>Tidak ada konten.</p>',
       category: item.category?.name || 'Berita',
-      author: item.created_by?.name || 'Humas UNIDSOE'
+      author: item.author || item.created_by?.name || 'Humas UNIDSOE'
     }
 
     error.value = false
@@ -173,5 +173,20 @@ watch(() => route.params.slug, (newSlug) => {
 /* Custom shadow to give premium feel */
 .shadow-xl {
   shadow-box: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+}
+
+/* Optimize images inside article body content (from CMS v-html) */
+:deep(.prose img) {
+  display: block;
+  max-width: 100%;
+  max-height: 520px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  background-color: #f8fafc;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 </style>

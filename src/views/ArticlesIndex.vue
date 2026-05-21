@@ -128,6 +128,8 @@ const loading = ref(true)
 // Read CMS configurations
 const cmsCategories = globalSettings.articleSettings?.categories || []
 const activeSlugs = cmsCategories.filter(c => c.show).map(c => c.slug)
+// All known slugs (including show:false) for broad fetching
+const allKnownSlugs = cmsCategories.map(c => c.slug)
 const wordLimit = globalSettings.articleSettings?.excerptWordLimit || 15
 
 // Excerpt helper
@@ -161,10 +163,8 @@ const fetchArticles = async () => {
     articles.value = (data.data || [])
       .filter(item => {
         const slug = item.category?.slug || ''
-        // If it's a dynamic blog category, verify it is allowed in active slugs.
-        // Otherwise, allow other main categories like 'prestasi', 'pengumuman', 'kegiatan'
-        const isCampSlug = ['prestasi', 'pengumuman', 'kegiatan'].includes(slug)
-        return activeSlugs.includes(slug) || isCampSlug
+        // Only show articles from slugs that exist in settings.json
+        return allKnownSlugs.includes(slug)
       })
       .map(item => {
         const slug = item.category?.slug || ''
@@ -179,7 +179,7 @@ const fetchArticles = async () => {
           excerpt: getTruncatedExcerpt(item.description),
           category: categoryName,
           category_slug: slug,
-          author: item.created_by?.name || 'Humas UNIDSOE'
+          author: item.author || item.created_by?.name || 'Humas UNIDSOE'
         }
       })
   } catch (error) {

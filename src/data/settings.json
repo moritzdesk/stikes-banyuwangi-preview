@@ -1,11 +1,16 @@
 {
   "articleSettings": {
-    "sectionTitle": "Artikel Terbaru",
+    "sectionTitle": "Berita & Artikel",
     "excerptWordLimit": 15,
     "showPublishDate": true,
     "categories": [
       {
-        "slug": "blog",
+        "slug": "berita",
+        "displayName": "Berita",
+        "show": true
+      },
+      {
+        "slug": "edukasi",
         "displayName": "Edukasi",
         "show": true
       },
@@ -15,9 +20,29 @@
         "show": true
       },
       {
-        "slug": "agenda",
-        "displayName": "Agenda",
+        "slug": "prestasi",
+        "displayName": "Prestasi",
         "show": true
+      },
+      {
+        "slug": "highlight",
+        "displayName": "Highlight",
+        "show": true
+      },
+      {
+        "slug": "pengumuman",
+        "displayName": "Pengumuman",
+        "show": true
+      },
+      {
+        "slug": "kegiatan",
+        "displayName": "Kegiatan",
+        "show": true
+      },
+      {
+        "slug": "blog",
+        "displayName": "Blog",
+        "show": false
       }
     ]
   },
