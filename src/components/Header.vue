@@ -245,8 +245,8 @@
           </router-link>
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
-              <li><a href="https://siakad.unidsoe.ac.id" target="_blank" class="nav-link-sub">Sistem Informasi Akademik</a></li>
-              <li><a href="https://elearning.unidsoe.ac.id" target="_blank" class="nav-link-sub">E-Learning</a></li>
+              <li><a href="https://unidsoe.siakadcloud.com/gate/login" target="_blank" class="nav-link-sub">Sistem Informasi Akademik</a></li>
+              <li><a href="https://edlink.id/" target="_blank" class="nav-link-sub">E-Learning</a></li>
               <li><router-link to="/akademik" class="nav-link-sub">Kalender Akademik</router-link></li>
               <li><router-link to="/akademik" class="nav-link-sub">Dokumen & Formulir</router-link></li>
             </ul>
