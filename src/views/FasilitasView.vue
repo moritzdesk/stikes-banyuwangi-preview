@@ -14,13 +14,7 @@
         </p>
       </div>
 
-      <!-- Categories Filter (UI Mockup) -->
-      <div class="flex justify-center flex-wrap gap-3 mb-12">
-        <button class="px-6 py-2 rounded-full font-bold text-sm bg-[#195682] text-white shadow-md">Semua</button>
-        <button class="px-6 py-2 rounded-full font-bold text-sm bg-white text-gray-600 border border-gray-200 hover:bg-gray-100">Laboratorium</button>
-        <button class="px-6 py-2 rounded-full font-bold text-sm bg-white text-gray-600 border border-gray-200 hover:bg-gray-100">Perpustakaan</button>
-        <button class="px-6 py-2 rounded-full font-bold text-sm bg-white text-gray-600 border border-gray-200 hover:bg-gray-100">Area Mahasiswa</button>
-      </div>
+
 
       <!-- Facilities Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -39,10 +33,9 @@
             <p class="text-gray-600 text-sm leading-relaxed mb-4">
               {{ fas.description }}
             </p>
-            <a href="#" class="inline-flex items-center text-[#195682] font-bold text-sm hover:text-[#f9ac42] transition-colors">
-              Lihat Ruangan (VR/360) 
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </a>
+            <span class="inline-flex items-center text-gray-400 text-sm italic">
+              * Virtual Tour tersedia segera
+            </span>
           </div>
         </div>
 

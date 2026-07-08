@@ -280,7 +280,7 @@
       </section>
 
       <!-- 4. VIDEO SECTION -->
-      <section class="bg-[#0b2b42] text-white rounded-3xl shadow-xl p-8 sm:p-12 mb-16 relative overflow-hidden">
+      <section v-if="identitasData.videoUrl" class="bg-[#0b2b42] text-white rounded-3xl shadow-xl p-8 sm:p-12 mb-16 relative overflow-hidden">
         <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
         
         <div class="relative z-10 text-center max-w-2xl mx-auto mb-10">

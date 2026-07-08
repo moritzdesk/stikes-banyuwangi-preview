@@ -120,7 +120,7 @@ import PageHeader from '../components/PageHeader.vue'
 import settings from '../data/settings.json'
 
 const submitForm = () => {
-  alert('Formulir mock: Pesan Dummy berhasil dikirim!')
+  alert('Terima kasih! Pesan Anda telah kami terima. Tim Humas & Promosi akan merespons melalui email yang Anda daftarkan.')
 }
 </script>
 

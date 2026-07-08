@@ -92,9 +92,7 @@
           © 2025 Universitas Dr. Soekardjo. All Rights Reserved.
         </p>
         <div class="flex items-center space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+
         </div>
       </div>
     </div>

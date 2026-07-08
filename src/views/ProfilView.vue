@@ -76,10 +76,7 @@
             <div class="relative rounded-2xl overflow-hidden border-2 border-gray-100 bg-gray-50 p-4 group cursor-zoom-in">
               <img src="https://images.pexels.com/photos/7414925/pexels-photo-7414925.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bagan Struktur Organisasi" class="w-full h-auto object-contain max-h-[600px] mix-blend-multiply opacity-80" />
               
-              <!-- Placeholder overlay since real structural chart isn't available yet -->
-              <div class="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span class="bg-[#195682] text-white px-6 py-3 rounded-full font-bold shadow-lg">Lihat Ukuran Penuh (Coming Soon)</span>
-              </div>
+
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
@@ -123,9 +120,7 @@
                   
                   <div v-html="profilData.sambutan.replace(/\n\n/g, '<br><br>')" class="leading-relaxed"></div>
                   
-                  <!-- Signature Mockup -->
                   <div class="mt-8 pt-6 border-t border-gray-100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Signature_of_John_Hancock.svg" alt="Tanda Tangan" class="h-16 opacity-50 mb-2" />
                     <p class="font-bold text-gray-900 uppercase">{{ profilData.namaKetua }}</p>
                   </div>
                 </div>

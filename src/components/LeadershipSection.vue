@@ -76,9 +76,6 @@
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
                     "Prestasi Unidsoe, adalah Hasil Eksistensi dari Proses yang Telah Dilalui"
                   </p>
-                  <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                    Read More →
-                  </button>
                 </div>
               </div>
             </div>
@@ -93,9 +90,6 @@
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
                     "Sudah saatnya menjadi Universitas"
                   </p>
-                  <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                    Read More →
-                  </button>
                 </div>
               </div>
             </div>
@@ -110,9 +104,6 @@
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
                     "Terima Kasih, Saya Bangga Menjadi Bagian dari Unidsoe"
                   </p>
-                  <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                    Read More →
-                  </button>
                 </div>
               </div>
             </div>
@@ -127,9 +118,6 @@
                   <p class="text-gray-600 text-sm leading-relaxed mb-3">
                     "Anggita dan Yahya Jebeng Thulk Kesehatan"
                   </p>
-                  <button class="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors">
-                    Read More →
-                  </button>
                 </div>
               </div>
             </div>

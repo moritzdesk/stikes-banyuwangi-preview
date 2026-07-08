@@ -262,8 +262,6 @@
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
               <li><router-link to="/artikel" class="nav-link-sub">Berita & Prestasi</router-link></li>
-              <li><a href="#" class="nav-link-sub">Publikasi Ilmiah</a></li>
-              <li><a href="#" class="nav-link-sub">Pengabdian Masyarakat</a></li>
               <li><router-link to="/akademik" class="nav-link-sub">KKN</router-link></li>
             </ul>
           </div>

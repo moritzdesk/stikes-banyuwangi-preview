@@ -56,18 +56,6 @@
       </div>
     </div>
 
-    <!-- View All Button -->
-    <div class="text-center mt-12">
-      <router-link 
-        to="/testimoni" 
-        class="inline-flex items-center px-8 py-4 bg-white text-[#195682] font-bold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 group"
-      >
-        Lihat Semua Testimoni
-        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-        </svg>
-      </router-link>
-    </div>
   </section>
 </template>
 
