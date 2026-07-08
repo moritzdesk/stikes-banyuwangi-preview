@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <!-- Tab Buttons / Filter (FISTEK vs FKES) -->
+      <!-- Tab Buttons / Filter (FISTEK vs FIKES) -->
       <div class="flex justify-center space-x-4 mb-12">
         <button 
           @click="activeFaculty = 'ALL'"
@@ -24,12 +24,12 @@
           Semua Program Studi
         </button>
         <button 
-          @click="activeFaculty = 'FKES'"
-          :class="[activeFaculty === 'FKES' ? 'bg-[#195682] text-white' : 'bg-white text-[#195682] border border-[#195682]/20 hover:bg-gray-50']"
+          @click="activeFaculty = 'FIKES'"
+          :class="[activeFaculty === 'FIKES' ? 'bg-[#195682] text-white' : 'bg-white text-[#195682] border border-[#195682]/20 hover:bg-gray-50']"
           class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm flex items-center"
         >
           <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-          Fakultas Kesehatan (FKES)
+          Fakultas Ilmu Kesehatan (FIKES)
         </button>
         <button 
           @click="activeFaculty = 'FISTEK'"
@@ -73,8 +73,8 @@
           <div class="p-6 flex-grow flex flex-col justify-between">
             <div>
               <div class="mb-3">
-                <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md" :class="[program.faculty === 'FKES' ? 'bg-red-50 text-red-700' : 'bg-blue-50 text-blue-700']">
-                  {{ program.faculty === 'FKES' ? 'Fakultas Kesehatan' : 'Fakultas Ilmu Sosial & Teknologi' }}
+                <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md" :class="[program.faculty === 'FIKES' ? 'bg-red-50 text-red-700' : 'bg-blue-50 text-blue-700']">
+                  {{ program.faculty === 'FIKES' ? 'Fakultas Ilmu Kesehatan' : 'Fakultas Ilmu Sosial & Teknologi' }}
                 </span>
               </div>
               <p class="text-gray-600 mb-4 line-clamp-3 text-sm leading-relaxed">
@@ -130,132 +130,32 @@ import PageHeader from '../components/PageHeader.vue'
 
 const activeFaculty = ref('ALL')
 
-const programs = ref([
-  // FISTEK Programs
-  {
-    title: 'S1 Sistem Informasi',
-    slug: 's1-sistem-informasi',
-    level: 'Sarjana (S1)',
-    faculty: 'FISTEK',
-    accreditation: 'Baik',
-    duration: '8 Semester',
-    degree: 'S.Kom',
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Menghasilkan profesional TI yang andal dalam merancang, menganalisis, dan mengembangkan sistem informasi terintegrasi untuk mendukung keputusan bisnis strategis.'
-  },
-  {
-    title: 'S1 Manajemen Bisnis Internasional',
-    slug: 's1-manajemen-bisnis',
-    level: 'Sarjana (S1)',
-    faculty: 'FISTEK',
-    accreditation: 'Baik',
-    duration: '8 Semester',
-    degree: 'S.M',
-    image: 'https://images.pexels.com/photos/3182811/pexels-photo-3182811.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Mempersiapkan wirausahawan dan manajer global dengan penguasaan manajemen strategis lintas negara, ekspansi pasar, dan investasi internasional.'
-  },
-  {
-    title: 'S1 Perdagangan Internasional',
-    slug: 's1-perdagangan-internasional',
-    level: 'Sarjana (S1)',
-    faculty: 'FISTEK',
-    accreditation: 'Baik',
-    duration: '8 Semester',
-    degree: 'S.Bns',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Fokus pada hukum niaga internasional, logistik global, ekspor-impor, negosiasi bisnis antarnegara, serta pengelolaan kepabeanan modern.'
-  },
+const levelMap = {
+  'S1': 'Sarjana (S1)',
+  'D3': 'Ahli Madya (D3)',
+  'D4': 'Sarjana Terapan (D4)',
+  'Profesi': 'Profesi'
+}
 
-  // FKES Programs
-  {
-    title: 'S1 Keperawatan',
-    slug: 's1-keperawatan',
-    level: 'Sarjana (S1)',
-    faculty: 'FKES',
-    accreditation: 'Baik Sekali',
-    duration: '8 Semester',
-    degree: 'S.Kep',
-    image: 'https://images.pexels.com/photos/3328173/pexels-photo-3328173.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Program studi unggulan yang mencetak Sarjana Keperawatan berwawasan riset klinis dan komunitas, siap dilanjutkan ke jenjang Profesi Ners untuk lisensi praktik global.'
-  },
-  {
-    title: 'Profesi Ners',
-    slug: 'profesi-ners',
-    level: 'Profesi',
-    faculty: 'FKES',
-    accreditation: 'Baik Sekali',
-    duration: '2 Semester',
-    degree: 'Ners (Ns)',
-    image: 'https://images.pexels.com/photos/3845118/pexels-photo-3845118.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Program lanjutan pasca S1 Keperawatan berupa praktik klinik nyata di Rumah Sakit, Puskesmas, dan Komunitas demi mencapai kompetensi profesional perawat.'
-  },
-  {
-    title: 'S1 Kebidanan',
-    slug: 's1-kebidanan',
-    level: 'Sarjana (S1)',
-    faculty: 'FKES',
-    accreditation: 'Baik',
-    duration: '8 Semester',
-    degree: 'S.Keb',
-    image: 'https://images.pexels.com/photos/3279196/pexels-photo-3279196.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Mendidik calon bidan profesional yang handal dalam asuhan kebidanan pada kehamilan, persalinan, bayi baru lahir, balita, serta kesehatan reproduksi wanita.'
-  },
-  {
-    title: 'Profesi Bidan',
-    slug: 'profesi-bidan',
-    level: 'Profesi',
-    faculty: 'FKES',
-    accreditation: 'Baik',
-    duration: '2 Semester',
-    degree: 'Bdn.',
-    image: 'https://images.pexels.com/photos/6303591/pexels-photo-6303591.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Pendidikan profesi bagi lulusan S1 Kebidanan untuk mendapatkan lisensi praktik mandiri serta kompetensi paripurna dalam pelayanan keluarga berencana.'
-  },
-  {
-    title: 'S1 Gizi',
-    slug: 's1-gizi',
-    level: 'Sarjana (S1)',
-    faculty: 'FKES',
-    accreditation: 'Baik',
-    duration: '8 Semester',
-    degree: 'S.Gz',
-    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Pendidikan ahli gizi atau nutrisionis klinis yang mampu menangani masalah gizi pada individu, rumah sakit (dietisien), masyarakat, dan industri pengelolaan makanan.'
-  },
-  {
-    title: 'D4 Teknologi Laboratorium Medis',
-    slug: 'd4-tlm',
-    level: 'Sarjana Terapan (D4)',
-    faculty: 'FKES',
-    accreditation: 'Baik',
-    duration: '8 Semester',
-    degree: 'S.Tr.Kes',
-    image: 'https://images.pexels.com/photos/3735957/pexels-photo-3735957.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Mencetak ATLM (Ahli Teknologi Laboratorium Medik) spesialis yang andal dalam pemeriksaan patologi klinis, mikrobiologi, biomolekuler (PCR), diagnostik di Rumah Sakit.'
-  },
-  {
-    title: 'D3 Keperawatan',
-    slug: 'd3-keperawatan',
-    level: 'Ahli Madya (D3)',
-    faculty: 'FKES',
-    accreditation: 'Baik Sekali',
-    duration: '6 Semester',
-    degree: 'A.Md.Kep',
-    image: 'https://images.pexels.com/photos/3952044/pexels-photo-3952044.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Program vokasi keperawatan legendaris yang memadukan teori terapan (30%) dan praktik langsung (70%). Lulusan sangat diminati oleh klinik dan rumah sakit seluruh Indonesia.'
-  },
-  {
-    title: 'D3 Farmasi',
-    slug: 'd3-farmasi',
-    level: 'Ahli Madya (D3)',
-    faculty: 'FKES',
-    accreditation: 'Baik Sekali',
-    duration: '6 Semester',
-    degree: 'A.Md.Farm',
-    image: 'https://images.pexels.com/photos/3683053/pexels-photo-3683053.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Membangun Tenaga Teknis Kefarmasian (TTK) yang terampil meracik obat, mengelola instalasi farmasi RS/Apotek, dan QA QC di industri obat/kosmetik.'
-  }
-])
+const modules = import.meta.glob('../data/programs/**/*.json', { eager: true, import: 'default' })
+
+const programs = computed(() => {
+  return Object.keys(modules).map(key => {
+    const data = modules[key]
+    const slug = key.split('/').pop().replace('.json', '')
+    return {
+      title: data.title,
+      slug,
+      level: levelMap[data.level] || data.level,
+      faculty: data.faculty,
+      accreditation: data.accreditation,
+      duration: data.duration,
+      degree: data.degree,
+      image: data.image,
+      description: data.shortDescription
+    }
+  })
+})
 
 const filteredPrograms = computed(() => {
   if (activeFaculty.value === 'ALL') {

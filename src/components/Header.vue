@@ -117,15 +117,15 @@
               </ul>
             </div>
             
-            <!-- Column 2: FKES (5 cols of 12) -->
+            <!-- Column 2: FIKES (5 cols of 12) -->
             <div class="col-span-5 p-7 bg-white border-l border-r border-gray-100">
               <div class="flex items-center space-x-3 mb-5 pb-3 border-b border-gray-100">
                 <span class="p-2 bg-red-50 text-[#c01c0c] rounded-lg">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                 </span>
                 <div>
-                  <h3 class="font-bold text-[#0b2b42] text-sm uppercase tracking-wider">FKES</h3>
-                  <p class="text-[10px] text-gray-500 font-semibold">Fakultas Kesehatan</p>
+                  <h3 class="font-bold text-[#0b2b42] text-sm uppercase tracking-wider">FIKES</h3>
+                  <p class="text-[10px] text-gray-500 font-semibold">Fakultas Ilmu Kesehatan</p>
                 </div>
               </div>
               
@@ -339,9 +339,9 @@
           </router-link>
         </div>
 
-        <!-- Mobile FKES -->
+        <!-- Mobile FIKES -->
         <div class="space-y-2">
-          <div class="font-bold text-[#195682] uppercase text-xs tracking-wider border-b pb-1">Fakultas Kesehatan (FKES)</div>
+          <div class="font-bold text-[#195682] uppercase text-xs tracking-wider border-b pb-1">Fakultas Ilmu Kesehatan (FIKES)</div>
           <router-link @click="isMobileMenuOpen = false" to="/program-studi/s1-keperawatan" class="block pl-4 py-1 text-sm text-gray-600 flex justify-between items-center">
             <span>S1 Keperawatan & Ners</span>
             <span class="text-[9px] bg-green-100 text-green-700 px-1.5 py-0.5 rounded font-semibold uppercase">Baik Sekali</span>

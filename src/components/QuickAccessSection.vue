@@ -356,20 +356,13 @@ const searchQuery = ref('')
 const isFocused = ref(false)
 const activeIndex = ref(-1)
 
-const searchItems = [
-  // Program Studi
-  { text: 'D3 Farmasi', path: '/program-studi/d3-farmasi', category: 'Program Studi', tags: ['farmasi', 'd3', 'obat', 'apoteker', 'resep'] },
-  { text: 'D3 Keperawatan', path: '/program-studi/d3-keperawatan', category: 'Program Studi', tags: ['keperawatan', 'd3', 'perawat', 'suster', 'medis'] },
-  { text: 'D4 Teknologi Laboratorium Medis', path: '/program-studi/d4-teknologi-laboratorium-medis', category: 'Program Studi', tags: ['tlm', 'laboratorium', 'd4', 'analis', 'darah', 'medis'] },
-  { text: 'Profesi Bidan', path: '/program-studi/profesi-bidan', category: 'Profesi', tags: ['bidan', 'persalinan', 'bayi', 'profesi', 'ibu'] },
-  { text: 'Profesi Ners', path: '/program-studi/profesi-ners', category: 'Profesi', tags: ['ners', 'perawat', 'profesi', 'suster', 'keperawatan'] },
-  { text: 'S1 Gizi', path: '/program-studi/s1-gizi', category: 'Program Studi', tags: ['gizi', 's1', 'makanan', 'diet', 'nutrisi'] },
-  { text: 'S1 Kebidanan', path: '/program-studi/s1-kebidanan', category: 'Program Studi', tags: ['kebidanan', 's1', 'bidan', 'ibu', 'anak'] },
-  { text: 'S1 Keperawatan', path: '/program-studi/s1-keperawatan', category: 'Program Studi', tags: ['keperawatan', 's1', 'perawat', 'suster'] },
-  { text: 'S1 Administrasi Kesehatan', path: '/program-studi/s1-administrasi-kesehatan', category: 'Program Studi', tags: ['administrasi', 's1', 'ak', 'manajemen', 'kesehatan', 'rs'] },
-  { text: 'S1 Ilmu Keolahragaan', path: '/program-studi/s1-ilmu-keolahragaan', category: 'Program Studi', tags: ['olahraga', 's1', 'keolahragaan', 'atlet', 'fisik', 'kebugaran'] },
-  { text: 'S1 Bisnis Digital', path: '/program-studi/s1-bisnis-digital', category: 'Program Studi', tags: ['bisnis', 'digital', 's1', 'startup', 'marketing', 'it', 'komputer'] },
+const levelCategoryMap = {
+  'Profesi': 'Profesi'
+}
 
+const programModules = import.meta.glob('../data/programs/**/*.json', { eager: true, import: 'default' })
+
+const baseSearchItems = [
   // Pimpinan & Rektor
   { text: 'Struktur Organisasi (Rektor DR. H. Soekardjo)', path: '/profil?tab=struktur', category: 'Profil', tags: ['rektor', 'pimpinan', 'struktur', 'organisasi', 'ketua', 'soekardjo', 'pendiri', 'pengurus'] },
   { text: 'Sambutan Ketua Yayasan / Rektor', path: '/profil?tab=sambutan', category: 'Profil', tags: ['sambutan', 'pidato', 'rektor', 'ketua', 'soekardjo'] },
@@ -385,16 +378,34 @@ const searchItems = [
 
   // Kontak & Kerja Sama
   { text: 'Kontak & Lokasi Kampus', path: '/kontak', category: 'Kontak', tags: ['kontak', 'alamat', 'telepon', 'email', 'peta', 'lokasi', 'banyuwangi'] },
-  { text: 'Kerja Sama & Kemitraan', path: '/kerjasama', category: 'Kemitraan', tags: ['kerjasama', 'mitra', 'kerja', 'rumahsakit', 'vps', 'instansi'] }
+  { text: 'Kerja Sama & Kemitraan', path: '/kerja-sama', category: 'Kemitraan', tags: ['kerjasama', 'mitra', 'kerja', 'rumahsakit', 'vps', 'instansi'] }
 ]
 
-const popularSearches = ['Rektor Soekardjo', 'Keperawatan', 'Beasiswa KIP', 'Bisnis Digital', 'Fasilitas Lab']
+const programSearchItems = computed(() => {
+  return Object.keys(programModules).map(key => {
+    const data = programModules[key]
+    const slug = key.split('/').pop().replace('.json', '')
+    const category = levelCategoryMap[data.level] || 'Program Studi'
+    const titleWords = data.title.toLowerCase().split(/\s+/)
+    const tags = [...titleWords, slug.replace(/-/g, ' '), data.faculty?.toLowerCase() || '']
+    return {
+      text: data.title,
+      path: `/program-studi/${slug}`,
+      category,
+      tags
+    }
+  })
+})
+
+const searchItems = computed(() => [...baseSearchItems, ...programSearchItems.value])
+
+const popularSearches = ['Rektor Soekardjo', 'Keperawatan', 'Beasiswa KIP', 'PMB 2026', 'Fasilitas Lab']
 
 const filteredResults = computed(() => {
   if (!searchQuery.value) return []
   const query = searchQuery.value.toLowerCase().trim()
   
-  return searchItems.filter(item => {
+  return searchItems.value.filter(item => {
     return (
       item.text.toLowerCase().includes(query) ||
       item.category.toLowerCase().includes(query) ||
