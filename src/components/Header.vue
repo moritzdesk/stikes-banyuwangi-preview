@@ -47,10 +47,10 @@
           </router-link>
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
-              <li><router-link to="/profil" class="nav-link-sub">Sejarah & Profil</router-link></li>
-              <li><router-link to="/profil" class="nav-link-sub">Visi & Misi</router-link></li>
-              <li><router-link to="/profil" class="nav-link-sub">Struktur Organisasi</router-link></li>
-              <li><router-link to="/profil" class="nav-link-sub">Sambutan Ketua</router-link></li>
+              <li><router-link to="/profil?tab=sejarah" class="nav-link-sub">Sejarah dan Profil</router-link></li>
+              <li><router-link to="/profil?tab=visi-misi" class="nav-link-sub">Visi & Misi</router-link></li>
+              <li><router-link to="/profil?tab=struktur" class="nav-link-sub">Struktur Organisasi</router-link></li>
+              <li><router-link to="/profil?tab=sambutan" class="nav-link-sub">Sambutan Rektor</router-link></li>
               <li><router-link to="/identitas" class="nav-link-sub">Identitas</router-link></li>
             </ul>
           </div>
@@ -315,8 +315,8 @@
         
         <div class="space-y-2">
           <div class="font-bold text-[#195682] uppercase text-xs tracking-wider">Tentang Kami</div>
-          <router-link @click="isMobileMenuOpen = false" to="/profil" class="block pl-4 py-1 text-sm text-gray-600">Selayang Pandang</router-link>
-          <router-link @click="isMobileMenuOpen = false" to="/profil" class="block pl-4 py-1 text-sm text-gray-600">Pimpinan</router-link>
+          <router-link @click="isMobileMenuOpen = false" to="/profil?tab=sejarah" class="block pl-4 py-1 text-sm text-gray-600">Selayang Pandang</router-link>
+          <router-link @click="isMobileMenuOpen = false" to="/profil?tab=sambutan" class="block pl-4 py-1 text-sm text-gray-600">Pimpinan</router-link>
           <router-link @click="isMobileMenuOpen = false" to="/identitas" class="block pl-4 py-1 text-sm text-gray-600">Identitas Kampus</router-link>
         </div>
 

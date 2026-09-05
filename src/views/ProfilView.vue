@@ -24,6 +24,15 @@
                   <svg v-if="activeTab === tab.id" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </button>
               </li>
+              <li>
+                <router-link 
+                  to="/identitas"
+                  class="w-full text-left px-4 py-3 rounded-lg transition-all font-medium flex justify-between items-center text-gray-600 hover:bg-gray-100"
+                >
+                  Identitas
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </router-link>
+              </li>
             </ul>
           </div>
         </aside>
@@ -33,12 +42,12 @@
           
           <!-- Sejarah -->
           <section v-if="activeTab === 'sejarah'" class="bg-white rounded-xl shadow-md p-8 animate-fade-in-up">
-            <h2 class="text-3xl font-bold text-[#0b2b42] mb-6">Sejarah Universitas Dr. Soekardjo Banyuwangi</h2>
+            <h2 class="text-3xl font-bold text-[#0b2b42] mb-6">Sejarah dan Profil</h2>
             <div class="prose max-w-none text-gray-700 space-y-4">
-              <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-64 object-cover rounded-xl mb-6 shadow-sm" alt="Gedung Lama" />
+              <img src="/assets/uploads/gerbang-depan.jpeg" class="w-full h-auto object-contain rounded-xl mb-6 shadow-sm" alt="Gerbang Depan Universitas Dr. Soekardjo" />
               <div v-html="profilData.sejarah.replace(/\n\n/g, '<br><br>')" class="leading-relaxed"></div>
               <div class="bg-blue-50 border-l-4 border-[#195682] p-4 my-6 italic text-gray-700">
-                "Bertekad menjadi sentra pendidikan tenaga kesehatan yang berakhlak mulia, berjiwa entrepreneur, dan kompeten secara global."
+                "We Create Graduates Who Serve The World."
               </div>
             </div>
           </section>
@@ -83,7 +92,7 @@
               <div class="border border-gray-200 rounded-xl p-6 hover:border-[#f9ac42] hover:shadow-md transition-all">
                 <h4 class="font-bold text-lg text-[#195682] mb-2">Pimpinan Institusi</h4>
                 <ul class="text-gray-600 space-y-2 text-sm">
-                  <li><span class="font-semibold text-gray-800">Ketua:</span> Dr. H. DR (HC) Ners. Soetomo, S.Kep., M.Kes</li>
+                  <li><span class="font-semibold text-gray-800">Rektor:</span> Dr. Drs. H. Soekardjo, S.Kep., MM., MBA</li>
                   <li><span class="font-semibold text-gray-800">Wakil Ketua 1:</span> Ns. Budi Santoso, M.Kep</li>
                   <li><span class="font-semibold text-gray-800">Wakil Ketua 2:</span> Hj. Siti Robiah, SST., M.Kes</li>
                 </ul>
@@ -101,16 +110,16 @@
 
           <!-- Sambutan -->
           <section v-if="activeTab === 'sambutan'" class="bg-white rounded-xl shadow-md p-8 animate-fade-in-up">
-            <h2 class="text-3xl font-bold text-[#0b2b42] mb-8">Sambutan Ketua</h2>
+            <h2 class="text-3xl font-bold text-[#0b2b42] mb-8">Sambutan Rektor</h2>
             
             <div class="flex flex-col lg:flex-row gap-8 items-start">
               <div class="w-full lg:w-1/3 flex-shrink-0">
                 <div class="rounded-xl overflow-hidden shadow-lg border-4 border-white mb-4">
-                  <img :src="profilData.fotoKetua" alt="Ketua" class="w-full h-auto object-cover aspect-[3/4]" />
+                  <img :src="profilData.fotoKetua" alt="Rektor" class="w-full h-auto object-cover aspect-[3/4]" />
                 </div>
                 <div class="text-center">
                   <h4 class="font-bold text-lg text-gray-900">{{ profilData.namaKetua }}</h4>
-                  <p class="text-sm text-[#f9ac42] font-semibold">Ketua Universitas Dr. Soekardjo Banyuwangi</p>
+                  <p class="text-sm text-[#f9ac42] font-semibold">Rektor Universitas Dr. Soekardjo (UNIDSOE)</p>
                 </div>
               </div>
               
@@ -144,10 +153,10 @@ const route = useRoute()
 const activeTab = vueRef('sejarah')
 
 const tabs = [
-  { id: 'sejarah', label: 'Sejarah & Profil' },
+  { id: 'sejarah', label: 'Sejarah dan Profil' },
   { id: 'visi-misi', label: 'Visi & Misi' },
   { id: 'struktur', label: 'Struktur Organisasi' },
-  { id: 'sambutan', label: 'Sambutan Ketua' }
+  { id: 'sambutan', label: 'Sambutan Rektor' }
 ]
 
 const updateTabFromQuery = () => {

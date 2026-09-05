@@ -3,7 +3,7 @@
     <!-- Page Header -->
     <PageHeader 
       title="Identitas Universitas" 
-      :breadcrumbs="[{ label: 'Profil', to: '/profil' }, { label: 'Identitas' }]"
+      :breadcrumbs="[{ label: 'Profil', path: '/profil' }, { label: 'Identitas' }]"
       bgImage="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
     />
 
