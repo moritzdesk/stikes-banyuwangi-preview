@@ -1,12 +1,103 @@
 {
   "title": "Profesi Bidan",
+  "faculty": "FIKES",
   "level": "Profesi",
-  "degree": "Bidan (Bd.)",
+  "degree": "Bdn",
   "accreditation": "Baik",
   "duration": "2 Semester / 1 Tahun",
   "image": "https://images.pexels.com/photos/3845625/pexels-photo-3845625.jpeg",
   "shortDescription": "Pendidikan tahap profesi untuk bidan sesuai amanat UU Kebidanan untuk legalitas praktik mandiri seutuhnya.",
+  "profilProgramStudi": [
+    "Program studi berbasis pada asuhan kebidanan yang komprehensif , berbasis bukti dengan keunggulan berpusat pada asuhan kebidanan komplementer berlandsakan aspek spiritualitas",
+    "Integrasi evidence-based practice dalam pembelajaran",
+    "Dosen kompeten dengan latar belakang akademik dan klinis",
+    "Fasilitas laboratorium kebidanan yang lengkap",
+    "Program praktik klinik di berbagai institusi kesehatan",
+    "Peluang kerja sama nasional dan internasional",
+    "Penguatan soft skills: komunikasi terapeutik, empati, dan spiritual care,.",
+    "Pendekatan pembelajaran student-centered learning",
+    "Kegiatan pengabdian masyarakat berbasis komunitas pada perempuan di sepanjang siklus kehidupan.",
+    "Persiapan menghadapi uji kompetensi nasional (UKOM Profesi Bidan)"
+  ],
+  "visi": "Menjadi Program Studi Pendidikan Bidan yang menghasilkan bidan profesi berdaya saing global, dengan keunggulan di bidang asuhan kebidanan komplementer berlandaskan pada aspek spiritualitas",
+  "misi": [
+    "Menyelenggarakan proses pendidikan akademik dan profesi bidan sesuai dengan perkembangan keilmuan dan teknologi berlandaskan nilai spiritualitas serta asuhan kebidanan komplementer;",
+    "Melaksanakan penelitian di bidang kesehatan berbasis bukti ilmiah dan berorientasi pada kebutuhan masyarakat di bidang kebidanan komplementer;",
+    "Menyelenggarakan kegiatan pengabdian masyarakat yang berkontribusi dalam pembangunan kesehatan dengan mengacu kepada hasil penelitian dan kebidanan komplementer;",
+    "Melakukan kerja sama dengan institusi dan lembaga tingkat nasional dan internasional serta wahana praktik sebagai optimalisasi kegiatan Tridarma Perguruan Tinggi."
+  ],
+  "keunggulan": "asuhan kebidanan komplementer berlandaskan spiritualitas",
+  "pembelajaran": "Mahasiswa memulai dengan tahap akademik (Sarjana Kebidanan) yang berfokus pada teori dasar fundamental bidan, ilmu biomedik, dan keterampilan klinik dasar melalui pembelajaran kelas dan praktikum laboratorium. Setelah menyelesaikan tahap ini, mahasiswa melanjutkan ke tahap profesi Bidan, di mana mereka menjalani praktik klinik secara langsung di rumah sakit dan fasilitas kesehatan lainnya. Selama proses ini, mahasiswa akan mengaplikasikan ilmu secara nyata, mengasah keterampilan klinis, serta mengembangkan sikap profesional dan spiritual dalam memberikan asuhan kebidanan.",
+  "masaStudiDetail": [
+    "Total SKS: ± 148 SKS (Sarjana) + ± 38 SKS (Profesi Bidan)",
+    "Lama Studi Sarjana: 8 semester (4 tahun)",
+    "Lama Studi Profesi Bidan: 2 semester (1 tahun)",
+    "Total Lama Studi: ± 5 tahun",
+    "Program percepatan (akselerasi) opsional jika tersedia",
+    "Peluang pertukaran mahasiswa (student exchange)"
+  ],
+  "saranaAkademik": [
+    "Laboratorium Keterampilan Dasar Praktik Kebidanan",
+    "Laboratorium Asuhan Pranikah Prakonsepsi",
+    "Laboratorium Asuhan Kehamilan",
+    "Laboratorium Asuhan Persalinan",
+    "Laboratorium Asuhan Bayi Balita dan Anak Prasekolah",
+    "Laboratorium Asuhan pelayanan KB dan Kontrasepsi",
+    "Laboratorium Kesehatan Reproduksi",
+    "Laboratorium Asuhan Gawat Darurat maternal neonatal",
+    "Laboratorium Komunitas",
+    "Perpustakaan digital & e-journal akses internasional",
+    "Skill lab dengan manekin simulasi",
+    "Ruang OSCE (Objective Structured Clinical Examination)",
+    "Sistem e-learning kampus"
+  ],
+  "praktikLapangan": "Mahasiswa mulai praktik klinik secara bertahap sejak semester awal di semester 2 dalam bentuk praktik dasar di Rumah Sakit untuk pengenalan dini keterampilan dasar bidan, dan berlanjut praktik di semester 3 , 4,5 diberbagainlahan praktik lainnya seperti Puseskmas, Rumah Sakit dan TPMB , Pada tahap profesi Bidan mahasiswa menjalani praktik intensif di berbagai stase untuk memberikan pelayanan kepada perempuan disepanjang siklus kehidupan. praktik dilakukan dengan sistem rotasi untuk memastikan pengalaman yang komprehensif.",
+  "jejaringKemitraan": [
+    "Rumah Sakit Umum Daerah (RSUD)",
+    "Rumah Sakit Swasta Nasional",
+    "Puskesmas dan Klinik",
+    "Institusi pelayanan kesehatan komunitas",
+    "Lembaga kesehatan internasional (jika ada MoU)",
+    "Dinas Kesehatan",
+    "AIPKIND",
+    "BKKBN Jatim",
+    "PD IBI Jatim dan PC IBI Jatim",
+    "Instansi Layanan Kesehatan di BUMN"
+  ],
+  "profilLulusan": "Sarjana Kebidanan (S.Keb)\nProfesi Bidan (Bdn.)",
   "competence": "Penguasaan 100% penanganan persalinan normal dan patologis rujukan, pengarahan komplementer, dan sertifikasi APN.",
   "prospects": "Buka Praktik Mandiri Bidan (PMB), Bidan Koordinator Rumah Sakit Ibu & Anak.",
-  "faculty": "FIKES"
+  "karierAlumni": [
+    {
+      "name": "Ketua IBI kabupaten Banyuwangi (Bd. Yulianingsih, S.ST.MM.Kes)",
+      "position": "",
+      "place": ""
+    },
+    {
+      "name": "Kepala Puskesmas Sobo, PKM Benculuk, PKM Tegalsari, PK Parijatah kulon, PKM Tapanrejo",
+      "position": "",
+      "place": ""
+    },
+    {
+      "name": "Kepala ruangan ruang bersalin RSUD Balmbangan",
+      "position": "",
+      "place": "RSUD Balmbangan"
+    },
+    {
+      "name": "Kepala ruangan ruang RG RSUD Blambangan",
+      "position": "",
+      "place": "RSUD Blambangan"
+    },
+    {
+      "name": "Kepala ruangan ruang bersalin RSUD Genteng",
+      "position": "",
+      "place": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "–",
+      "answer": "–"
+    }
+  ]
 }

@@ -31,3 +31,6 @@ graphify-out/
 # TinaCMS
 .tina/__generated__
 tina/__generated__
+
+# Referensi lokal scraping prodi (jangan di-commit)
+tmp_prodi/

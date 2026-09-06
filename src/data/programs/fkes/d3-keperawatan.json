@@ -1,12 +1,173 @@
 {
-  "shortDescription": "Program vokasi keperawatan kebanggaan dengan rasio kelulusan uji kompetensi terbaik. Lulusan sangat cekatan di perawatan lapangan. yak yak yak",
-  "level": "D3",
-  "prospects": "Perawat Pelaksana di Rumah Sakit, Klinik perusahaan luar jawa, Asisten Perawat di Jepang (EPA).",
-  "competence": "Tindakan kegawatdaruratan, observasi klinis dasar, dan bantuan hidup dasar.",
-  "degree": "A.Md.Kep",
-  "duration": "6 Semester / 3 Tahun",
   "title": "D3 Keperawatan",
-  "accreditation": "A / Unggul",
+  "faculty": "FIKES",
+  "level": "D3",
+  "degree": "A.Md.Kep",
+  "accreditation": "Baik Sekali",
+  "duration": "6 Semester / 3 Tahun",
   "image": "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg",
-  "faculty": "FIKES"
+  "shortDescription": "Program vokasi keperawatan kebanggaan dengan rasio kelulusan uji kompetensi terbaik. Lulusan sangat cekatan di perawatan lapangan.",
+  "profilProgramStudi": "Prodi D3 Keperawatan UNIDSOE merupakan program pendidikan vokasi keperawatan mencetak perawat vokasi yang memiliki keunggulan pada keperawatan holistik. Lulusan kami tersebar di RS di seluruh Indonesia maupun luar negeri serta sukses membuka praktek mandiri bidang keperawatan holistik. Proses pembelajaran teori dan praktik yang diterapkan interaktif, holistik, integratif berbasis kebutuhan layanan kesehatan, serta didukung kegiatan penelitian dan pengabdian masyarakat yang berfokus keperawatan holistik. Tujuan utamanya adalah menghasilkan lulusan perawat vokasi yang religius, beretika, berkarakter, serta mampu memberikan asuhan keperawatan secara komprehensif dan berdaya saing di tingkat nasional maupun global.",
+  "visi": "Menjadi Program Studi Diploma Tiga Keperawatan yang berdaya saing global, dengan  keunggulan pada Keperawatan Holistik dengan mengedepankan aspek spiritual tahun 2025",
+  "misi": [
+    "Menyelenggarakan pendidikan yang unggul pada keperawatan holistik dengan mengedepankan aspek spiritual.",
+    "Menyelenggarakan penelitian yang unggul pada keperawatan holistik dengan mengedepankan aspek spiritual.",
+    "Menyelenggarakan pengabdian kepada masyarakat (PkM) yang unggul pada keperawatan holistik dengan mengedepankan aspek spiritual.",
+    "Menyelenggarakan kerja sama dengan berbagai lembaga dalam negeri maupun luar negeri dalam mewujudkan tridharma perguruan tinggi."
+  ],
+  "keunggulan": [
+    "Memiliki keunggulan spesifik pada keperawatan holistik berbasis spiritual yang belum banyak dimiliki prodi lain.",
+    "Lulusan tidak hanya kompeten secara klinis, tetapi juga unggul dalam pendekatan humanis dan spiritual care.",
+    "Adanya program pengabdian masyarakat inovatif yang terintegrasi pada pembelajaran.",
+    "Jejaring kerja sama dengan berbagai institusi kesehatan dalam dan luar negeri.",
+    "Peluang pengembangan diri mahasiswa melalui kegiatan akademik dan non-akademik yang terarah.",
+    "Menghasilkan lulusan yang siap kerja (job ready) sesuai kebutuhan fasilitas pelayanan kesehatan."
+  ],
+  "pembelajaran": "Alur pembelajaran pada Prodi D3 Keperawatan dimulai dari penguasaan konsep dasar keperawatan dan ilmu penunjang, dilanjutkan dengan praktik keterampilan di laboratorium (OSCE) untuk melatih kemampuan klinis secara bertahap. Selanjutnya, mahasiswa menjalani praktik klinik di fasilitas pelayanan kesehatan agar mampu mengaplikasikan asuhan keperawatan secara langsung kepada pasien dengan pendekatan holistik yang mencakup aspek bio-psiko-sosial dan spiritual. Selama proses tersebut, mahasiswa juga dilibatkan dalam kegiatan penelitian sederhana dan pengabdian masyarakat untuk meningkatkan kemampuan berpikir kritis dan kepedulian sosial, sehingga menjadi lulusan yang kompeten, profesional, dan siap kerja di dunia pelayanan kesehatan.",
+  "masaStudiDetail": "Prodi D3 Keperawatan memiliki beban studi 115 SKS yang harus ditempuh oleh mahasiswa sesuai dengan kurikulum nasional D3 Keperawatan 2022. Masa studi 3 tahun (6 semester) dengan pembelajaran yang terstruktur dari teori, praktik laboratorium, hingga praktik klinik dan praktik lapangan. Prodi memberikan keleluasaan pada mahasiswa mengembangkan potensinya melalui program-program kompetitif nasional seperti Program Kreativitas Mahasiswa serta di berbagai kegiatan UKM di lingkungan kampus serta peluang pengembangan melalui kegiatan penelitian dan pengabdian masyarakat. Didukung juga dengan kerja sama institusi dalam dan luar negeri, mahasiswa memiliki kesempatan memperluas wawasan dan pengalaman praktik, sehingga lulusan lebih siap bersaing di dunia kerja.",
+  "praktikLapangan": "Mahasiswa Prodi D3 Keperawatan mulai melaksanakan praktik klinik semester 2 untuk mencapai kompetensi MK keperawatan dasar selama 1 bulan di RS Blambangan setelah dinyatakan lulus teori dan praktik laboratorium (skill lab). Ini adalah pengalaman praktik klinik pertama kali. Pada semester 3, mahasiswa melakukan praktik klinik keperawatan dasar dengan pendampingan ketat pada RS Blambangan Banyuwangi. Dilanjutkan pengalaman praktik semester 4 pada RS tipe A untuk memenuhi kompetensi praktik klinik keperawatan anak, praktik klinik keperawatan maternitas, praktik klinik KMB, praktik klinik jiwa. Pada semester 5 praktik lapangan keluarga gerontik. Semester 6 mahasiswa melanjutkan KKN tematik satu institusi, di mana mahasiswa mulai mengelola asuhan keperawatan secara komprehensif. Selama praktik lapangan, mahasiswa dibimbing oleh dosen dan preseptor klinik, serta dievaluasi berdasarkan pencapaian kompetensi, sikap profesional, dan kemampuan memberikan asuhan keperawatan secara holistik.",
+  "jejaringKemitraan": [
+    "Kami telah menjalin MoU resmi dengan berbagai institusi, diantaranya:",
+    "RS Saiful Anwar Malang sebagai tempat praktik dan serapan kerja alumni.",
+    "RSJ Dr. Radjiman Wediodiningrat Lawang sebagai tempat praktik.",
+    "RSUD Blambangan Banyuwangi sebagai tempat praktik dan serapan kerja alumni.",
+    "Dinas Kesehatan Banyuwangi sebagai tempat praktik dan serapan kerja alumni.",
+    "Dinas Sosial Provinsi Jawa Timur bidang penelitian.",
+    "RSUD Genteng Banyuwangi sebagai tempat praktik dan serapan kerja alumni.",
+    "RSI Fatimah sebagai tempat praktik dan serapan kerja alumni.",
+    "RS Al Huda sebagai tempat praktik dan serapan kerja alumni."
+  ],
+  "profilLulusan": [
+    "Anda disiapkan untuk menjadi:",
+    "Pemberi asuhan keperawatan (care provider) sebagai perawat yang mampu memberikan asuhan keperawatan pada individu, keluarga, dan kelompok khusus di tatanan klinik dan komunitas untuk memenuhi kebutuhan dasar manusia yang meliputi aspek bio, psiko, sosio, kultural, dan spiritual melalui penerapan keperawatan komplementer (acupoint therapy, cupping care therapy, herbal therapy) dalam kondisi sehat, sakit, serta kegawatdaruratan berdasarkan ilmu dan teknologi keperawatan dengan memegang teguh kode etik perawat, undang-undang yang berlaku, dan nilai-nilai spiritual.",
+    "Pendidik klien (educator) sebagai perawat yang mampu memberikan pendidikan kesehatan sebagai upaya promosi dan prevensi kesehatan kepada individu, keluarga, dan kelompok khusus di tatanan klinik dan komunitas dengan mengedepankan nilai-nilai spiritual.",
+    "Pengelola dan pemimpin asuhan keperawatan (manager and leader) sebagai perawat yang mampu menggerakkan diri dan klien serta berperan aktif dalam manajemen keperawatan pada individu, keluarga, kelompok, dan masyarakat sesuai dengan standar asuhan keperawatan terkini sesuai tanggung jawab dan kewenangannya.",
+    "Peneliti (researcher) sebagai perawat yang mampu melakukan penelitian melalui asuhan keperawatan berdasarkan etik dan bukti ilmiah dengan referensi nasional dan internasional terbarukan untuk meningkatkan kualitas asuhan keperawatan sebagai implementasi belajar sepanjang hayat.",
+    "Lulusan Program Studi Diploma Tiga Keperawatan akan memperoleh gelar akademik Ahli Madya Keperawatan (A.Md.Kep). Dengan bekal kompetensi vokasional dan keterampilan klinis yang dimiliki, lulusan dapat berkarier sebagai perawat pelaksana di rumah sakit, puskesmas, dan klinik; asisten perawat di layanan spesialis (seperti IGD, rawat inap, atau rawat jalan); perawat home care; serta tenaga kesehatan di komunitas (community health nursing). Selain itu, lulusan juga berpeluang bekerja di fasilitas pelayanan kesehatan swasta maupun pemerintah, panti wreda, klinik perusahaan/industri, serta dapat mengembangkan karier sebagai caregiver profesional dengan keunggulan pada keperawatan holistik atau melanjutkan pendidikan ke jenjang yang lebih tinggi di bidang keperawatan."
+  ],
+  "competence": "Tindakan kegawatdaruratan, observasi klinis dasar, dan bantuan hidup dasar.",
+  "prospects": "Perawat Pelaksana di Rumah Sakit, Klinik perusahaan luar jawa, Asisten Perawat di Jepang (EPA).",
+  "karierAlumni": [
+    {
+      "name": "Dita Silvi Octaviani",
+      "position": "PJ Perawat",
+      "place": "Klinik Nanita Pro"
+    },
+    {
+      "name": "Hesti Fepti Sari, And.Kep",
+      "position": "Perawat",
+      "place": "Puskesmas Yosomulyo"
+    },
+    {
+      "name": "Muflih Kurniawan",
+      "position": "Perawat Pelaksana",
+      "place": "PKM Sukapura, Kabupaten Probolinggo"
+    },
+    {
+      "name": "Defi Nurkholifah, Amd.Kep",
+      "position": "Perawat Pelaksana",
+      "place": "RS Yasmin Banyuwangi"
+    },
+    {
+      "name": "Angghy Eka Fendhy",
+      "position": "Kabid Penunjang",
+      "place": "Rahayu Medika"
+    },
+    {
+      "name": "Denok Oktavia Trisnaningt",
+      "position": "Perawat",
+      "place": "RS Bhayangkara Pontianak"
+    },
+    {
+      "name": "Pandurasta",
+      "position": "Perawat Pelaksana",
+      "place": "RSUD Negara"
+    },
+    {
+      "name": "Lifa Setiawati",
+      "position": "Perawat Pelaksana",
+      "place": "RS Al Huda"
+    },
+    {
+      "name": "Ni Putu Mei Wahyuni",
+      "position": "Perawat",
+      "place": "RSUD Bali Mandara"
+    },
+    {
+      "name": "Novi Karmila",
+      "position": "Perawat",
+      "place": "RSUD Kabupaten Buleleng"
+    },
+    {
+      "name": "Choirul",
+      "position": "Pramubakti / Perawat",
+      "place": "Kantor Kesehatan Pelabuhan Kelas II Probolinggo (Wilker Tanjung Wangi)"
+    },
+    {
+      "name": "Nurul Hidayati, Amd.Kep",
+      "position": "Perawat",
+      "place": "RSUD Blambangan"
+    },
+    {
+      "name": "Ilham Adi Pradana",
+      "position": "Praktik Mandiri",
+      "place": "Siliragung"
+    },
+    {
+      "name": "Tria Agustin Sriwahyuningsih",
+      "position": "Perawat Pelaksana",
+      "place": "RSUD Blambangan"
+    },
+    {
+      "name": "Ira Mirnawati",
+      "position": "Perawat Pelaksana",
+      "place": "RS Al Huda Genteng"
+    },
+    {
+      "name": "Dwi Hendarwati",
+      "position": "Perawat Pelaksana",
+      "place": "UPTD Puskesmas Songgon"
+    },
+    {
+      "name": "Rachmawati Fajrin",
+      "position": "BKO",
+      "place": "Kantor Kesehatan Pelabuhan Kelas II Probolinggo (Wilker Tanjung Wangi)"
+    },
+    {
+      "name": "Eka Fitri Frediati",
+      "position": "Perawat",
+      "place": "RSUD Blambangan Banyuwangi"
+    },
+    {
+      "name": "Dewi Aliyanti",
+      "position": "Perawat Pelaksana",
+      "place": "RS Al Huda Genteng"
+    },
+    {
+      "name": "Irma Indriana",
+      "position": "Perawat Pelaksana",
+      "place": "RSUD Blambangan"
+    },
+    {
+      "name": "Siti Maesaroh",
+      "position": "Perawat",
+      "place": "RS Yasmin"
+    },
+    {
+      "name": "Satiti Bunga Pratiwi",
+      "position": "Perawat",
+      "place": "Klinik Amal Sehat"
+    },
+    {
+      "name": "May Dinda Febriyanti",
+      "position": "Perawat",
+      "place": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apakah saat ini kuliah D3 Keperawatan masih relevan mengingat ada isu akan ditutupnya prodi D3 Keperawatan?",
+      "answer": "Wacana tentang pendidikan D3 dihapuskan sudah bergulir sangat lama sejak tahun 2000-an. Namun, sejauh ini belum ada implikasi nyata. Keberadaan Prodi D3 Keperawatan dapat dipengaruhi oleh beberapa hal, meliputi:\n1. Regulasi\n2. Demand\n3. Kondisi sosial\nSecara regulasi, pendidikan kesehatan terdiri dari pendidikan vokasi, akademik, dan profesi. Maka, penghapusan pendidikan vokasi akan menyalahi undang-undang kesehatan.\nSecara sosial (politik), banyak pihak yang masih menginginkan pendidikan vokasi. Poltekkes sebagai pionir pendidikan kesehatan masih sangat dominan untuk mempertahankan pendidikan vokasi.\nPada akhirnya, semua kembali pada kebutuhan (need) dan permintaan (demand) di masyarakat."
+    }
+  ]
 }

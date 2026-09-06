@@ -1,12 +1,111 @@
 {
   "title": "S1 Keperawatan",
+  "faculty": "FIKES",
   "level": "S1",
   "degree": "S.Kep",
   "accreditation": "Baik Sekali",
   "duration": "8 Semester / 4 Tahun",
   "image": "https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
-  "shortDescription": "Program studi ini mendidik perawat berjenjang sarjana (S1) dengan landasan etika kuat, keterampilan klinis unggul, dan kesiapan pengabdian pada masyarakat di berbagai tingkatan mulai dari keluarga, komunitas asuh, panti dan utamanya RS Daerah hingga RS Tipe A.",
+  "shortDescription": "Holistic Nursing Excellence with Spiritual Integrity for Global Competitiveness | Perawat Holistik, Spiritual, dan Siap Bersaing di Asia.",
+  "profilProgramStudi": [
+    "Kurikulum berbasis keperawatan holistik dan spiritual",
+    "Integrasi evidence-based practice dalam pembelajaran",
+    "Dosen kompeten dengan latar belakang akademik dan klinis",
+    "Fasilitas laboratorium keperawatan yang lengkap",
+    "Program praktik klinik di berbagai institusi kesehatan",
+    "Peluang kerja sama nasional dan internasional",
+    "Penguatan soft skills: komunikasi terapeutik, empati, dan spiritual care",
+    "Pendekatan pembelajaran student-centered learning",
+    "Kegiatan pengabdian masyarakat berbasis komunitas",
+    "Persiapan menghadapi uji kompetensi nasional (UKOM Ners)"
+  ],
+  "visi": "Menjadi Program Studi Pendidikan Ners yang Unggul di Bidang Keperawatan Holistik Berbasis Spiritual Serta Berdaya Saing Asia Tahun 2025.",
+  "misi": [
+    "Menyelenggarakan pendidikan akademik dan profesi Ners dengan keunggulan keperawatan holistik berlandaskan spiritual.",
+    "Menyelenggarakan penelitian dan pengabdian kepada masyarakat dengan keunggulan keperawatan holistik berlandaskan spiritual.",
+    "Menyelenggarakan kerja sama dalam negeri dan luar negeri sebagai optimalisasi kegiatan tridharma perguruan tinggi."
+  ],
+  "tujuan": [
+    "Menghasilkan lulusan yang unggul dalam keperawatan holistik berlandaskan spiritual.",
+    "Menghasilkan penelitian dan pengabdian kepada masyarakat yang memiliki keunggulan keperawatan holistik berlandaskan spiritual.",
+    "Menghasilkan kerja sama dalam negeri dan luar negeri sebagai optimalisasi kegiatan tridharma perguruan tinggi."
+  ],
+  "pembelajaran": "Mahasiswa memulai dengan tahap akademik (Sarjana Keperawatan) yang berfokus pada teori dasar keperawatan, ilmu biomedik, dan keterampilan klinik dasar melalui pembelajaran kelas dan praktikum laboratorium. Setelah menyelesaikan tahap ini, mahasiswa melanjutkan ke tahap profesi Ners, di mana mereka menjalani praktik klinik secara langsung di rumah sakit dan fasilitas kesehatan lainnya. Selama proses ini, mahasiswa akan mengaplikasikan ilmu secara nyata, mengasah keterampilan klinis, serta mengembangkan sikap profesional dan spiritual dalam memberikan asuhan keperawatan.",
+  "masaStudiDetail": [
+    "Total SKS: ± 144 SKS (Sarjana) + ± 36 SKS (Profesi Ners)",
+    "Lama Studi Sarjana: 8 semester (4 tahun)",
+    "Lama Studi Profesi Ners: 2 semester (1 tahun)",
+    "Total Lama Studi: ± 5 tahun",
+    "Program percepatan (akselerasi) opsional jika tersedia",
+    "Peluang pertukaran mahasiswa (student exchange)"
+  ],
+  "saranaAkademik": [
+    "Laboratorium Keperawatan Dasar",
+    "Laboratorium Keperawatan Medikal Bedah",
+    "Laboratorium Keperawatan Maternitas",
+    "Laboratorium Keperawatan Anak",
+    "Laboratorium Keperawatan Jiwa",
+    "Laboratorium Komunitas",
+    "Perpustakaan digital & e-journal akses internasional",
+    "Skill lab dengan manekin simulasi",
+    "Ruang OSCE (Objective Structured Clinical Examination)",
+    "Sistem e-learning kampus"
+  ],
+  "praktikLapangan": "Mahasiswa mulai praktik klinik secara bertahap sejak semester menengah (semester 4–5) dalam bentuk praktik dasar. Pada tahap profesi Ners, mahasiswa menjalani praktik intensif di berbagai departemen seperti IGD, ICU, maternitas, anak, komunitas, dan keperawatan jiwa. Praktik dilakukan dengan sistem rotasi untuk memastikan pengalaman yang komprehensif.",
+  "jejaringKemitraan": [
+    "Rumah Sakit Umum Daerah (RSUD)",
+    "Rumah Sakit Swasta Nasional",
+    "Puskesmas dan Klinik",
+    "Institusi pelayanan kesehatan komunitas",
+    "Lembaga kesehatan internasional (jika ada MoU)",
+    "Dinas Kesehatan",
+    "Instansi Layanan Kesehatan di BUMN"
+  ],
+  "profilLulusan": [
+    "Gelar Akademik: S.Kep (Sarjana Keperawatan)",
+    "Gelar Profesi: Ners (Ns.)",
+    "Perawat klinis di rumah sakit",
+    "Perawat komunitas",
+    "Perawat home care",
+    "Perawat kesehatan kerja (perusahaan)",
+    "Peneliti keperawatan",
+    "Dosen (dengan studi lanjut)",
+    "Konsultan keperawatan holistik & spiritual care"
+  ],
   "competence": "Kompetensi Utama Lulusan:\n- Memberikan Asuhan Keperawatan Pasien Bedah, Penyakit Dalam, dll.\n- Berperan aktif dalam program pencegahan risiko penyakit menular maupun tidak menular.\n- Menjalankan fungsi manajerial perawatan tingkat dasar (PN/Kepala Ruang).\n- Mengembangkan penelitian evidence-based practice.",
   "prospects": "Peluang Karir Lulusan kami dapat bekerja pada:\n- Rumah Sakit tipe A, B, C dan D Pemerintah maupun Swasta\n- Klinik Swasta mandiri atau Klinik Perusahaan\n- Dinas Kesehatan, Puskesmas, dan Asuransi Kesehatan\n- Menjadi Perawat Pekerja Migran di Jepang, Arab Saudi dan Kuwait\n- Peneliti",
-  "faculty": "FIKES"
+  "karierAlumni": [
+    {
+      "name": "Khomsariya",
+      "position": "Ketua PPNI DPLN Kuwait",
+      "place": "Rumah Sakit Pemerintah Kuwait"
+    },
+    {
+      "name": "Wahyu Danang",
+      "position": "Ka Diklat Rumah Sakit",
+      "place": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apakah lulusan langsung bisa bekerja di rumah sakit?",
+      "answer": "Ya, setelah lulus profesi Ners dan mengikuti uji kompetensi, lulusan dapat bekerja sebagai perawat profesional."
+    },
+    {
+      "question": "Apakah program ini sulit?",
+      "answer": "Program ini menantang karena menggabungkan teori dan praktik, tetapi didukung oleh dosen dan fasilitas yang memadai."
+    },
+    {
+      "question": "Apakah ada praktik langsung ke pasien?",
+      "answer": "Ada. Mahasiswa akan menjalani praktik klinik di rumah sakit dan fasilitas kesehatan lainnya."
+    },
+    {
+      "question": "Apakah bisa bekerja di luar negeri?",
+      "answer": "Bisa, dengan memenuhi persyaratan tambahan seperti sertifikasi internasional dan kemampuan bahasa."
+    },
+    {
+      "question": "Apa keunggulan dibanding kampus lain?",
+      "answer": "Fokus pada keperawatan holistik berbasis spiritual yang jarang dimiliki program lain."
+    }
+  ]
 }

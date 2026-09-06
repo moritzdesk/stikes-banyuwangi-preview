@@ -1,12 +1,97 @@
 {
   "title": "D4 Teknologi Laboratorium Medis",
+  "faculty": "FIKES",
   "level": "D4",
   "degree": "S.Tr.Kes",
   "accreditation": "Baik",
   "duration": "8 Semester / 4 Tahun",
   "image": "https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg",
-  "shortDescription": "Pendidikan Sarjana Terapan bagi para ahli mikrobiologi mikroskopis dan penganalisa lab kesehatan berstandar presisi.",
+  "shortDescription": "Pendidikan Sarjana Terapan bagi para ahli laboratorium medik terampil yang bertugas di balik layar diagnosis penyakit.",
+  "profilProgramStudi": "Program Studi Sarjana Terapan (D4) Teknologi Laboratorium Medis Universitas Dr. Soekardjo merupakan pendidikan tinggi vokasi yang berdedikasi untuk mencetak ahli laboratorium medik terampil yang bertugas di balik layar diagnosis penyakit dan memastikan akurasi hasil laboratorium sebagai landasan paling krusial dalam penentuan tindakan medis/pengobatan. Fokus pembelajaran pada program ini mencakup: pengambilan dan pengelolaan sampel klinis manusia,  persiapan dan keamanan pasien, teknik pemeriksaan laboratorium, penguasaan manajerial laboratorium, manajemen mutu terpadu, serta keahlian diagnostik komprehensif tingkat lanjut—meliputi analisis imunologi klinis, biologi molekuler, hingga pengembangan riset terapan yang memanfaatkan metodologi mutakhir seperti pendekatan in silico, in vitro, dan in vivo.",
+  "visi": "Menjadi pusat Pendidikan sarjana sains terapan Teknologi Laboratorium Medik yang berdaya saing global, berlandaskan pada spiritualitas, serta unggul dan profesional di bidang penyakit infeksi",
+  "misi": [
+    "Menyelenggarakan proses pendidikan teknologi laboratorium medik yang berdaya saing global berorientasi pada bidang penyakit infeksi.",
+    "Melaksanakan dan mengembangkan penelitian yang tepat guna dan bermanfaat baik untuk masyarakat, laboratorium maupun instansi lain dalam bidang penyakit infeksi.",
+    "Melaksanakan pengabdian kepada masyarakat dalam bidang penyakit infeksi sebagai upaya penurunan dan pencegahan penyakit serius guna meningkatkan derajat kesehatan manusia.",
+    "Menyelenggarakan kerjasama dengan berbagai Lembaga baik dalam negeri maupun luar negeri dalam mewujudkan Tri Dharma Perguruan Tinggi"
+  ],
+  "keunggulan": [
+    "1. Menjadi satu-satunya program studi D4 TLM di Kabupaten Banyuwangi, yang memberikan keunggulan kompetitif secara regional sekaligus memastikan tingginya persentase serapan lulusan di dunia kerja.",
+    "2. Menerapkan pembelajaran terintegrasi antara kurikulum vokasi berbasis manajemen mutu dan penguatan riset diagnostik terapan, di mana mahasiswa dilibatkan secara aktif dalam pengalaman penelitian laboratorium secara langsung.",
+    "3. Aktif dalam pembaruan ilmu pengetahuan dan inovasi medis, khususnya melalui integrasi teknik laboratorium mutakhir dengan eksplorasi biodiversitas lokal (bahan alam) yang diuji secara komprehensif melalui metode in silico, in vitro, maupun in vivo."
+  ],
+  "pembelajaran": "Proses belajar di program studi D4 Teknologi Laboratorium Medis dirancang secara bertahap agar bisa diterima oleh mahasiswa dengan barbagai latar belakang keilmuan di bangku SMA.\nPada awal kuliah, mahasiswa akan dibekali ilmu dasar medis dan kemampuan dasar di dalam laboratorium. Memasuki pertengahan semester, porsi belajar akan lebih banyak diisi dengan praktik langsung menggunakan instrumen laboratorium yang modern, mulai dari teknik pemeriksaan laboratorium sederhana hingga teknik terapan. Mahasiswa tidak hanya dibekali tentang bagaimana cara melakukan pemeriksaan laboratorium, namun juga bagaimana menjaga menajemen mutu pemeriksaan laboratorium agar hasilnya akurat dan dapat dipertanggungjawabkan. Mahasiswa akan terjun ke dalam lahan untuk praktik klinis mulai dari Semester V, diberikan kesempatan magang mandiri di berbagai fasilitas laboratorium pelayanan, serta akan menjalani Praktik Kerja Lapangan (PKL) di Semester VII di Laboratorium Rumah Sakit Tipe A.\nSelama menduduki Semester I hingga Semester VI, mahasiswa akan dilibatkan aktif dalam pembelajaran yang terintegrasi penelitian dan pengabdian masyarakat, untuk memastikan materi perkuliahan dapat terimplementasikan dengan baik. Penyusunan Skripsi dilakukan mulai Semester VI dan selesai di Semester VIII. Proyek penelitian atau pengabdian masyarakat yang sudah pernah dilakukan dapat dilaporkan sebagai pemenuhan skripsi.\nDengan alur ini, saat lulus nanti mahasiswa tidak hanya sekadar paham teori, tapi menjadi tenaga ahli laboratorium yang siap bekerja!",
+  "masaStudiDetail": "Total SKS: 146, terdiri dari 56 SKS mata kuliah Teori dan 88 SKS mata kuliah Praktikum\nMasa studi selama 4 tahun (8 semester)",
+  "saranaAkademik": "Fasilitas Laboratorium:\nLaboratorium Mikrobiologi\nLaboratorium Kimia\nLaboratorium Patologi Klinik\nLaboratorium Patologi Anatomi\nLaboratorium Hewan Coba\nSemua pembelajaran dilakukan secara interaktif dan dokumen bahan ajar telah terdigitalisasi di dalam LMS (Learning Management System). Penilaian pembelajaran dilakukan secara objektif dan transparansi di dalam LMS.",
+  "praktikLapangan": "Mahasiswa mulai praktik di laboratorium pelayanan mulai Semester V, serta diberikan kesempatan magang/praktik mandiri di Semester VI.\nPraktik Kerja Lapangan (PKL) dilakukan di Semester VII\nSebelum dilakukan praktik, magang, atau PKL, mahasiswa akan menerima pembekalan dari prodi, untuk memastikan kesiapan dan kemampuan adaptasi mahasiswa selama praktik.",
+  "jejaringKemitraan": "RS Dr. Saiful Anwar (RSSA) Malang\nRS. Dr. Soebandi Jember\nRS. Paru Jember\nRSUD Blambangan\nRSUD Genteng\nRS PKU Muhammadiyah Banyuwangi\nLaboratorium Kesehatan Daerah (Labkesda) Banyuwangi\nSemua Puskesmas di Kabupaten Banyuwangi",
+  "profilLulusan": "Gelar lulusan: S.Tr.Kes (Sarjana Terapan Kesehatan)\nLulusan prodi D4 dapat langsung bekerja, tanpa ada keharusan menempuh pendidikan Profesi\nProspek Kerja Lulusan D4 TLM:\n1. Semua Fasilitas Pelayanan Kesehatan yang memiliki Laboratorium. Terdiri dari: Puskesmas, Klinik, Praktik mandiri dokter, Apotek, Rumah Sakit\n2. Bank Darah Rumah Sakit (BDRS) atau Palang Merah Indonesia (PMI)\n3. Aparatur Sipil Negara di Puskesmas atau Rumah Sakit\n4. Laboratorium Swasta (seperti Parahitia, Prodia, Pramita, IHC, dst)\n5. Badan Pengawas Obat dan Makanan (BPOM)\n6. Laboratorium Forensik\n7. Balai Narkotika Nasional (BNN): untuk melakukan pemeriksaan narkoba rutin\n8. Laboratorium Riset (seperti BRIN, ITP Unair, CDAST Unej, dst)\n9. Perusahaan Bahan Kimia/Reagensia Laboratorium (seperti PT. GeneCraft Labs, PT Baswara Jaya Scientific, PT PROLINE, dst)\n10. Perusahaan Instrumen Laboratorium (seperti PT. Anugerah Santosa Abadi, PT Indotech Sains Inti, dst)\n11. Tenaga pendidik (Asisten Laboratorium, Guru di Sekolah Menengah Analis Kesehatan atau SMAK, dan Dosen)\n12. Wirausaha (menjadi pendiri Laboratorium swasta, Klinik, perusahaan / distributor reagensia, perusahaan / distributor instrumen laboratorium)\n13. Relawan berbayar di berbagai program kesehatan di Indonesia (seperti Nusantara Sehat, dst)",
   "competence": "Ahli flebotomi, analisa patologi klinik, toksikologi forensik, dan bakteriologi molekuler.",
   "prospects": "Laboratorium Prodia/Pramita, Lab RS Tipe A, Peneliti Labkesda, Forensik Kepolisian.",
-  "faculty": "FIKES"
+  "karierAlumni": [
+    {
+      "name": "Hanifah",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "PMI Banyuwangi"
+    },
+    {
+      "name": "Sinta Nuriyah Putri Ayu",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Klinik STIKES Banyuwangi"
+    },
+    {
+      "name": "Viera Salsabiela",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Puskesmas Sobo"
+    },
+    {
+      "name": "Adisa Octaviani",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Puskesmas Sambirejo"
+    },
+    {
+      "name": "Okta Nata Kusuma",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "RS Yasmin Banyuwangi"
+    },
+    {
+      "name": "Deo Fernanda",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Laboratorium Klinik Brawijaya"
+    },
+    {
+      "name": "Destia",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Laboratorium Klinik Brawijaya"
+    },
+    {
+      "name": "Afifah",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Klinik Medika Asri Genteng"
+    },
+    {
+      "name": "Adhinda Fisabilla",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": "Rumah Sakit Umum Bunda Jembrana"
+    },
+    {
+      "name": "Nufus Nurmazaya",
+      "position": "Petugas Laboratorium / ATLM",
+      "place": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apakah siswa selain jurusan IPA atau bahkan siswa SMK boleh mendaftar?",
+      "answer": "Sangat boleh, jangan khawatir pembelajaran akan dilakukan bertahap, kami pastikan siswa dari berbagai background pendidikan SMA/MA dapat mengikuti kegiatan"
+    },
+    {
+      "question": "Apakah ada persyaratan fisik untuk siswa SMA yang boleh mendaftar?",
+      "answer": "Dipastikan bebas dari buta warna"
+    },
+    {
+      "question": "Apakah siswa yang sudah menikah / bekerja dapat mendaftar menjadi mahasiswa?",
+      "answer": "Boleh, dengan menyatakan komitmen kesanggupan diri mengikuti semua proses akademik yang ada"
+    }
+  ]
 }

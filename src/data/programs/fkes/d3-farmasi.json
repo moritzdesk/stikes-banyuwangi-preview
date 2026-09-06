@@ -1,12 +1,95 @@
 {
   "title": "D3 Farmasi",
+  "faculty": "FIKES",
   "level": "D3",
   "degree": "A.Md.Farm",
   "accreditation": "Baik Sekali",
   "duration": "6 Semester / 3 Tahun",
   "image": "https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg",
   "shortDescription": "Mencetak Tenaga Teknis Kefarmasian (TTK) yang terampil dan teliti di bagian peracikan, inventori dan pemesanan obat resep dokter.",
+  "profilProgramStudi": "D3 Farmasi salah satu Prodi di Universitas Dr. Soekardjo Banyuwangi yang berdiri tahun 2015. Dalam kurun waktu kurang lebih 10 tahun telah mencetak alumni yang bekerja di ranah pelayanan kefarmasian seperti Apotek, Rumah Sakit, Klinik, Pedagang Besar Farmasi, Industri Farmasi, Dinas Kesehatan dan Puskesmas.",
+  "visi": "Menjadi penyelenggara Pendidikan vokasi yang menghasilkan tenaga kefarmasian yang berdaya saing global, berlandaskan pada keimanan, serta unggul dalam bidang pelayanan kefarmasian",
+  "misi": [
+    "Menyelenggarakan proses pendidikan vokasi berdaya saing global yang berorientasi pada pengembangan ilmu pelayanan farmasi klinik dan komunitas.",
+    "Melaksanakan penelitian di bidang farmasi yang berorientasi pada kebutuhan masyarakat.",
+    "Mengembangkan aktivitas pengabdian kepada masyarakat yang berkontribusi dalam pembangunan kesehatan dengan mengacu pada hasil penelitian dan kearifan lokal.",
+    "Menghasilkan lulusan yang mandiri, beriman, dan bertakwa.",
+    "Menjalin hubungan kerja sama dengan berbagai stakeholder dan institusi pendidikan lainnya."
+  ],
+  "keunggulan": "Prodi D3 Farmasi Universitas Dr. Soekardjo mencetak Tenaga Vokasi Farmasi yang mampu bersaing di dunia pelayanan kefarmasian, karena dibekali dengan pelatihan pencampuran obat steril",
+  "pembelajaran": "Pembelajaran di D3 Farmasi dilakukan secara hibrid, yaitu luring atau tatap muka untuk matakuliah inti farmasi dan praktikum, sedangkan daring untuk matakuliah pendukung. Dalam satu semester, mahasiswa akan mengikuti kegiatan pembelajaran kuliah dan praktikum, dimana bahan perkuliahan akan dipraktekkan secara mandiri ataupun berkelompok oleh mahasiswa.",
+  "masaStudiDetail": "Pendidikan D3 Farmasi di Universitas Dr. Soekardjo Banyuwangi ditempuh dalam waktu 3 tahun (6 semester) dengan jumlah sks sebanyak 115 sks dengan sks per semester antara 16 – 20 sks.",
+  "saranaAkademik": "Sarana penunjang pembelajaran mahasiswa D3 Farmasi antara laboratorium Farmasetika, Farmakologi, Bahan Alam, Kimia, Teknologi Farmasi  yang dilengkapi dengan peralatan yang memadai. Selain itu terdapat banyak ruang kelas yang dapat digunakan dan dilengkapi dengan LCD Proyektor dan AC. Mahasiswa juga dapat menggunakan akses internet gratis untuk menunjang perkuliahan. Pembelajaran di D3 Farmasi Universitas Dr. Soekardjo Banyuwangi meliputi kuliah di kelas, praktikum di laboratorium dan praktek di lahan pelayanan kefarmasian.",
+  "praktikLapangan": "Praktek lapangan atau lahan dilakukan di semester V, di mana mahasiswa telah memiliki bekal keilmuan yang cukup, sehingga pembelajaran di lahan menjadi lebih efektif. Lahan yang digunakan oleh mahasiswa sudah ditentukan dari Program Studi agar standar pembelajaran yang ditargetkan dapat tercapai sesuai dengan kebutuhan dunia kerja",
+  "jejaringKemitraan": [
+    "Penunjang pembelajaran dan karir mahasiswa, D3 Farmasi Dr. Soekardjo Banyuwangi berkerja sama dengan:",
+    "PT. Kimia Farma",
+    "Apotek Kebalenan",
+    "Apotek Lukito",
+    "Apotek Drajat Farma",
+    "Apotek Guardian",
+    "Dinas Kesehatan Banyuwangi",
+    "RSUD Blambangan",
+    "RSUD Dr. Soetomo Surabaya",
+    "RS Al Huda",
+    "Berbagai sarana pelayanan kesehatan lainnya"
+  ],
+  "profilLulusan": "Pendidikan D3 Farmasi Universitas Dr. Soekardjo Banyuwangi akan menghasilkan lulusan dengan gelar akademik Ahli Madya Farmasi (A.Md. Farm.)\n>",
   "competence": "Peracikan sediaan farmasi cair/padat, pemahaman farmakologi, manajemen apotek K24/Kimia Farma.",
   "prospects": "Tenaga Teknis Kefarmasian Klinik Utama, Asisten Apoteker RS, Industri Obat Tradisional (IOT).",
-  "faculty": "FIKES"
+  "karierAlumni": [
+    {
+      "name": "Ratna Paundria Anjani, A.Md.Farm",
+      "position": "Tenaga Vokasi Farmasi",
+      "place": "RSUD Dr. Soetomo Surabaya"
+    },
+    {
+      "name": "Lisa Vironika Agustin Ningtias, A.Md.Farm",
+      "position": "Tenaga Vokasi Farmasi",
+      "place": "RSUD Dr. Soetomo Surabaya"
+    },
+    {
+      "name": "Citra Aisyah, A.Md.Farm",
+      "position": "Pengelola Layanan Operasional",
+      "place": "Dinas Kesehatan Kabupaten Banyuwangi"
+    },
+    {
+      "name": "Sri Windarti Samporna, A.Md.Farm",
+      "position": "Tenaga Vokasi Farmasi",
+      "place": "RSUD Genteng"
+    },
+    {
+      "name": "Budi Tantri Anisa Lestari",
+      "position": "Tenaga Teknis Kefarmasian",
+      "place": "RS Al Huda"
+    },
+    {
+      "name": "Indriyatul Masitah",
+      "position": "PPPK",
+      "place": "Puskesmas Kertosari"
+    },
+    {
+      "name": "Muhammad Dzikry Alfiyansyah",
+      "position": "Asisten Apoteker",
+      "place": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apakah peluang karir di D3 Farmasi masih cukup besar?",
+      "answer": "Peluang karir di D3 Farmasi masih cukup besar. Hal ini dibuktikan dengan data dari Kementerian Kesehatan bahwa tenaga vokasi farmasi (lulusan D3 Farmasi) masih belum mencukupi kebutuhan yang ada di lapangan. Kekurangan tenaga vokasi farmasi diperkirakan mencapai sekitar 50% dari kebutuhan yang ada."
+    },
+    {
+      "question": "Apa saja yang dipelajari di Program Studi D3 Farmasi?",
+      "answer": "Mahasiswa D3 Farmasi akan mempelajari berbagai hal, seperti meracik obat, memberikan informasi obat dan alat kesehatan, serta pengelolaan farmasi di apotek, rumah sakit, puskesmas, dan klinik. Selain itu, mahasiswa juga mempelajari produksi obat sehingga memiliki peluang berkarir di industri farmasi, termasuk bidang obat tradisional."
+    },
+    {
+      "question": "Di mana saja peluang kerja lulusan D3 Farmasi?",
+      "answer": "Lulusan D3 Farmasi memiliki peluang kerja yang luas, antara lain pada pelayanan kesehatan seperti apotek, rumah sakit, klinik, dan puskesmas; bidang distribusi farmasi seperti Pedagang Besar Farmasi (PBF) obat dan alat kesehatan; industri farmasi baik obat sintetik maupun obat tradisional; serta instansi pemerintah seperti Dinas Kesehatan."
+    },
+    {
+      "question": "Apakah kuliah di D3 Farmasi susah?",
+      "answer": "Tidak. Program Studi D3 Farmasi dirancang agar mudah diikuti oleh seluruh mahasiswa. Proses pembelajaran didukung oleh dosen-dosen yang kompeten, ramah, dan siap membimbing mahasiswa baik dalam teori maupun praktik."
+    }
+  ]
 }

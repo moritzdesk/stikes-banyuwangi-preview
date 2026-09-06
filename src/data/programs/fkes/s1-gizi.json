@@ -1,12 +1,120 @@
 {
   "title": "S1 Gizi",
+  "faculty": "FIKES",
   "level": "S1",
   "degree": "S.Gz",
   "accreditation": "Baik",
   "duration": "8 Semester / 4 Tahun",
   "image": "https://images.pexels.com/photos/8522770/pexels-photo-8522770.jpeg",
-  "shortDescription": "Menghasilkan ahli gizi dengan kapabilitas dietetik klinis, pengawasan kualitas pangan, gizi olahraga dan manajemen food industry.",
+  "shortDescription": "Where Nutrition Meets Culinary Tourism Excellence: Belajar lebih dari sekadar ilmu gizi, Program Studi Gizi Universitas Dr.Soekardjo dengan keunggulan gizi dan kuliner pariwisata untuk menjawab kebutuhan masa depan.",
+  "profilProgramStudi": "Program Studi Gizi Universitas Dr.Soekardjo merupakan satu-satunya Program Studi Gizi di Banyuwangi yang berfokus pada pengembangan ilmu gizi, pangan, dan kesehatan untuk mencetak lulusan profesional yang kompeten dalam meningkatkan kualitas hidup masyarakat. Dengan kekhasan pada bidang gizi dan kuliner pariwisata, proses pembelajaran dirancang untuk mengintegrasikan sains gizi, inovasi produk pangan, manajemen penyelenggaraan makanan, serta pengembangan kuliner sehat berbasis potensi lokal dan industri hospitality. Program Studi Gizi Universitas Dr.Soekardjo menghasilkan sarjana gizi yang unggul, adaptif, dan siap berkarier di sektor kesehatan, industri pangan, serta wirausaha kuliner yang berdaya saing global.",
+  "visi": "Menjadi Program Studi Sarjana Gizi yang berdaya saing global dengan keunggulan di bidang gizi dan kuliner pariwisata yang berlandaskan pada aspek spiritualitas",
+  "misi": [
+    "Menyelenggarakan proses pendidikan akademik serta mengembangkan hardskill dan softskill yang berdaya saing global di bidang gizi dan kuliner pariwisata yang mengedepankan aspek spiritual.",
+    "Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang memiliki keunggulan pada bidang gizi dan kuliner pariwisata yang berorientasi kepada kebutuhan masyarakat.",
+    "Melakukan kerjasama dengan institusi atau lembaga nasional maupun internasional guna mewujudkan pelaksanaan tri dharma perguruan tinggi."
+  ],
+  "keunggulan": "Program Studi Gizi hadir sebagai satu-satunya program unggulan di Banyuwangi yang mengusung kekhasan integrasi ilmu gizi dengan kuliner pariwisata. Mahasiswa akan memperoleh kompetensi pada kesehatan dan pangan, serta pada pengembangan kuliner berbasis potensi wisata lokal sebagai bagian dari daya tarik industri pariwisata dan ekonomi kreatif.",
+  "pembelajaran": "Proses pembelajaran di Program Studi Gizi dirancang secara bertahap dan terintegrasi, dimulai dari penguasaan dasar ilmu gizi, pangan, dietetik, gizi olahraga, gizi daur kehidupan, biomedik, dan kesehatan masyarakat, kemudian dilanjutkan dengan penguatan kompetensi melalui praktikum laboratorium, case-based learning, project-based learning, serta pengembangan inovasi produk pangan. Pada tahap akhir studi, mahasiswa akan mengikuti praktik lapangan di puskesmas, rumah sakit, hotel, dan industri katering profesional untuk mengaplikasikan kompetensi gizi masyarakat, gizi klinis, serta manajemen penyelenggaraan makanan, sehingga siap memasuki dunia kerja secara profesional.",
+  "masaStudiDetail": "Program Studi Gizi Universitas Dr.Soekardjo dirancang dengan beban studi total 150 SKS yang dapat ditempuh dalam estimasi waktu 8 semester atau 4 tahun. Kurikulum disusun secara terstruktur dan adaptif untuk memastikan mahasiswa lulus tepat waktu dengan kompetensi unggul di bidang gizi, pangan, dan kuliner pariwisata.",
+  "saranaAkademik": "Proses pembelajaran di Prodi Gizi dirancang interaktif dan aplikatif melalui perpaduan kuliah tatap muka, diskusi kasus, project-based learning, praktikum laboratorium, serta praktik lapangan. Didukung fasilitas pembelajaran modern berupa Lab Kuliner dan Dietetik, Lab Kimia, Lab Antropometri dan Konsultasi Gizi, serta teaching kitchen yang representatif yang dirancang untuk menunjang pengalaman belajar berbasis praktik. Mahasiswa dapat mengasah keterampilan asesmen status gizi, uji mutu pangan, perencanaan menu, hingga pengembangan kuliner sehat dan inovatif yang relevan dengan industri hospitality dan pariwisata.",
+  "praktikLapangan": "Mahasiswa akan mengikuti praktik lapangan secara bertahap pada fase akhir masa studi yakni semester VII sebagai bagian dari penguatan kompetensi profesional. Praktik dilaksanakan di berbagai mitra institusi, meliputi praktik gizi masyarakat di Puskesmas dimana mahasiswa terlibat langsung dalam pelayanan promotif dan preventif bersama tenaga kesehatan di puskesmas, gizi klinis di Rumah Sakit, mahasiswa mempelajari pelayanan gizi pasien rawat inap dan rawat jalan melalui pendekatan Nutrition Care Process / PAGT, serta gizi institusi penyelenggaraan makanan di Hotel maupun industri katering profesional seperti ACS Aerofood yang mahasiswa fokus pada manajemen penyelenggaraan makanan skala besar. Dengan praktik kerja lapang tersebut, mahasiswa memiliki pengalaman nyata yang selaras dengan kebutuhan dunia kerja.",
+  "jejaringKemitraan": [
+    "Program Studi Gizi Universitas Dr.Soekardjo didukung jejaring kemitraan resmi (MoU) dengan berbagai institusi terkemuka dari sektor layanan kesehatan, hospitality, dan industri sebagai lahan praktik profesional. Mitra tersebut meliputi:",
+    "Dinas Kesehatan Kab. Banyuwangi",
+    "RSUD Dr. Saiful Anwar Malang",
+    "RSUD Bangil Kabupaten Pasuruan",
+    "RSUD Blambangan",
+    "Aerofood ACS Garuda Indonesia Group",
+    "Aston Banyuwangi Hotel & Conference Center"
+  ],
+  "profilLulusan": "Lulusan Program Studi Gizi akan memperoleh gelar akademik Sarjana Gizi (S.Gz) dan dapat melanjutkan pendidikan Profesi Nutrisionis atau Profesi Dietisien.",
   "competence": "Perhitungan Dietetika Pasien Penyakit Dalam, Inovasi Food Processing, Analisa Kualitas Gizi.",
   "prospects": "Ahli Gizi RSUD/RS Swasta, Katering Diet, Food Quality Control di Industri Pangan Nasional.",
-  "faculty": "FIKES"
+  "karierAlumni": [
+    {
+      "name": "Duvita Rahma Purwaningsih, S.Gz",
+      "position": "Ahli Gizi",
+      "place": "Rumah Sakit Bergerak Distrik Mindiptana Kab.Boven Digoel, Papua Selatan"
+    },
+    {
+      "name": "Ropita Ramadani, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Banyuwangi Songgon Bayu"
+    },
+    {
+      "name": "Dian Dewi Utami, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Sumbersari"
+    },
+    {
+      "name": "Amanda Eka Setyawati, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Situbondo Bungatan Pasir Putih"
+    },
+    {
+      "name": "Mayka Ayuning Putri, S.Gz",
+      "position": "–",
+      "place": "Bank BTN Surabaya"
+    },
+    {
+      "name": "Ajeng Lufita Sari, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Kelir 2"
+    },
+    {
+      "name": "Milla Handita Putri, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Ketapang"
+    },
+    {
+      "name": "Adhila Putri Daniesa, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Sumber Anyar"
+    },
+    {
+      "name": "Evita Rosida W, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Kepiting"
+    },
+    {
+      "name": "Trisna Maulida, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Kebalenan 2"
+    },
+    {
+      "name": "Anisa Fitria, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Pakis"
+    },
+    {
+      "name": "Christi Titi Agustina, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Tamansari Licin"
+    },
+    {
+      "name": "Dwi Merlisa A, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": "SPPG Glagah Banjarsari"
+    },
+    {
+      "name": "Sheila Nanda Ardana, S.Gz",
+      "position": "Pengawas Gizi/Ahli Gizi",
+      "place": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apa yang membedakan Program Studi Gizi Unidsoe dengan kampus lain?",
+      "answer": "Program Studi Gizi Unidsoe ini merupakan satu-satunya di Banyuwangi dengan keunggulan pada bidang gizi dan kuliner pariwisata yang tentu sangat tepat dengan lokasi Prodi. Mahasiswa bukan hanya mempelajari ilmu gizi klinis dan gizi masyarakat, tetapi juga manajemen food service."
+    },
+    {
+      "question": "Apa mahasiswa akan mendapatkan banyak praktik?",
+      "answer": "Ya, pembelajaran di Program Studi Gizi Unidsoe dirancang sangat aplikatif melalui praktikum laboratorium, teaching kitchen, projek inovasi pangan, serta praktik langsung di lapangan seperti puskesmas, rumah sakit, hotel, dan industri katering profesional."
+    },
+    {
+      "question": "Lulusan bisa bekerja di mana saja?",
+      "answer": "Lulusan Program Studi Gizi Unidsoe dapat berkarir sebagai ahli gizi puskesmas, industri pangan, pengawas gizi satuan pelayanan pemenuhan gizi (SPPG) BGN, hotel, katering profesional, quality control, food service manager, hingga entrepreneur kuliner sehat."
+    }
+  ]
 }

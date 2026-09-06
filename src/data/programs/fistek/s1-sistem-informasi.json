@@ -6,7 +6,42 @@
   "accreditation": "Baik",
   "duration": "8 Semester / 4 Tahun",
   "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-  "shortDescription": "Menghasilkan Sarjana Komputer yang andal dalam merancang, menganalisis, dan mengembangkan sistem informasi bisnis serta manajemen teknologi digital.",
-  "competence": "Rekayasa Perangkat Lunak, Manajemen Database, Analisis Bisnis Digital, Tata Kelola IT.",
-  "prospects": "System Analyst, IT Consultant, Database Administrator, Tech Entrepreneur."
+  "shortDescription": "Empowering Digital Health Innovation through Smart Information Systems.",
+  "profilProgramStudi": "Program Studi S1 Sistem Informasi merupakan program pendidikan yang berfokus pada pengembangan sistem informasi dengan spesialisasi di bidang Health Informatics (Sistem Informasi Kesehatan). Mahasiswa dibekali kemampuan analisis, perancangan, serta implementasi teknologi informasi modern untuk mendukung transformasi digital di sektor kesehatan.",
+  "visi": "Menjadi program studi Sistem Informasi yang unggul dan berdaya saing global di bidang analitik data kesehatan, telehealth, dan solusi berbasis kecerdasan buatan, menghasilkan lulusan inovatif, kompeten, dan berlandaskan keimanan serta ketakwaan pada tahun 2030.",
+  "misi": [
+    "Menghasilkan lulusan kompeten di bidang Sistem Informasi Kesehatan.",
+    "Melaksanakan penelitian inovatif berbasis kebutuhan masyarakat.",
+    "Berperan aktif dalam pengabdian masyarakat berbasis teknologi kesehatan.",
+    "Menyiapkan lulusan berintegritas dan berjiwa mandiri.",
+    "Membangun jejaring kerja sama dalam dan luar negeri.",
+    "Mendorong kewirausahaan dan wawasan kebangsaan di bidang health IT."
+  ],
+  "keunggulan": "Program Studi Sistem Informasi UNIDSOE memiliki keunggulan unik dengan fokus pada bidang sistem informasi kesehatan (Health Informatics). Mahasiswa tidak hanya belajar konsep dasar sistem informasi, tetapi juga menerapkan teknologi mutakhir seperti AI diagnosis, Big Data Kesehatan, Telehealth, dan IoMT. Program ini mendukung MBKM melalui magang di rumah sakit, startup healthtech, dan riset kolaboratif berbasis teknologi kesehatan.",
+  "pembelajaran": "Alur belajar mahasiswa Program Studi S1 Sistem Informasi UNIDSOE secara umum dimulai dari penguatan dasar-dasar sistem informasi, pemrograman, analisis kebutuhan, perancangan sistem, pengelolaan data, hingga implementasi teknologi informasi untuk memecahkan berbagai persoalan organisasi. Mahasiswa tidak hanya diarahkan pada bidang Health Informatics atau sistem informasi kesehatan, tetapi juga dibekali kemampuan yang relevan untuk diterapkan di berbagai sektor, seperti industri, korporasi, bisnis digital, lembaga pelayanan publik, dan instansi pemerintahan. Selama masa studi 4 tahun dengan total 144 SKS, mahasiswa mengembangkan kompetensi melalui pembelajaran teori, praktik laboratorium, proyek kolaboratif, praktik lapangan, magang, serta riset berbasis kebutuhan nyata. Dengan alur tersebut, lulusan diharapkan mampu menjadi analis sistem, pengembang aplikasi, data analyst, konsultan IT, business analyst, maupun tenaga profesional teknologi informasi yang siap mendukung transformasi digital di berbagai bidang.",
+  "masaStudiDetail": "Total SKS: 144 SKS\nLama studi: 4 Tahun",
+  "saranaAkademik": "Program Studi S1 Sistem Informasi Universitas Dr. Soekardjo didukung sarana akademik modern yang lengkap, meliputi laboratorium komputer berteknologi tinggi, Virtual Reality (VR), akses internet berkecepatan tinggi, serta perpustakaan digital dengan koleksi referensi yang relevan. Tersedia juga ruang diskusi kolaboratif sebagai wadah mahasiswa mengembangkan kreativitas, inovasi, dan kerja tim dalam menyelesaikan proyek berbasis teknologi.\nSemua fasilitas ini merupakan wujud komitmen universitas dalam mencetak lulusan yang kompeten dan siap menghadapi tantangan industri teknologi informasi.",
+  "praktikLapangan": "Program Studi S1 Sistem Informasi Universitas Dr. Soekardjo memberikan kesempatan kepada mahasiswa untuk mengikuti praktek lapangan melalui program magang, kerja praktek, dan proyek kolaboratif di berbagai instansi dan industri teknologi. Kegiatan ini bertujuan meningkatkan kompetensi mahasiswa dalam penerapan sistem informasi, pengembangan aplikasi, analisis data, serta penguasaan teknologi digital sesuai kebutuhan dunia kerja. Selain keterampilan teknis, mahasiswa juga dibekali kemampuan komunikasi, kerja tim, dan etika profesi sehingga siap menghadapi tantangan industri di era transformasi digital.",
+  "jejaringKemitraan": "Program Studi S1 Sistem Informasi Universitas Dr. Soekardjo menjalin kerja sama dengan berbagai institusi nasional dan internasional guna mendukung peningkatan kualitas pendidikan, penelitian, dan implementasi program MBKM. Mitra kerja sama meliputi SEVIMA, PT. Cerdas Digital Nusantara, PT. Integara Teknologi Solusi, Kementerian Sosial Republik Indonesia, Lincoln University College, Management and Science University, UCSI University, Ifugao State University, Universitas Surabaya, dan Universitas Airlangga. Kerja sama ini mencakup pengembangan kompetensi digital, penelitian kolaboratif, seminar internasional, pertukaran akademik, serta program magang industri.",
+  "profilLulusan": "Gelar: S.Kom\nLulusan memiliki kompetensi sebagai:\n1. Analis sistem informasi kesehatan\n2. Developer aplikasi telemedicine / IoMT\n3. Data scientist bidang kesehatan\n4. Konsultan IT kesehatan\n5. Health business analyst",
+  "competence": "Rekayasa Perangkat Lunak, Manajemen Database, Analisis Bisnis Digital, Tata Kelola IT, Health Informatics, AI Diagnosis, Big Data Kesehatan, Telehealth, IoMT.",
+  "prospects": "System Analyst, IT Consultant, Database Administrator, Tech Entrepreneur, Health Informatics Specialist, Telehealth Developer, Healthcare Data Analyst.",
+  "faq": [
+    {
+      "question": "Apa itu Program Studi Sistem Informasi?",
+      "answer": "Program studi yang mempelajari bagaimana merancang, mengembangkan, dan mengelola sistem informasi untuk mendukung kebutuhan organisasi, khususnya di bidang kesehatan."
+    },
+    {
+      "question": "Apa keunikan prodi ini?",
+      "answer": "Keunggulan utama terletak pada fokus Sistem Informasi Kesehatan (Health Informatics) yang menggabungkan teknologi IT modern dengan dunia medis."
+    },
+    {
+      "question": "Apakah harus jago coding untuk masuk?",
+      "answer": "Tidak harus. Kamu akan belajar dari dasar. Yang penting adalah kemauan belajar, logika, dan ketertarikan pada teknologi."
+    },
+    {
+      "question": "Apa perbedaan Sistem Informasi dengan Teknik Informatika?",
+      "answer": "– Sistem Informasi: fokus pada solusi bisnis dan implementasi teknologi\n– Teknik Informatika: fokus pada pengembangan software dan algoritma secara mendalam"
+    }
+  ]
 }
