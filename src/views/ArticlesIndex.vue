@@ -111,6 +111,7 @@
 import { ref, computed, onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
 import { useSEO } from '../composables/useSEO'
+import { getAllArticles, getActiveCategories } from '../composables/useArticles'
 import globalSettings from '../data/settings.json'
 
 // SEO Meta Tags
@@ -125,83 +126,21 @@ const categories = ref([])
 const selectedCategory = ref('all')
 const loading = ref(true)
 
-// Read CMS configurations
+// Kategori dari settings yang punya artikel (mapping displayName dipertahankan)
 const cmsCategories = globalSettings.articleSettings?.categories || []
-const activeSlugs = cmsCategories.filter(c => c.show).map(c => c.slug)
-// All known slugs (including show:false) for broad fetching
-const allKnownSlugs = cmsCategories.map(c => c.slug)
-const wordLimit = globalSettings.articleSettings?.excerptWordLimit || 15
-
-// Excerpt helper
-const getTruncatedExcerpt = (text) => {
-  if (!text) return ''
-  const words = text.trim().split(/\s+/)
-  if (words.length > wordLimit) {
-    return words.slice(0, wordLimit).join(' ') + '...'
-  }
-  return text
-}
 
 // Compute active categories for filtering based on CMS settings
-const activeCategories = computed(() => {
-  return categories.value
-    .filter(cat => activeSlugs.includes(cat.slug))
-    .map(cat => {
-      const cmsCat = cmsCategories.find(c => c.slug === cat.slug)
-      return {
-        slug: cat.slug,
-        displayName: cmsCat ? cmsCat.displayName : cat.name
-      }
-    })
-})
+const activeCategories = computed(() => getActiveCategories())
 
-const fetchArticles = async () => {
-  try {
-    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
-    const data = await response.json()
-    
-    articles.value = (data.data || [])
-      .filter(item => {
-        const slug = item.category?.slug || ''
-        // Only show articles from slugs that exist in settings.json
-        return allKnownSlugs.includes(slug)
-      })
-      .map(item => {
-        const slug = item.category?.slug || ''
-        const cmsCat = cmsCategories.find(c => c.slug === slug)
-        const categoryName = cmsCat ? cmsCat.displayName : (item.category?.name || 'Berita')
-
-        return {
-          title: item.title,
-          slug: item.slug,
-          date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-          image: item.image_path || item.large_image_path,
-          excerpt: getTruncatedExcerpt(item.description),
-          category: categoryName,
-          category_slug: slug,
-          author: item.author || item.created_by?.name || 'Humas UNIDSOE'
-        }
-      })
-  } catch (error) {
-    console.error('Error fetching articles:', error)
-  }
-}
-
-const fetchCategories = async () => {
-  try {
-    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories')
-    const data = await response.json()
-    // Append standard categories as well
-    const allCategories = data.data || []
-    categories.value = allCategories
-  } catch (error) {
-    console.error('Error fetching categories:', error)
-  }
+const loadArticles = async () => {
+  // Data lokal hasil prebuild Payload (tanpa fetch runtime)
+  articles.value = getAllArticles()
+  categories.value = cmsCategories
 }
 
 onMounted(async () => {
   loading.value = true
-  await Promise.all([fetchArticles(), fetchCategories()])
+  await loadArticles()
   loading.value = false
 })
 

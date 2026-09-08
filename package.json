@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tinacms dev -c \"vite\"",
-    "build": "tinacms build --local --skip-cloud-checks && vite build",
+    "prebuild": "node scripts/prebuild.mjs",
+    "build": "npm run prebuild && tinacms build --local --skip-cloud-checks && vite build",
     "preview": "tinacms build --local --skip-cloud-checks && vite preview"
   },
   "dependencies": {

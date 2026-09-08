@@ -102,40 +102,57 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { useHead } from '@unhead/vue'
 import PageHeader from '../components/PageHeader.vue'
-import { useSEO } from '../composables/useSEO'
+import { getArticleBySlug } from '../composables/useArticles'
 
 const route = useRoute()
 const article = ref(null)
 const loading = ref(true)
 const error = ref(false)
 
-const fetchArticleDetail = async (slug) => {
+// SEO dinamis per artikel (meta Payload -> tag head)
+useHead({
+  title: () => article.value ? `${article.value.seoTitle || article.value.title} | Unidsoe - Universitas Dr. Soekardjo` : 'Berita & Artikel - Universitas Dr. Soekardjo',
+  meta: [
+    {
+      name: 'description',
+      content: () => article.value?.seoDescription || article.value?.excerpt || 'Berita dan artikel terkini Universitas Dr. Soekardjo.'
+    },
+    {
+      property: 'og:title',
+      content: () => article.value?.seoTitle || article.value?.title || ''
+    },
+    {
+      property: 'og:description',
+      content: () => article.value?.seoDescription || article.value?.excerpt || ''
+    },
+    {
+      property: 'og:image',
+      content: () => article.value?.image || ''
+    },
+    {
+      property: 'og:type',
+      content: 'article'
+    }
+  ]
+})
+
+const loadArticleDetail = async (slug) => {
   try {
     loading.value = true
-    const response = await fetch(`https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/articles/${slug}`)
-    
-    if (!response.ok) throw new Error('Not found')
-    
-    const data = await response.json()
-    const item = data.data
-    
-    article.value = {
-      title: item.title,
-      slug: item.slug,
-      date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-      image: item.image_path || item.large_image_path,
-      summary: item.description,
-      content: item.content || item.body || '<p>Tidak ada konten.</p>',
-      category: item.category?.name || 'Berita',
-      author: item.author || item.created_by?.name || 'Humas UNIDSOE'
-    }
+    // Data lokal hasil prebuild Payload (tanpa fetch runtime)
+    const found = getArticleBySlug(slug)
+
+    if (!found) throw new Error('Not found')
+
+    article.value = found
 
     error.value = false
   } catch (err) {
-    console.error('Error fetching article detail:', err)
+    console.error('Error loading article detail:', err)
     error.value = true
   } finally {
     loading.value = false
@@ -156,12 +173,12 @@ const share = (platform) => {
 
 // Initial fetch
 onMounted(() => {
-  fetchArticleDetail(route.params.slug)
+  loadArticleDetail(route.params.slug)
 })
 
 // Watch for slug changes (if user clicks related links)
 watch(() => route.params.slug, (newSlug) => {
-  if (newSlug) fetchArticleDetail(newSlug)
+  if (newSlug) loadArticleDetail(newSlug)
 })
 </script>
 

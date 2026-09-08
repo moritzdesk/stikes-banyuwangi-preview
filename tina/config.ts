@@ -30,74 +30,6 @@ export default defineConfig({
   schema: {
     collections: [
       // -----------------------------------------------
-      // SEMESTA AI GATEWAY
-      // -----------------------------------------------
-      {
-        name: "semesta",
-        label: "🚀 Semesta AI Gateway",
-        path: "src/data",
-        format: "json",
-        ui: {
-          allowedActions: {
-            create: false,
-            delete: false,
-          },
-        },
-        match: {
-          include: "semesta",
-        },
-        fields: [
-          {
-            type: "string",
-            name: "semestaUrl",
-            label: "URL Semesta AI",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "gatewayButton",
-            label: "Akses Semesta AI",
-            ui: {
-              component: (props: any) => {
-                const url = props.tinaForm?.values?.semestaUrl || "https://platform-semesta.sclstudio.id/auth/login";
-                return React.createElement(
-                  "div",
-                  { style: { padding: "16px", background: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0", marginTop: "12px", textAlign: "center" } },
-                  React.createElement(
-                    "p",
-                    { style: { fontSize: "13px", color: "#64748b", marginBottom: "12px", lineHeight: "1.5" } },
-                    "Semesta AI adalah platform pengeditan konten bertenaga AI untuk mengoptimalkan tulisan Anda secara cerdas. Klik tombol di bawah ini untuk membuka platform Semesta AI di tab baru."
-                  ),
-                  React.createElement(
-                    "a",
-                    {
-                      href: url,
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                      style: {
-                        display: "inline-flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        padding: "12px 24px",
-                        background: "linear-gradient(135deg, #195682 0%, #0b2b42 100%)",
-                        color: "#fff",
-                        fontWeight: "bold",
-                        fontSize: "14px",
-                        borderRadius: "8px",
-                        textDecoration: "none",
-                        boxShadow: "0 4px 6px -1px rgba(25, 86, 130, 0.2)",
-                        transition: "all 0.2s"
-                      }
-                    },
-                    "🚀 Buka Semesta AI Sekarang"
-                  )
-                );
-              }
-            }
-          }
-        ]
-      },
-      // -----------------------------------------------
       // HOMEPAGE SETTINGS
       // -----------------------------------------------
       {
@@ -358,7 +290,7 @@ export default defineConfig({
               {
                 type: "object",
                 name: "categories",
-                label: "Daftar Pemetaan Kategori dari CMS Semesta",
+                label: "Daftar Pemetaan Kategori dari CMS (Payload)",
                 list: true,
                 ui: {
                   itemProps: (item) => ({
@@ -369,7 +301,7 @@ export default defineConfig({
                   {
                     type: "string",
                     name: "slug",
-                    label: "Slug Kategori di Semesta (Contoh: blog, opini, agenda)",
+                    label: "Slug Kategori di CMS (Contoh: berita, pengumuman)",
                     required: true,
                   },
                   {

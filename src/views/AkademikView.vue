@@ -32,7 +32,7 @@
       <div class="flex flex-col lg:flex-row gap-10">
         <!-- Pengumuman Akademik -->
         <main class="w-full lg:w-2/3">
-          <!-- News Section (Tetap menggunakan Semesta API) -->
+          <!-- News Section (data lokal prebuild Payload) -->
           <div class="bg-white rounded-2xl shadow-md p-8">
             <div class="flex items-center justify-between mb-8 border-b pb-4">
               <h2 class="text-2xl font-bold text-[#0b2b42]">Berita & Pengumuman Akademik</h2>
@@ -98,27 +98,17 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
+import { getArticlesBySlugs } from '../composables/useArticles'
 
 const academicNews = ref([])
 const newsLoading = ref(true)
 const uploadedDocuments = ref([])
 
-// 1. Fetch Academic News from Semesta API
-const fetchAcademicNews = async () => {
+// 1. Berita akademik dari data lokal prebuild Payload (kategori pengumuman)
+const loadAcademicNews = async () => {
   try {
     newsLoading.value = true
-    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
-    const data = await response.json()
-    // Kategori akademik atau pengumuman
-    academicNews.value = (data.data || [])
-      .filter(a => a.category?.slug === 'pengumuman')
-      .slice(0, 5)
-      .map(item => ({
-        title: item.title,
-        slug: item.slug,
-        excerpt: item.description,
-        image: item.image_path || item.small_image_path
-      }))
+    academicNews.value = getArticlesBySlugs(['pengumuman'], 5)
   } catch (error) {
     console.error('Error news:', error)
   } finally {
@@ -146,7 +136,7 @@ const loadUploadedDocuments = async () => {
 }
 
 onMounted(() => {
-  fetchAcademicNews()
+  loadAcademicNews()
   loadUploadedDocuments()
 })
 </script>

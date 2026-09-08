@@ -140,38 +140,27 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { getArticlesBySlugs } from '../composables/useArticles'
 
 const startIndex = ref(0)
 const allNews = ref([])
 const loading = ref(true)
 
-const fetchHighlightNews = async () => {
+const loadHighlightNews = async () => {
   try {
     loading.value = true
-    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
-    const data = await response.json()
-    const articles = data.data || []
-    
-    // Filter only those with 'highlight' category slug
-    allNews.value = articles
-      .filter(item => item.category?.slug === 'highlight')
-      .map(item => ({
-        title: item.title,
-        slug: item.slug,
-        date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-        image: item.image_path || item.large_image_path,
-        excerpt: item.description,
-        category: item.category?.name || 'Berita'
-      }))
+    // Data lokal hasil prebuild Payload (tanpa fetch runtime).
+    // Hanya kategori 'highlight'
+    allNews.value = getArticlesBySlugs(['highlight'], 20)
   } catch (error) {
-    console.error('Error fetching highlight news:', error)
+    console.error('Error loading highlight news:', error)
   } finally {
     loading.value = false
   }
 }
 
 onMounted(() => {
-  fetchHighlightNews()
+  loadHighlightNews()
 })
 
 const displayedNews = computed(() => {

@@ -127,78 +127,28 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import globalSettings from '../data/settings.json'
+import { getArticlesBySlugs } from '../composables/useArticles'
 
 const blogNews = ref([])
 const campusInfo = ref([])
 const loading = ref(true)
 
-const fetchNews = async () => {
+const loadNews = async () => {
   try {
     loading.value = true
-    const response = await fetch('https://app-semesta.sclstudio.id/api/7484760816345a2673df2eb6c36eca74/categories/all/articles')
-    const data = await response.json()
-    const allArticles = data.data || []
-    
-    // Read category settings
-    const activeCategories = globalSettings.articleSettings?.categories?.filter(c => c.show) || []
-    const activeSlugs = activeCategories.map(c => c.slug)
-    const wordLimit = globalSettings.articleSettings?.excerptWordLimit || 15
-
-    // Helper to truncate excerpts by word limit
-    const getTruncatedExcerpt = (text) => {
-      if (!text) return ''
-      const words = text.trim().split(/\s+/)
-      if (words.length > wordLimit) {
-        return words.slice(0, wordLimit).join(' ') + '...'
-      }
-      return text
-    }
-    
-    // Section 1: Berita, Edukasi, Opini
-    const section1Slugs = ['berita', 'edukasi', 'opini']
-    blogNews.value = allArticles
-      .filter(item => section1Slugs.includes(item.category?.slug))
-      .slice(0, 3)
-      .map(item => {
-        const catObj = activeCategories.find(c => c.slug === item.category?.slug)
-        const displayName = catObj ? catObj.displayName : (item.category?.name || 'Artikel')
-        return {
-          title: item.title,
-          slug: item.slug,
-          date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-          image: item.image_path || item.large_image_path,
-          excerpt: getTruncatedExcerpt(item.description),
-          category: displayName
-        }
-      })
-    
-    // Section 2: Prestasi, Pengumuman, Kegiatan
-    const campusSlugs = ['prestasi', 'pengumuman', 'kegiatan']
-    campusInfo.value = allArticles
-      .filter(item => campusSlugs.includes(item.category?.slug))
-      .slice(0, 3)
-      .map(item => {
-        const catObj = activeCategories.find(c => c.slug === item.category?.slug)
-        const displayName = catObj ? catObj.displayName : (item.category?.name || 'Informasi')
-        return {
-          title: item.title,
-          slug: item.slug,
-          date: item.publish_date ? new Date(item.publish_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '',
-          image: item.image_path || item.large_image_path,
-          excerpt: getTruncatedExcerpt(item.description),
-          category: displayName
-        }
-      })
+    // Data lokal hasil prebuild Payload (tanpa fetch runtime).
+    // Section 1: Berita, Edukasi, Opini — Section 2: Prestasi, Pengumuman, Kegiatan
+    blogNews.value = getArticlesBySlugs(['berita', 'edukasi', 'opini'], 3)
+    campusInfo.value = getArticlesBySlugs(['prestasi', 'pengumuman', 'kegiatan'], 3)
   } catch (error) {
-    console.error('Error fetching news:', error)
+    console.error('Error loading news:', error)
   } finally {
     loading.value = false
   }
 }
 
 onMounted(() => {
-  fetchNews()
+  loadNews()
 })
 </script>
 
