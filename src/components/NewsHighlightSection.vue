@@ -4,127 +4,107 @@
       
       <!-- Loading State -->
       <div v-if="loading" class="h-[600px] bg-gray-100 animate-pulse rounded-2xl flex items-center justify-center">
-         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Memuat Highlight...</p>
+         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">{{ $t('home.news.loadingHighlight') }}</p>
       </div>
 
       <!-- Outer wrapper -->
-      <div v-else-if="allNews.length > 0" class="relative group">
-        <!-- Dynamic Layout wrapper -->
-        <div 
-          class="flex flex-col lg:flex-row gap-2 h-auto"
-          :class="[allNews.length >= 5 ? 'lg:h-[600px]' : 'lg:h-auto']"
-        >
-          
-          <!-- Large Featured Article (Left) -->
-          <div 
-            v-if="featuredNews" 
-            class="relative overflow-hidden rounded-sm lg:rounded-none bg-gray-900 transition-all duration-500"
-            :class="[allNews.length === 1 ? 'w-full aspect-[21/9]' : 'w-full lg:w-[60%] h-[400px] lg:h-full']"
-          >
-            <Transition name="fade" mode="out-in">
-              <div :key="featuredNews.title" class="absolute inset-0">
-                <img 
-                  :src="featuredNews.image" 
-                  :alt="featuredNews.title" 
-                  class="w-full h-full object-cover transition-transform duration-[10000ms] hover:scale-110"
-                />
-              </div>
-            </Transition>
-            
-            <!-- Dark Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-            
-            <!-- Content -->
-            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-[#f9ac42] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest truncate shadow-lg">HIGHLIGHT</span>
-                <span v-if="featuredNews.category" class="bg-black/60 text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest border border-white/30">{{ featuredNews.category }}</span>
-              </div>
-              <Transition name="slide-fade" mode="out-in">
-                <div :key="featuredNews.title">
-                  <router-link :to="`/artikel/${featuredNews.slug}`" class="block">
-                    <h2 
-                      class="font-bold text-white mb-4 leading-tight hover:text-[#f9ac42] transition-colors cursor-pointer"
-                      :class="[allNews.length === 1 ? 'text-3xl md:text-5xl lg:text-6xl' : 'text-2xl md:text-4xl']"
-                    >
-                      {{ featuredNews.title }}
-                    </h2>
-                  </router-link>
-                  <div class="flex items-center text-gray-300 text-sm space-x-4 mb-4 font-bold uppercase tracking-widest text-[10px]">
-                    <span class="flex items-center"><i class="far fa-user mr-2 text-xs"></i> HUMAS UNIDSOE</span>
-                    <span class="flex items-center"><i class="far fa-clock mr-2 text-xs"></i> {{ featuredNews.date }}</span>
-                  </div>
-                  <p v-if="featuredNews.excerpt" class="text-gray-300 text-sm md:text-base line-clamp-2 max-w-3xl hidden md:block leading-relaxed">
-                    {{ featuredNews.excerpt }}
-                  </p>
-                </div>
-              </Transition>
+      <div v-else-if="allNews.length > 0" class="relative">
+        <!-- 1 artikel: full-bleed -->
+        <div v-if="allNews.length === 1 && featuredNews" class="relative overflow-hidden rounded-2xl bg-gray-900 aspect-[21/9]">
+          <img
+            :src="featuredNews.image"
+            :alt="featuredNews.title"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#f9ac42] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest shadow-lg">HIGHLIGHT</span>
+              <span v-if="featuredNews.category" class="bg-black/60 text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest border border-white/30">{{ featuredNews.category }}</span>
             </div>
-          </div>
-
-          <!-- Grid of Smaller Articles (Right) - Only if more than 1 article -->
-          <div 
-            v-if="allNews.length > 1"
-            class="grid gap-2"
-            :class="[
-              allNews.length >= 5 ? 'w-full lg:w-[40%] grid-cols-1 md:grid-cols-2 lg:grid-cols-2 h-full' : 'w-full lg:w-[40%] grid-cols-1'
-            ]"
-          >
-            <div 
-              v-for="(item, index) in smallNewsItems" 
-              :key="item.title"
-              class="relative overflow-hidden bg-gray-900"
-              :class="[allNews.length >= 5 ? 'aspect-[16/10] lg:aspect-auto' : 'h-[200px] lg:flex-1']"
-            >
-              <Transition name="fade" mode="out-in">
-                <div :key="item.title" class="absolute inset-0">
-                  <img 
-                    :src="item.image" 
-                    :alt="item.title" 
-                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                  />
-                </div>
-              </Transition>
-              
-              <!-- Dark Overlay -->
-              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
-              
-              <!-- Content -->
-              <div class="absolute inset-0 p-4 flex flex-col justify-end">
-                <div class="flex gap-2 mb-2">
-                  <span class="bg-black/60 text-white text-[8px] font-bold px-1.5 py-0.5 uppercase tracking-widest border border-white/20">{{ item.category || 'Berita' }}</span>
-                </div>
-                <router-link :to="`/artikel/${item.slug}`" class="block mb-2">
-                  <h3 class="text-white font-bold text-sm lg:text-base leading-snug hover:text-[#f9ac42] transition-colors line-clamp-2 cursor-pointer">
-                    {{ item.title }}
-                  </h3>
-                </router-link>
-                <div class="flex items-center text-gray-400 text-[10px] space-x-3 font-bold uppercase tracking-widest text-[8px]">
-                  <span class="flex items-center"><i class="far fa-clock mr-1"></i> {{ item.date }}</span>
-                </div>
-              </div>
+            <router-link :to="`/artikel/${featuredNews.slug}`" class="block">
+              <h2 class="font-bold text-white mb-4 leading-tight text-3xl md:text-5xl hover:text-[#f9ac42] transition-colors cursor-pointer">
+                {{ featuredNews.title }}
+              </h2>
+            </router-link>
+            <div class="flex items-center text-gray-300 text-sm space-x-4 mb-4 font-bold uppercase tracking-widest text-[10px]">
+              <span class="flex items-center"><i class="far fa-user mr-2 text-xs"></i> HUMAS UNIDSOE</span>
+              <span class="flex items-center"><i class="far fa-clock mr-2 text-xs"></i> {{ featuredNews.date }}</span>
             </div>
+            <p v-if="featuredNews.excerpt" class="text-gray-300 text-sm md:text-base line-clamp-2 max-w-3xl hidden md:block leading-relaxed">
+              {{ featuredNews.excerpt }}
+            </p>
           </div>
         </div>
 
-        <!-- Slider Arrows - Only if more than 5 articles -->
-        <template v-if="allNews.length > 5">
-          <button 
-            @click="prevSlide"
-            class="absolute left-2 lg:-left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 lg:w-12 lg:h-12 bg-black/60 text-white flex items-center justify-center rounded-sm hover:bg-[#f9ac42] transition-all opacity-0 group-hover:opacity-100 shadow-xl border border-white/10"
-            aria-label="Previous News"
+        <!-- 2+: lead besar + list bernomor -->
+        <div v-else class="grid lg:grid-cols-3 gap-6">
+          <!-- Lead -->
+          <router-link
+            v-if="featuredNews"
+            :to="`/artikel/${featuredNews.slug}`"
+            class="lg:col-span-2 group relative overflow-hidden rounded-2xl bg-gray-900 min-h-[380px] lg:min-h-[520px] block"
           >
-            <svg class="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-          </button>
+            <img
+              :src="featuredNews.image"
+              :alt="featuredNews.title"
+              class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"></div>
+            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-[#f9ac42] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest shadow-lg">HIGHLIGHT</span>
+                <span v-if="featuredNews.category" class="bg-black/60 text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest border border-white/30">{{ featuredNews.category }}</span>
+              </div>
+              <h2 class="font-bold text-white mb-4 leading-tight text-2xl md:text-4xl group-hover:text-[#f9ac42] transition-colors">
+                {{ featuredNews.title }}
+              </h2>
+              <div class="flex items-center text-gray-300 text-sm space-x-4 mb-4 font-bold uppercase tracking-widest text-[10px]">
+                <span class="flex items-center"><i class="far fa-user mr-2 text-xs"></i> HUMAS UNIDSOE</span>
+                <span class="flex items-center"><i class="far fa-clock mr-2 text-xs"></i> {{ featuredNews.date }}</span>
+              </div>
+              <p v-if="featuredNews.excerpt" class="text-gray-300 text-sm md:text-base line-clamp-2 max-w-3xl hidden md:block leading-relaxed">
+                {{ featuredNews.excerpt }}
+              </p>
+            </div>
+          </router-link>
 
-          <button 
-            @click="nextSlide"
-            class="absolute right-2 lg:-right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 lg:w-12 lg:h-12 bg-black/60 text-white flex items-center justify-center rounded-sm hover:bg-[#f9ac42] transition-all opacity-0 group-hover:opacity-100 shadow-xl border border-white/10"
-            aria-label="Next News"
-          >
-            <svg class="w-6 h-6 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-          </button>
-        </template>
+          <!-- List bernomor -->
+          <div class="flex flex-col rounded-2xl border border-gray-100 bg-gray-50/60 overflow-hidden">
+            <div class="px-6 pt-5 pb-3 text-[11px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100">
+              {{ $t('home.news.otherHighlights') }}
+            </div>
+            <div class="flex-1 divide-y divide-gray-100 overflow-y-auto max-h-[420px] lg:max-h-none">
+              <router-link
+                v-for="(item, index) in smallNewsItems"
+                :key="item.slug"
+                :to="`/artikel/${item.slug}`"
+                class="group flex gap-4 p-5 hover:bg-white transition-colors"
+              >
+                <span class="text-2xl font-black text-gray-200 group-hover:text-[#f9ac42] transition-colors leading-none pt-0.5">
+                  {{ String(index + 2).padStart(2, '0') }}
+                </span>
+                <span class="flex-1 min-w-0">
+                  <span v-if="item.category" class="inline-block text-[9px] font-bold uppercase tracking-widest text-[#195682] bg-blue-50 px-2 py-0.5 rounded-full mb-2">
+                    {{ item.category }}
+                  </span>
+                  <span class="block font-bold text-gray-900 text-[15px] leading-snug group-hover:text-[#195682] transition-colors line-clamp-2">
+                    {{ item.title }}
+                  </span>
+                  <span class="mt-1.5 flex items-center text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                    <i class="far fa-clock mr-1.5"></i> {{ item.date }}
+                  </span>
+                </span>
+                <img
+                  :src="item.image"
+                  :alt="item.title"
+                  class="w-20 h-20 rounded-xl object-cover flex-shrink-0"
+                  loading="lazy"
+                />
+              </router-link>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Empty State -->
@@ -132,7 +112,7 @@
          <svg class="w-16 h-16 text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z"></path>
          </svg>
-         <p class="text-gray-400 font-bold">Belum ada artikel sorotan (highlight)</p>
+          <p class="text-gray-400 font-bold">{{ $t('home.news.empty') }}</p>
       </div>
     </div>
   </section>
@@ -142,7 +122,6 @@
 import { ref, computed, onMounted } from 'vue'
 import { getArticlesBySlugs } from '../composables/useArticles'
 
-const startIndex = ref(0)
 const allNews = ref([])
 const loading = ref(true)
 
@@ -165,35 +144,12 @@ onMounted(() => {
 
 const displayedNews = computed(() => {
   if (allNews.value.length === 0) return []
-  const items = []
-  
-  // Dynamic number of items to display based on availability
-  // If we have less than 5, show all available ones once (no duplicates)
-  if (allNews.value.length < 5) {
-    return allNews.value
-  }
-
-  // If 5 or more, use the sliding logic
-  for (let i = 0; i < 5; i++) {
-    items.push(allNews.value[(startIndex.value + i) % allNews.value.length])
-  }
-  return items
+  // Lead + maksimal 4 pendamping (list bernomor, tanpa slider)
+  return allNews.value.slice(0, 5)
 })
 
 const featuredNews = computed(() => displayedNews.value[0])
 const smallNewsItems = computed(() => displayedNews.value.slice(1))
-
-const nextSlide = () => {
-  if (allNews.value.length > 5) {
-    startIndex.value = (startIndex.value + 1) % allNews.value.length
-  }
-}
-
-const prevSlide = () => {
-  if (allNews.value.length > 5) {
-    startIndex.value = (startIndex.value - 1 + allNews.value.length) % allNews.value.length
-  }
-}
 </script>
 
 <style scoped>

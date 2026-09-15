@@ -26,7 +26,7 @@
               >
                 {{ slide.tag }}
               </span>
-              <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" v-html="slide.headline">
+              <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" v-html="headlineHtml(slide)">
               </h1>
               <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
                 {{ slide.subheadline }}
@@ -80,10 +80,41 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import homeData from '../data/home.json'
+import { getHomeSlides } from '../composables/useSite'
+
+// Data lokal hasil prebuild Payload (tanpa JSON statis)
+const homeData = computed(() => ({ slides: getHomeSlides() }))
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+}
+function headlineHtml(slide) {
+  // Field baru (tanpa HTML) prioritas; fallback ke headline lama untuk data legacy
+  const line1 = slide.headlineLine1?.trim()
+  const highlight = slide.headlineHighlight?.trim()
+  const line2 = slide.headlineLine2?.trim()
+  const color = slide.headlineHighlightColor?.trim() || '#f9ac42'
+  const br = slide.headlineBreak !== false
+  if (line1 || highlight || line2) {
+    const parts = []
+    if (line1) parts.push(esc(line1))
+    if (highlight) {
+      if (br && line1) parts.push('<br/>')
+      else if (line1) parts.push(' ')
+      parts.push(`<span style="color:${esc(color)}">${esc(highlight)}</span>`)
+    }
+    if (line2) {
+      if (br) parts.push('<br/>')
+      else parts.push(' ')
+      parts.push(esc(line2))
+    }
+    return parts.join('')
+  }
+  return slide.headline || ''
+}
 
 const currentSlide = ref(0)
-const totalSlides = computed(() => homeData.slides?.length || 0)
+const totalSlides = computed(() => homeData.value.slides?.length || 0)
 let slideInterval
 
 const nextSlide = () => {

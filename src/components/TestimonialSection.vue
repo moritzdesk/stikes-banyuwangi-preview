@@ -12,13 +12,13 @@
         <!-- Text Content -->
         <div class="md:w-1/2">
             <span class="inline-block py-1 px-3 rounded-full bg-[#58d1fd]/20 text-[#58d1fd] text-sm font-bold mb-6 tracking-wider uppercase">
-                Kata Mereka
+                {{ $t('home.testi.eyebrow') }}
             </span>
           <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-             Cerita Sukses Alumni Universitas Dr. Soekardjo Banyuwangi
+             {{ $t('home.testi.title') }}
           </h2>
           <p class="text-blue-100 text-lg mb-8 leading-relaxed">
-            Lebih dari 1000 alumni telah bekerja di berbagai fasilitas kesehatan pemerintah dan swasta di seluruh Indonesia. Dengar apa kata mereka tentang pengalaman belajar di sini.
+            {{ $t('home.testi.subtitle') }}
           </p>
           <div class="flex gap-4">
                <button @click="prevTestimonial" class="p-4 rounded-full border border-white/30 hover:bg-white hover:text-[#195682] transition-all">
@@ -61,7 +61,10 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import settings from '../data/settings.json'
+import { getTestimonials } from '../composables/useSite'
+
+// Testimoni dari prebuild Payload (tanpa JSON statis)
+const settings = { testimonials: getTestimonials() }
 
 const testimonials = settings.testimonials
 

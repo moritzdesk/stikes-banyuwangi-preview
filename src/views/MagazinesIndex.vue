@@ -11,16 +11,16 @@
       <div class="container-custom px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
         <!-- Breadcrumbs -->
         <nav class="flex mb-6 text-sm text-gray-300 font-medium">
-          <router-link to="/" class="hover:text-white transition-colors">Beranda</router-link>
+          <router-link to="/" class="hover:text-white transition-colors">{{ $t('majalah.crumbHome') }}</router-link>
           <span class="mx-2">/</span>
-          <span class="text-[#f9ac42]">Majalah Kampus</span>
+          <span class="text-[#f9ac42]">{{ $t('majalah.crumb') }}</span>
         </nav>
         
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-          {{ initialMagazines.title || 'Majalah Kampus' }}
+          {{ magInfo.title || $t('majalah.indexTitle') }}
         </h1>
         <p class="text-lg md:text-xl text-gray-200 max-w-3xl leading-relaxed">
-          {{ initialMagazines.subtitle || 'Kumpulan edisi majalah dan tabloid kampus resmi.' }}
+          {{ magInfo.subtitle || 'Kumpulan edisi majalah dan tabloid kampus resmi.' }}
         </p>
       </div>
     </div>
@@ -34,7 +34,7 @@
           <input 
             v-model="searchQuery"
             type="text" 
-            placeholder="Cari edisi majalah..."
+            :placeholder="$t('majalah.searchPh')"
             class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#195682] focus:border-[#195682] transition-all"
           />
           <span class="absolute left-4 top-3.5 text-gray-400">
@@ -46,11 +46,11 @@
 
         <!-- Filter / Stats Info -->
         <div class="text-sm text-gray-500 font-medium w-full md:w-auto text-center md:text-right">
-          Menampilkan <span class="text-[#195682] font-bold">{{ filteredMagazines.length }}</span> Edisi Majalah
+          {{ $t('majalah.showing') }} <span class="text-[#195682] font-bold">{{ filteredMagazines.length }}</span> {{ $t('majalah.editions') }}
         </div>
       </div>
 
-      <!-- Magazine Grid -->
+      <!-- Magazine Grid: kartu seragam 3:4 + blur-fill (lihat MagazineSection) -->
       <div v-if="filteredMagazines.length > 0" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
         <div 
           v-for="magazine in filteredMagazines" 
@@ -59,17 +59,26 @@
           class="group cursor-pointer flex flex-col h-full bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
         >
           <!-- Magazine Cover Container -->
-          <div class="relative bg-gradient-to-br from-[#195682] to-[#0b2b42] aspect-[3/4] overflow-hidden">
+          <div class="relative bg-[#0b2b42] aspect-[3/4] overflow-hidden">
+            <img
+              v-if="magazine.cover"
+              :src="magazine.cover"
+              alt=""
+              aria-hidden="true"
+              class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-60"
+              loading="lazy"
+            />
             <!-- Cover Image -->
             <img 
               v-if="magazine.cover"
               :src="magazine.cover" 
               :alt="magazine.title"
-              class="w-full h-full object-cover"
+              class="absolute inset-0 w-full h-full object-contain drop-shadow-xl"
+              loading="lazy"
               @error="handleImageError"
             />
             <!-- Fallback Icon Cover -->
-            <div v-else class="w-full h-full flex flex-col items-center justify-center text-white p-6 relative">
+            <div v-else class="absolute inset-0 flex flex-col items-center justify-center text-white p-6 bg-gradient-to-br from-[#195682] to-[#0b2b42] relative">
               <div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
               
               <div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-4 backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
@@ -90,8 +99,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                   </svg>
                 </div>
-                <p class="font-bold tracking-wide text-sm">Baca Selengkapnya</p>
-                <p class="text-xs text-gray-300 mt-1">Klik untuk Baca / Download</p>
+                <p class="font-bold tracking-wide text-sm">{{ $t('majalah.readMore') }}</p>
+                <p class="text-xs text-gray-300 mt-1">{{ $t('majalah.readDownload') }}</p>
               </div>
             </div>
           </div>
@@ -110,7 +119,7 @@
                 {{ magazine.date }}
               </span>
               <span class="text-[#195682] font-bold group-hover:translate-x-1 transition-transform inline-flex items-center">
-                Buka
+                {{ $t('majalah.open') }}
                 <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
@@ -125,9 +134,9 @@
         <svg class="w-20 h-20 text-gray-300 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
         </svg>
-        <h3 class="text-2xl font-bold text-gray-900 mb-2">Edisi Majalah Tidak Ditemukan</h3>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ $t('majalah.emptyTitle') }}</h3>
         <p class="text-gray-500 max-w-md mx-auto">
-          Tidak ada majalah yang cocok dengan kata pencarian "{{ searchQuery }}". Coba cari dengan kata kunci lain.
+          {{ $t('majalah.emptyDesc') }} "{{ searchQuery }}".
         </p>
       </div>
     </div>
@@ -180,13 +189,13 @@
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 001 1h4m-4 0a1 1 0 01-1-1V3m-1 4v10a1 1 0 001 1h3m10-11V9a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V9z"></path>
                 </svg>
-                Download PDF
+                {{ $t('common.download') }} PDF
               </a>
               <button 
                 @click="closeMagazine"
                 class="inline-flex items-center justify-center px-8 py-4 bg-gray-100 text-gray-800 font-bold rounded-xl hover:bg-gray-200 transition-colors"
               >
-                Tutup
+                {{ $t('common.close') }}
               </button>
             </div>
           </div>
@@ -198,9 +207,12 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import initialMagazines from '../data/magazines.json'
+import { getMagazines } from '../composables/useSite'
 
-const magazines = ref(initialMagazines.magazines || [])
+// Data lokal hasil prebuild Payload (tanpa JSON statis, id dipertahankan)
+// Urutan CMS: terlama -> terbaru, dibalik agar terbaru tampil duluan
+const magazines = ref([...(getMagazines().magazines || [])].reverse())
+const magInfo = getMagazines()
 const selectedMagazine = ref(null)
 const searchQuery = ref('')
 

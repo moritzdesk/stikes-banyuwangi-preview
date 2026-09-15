@@ -27,7 +27,7 @@
                 📅
               </div>
               <div>
-                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Periode Pendaftaran:</div>
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">{{ $t('pmb.regPeriod') }}</div>
                 <div class="text-sm font-bold text-[#0b2b42]">{{ data.openDate }}</div>
               </div>
             </div>
@@ -45,8 +45,8 @@
       <!-- Registration Pathways Grid -->
       <div class="mb-12">
         <div class="text-center mb-10">
-          <span class="text-[#195682] font-bold uppercase tracking-wider text-sm block mb-2">Jalur Seleksi</span>
-          <h2 class="text-3xl font-bold text-[#0b2b42]">Pilihan Jalur Pendaftaran</h2>
+          <span class="text-[#195682] font-bold uppercase tracking-wider text-sm block mb-2">{{ $t('pmb.trackTitle') }}</span>
+          <h2 class="text-3xl font-bold text-[#0b2b42]">{{ $t('pmb.trackHeading') }}</h2>
           <p class="text-gray-500 mt-2 max-w-xl mx-auto text-sm">
             Tersedia berbagai pilihan jalur masuk yang disesuaikan dengan minat, bakat, dan kompetensi calon mahasiswa:
           </p>
@@ -124,7 +124,7 @@
           <div class="absolute bottom-0 left-0 w-48 h-48 bg-white rounded-full translate-y-20 -translate-x-20"></div>
         </div>
 
-        <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block mb-2 relative z-10">Portal Online Resmi</span>
+        <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block mb-2 relative z-10">{{ $t('pmb.officialPortal') }}</span>
         <h2 class="text-3xl font-bold mb-4 relative z-10 leading-tight">
           Pendaftaran Online Mahasiswa Baru TA 2026/2027
         </h2>
@@ -155,7 +155,10 @@
 <script setup>
 import { onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
-import data from '../data/infopmb.json'
+import { getInfoPmb } from '../composables/useSite'
+
+// Data lokal hasil prebuild Payload (tanpa JSON statis)
+const data = getInfoPmb()
 
 onMounted(() => {
   document.title = `${data.title} | Universitas Dr. Soekardjo`

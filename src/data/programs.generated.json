@@ -1,0 +1,1121 @@
+{
+  "generatedAt": "2026-09-15T07:28:27.400Z",
+  "cmsUrl": "http://127.0.0.1:3000",
+  "programs": [
+    {
+      "id": 4,
+      "title": "D3 Farmasi",
+      "slug": "d3-farmasi",
+      "faculty": "FIKES",
+      "level": "D3",
+      "degree": "A.Md.Farm",
+      "accreditation": "Baik Sekali",
+      "duration": "6 Semester / 3 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/d3-farmasi-768x1075.jpg",
+      "shortDescription": "Mencetak Tenaga Teknis Kefarmasian (TTK) yang terampil dan teliti di bagian peracikan, inventori dan pemesanan obat resep dokter.",
+      "profilProgramStudi": "D3 Farmasi salah satu Prodi di Universitas Dr. Soekardjo Banyuwangi yang berdiri tahun 2015. Dalam kurun waktu kurang lebih 10 tahun telah mencetak alumni yang bekerja di ranah pelayanan kefarmasian seperti Apotek, Rumah Sakit, Klinik, Pedagang Besar Farmasi, Industri Farmasi, Dinas Kesehatan dan Puskesmas.",
+      "visi": "Menjadi penyelenggara Pendidikan vokasi yang menghasilkan tenaga kefarmasian yang berdaya saing global, berlandaskan pada keimanan, serta unggul dalam bidang pelayanan kefarmasian",
+      "misi": [
+        "Menyelenggarakan proses pendidikan vokasi berdaya saing global yang berorientasi pada pengembangan ilmu pelayanan farmasi klinik dan komunitas.",
+        "Melaksanakan penelitian di bidang farmasi yang berorientasi pada kebutuhan masyarakat.",
+        "Mengembangkan aktivitas pengabdian kepada masyarakat yang berkontribusi dalam pembangunan kesehatan dengan mengacu pada hasil penelitian dan kearifan lokal.",
+        "Menghasilkan lulusan yang mandiri, beriman, dan bertakwa.",
+        "Menjalin hubungan kerja sama dengan berbagai stakeholder dan institusi pendidikan lainnya."
+      ],
+      "tujuan": [],
+      "keunggulan": "Prodi D3 Farmasi Universitas Dr. Soekardjo mencetak Tenaga Vokasi Farmasi yang mampu bersaing di dunia pelayanan kefarmasian, karena dibekali dengan pelatihan pencampuran obat steril",
+      "pembelajaran": "Pembelajaran di D3 Farmasi dilakukan secara hibrid, yaitu luring atau tatap muka untuk matakuliah inti farmasi dan praktikum, sedangkan daring untuk matakuliah pendukung. Dalam satu semester, mahasiswa akan mengikuti kegiatan pembelajaran kuliah dan praktikum, dimana bahan perkuliahan akan dipraktekkan secara mandiri ataupun berkelompok oleh mahasiswa.",
+      "masaStudiDetail": "Pendidikan D3 Farmasi di Universitas Dr. Soekardjo Banyuwangi ditempuh dalam waktu 3 tahun (6 semester) dengan jumlah sks sebanyak 115 sks dengan sks per semester antara 16 – 20 sks.",
+      "saranaAkademik": "Sarana penunjang pembelajaran mahasiswa D3 Farmasi antara laboratorium Farmasetika, Farmakologi, Bahan Alam, Kimia, Teknologi Farmasi  yang dilengkapi dengan peralatan yang memadai. Selain itu terdapat banyak ruang kelas yang dapat digunakan dan dilengkapi dengan LCD Proyektor dan AC. Mahasiswa juga dapat menggunakan akses internet gratis untuk menunjang perkuliahan. Pembelajaran di D3 Farmasi Universitas Dr. Soekardjo Banyuwangi meliputi kuliah di kelas, praktikum di laboratorium dan praktek di lahan pelayanan kefarmasian.",
+      "praktikLapangan": "Praktek lapangan atau lahan dilakukan di semester V, di mana mahasiswa telah memiliki bekal keilmuan yang cukup, sehingga pembelajaran di lahan menjadi lebih efektif. Lahan yang digunakan oleh mahasiswa sudah ditentukan dari Program Studi agar standar pembelajaran yang ditargetkan dapat tercapai sesuai dengan kebutuhan dunia kerja",
+      "profilLulusan": "Pendidikan D3 Farmasi Universitas Dr. Soekardjo Banyuwangi akan menghasilkan lulusan dengan gelar akademik Ahli Madya Farmasi (A.Md. Farm.)\n>",
+      "jejaringKemitraan": [
+        "Penunjang pembelajaran dan karir mahasiswa, D3 Farmasi Dr. Soekardjo Banyuwangi berkerja sama dengan:",
+        "PT. Kimia Farma",
+        "Apotek Kebalenan",
+        "Apotek Lukito",
+        "Apotek Drajat Farma",
+        "Apotek Guardian",
+        "Dinas Kesehatan Banyuwangi",
+        "RSUD Blambangan",
+        "RSUD Dr. Soetomo Surabaya",
+        "RS Al Huda",
+        "Berbagai sarana pelayanan kesehatan lainnya"
+      ],
+      "competence": "Peracikan sediaan farmasi cair/padat, pemahaman farmakologi, manajemen apotek K24/Kimia Farma.",
+      "prospects": "Tenaga Teknis Kefarmasian Klinik Utama, Asisten Apoteker RS, Industri Obat Tradisional (IOT).",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692b67",
+          "name": "Ratna Paundria Anjani, A.Md.Farm",
+          "position": "Tenaga Vokasi Farmasi",
+          "place": "RSUD Dr. Soetomo Surabaya"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b68",
+          "name": "Lisa Vironika Agustin Ningtias, A.Md.Farm",
+          "position": "Tenaga Vokasi Farmasi",
+          "place": "RSUD Dr. Soetomo Surabaya"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b69",
+          "name": "Citra Aisyah, A.Md.Farm",
+          "position": "Pengelola Layanan Operasional",
+          "place": "Dinas Kesehatan Kabupaten Banyuwangi"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b6a",
+          "name": "Sri Windarti Samporna, A.Md.Farm",
+          "position": "Tenaga Vokasi Farmasi",
+          "place": "RSUD Genteng"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b6b",
+          "name": "Budi Tantri Anisa Lestari",
+          "position": "Tenaga Teknis Kefarmasian",
+          "place": "RS Al Huda"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b6c",
+          "name": "Indriyatul Masitah",
+          "position": "PPPK",
+          "place": "Puskesmas Kertosari"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b6d",
+          "name": "Muhammad Dzikry Alfiyansyah",
+          "position": "Asisten Apoteker",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b6e",
+          "question": "Apakah peluang karir di D3 Farmasi masih cukup besar?",
+          "answer": "Peluang karir di D3 Farmasi masih cukup besar. Hal ini dibuktikan dengan data dari Kementerian Kesehatan bahwa tenaga vokasi farmasi (lulusan D3 Farmasi) masih belum mencukupi kebutuhan yang ada di lapangan. Kekurangan tenaga vokasi farmasi diperkirakan mencapai sekitar 50% dari kebutuhan yang ada."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b6f",
+          "question": "Apa saja yang dipelajari di Program Studi D3 Farmasi?",
+          "answer": "Mahasiswa D3 Farmasi akan mempelajari berbagai hal, seperti meracik obat, memberikan informasi obat dan alat kesehatan, serta pengelolaan farmasi di apotek, rumah sakit, puskesmas, dan klinik. Selain itu, mahasiswa juga mempelajari produksi obat sehingga memiliki peluang berkarir di industri farmasi, termasuk bidang obat tradisional."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b70",
+          "question": "Di mana saja peluang kerja lulusan D3 Farmasi?",
+          "answer": "Lulusan D3 Farmasi memiliki peluang kerja yang luas, antara lain pada pelayanan kesehatan seperti apotek, rumah sakit, klinik, dan puskesmas; bidang distribusi farmasi seperti Pedagang Besar Farmasi (PBF) obat dan alat kesehatan; industri farmasi baik obat sintetik maupun obat tradisional; serta instansi pemerintah seperti Dinas Kesehatan."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b71",
+          "question": "Apakah kuliah di D3 Farmasi susah?",
+          "answer": "Tidak. Program Studi D3 Farmasi dirancang agar mudah diikuti oleh seluruh mahasiswa. Proses pembelajaran didukung oleh dosen-dosen yang kompeten, ramah, dan siap membimbing mahasiswa baik dalam teori maupun praktik."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "D3 Keperawatan",
+      "slug": "d3-keperawatan",
+      "faculty": "FIKES",
+      "level": "D3",
+      "degree": "A.Md.Kep",
+      "accreditation": "Baik Sekali",
+      "duration": "6 Semester / 3 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/d3-keperawatan-768x512.jpg",
+      "shortDescription": "Program vokasi keperawatan kebanggaan dengan rasio kelulusan uji kompetensi terbaik. Lulusan sangat cekatan di perawatan lapangan.",
+      "profilProgramStudi": "Prodi D3 Keperawatan UNIDSOE merupakan program pendidikan vokasi keperawatan mencetak perawat vokasi yang memiliki keunggulan pada keperawatan holistik. Lulusan kami tersebar di RS di seluruh Indonesia maupun luar negeri serta sukses membuka praktek mandiri bidang keperawatan holistik. Proses pembelajaran teori dan praktik yang diterapkan interaktif, holistik, integratif berbasis kebutuhan layanan kesehatan, serta didukung kegiatan penelitian dan pengabdian masyarakat yang berfokus keperawatan holistik. Tujuan utamanya adalah menghasilkan lulusan perawat vokasi yang religius, beretika, berkarakter, serta mampu memberikan asuhan keperawatan secara komprehensif dan berdaya saing di tingkat nasional maupun global.",
+      "visi": "Menjadi Program Studi Diploma Tiga Keperawatan yang berdaya saing global, dengan  keunggulan pada Keperawatan Holistik dengan mengedepankan aspek spiritual tahun 2025",
+      "misi": [
+        "Menyelenggarakan pendidikan yang unggul pada keperawatan holistik dengan mengedepankan aspek spiritual.",
+        "Menyelenggarakan penelitian yang unggul pada keperawatan holistik dengan mengedepankan aspek spiritual.",
+        "Menyelenggarakan pengabdian kepada masyarakat (PkM) yang unggul pada keperawatan holistik dengan mengedepankan aspek spiritual.",
+        "Menyelenggarakan kerja sama dengan berbagai lembaga dalam negeri maupun luar negeri dalam mewujudkan tridharma perguruan tinggi."
+      ],
+      "tujuan": [],
+      "keunggulan": "Memiliki keunggulan spesifik pada keperawatan holistik berbasis spiritual yang belum banyak dimiliki prodi lain.\nLulusan tidak hanya kompeten secara klinis, tetapi juga unggul dalam pendekatan humanis dan spiritual care.\nAdanya program pengabdian masyarakat inovatif yang terintegrasi pada pembelajaran.\nJejaring kerja sama dengan berbagai institusi kesehatan dalam dan luar negeri.\nPeluang pengembangan diri mahasiswa melalui kegiatan akademik dan non-akademik yang terarah.\nMenghasilkan lulusan yang siap kerja (job ready) sesuai kebutuhan fasilitas pelayanan kesehatan.",
+      "pembelajaran": "Alur pembelajaran pada Prodi D3 Keperawatan dimulai dari penguasaan konsep dasar keperawatan dan ilmu penunjang, dilanjutkan dengan praktik keterampilan di laboratorium (OSCE) untuk melatih kemampuan klinis secara bertahap. Selanjutnya, mahasiswa menjalani praktik klinik di fasilitas pelayanan kesehatan agar mampu mengaplikasikan asuhan keperawatan secara langsung kepada pasien dengan pendekatan holistik yang mencakup aspek bio-psiko-sosial dan spiritual. Selama proses tersebut, mahasiswa juga dilibatkan dalam kegiatan penelitian sederhana dan pengabdian masyarakat untuk meningkatkan kemampuan berpikir kritis dan kepedulian sosial, sehingga menjadi lulusan yang kompeten, profesional, dan siap kerja di dunia pelayanan kesehatan.",
+      "masaStudiDetail": "Prodi D3 Keperawatan memiliki beban studi 115 SKS yang harus ditempuh oleh mahasiswa sesuai dengan kurikulum nasional D3 Keperawatan 2022. Masa studi 3 tahun (6 semester) dengan pembelajaran yang terstruktur dari teori, praktik laboratorium, hingga praktik klinik dan praktik lapangan. Prodi memberikan keleluasaan pada mahasiswa mengembangkan potensinya melalui program-program kompetitif nasional seperti Program Kreativitas Mahasiswa serta di berbagai kegiatan UKM di lingkungan kampus serta peluang pengembangan melalui kegiatan penelitian dan pengabdian masyarakat. Didukung juga dengan kerja sama institusi dalam dan luar negeri, mahasiswa memiliki kesempatan memperluas wawasan dan pengalaman praktik, sehingga lulusan lebih siap bersaing di dunia kerja.",
+      "saranaAkademik": "",
+      "praktikLapangan": "Mahasiswa Prodi D3 Keperawatan mulai melaksanakan praktik klinik semester 2 untuk mencapai kompetensi MK keperawatan dasar selama 1 bulan di RS Blambangan setelah dinyatakan lulus teori dan praktik laboratorium (skill lab). Ini adalah pengalaman praktik klinik pertama kali. Pada semester 3, mahasiswa melakukan praktik klinik keperawatan dasar dengan pendampingan ketat pada RS Blambangan Banyuwangi. Dilanjutkan pengalaman praktik semester 4 pada RS tipe A untuk memenuhi kompetensi praktik klinik keperawatan anak, praktik klinik keperawatan maternitas, praktik klinik KMB, praktik klinik jiwa. Pada semester 5 praktik lapangan keluarga gerontik. Semester 6 mahasiswa melanjutkan KKN tematik satu institusi, di mana mahasiswa mulai mengelola asuhan keperawatan secara komprehensif. Selama praktik lapangan, mahasiswa dibimbing oleh dosen dan preseptor klinik, serta dievaluasi berdasarkan pencapaian kompetensi, sikap profesional, dan kemampuan memberikan asuhan keperawatan secara holistik.",
+      "profilLulusan": "Anda disiapkan untuk menjadi:\nPemberi asuhan keperawatan (care provider) sebagai perawat yang mampu memberikan asuhan keperawatan pada individu, keluarga, dan kelompok khusus di tatanan klinik dan komunitas untuk memenuhi kebutuhan dasar manusia yang meliputi aspek bio, psiko, sosio, kultural, dan spiritual melalui penerapan keperawatan komplementer (acupoint therapy, cupping care therapy, herbal therapy) dalam kondisi sehat, sakit, serta kegawatdaruratan berdasarkan ilmu dan teknologi keperawatan dengan memegang teguh kode etik perawat, undang-undang yang berlaku, dan nilai-nilai spiritual.\nPendidik klien (educator) sebagai perawat yang mampu memberikan pendidikan kesehatan sebagai upaya promosi dan prevensi kesehatan kepada individu, keluarga, dan kelompok khusus di tatanan klinik dan komunitas dengan mengedepankan nilai-nilai spiritual.\nPengelola dan pemimpin asuhan keperawatan (manager and leader) sebagai perawat yang mampu menggerakkan diri dan klien serta berperan aktif dalam manajemen keperawatan pada individu, keluarga, kelompok, dan masyarakat sesuai dengan standar asuhan keperawatan terkini sesuai tanggung jawab dan kewenangannya.\nPeneliti (researcher) sebagai perawat yang mampu melakukan penelitian melalui asuhan keperawatan berdasarkan etik dan bukti ilmiah dengan referensi nasional dan internasional terbarukan untuk meningkatkan kualitas asuhan keperawatan sebagai implementasi belajar sepanjang hayat.\nLulusan Program Studi Diploma Tiga Keperawatan akan memperoleh gelar akademik Ahli Madya Keperawatan (A.Md.Kep). Dengan bekal kompetensi vokasional dan keterampilan klinis yang dimiliki, lulusan dapat berkarier sebagai perawat pelaksana di rumah sakit, puskesmas, dan klinik; asisten perawat di layanan spesialis (seperti IGD, rawat inap, atau rawat jalan); perawat home care; serta tenaga kesehatan di komunitas (community health nursing). Selain itu, lulusan juga berpeluang bekerja di fasilitas pelayanan kesehatan swasta maupun pemerintah, panti wreda, klinik perusahaan/industri, serta dapat mengembangkan karier sebagai caregiver profesional dengan keunggulan pada keperawatan holistik atau melanjutkan pendidikan ke jenjang yang lebih tinggi di bidang keperawatan.",
+      "jejaringKemitraan": [
+        "Kami telah menjalin MoU resmi dengan berbagai institusi, diantaranya:",
+        "RS Saiful Anwar Malang sebagai tempat praktik dan serapan kerja alumni.",
+        "RSJ Dr. Radjiman Wediodiningrat Lawang sebagai tempat praktik.",
+        "RSUD Blambangan Banyuwangi sebagai tempat praktik dan serapan kerja alumni.",
+        "Dinas Kesehatan Banyuwangi sebagai tempat praktik dan serapan kerja alumni.",
+        "Dinas Sosial Provinsi Jawa Timur bidang penelitian.",
+        "RSUD Genteng Banyuwangi sebagai tempat praktik dan serapan kerja alumni.",
+        "RSI Fatimah sebagai tempat praktik dan serapan kerja alumni.",
+        "RS Al Huda sebagai tempat praktik dan serapan kerja alumni."
+      ],
+      "competence": "Tindakan kegawatdaruratan, observasi klinis dasar, dan bantuan hidup dasar.",
+      "prospects": "Perawat Pelaksana di Rumah Sakit, Klinik perusahaan luar jawa, Asisten Perawat di Jepang (EPA).",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692b72",
+          "name": "Dita Silvi Octaviani",
+          "position": "PJ Perawat",
+          "place": "Klinik Nanita Pro"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b73",
+          "name": "Hesti Fepti Sari, And.Kep",
+          "position": "Perawat",
+          "place": "Puskesmas Yosomulyo"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b74",
+          "name": "Muflih Kurniawan",
+          "position": "Perawat Pelaksana",
+          "place": "PKM Sukapura, Kabupaten Probolinggo"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b75",
+          "name": "Defi Nurkholifah, Amd.Kep",
+          "position": "Perawat Pelaksana",
+          "place": "RS Yasmin Banyuwangi"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b76",
+          "name": "Angghy Eka Fendhy",
+          "position": "Kabid Penunjang",
+          "place": "Rahayu Medika"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b77",
+          "name": "Denok Oktavia Trisnaningt",
+          "position": "Perawat",
+          "place": "RS Bhayangkara Pontianak"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b78",
+          "name": "Pandurasta",
+          "position": "Perawat Pelaksana",
+          "place": "RSUD Negara"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b79",
+          "name": "Lifa Setiawati",
+          "position": "Perawat Pelaksana",
+          "place": "RS Al Huda"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b7a",
+          "name": "Ni Putu Mei Wahyuni",
+          "position": "Perawat",
+          "place": "RSUD Bali Mandara"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b7b",
+          "name": "Novi Karmila",
+          "position": "Perawat",
+          "place": "RSUD Kabupaten Buleleng"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b7c",
+          "name": "Choirul",
+          "position": "Pramubakti / Perawat",
+          "place": "Kantor Kesehatan Pelabuhan Kelas II Probolinggo (Wilker Tanjung Wangi)"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b7d",
+          "name": "Nurul Hidayati, Amd.Kep",
+          "position": "Perawat",
+          "place": "RSUD Blambangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b7e",
+          "name": "Ilham Adi Pradana",
+          "position": "Praktik Mandiri",
+          "place": "Siliragung"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b7f",
+          "name": "Tria Agustin Sriwahyuningsih",
+          "position": "Perawat Pelaksana",
+          "place": "RSUD Blambangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b80",
+          "name": "Ira Mirnawati",
+          "position": "Perawat Pelaksana",
+          "place": "RS Al Huda Genteng"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b81",
+          "name": "Dwi Hendarwati",
+          "position": "Perawat Pelaksana",
+          "place": "UPTD Puskesmas Songgon"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b82",
+          "name": "Rachmawati Fajrin",
+          "position": "BKO",
+          "place": "Kantor Kesehatan Pelabuhan Kelas II Probolinggo (Wilker Tanjung Wangi)"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b83",
+          "name": "Eka Fitri Frediati",
+          "position": "Perawat",
+          "place": "RSUD Blambangan Banyuwangi"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b84",
+          "name": "Dewi Aliyanti",
+          "position": "Perawat Pelaksana",
+          "place": "RS Al Huda Genteng"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b85",
+          "name": "Irma Indriana",
+          "position": "Perawat Pelaksana",
+          "place": "RSUD Blambangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b86",
+          "name": "Siti Maesaroh",
+          "position": "Perawat",
+          "place": "RS Yasmin"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b87",
+          "name": "Satiti Bunga Pratiwi",
+          "position": "Perawat",
+          "place": "Klinik Amal Sehat"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b88",
+          "name": "May Dinda Febriyanti",
+          "position": "Perawat",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b89",
+          "question": "Apakah saat ini kuliah D3 Keperawatan masih relevan mengingat ada isu akan ditutupnya prodi D3 Keperawatan?",
+          "answer": "Wacana tentang pendidikan D3 dihapuskan sudah bergulir sangat lama sejak tahun 2000-an. Namun, sejauh ini belum ada implikasi nyata. Keberadaan Prodi D3 Keperawatan dapat dipengaruhi oleh beberapa hal, meliputi:\n1. Regulasi\n2. Demand\n3. Kondisi sosial\nSecara regulasi, pendidikan kesehatan terdiri dari pendidikan vokasi, akademik, dan profesi. Maka, penghapusan pendidikan vokasi akan menyalahi undang-undang kesehatan.\nSecara sosial (politik), banyak pihak yang masih menginginkan pendidikan vokasi. Poltekkes sebagai pionir pendidikan kesehatan masih sangat dominan untuk mempertahankan pendidikan vokasi.\nPada akhirnya, semua kembali pada kebutuhan (need) dan permintaan (demand) di masyarakat."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "D4 Teknologi Laboratorium Medis",
+      "slug": "d4-tlm",
+      "faculty": "FIKES",
+      "level": "D4",
+      "degree": "S.Tr.Kes",
+      "accreditation": "Baik",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/d4-tlm-768x1151.jpg",
+      "shortDescription": "Pendidikan Sarjana Terapan bagi para ahli laboratorium medik terampil yang bertugas di balik layar diagnosis penyakit.",
+      "profilProgramStudi": "Program Studi Sarjana Terapan (D4) Teknologi Laboratorium Medis Universitas Dr. Soekardjo merupakan pendidikan tinggi vokasi yang berdedikasi untuk mencetak ahli laboratorium medik terampil yang bertugas di balik layar diagnosis penyakit dan memastikan akurasi hasil laboratorium sebagai landasan paling krusial dalam penentuan tindakan medis/pengobatan. Fokus pembelajaran pada program ini mencakup: pengambilan dan pengelolaan sampel klinis manusia,  persiapan dan keamanan pasien, teknik pemeriksaan laboratorium, penguasaan manajerial laboratorium, manajemen mutu terpadu, serta keahlian diagnostik komprehensif tingkat lanjut—meliputi analisis imunologi klinis, biologi molekuler, hingga pengembangan riset terapan yang memanfaatkan metodologi mutakhir seperti pendekatan in silico, in vitro, dan in vivo.",
+      "visi": "Menjadi pusat Pendidikan sarjana sains terapan Teknologi Laboratorium Medik yang berdaya saing global, berlandaskan pada spiritualitas, serta unggul dan profesional di bidang penyakit infeksi",
+      "misi": [
+        "Menyelenggarakan proses pendidikan teknologi laboratorium medik yang berdaya saing global berorientasi pada bidang penyakit infeksi.",
+        "Melaksanakan dan mengembangkan penelitian yang tepat guna dan bermanfaat baik untuk masyarakat, laboratorium maupun instansi lain dalam bidang penyakit infeksi.",
+        "Melaksanakan pengabdian kepada masyarakat dalam bidang penyakit infeksi sebagai upaya penurunan dan pencegahan penyakit serius guna meningkatkan derajat kesehatan manusia.",
+        "Menyelenggarakan kerjasama dengan berbagai Lembaga baik dalam negeri maupun luar negeri dalam mewujudkan Tri Dharma Perguruan Tinggi"
+      ],
+      "tujuan": [],
+      "keunggulan": "1. Menjadi satu-satunya program studi D4 TLM di Kabupaten Banyuwangi, yang memberikan keunggulan kompetitif secara regional sekaligus memastikan tingginya persentase serapan lulusan di dunia kerja.\n2. Menerapkan pembelajaran terintegrasi antara kurikulum vokasi berbasis manajemen mutu dan penguatan riset diagnostik terapan, di mana mahasiswa dilibatkan secara aktif dalam pengalaman penelitian laboratorium secara langsung.\n3. Aktif dalam pembaruan ilmu pengetahuan dan inovasi medis, khususnya melalui integrasi teknik laboratorium mutakhir dengan eksplorasi biodiversitas lokal (bahan alam) yang diuji secara komprehensif melalui metode in silico, in vitro, maupun in vivo.",
+      "pembelajaran": "Proses belajar di program studi D4 Teknologi Laboratorium Medis dirancang secara bertahap agar bisa diterima oleh mahasiswa dengan barbagai latar belakang keilmuan di bangku SMA.\nPada awal kuliah, mahasiswa akan dibekali ilmu dasar medis dan kemampuan dasar di dalam laboratorium. Memasuki pertengahan semester, porsi belajar akan lebih banyak diisi dengan praktik langsung menggunakan instrumen laboratorium yang modern, mulai dari teknik pemeriksaan laboratorium sederhana hingga teknik terapan. Mahasiswa tidak hanya dibekali tentang bagaimana cara melakukan pemeriksaan laboratorium, namun juga bagaimana menjaga menajemen mutu pemeriksaan laboratorium agar hasilnya akurat dan dapat dipertanggungjawabkan. Mahasiswa akan terjun ke dalam lahan untuk praktik klinis mulai dari Semester V, diberikan kesempatan magang mandiri di berbagai fasilitas laboratorium pelayanan, serta akan menjalani Praktik Kerja Lapangan (PKL) di Semester VII di Laboratorium Rumah Sakit Tipe A.\nSelama menduduki Semester I hingga Semester VI, mahasiswa akan dilibatkan aktif dalam pembelajaran yang terintegrasi penelitian dan pengabdian masyarakat, untuk memastikan materi perkuliahan dapat terimplementasikan dengan baik. Penyusunan Skripsi dilakukan mulai Semester VI dan selesai di Semester VIII. Proyek penelitian atau pengabdian masyarakat yang sudah pernah dilakukan dapat dilaporkan sebagai pemenuhan skripsi.\nDengan alur ini, saat lulus nanti mahasiswa tidak hanya sekadar paham teori, tapi menjadi tenaga ahli laboratorium yang siap bekerja!",
+      "masaStudiDetail": "Total SKS: 146, terdiri dari 56 SKS mata kuliah Teori dan 88 SKS mata kuliah Praktikum\nMasa studi selama 4 tahun (8 semester)",
+      "saranaAkademik": "Fasilitas Laboratorium:\nLaboratorium Mikrobiologi\nLaboratorium Kimia\nLaboratorium Patologi Klinik\nLaboratorium Patologi Anatomi\nLaboratorium Hewan Coba\nSemua pembelajaran dilakukan secara interaktif dan dokumen bahan ajar telah terdigitalisasi di dalam LMS (Learning Management System). Penilaian pembelajaran dilakukan secara objektif dan transparansi di dalam LMS.",
+      "praktikLapangan": "Mahasiswa mulai praktik di laboratorium pelayanan mulai Semester V, serta diberikan kesempatan magang/praktik mandiri di Semester VI.\nPraktik Kerja Lapangan (PKL) dilakukan di Semester VII\nSebelum dilakukan praktik, magang, atau PKL, mahasiswa akan menerima pembekalan dari prodi, untuk memastikan kesiapan dan kemampuan adaptasi mahasiswa selama praktik.",
+      "profilLulusan": "Gelar lulusan: S.Tr.Kes (Sarjana Terapan Kesehatan)\nLulusan prodi D4 dapat langsung bekerja, tanpa ada keharusan menempuh pendidikan Profesi\nProspek Kerja Lulusan D4 TLM:\n1. Semua Fasilitas Pelayanan Kesehatan yang memiliki Laboratorium. Terdiri dari: Puskesmas, Klinik, Praktik mandiri dokter, Apotek, Rumah Sakit\n2. Bank Darah Rumah Sakit (BDRS) atau Palang Merah Indonesia (PMI)\n3. Aparatur Sipil Negara di Puskesmas atau Rumah Sakit\n4. Laboratorium Swasta (seperti Parahitia, Prodia, Pramita, IHC, dst)\n5. Badan Pengawas Obat dan Makanan (BPOM)\n6. Laboratorium Forensik\n7. Balai Narkotika Nasional (BNN): untuk melakukan pemeriksaan narkoba rutin\n8. Laboratorium Riset (seperti BRIN, ITP Unair, CDAST Unej, dst)\n9. Perusahaan Bahan Kimia/Reagensia Laboratorium (seperti PT. GeneCraft Labs, PT Baswara Jaya Scientific, PT PROLINE, dst)\n10. Perusahaan Instrumen Laboratorium (seperti PT. Anugerah Santosa Abadi, PT Indotech Sains Inti, dst)\n11. Tenaga pendidik (Asisten Laboratorium, Guru di Sekolah Menengah Analis Kesehatan atau SMAK, dan Dosen)\n12. Wirausaha (menjadi pendiri Laboratorium swasta, Klinik, perusahaan / distributor reagensia, perusahaan / distributor instrumen laboratorium)\n13. Relawan berbayar di berbagai program kesehatan di Indonesia (seperti Nusantara Sehat, dst)",
+      "jejaringKemitraan": [],
+      "competence": "Ahli flebotomi, analisa patologi klinik, toksikologi forensik, dan bakteriologi molekuler.",
+      "prospects": "Laboratorium Prodia/Pramita, Lab RS Tipe A, Peneliti Labkesda, Forensik Kepolisian.",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692b8a",
+          "name": "Hanifah",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "PMI Banyuwangi"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b8b",
+          "name": "Sinta Nuriyah Putri Ayu",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Klinik STIKES Banyuwangi"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b8c",
+          "name": "Viera Salsabiela",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Puskesmas Sobo"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b8d",
+          "name": "Adisa Octaviani",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Puskesmas Sambirejo"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b8e",
+          "name": "Okta Nata Kusuma",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "RS Yasmin Banyuwangi"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b8f",
+          "name": "Deo Fernanda",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Laboratorium Klinik Brawijaya"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b90",
+          "name": "Destia",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Laboratorium Klinik Brawijaya"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b91",
+          "name": "Afifah",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Klinik Medika Asri Genteng"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b92",
+          "name": "Adhinda Fisabilla",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": "Rumah Sakit Umum Bunda Jembrana"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b93",
+          "name": "Nufus Nurmazaya",
+          "position": "Petugas Laboratorium / ATLM",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b94",
+          "question": "Apakah siswa selain jurusan IPA atau bahkan siswa SMK boleh mendaftar?",
+          "answer": "Sangat boleh, jangan khawatir pembelajaran akan dilakukan bertahap, kami pastikan siswa dari berbagai background pendidikan SMA/MA dapat mengikuti kegiatan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b95",
+          "question": "Apakah ada persyaratan fisik untuk siswa SMA yang boleh mendaftar?",
+          "answer": "Dipastikan bebas dari buta warna"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b96",
+          "question": "Apakah siswa yang sudah menikah / bekerja dapat mendaftar menjadi mahasiswa?",
+          "answer": "Boleh, dengan menyatakan komitmen kesanggupan diri mengikuti semua proses akademik yang ada"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Profesi Bidan",
+      "slug": "profesi-bidan",
+      "faculty": "FIKES",
+      "level": "Profesi",
+      "degree": "Bdn",
+      "accreditation": "Baik",
+      "duration": "2 Semester / 1 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/profesi-bidan-768x512.jpg",
+      "shortDescription": "Pendidikan tahap profesi untuk bidan sesuai amanat UU Kebidanan untuk legalitas praktik mandiri seutuhnya.",
+      "profilProgramStudi": "Program studi berbasis pada asuhan kebidanan yang komprehensif , berbasis bukti dengan keunggulan berpusat pada asuhan kebidanan komplementer berlandsakan aspek spiritualitas\nIntegrasi evidence-based practice dalam pembelajaran\nDosen kompeten dengan latar belakang akademik dan klinis\nFasilitas laboratorium kebidanan yang lengkap\nProgram praktik klinik di berbagai institusi kesehatan\nPeluang kerja sama nasional dan internasional\nPenguatan soft skills: komunikasi terapeutik, empati, dan spiritual care,.\nPendekatan pembelajaran student-centered learning\nKegiatan pengabdian masyarakat berbasis komunitas pada perempuan di sepanjang siklus kehidupan.\nPersiapan menghadapi uji kompetensi nasional (UKOM Profesi Bidan)",
+      "visi": "Menjadi Program Studi Pendidikan Bidan yang menghasilkan bidan profesi berdaya saing global, dengan keunggulan di bidang asuhan kebidanan komplementer berlandaskan pada aspek spiritualitas",
+      "misi": [
+        "Menyelenggarakan proses pendidikan akademik dan profesi bidan sesuai dengan perkembangan keilmuan dan teknologi berlandaskan nilai spiritualitas serta asuhan kebidanan komplementer;",
+        "Melaksanakan penelitian di bidang kesehatan berbasis bukti ilmiah dan berorientasi pada kebutuhan masyarakat di bidang kebidanan komplementer;",
+        "Menyelenggarakan kegiatan pengabdian masyarakat yang berkontribusi dalam pembangunan kesehatan dengan mengacu kepada hasil penelitian dan kebidanan komplementer;",
+        "Melakukan kerja sama dengan institusi dan lembaga tingkat nasional dan internasional serta wahana praktik sebagai optimalisasi kegiatan Tridarma Perguruan Tinggi."
+      ],
+      "tujuan": [],
+      "keunggulan": "asuhan kebidanan komplementer berlandaskan spiritualitas",
+      "pembelajaran": "Mahasiswa memulai dengan tahap akademik (Sarjana Kebidanan) yang berfokus pada teori dasar fundamental bidan, ilmu biomedik, dan keterampilan klinik dasar melalui pembelajaran kelas dan praktikum laboratorium. Setelah menyelesaikan tahap ini, mahasiswa melanjutkan ke tahap profesi Bidan, di mana mereka menjalani praktik klinik secara langsung di rumah sakit dan fasilitas kesehatan lainnya. Selama proses ini, mahasiswa akan mengaplikasikan ilmu secara nyata, mengasah keterampilan klinis, serta mengembangkan sikap profesional dan spiritual dalam memberikan asuhan kebidanan.",
+      "masaStudiDetail": "Total SKS: ± 148 SKS (Sarjana) + ± 38 SKS (Profesi Bidan)\nLama Studi Sarjana: 8 semester (4 tahun)\nLama Studi Profesi Bidan: 2 semester (1 tahun)\nTotal Lama Studi: ± 5 tahun\nProgram percepatan (akselerasi) opsional jika tersedia\nPeluang pertukaran mahasiswa (student exchange)",
+      "saranaAkademik": "Laboratorium Keterampilan Dasar Praktik Kebidanan\nLaboratorium Asuhan Pranikah Prakonsepsi\nLaboratorium Asuhan Kehamilan\nLaboratorium Asuhan Persalinan\nLaboratorium Asuhan Bayi Balita dan Anak Prasekolah\nLaboratorium Asuhan pelayanan KB dan Kontrasepsi\nLaboratorium Kesehatan Reproduksi\nLaboratorium Asuhan Gawat Darurat maternal neonatal\nLaboratorium Komunitas\nPerpustakaan digital & e-journal akses internasional\nSkill lab dengan manekin simulasi\nRuang OSCE (Objective Structured Clinical Examination)\nSistem e-learning kampus",
+      "praktikLapangan": "Mahasiswa mulai praktik klinik secara bertahap sejak semester awal di semester 2 dalam bentuk praktik dasar di Rumah Sakit untuk pengenalan dini keterampilan dasar bidan, dan berlanjut praktik di semester 3 , 4,5 diberbagainlahan praktik lainnya seperti Puseskmas, Rumah Sakit dan TPMB , Pada tahap profesi Bidan mahasiswa menjalani praktik intensif di berbagai stase untuk memberikan pelayanan kepada perempuan disepanjang siklus kehidupan. praktik dilakukan dengan sistem rotasi untuk memastikan pengalaman yang komprehensif.",
+      "profilLulusan": "Sarjana Kebidanan (S.Keb)\nProfesi Bidan (Bdn.)",
+      "jejaringKemitraan": [
+        "Rumah Sakit Umum Daerah (RSUD)",
+        "Rumah Sakit Swasta Nasional",
+        "Puskesmas dan Klinik",
+        "Institusi pelayanan kesehatan komunitas",
+        "Lembaga kesehatan internasional (jika ada MoU)",
+        "Dinas Kesehatan",
+        "AIPKIND",
+        "BKKBN Jatim",
+        "PD IBI Jatim dan PC IBI Jatim",
+        "Instansi Layanan Kesehatan di BUMN"
+      ],
+      "competence": "Penguasaan 100% penanganan persalinan normal dan patologis rujukan, pengarahan komplementer, dan sertifikasi APN.",
+      "prospects": "Buka Praktik Mandiri Bidan (PMB), Bidan Koordinator Rumah Sakit Ibu & Anak.",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692b97",
+          "name": "Ketua IBI kabupaten Banyuwangi (Bd. Yulianingsih, S.ST.MM.Kes)",
+          "position": "",
+          "place": ""
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b98",
+          "name": "Kepala Puskesmas Sobo, PKM Benculuk, PKM Tegalsari, PK Parijatah kulon, PKM Tapanrejo",
+          "position": "",
+          "place": ""
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b99",
+          "name": "Kepala ruangan ruang bersalin RSUD Balmbangan",
+          "position": "",
+          "place": "RSUD Balmbangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b9a",
+          "name": "Kepala ruangan ruang RG RSUD Blambangan",
+          "position": "",
+          "place": "RSUD Blambangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b9b",
+          "name": "Kepala ruangan ruang bersalin RSUD Genteng",
+          "position": "",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b9c",
+          "question": "–",
+          "answer": "–"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Profesi Ners",
+      "slug": "profesi-ners",
+      "faculty": "FIKES",
+      "level": "Profesi",
+      "degree": "Ns.",
+      "accreditation": "Baik Sekali",
+      "duration": "2 Semester / 1 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/profesi-ners-768x512.jpg",
+      "shortDescription": "Pendidikan tahap profesi lanjutan setelah Sarjana Keperawatan yang fokus pada penguasaan praktik keperawatan klinis tingkat lanjut secara komprehensif di rumah sakit dan puskesmas.",
+      "profilProgramStudi": "Kurikulum berbasis keperawatan holistik dan spiritual\nIntegrasi evidence-based practice dalam pembelajaran\nDosen kompeten dengan latar belakang akademik dan klinis\nFasilitas laboratorium keperawatan yang lengkap\nProgram praktik klinik di berbagai institusi kesehatan\nPeluang kerja sama nasional dan internasional\nPenguatan soft skills: komunikasi terapeutik, empati, dan spiritual care\nPendekatan pembelajaran student-centered learning\nKegiatan pengabdian masyarakat berbasis komunitas\nPersiapan menghadapi uji kompetensi nasional (UKOM Ners)",
+      "visi": "Menjadi Program Studi Pendidikan Ners yang Unggul di Bidang Keperawatan Holistik Berbasis Spiritual Serta Berdaya Saing Asia Tahun 2025.",
+      "misi": [
+        "Menyelenggarakan pendidikan akademik dan profesi Ners dengan keunggulan keperawatan holistik berlandaskan spiritual.",
+        "Menyelenggarakan penelitian dan pengabdian kepada masyarakat dengan keunggulan keperawatan holistik berlandaskan spiritual.",
+        "Menyelenggarakan kerja sama dalam negeri dan luar negeri sebagai optimalisasi kegiatan tridharma perguruan tinggi."
+      ],
+      "tujuan": [
+        "Menghasilkan lulusan yang unggul dalam keperawatan holistik berlandaskan spiritual.",
+        "Menghasilkan penelitian dan pengabdian kepada masyarakat yang memiliki keunggulan keperawatan holistik berlandaskan spiritual.",
+        "Menghasilkan kerja sama dalam negeri dan luar negeri sebagai optimalisasi kegiatan tridharma perguruan tinggi."
+      ],
+      "keunggulan": "",
+      "pembelajaran": "Mahasiswa memulai dengan tahap akademik (Sarjana Keperawatan) yang berfokus pada teori dasar keperawatan, ilmu biomedik, dan keterampilan klinik dasar melalui pembelajaran kelas dan praktikum laboratorium. Setelah menyelesaikan tahap ini, mahasiswa melanjutkan ke tahap profesi Ners, di mana mereka menjalani praktik klinik secara langsung di rumah sakit dan fasilitas kesehatan lainnya. Selama proses ini, mahasiswa akan mengaplikasikan ilmu secara nyata, mengasah keterampilan klinis, serta mengembangkan sikap profesional dan spiritual dalam memberikan asuhan keperawatan.",
+      "masaStudiDetail": "Total SKS: ± 144 SKS (Sarjana) + ± 36 SKS (Profesi Ners)\nLama Studi Sarjana: 8 semester (4 tahun)\nLama Studi Profesi Ners: 2 semester (1 tahun)\nTotal Lama Studi: ± 5 tahun\nProgram percepatan (akselerasi) opsional jika tersedia\nPeluang pertukaran mahasiswa (student exchange)",
+      "saranaAkademik": "Laboratorium Keperawatan Dasar\nLaboratorium Keperawatan Medikal Bedah\nLaboratorium Keperawatan Maternitas\nLaboratorium Keperawatan Anak\nLaboratorium Keperawatan Jiwa\nLaboratorium Komunitas\nPerpustakaan digital & e-journal akses internasional\nSkill lab dengan manekin simulasi\nRuang OSCE (Objective Structured Clinical Examination)\nSistem e-learning kampus",
+      "praktikLapangan": "Mahasiswa mulai praktik klinik secara bertahap sejak semester menengah (semester 4–5) dalam bentuk praktik dasar. Pada tahap profesi Ners, mahasiswa menjalani praktik intensif di berbagai departemen seperti IGD, ICU, maternitas, anak, komunitas, dan keperawatan jiwa. Praktik dilakukan dengan sistem rotasi untuk memastikan pengalaman yang komprehensif.",
+      "profilLulusan": "Gelar Akademik: S.Kep (Sarjana Keperawatan)\nGelar Profesi: Ners (Ns.)\nPerawat klinis di rumah sakit\nPerawat komunitas\nPerawat home care\nPerawat kesehatan kerja (perusahaan)\nPeneliti keperawatan\nDosen (dengan studi lanjut)\nKonsultan keperawatan holistik & spiritual care",
+      "jejaringKemitraan": [
+        "Rumah Sakit Umum Daerah (RSUD)",
+        "Rumah Sakit Swasta Nasional",
+        "Puskesmas dan Klinik",
+        "Institusi pelayanan kesehatan komunitas",
+        "Lembaga kesehatan internasional (jika ada MoU)",
+        "Dinas Kesehatan",
+        "Instansi Layanan Kesehatan di BUMN"
+      ],
+      "competence": "Lulusan dibekali sertifikasi kegawatdaruratan (BTCLS) serta asuhan berstandar tinggi di ruang ICU, NICU, dan IGD. Mahasiswa 100% full menempuh praktik stase klinik.",
+      "prospects": "Rumah Sakit Vertikal, Kepala Ruang/Asuhan, Peluang Kerja Jepang / Timteng.",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692b9d",
+          "name": "Khomsariya",
+          "position": "Ketua PPNI DPLN Kuwait",
+          "place": "Rumah Sakit Pemerintah Kuwait"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b9e",
+          "name": "Wahyu Danang",
+          "position": "Ka Diklat Rumah Sakit",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b9f",
+          "question": "Apakah lulusan langsung bisa bekerja di rumah sakit?",
+          "answer": "Ya, setelah lulus profesi Ners dan mengikuti uji kompetensi, lulusan dapat bekerja sebagai perawat profesional."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba0",
+          "question": "Apakah program ini sulit?",
+          "answer": "Program ini menantang karena menggabungkan teori dan praktik, tetapi didukung oleh dosen dan fasilitas yang memadai."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba1",
+          "question": "Apakah ada praktik langsung ke pasien?",
+          "answer": "Ada. Mahasiswa akan menjalani praktik klinik di rumah sakit dan fasilitas kesehatan lainnya."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba2",
+          "question": "Apakah bisa bekerja di luar negeri?",
+          "answer": "Bisa, dengan memenuhi persyaratan tambahan seperti sertifikasi internasional dan kemampuan bahasa."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba3",
+          "question": "Apa keunggulan dibanding kampus lain?",
+          "answer": "Fokus pada keperawatan holistik berbasis spiritual yang jarang dimiliki program lain."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "S1 Gizi",
+      "slug": "s1-gizi",
+      "faculty": "FIKES",
+      "level": "S1",
+      "degree": "S.Gz",
+      "accreditation": "Baik",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/s1-gizi-768x512.jpg",
+      "shortDescription": "Where Nutrition Meets Culinary Tourism Excellence: Belajar lebih dari sekadar ilmu gizi, Program Studi Gizi Universitas Dr.Soekardjo dengan keunggulan gizi dan kuliner pariwisata untuk menjawab kebutuhan masa depan.",
+      "profilProgramStudi": "Program Studi Gizi Universitas Dr.Soekardjo merupakan satu-satunya Program Studi Gizi di Banyuwangi yang berfokus pada pengembangan ilmu gizi, pangan, dan kesehatan untuk mencetak lulusan profesional yang kompeten dalam meningkatkan kualitas hidup masyarakat. Dengan kekhasan pada bidang gizi dan kuliner pariwisata, proses pembelajaran dirancang untuk mengintegrasikan sains gizi, inovasi produk pangan, manajemen penyelenggaraan makanan, serta pengembangan kuliner sehat berbasis potensi lokal dan industri hospitality. Program Studi Gizi Universitas Dr.Soekardjo menghasilkan sarjana gizi yang unggul, adaptif, dan siap berkarier di sektor kesehatan, industri pangan, serta wirausaha kuliner yang berdaya saing global.",
+      "visi": "Menjadi Program Studi Sarjana Gizi yang berdaya saing global dengan keunggulan di bidang gizi dan kuliner pariwisata yang berlandaskan pada aspek spiritualitas",
+      "misi": [
+        "Menyelenggarakan proses pendidikan akademik serta mengembangkan hardskill dan softskill yang berdaya saing global di bidang gizi dan kuliner pariwisata yang mengedepankan aspek spiritual.",
+        "Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang memiliki keunggulan pada bidang gizi dan kuliner pariwisata yang berorientasi kepada kebutuhan masyarakat.",
+        "Melakukan kerjasama dengan institusi atau lembaga nasional maupun internasional guna mewujudkan pelaksanaan tri dharma perguruan tinggi."
+      ],
+      "tujuan": [],
+      "keunggulan": "Program Studi Gizi hadir sebagai satu-satunya program unggulan di Banyuwangi yang mengusung kekhasan integrasi ilmu gizi dengan kuliner pariwisata. Mahasiswa akan memperoleh kompetensi pada kesehatan dan pangan, serta pada pengembangan kuliner berbasis potensi wisata lokal sebagai bagian dari daya tarik industri pariwisata dan ekonomi kreatif.",
+      "pembelajaran": "Proses pembelajaran di Program Studi Gizi dirancang secara bertahap dan terintegrasi, dimulai dari penguasaan dasar ilmu gizi, pangan, dietetik, gizi olahraga, gizi daur kehidupan, biomedik, dan kesehatan masyarakat, kemudian dilanjutkan dengan penguatan kompetensi melalui praktikum laboratorium, case-based learning, project-based learning, serta pengembangan inovasi produk pangan. Pada tahap akhir studi, mahasiswa akan mengikuti praktik lapangan di puskesmas, rumah sakit, hotel, dan industri katering profesional untuk mengaplikasikan kompetensi gizi masyarakat, gizi klinis, serta manajemen penyelenggaraan makanan, sehingga siap memasuki dunia kerja secara profesional.",
+      "masaStudiDetail": "Program Studi Gizi Universitas Dr.Soekardjo dirancang dengan beban studi total 150 SKS yang dapat ditempuh dalam estimasi waktu 8 semester atau 4 tahun. Kurikulum disusun secara terstruktur dan adaptif untuk memastikan mahasiswa lulus tepat waktu dengan kompetensi unggul di bidang gizi, pangan, dan kuliner pariwisata.",
+      "saranaAkademik": "Proses pembelajaran di Prodi Gizi dirancang interaktif dan aplikatif melalui perpaduan kuliah tatap muka, diskusi kasus, project-based learning, praktikum laboratorium, serta praktik lapangan. Didukung fasilitas pembelajaran modern berupa Lab Kuliner dan Dietetik, Lab Kimia, Lab Antropometri dan Konsultasi Gizi, serta teaching kitchen yang representatif yang dirancang untuk menunjang pengalaman belajar berbasis praktik. Mahasiswa dapat mengasah keterampilan asesmen status gizi, uji mutu pangan, perencanaan menu, hingga pengembangan kuliner sehat dan inovatif yang relevan dengan industri hospitality dan pariwisata.",
+      "praktikLapangan": "Mahasiswa akan mengikuti praktik lapangan secara bertahap pada fase akhir masa studi yakni semester VII sebagai bagian dari penguatan kompetensi profesional. Praktik dilaksanakan di berbagai mitra institusi, meliputi praktik gizi masyarakat di Puskesmas dimana mahasiswa terlibat langsung dalam pelayanan promotif dan preventif bersama tenaga kesehatan di puskesmas, gizi klinis di Rumah Sakit, mahasiswa mempelajari pelayanan gizi pasien rawat inap dan rawat jalan melalui pendekatan Nutrition Care Process / PAGT, serta gizi institusi penyelenggaraan makanan di Hotel maupun industri katering profesional seperti ACS Aerofood yang mahasiswa fokus pada manajemen penyelenggaraan makanan skala besar. Dengan praktik kerja lapang tersebut, mahasiswa memiliki pengalaman nyata yang selaras dengan kebutuhan dunia kerja.",
+      "profilLulusan": "Lulusan Program Studi Gizi akan memperoleh gelar akademik Sarjana Gizi (S.Gz) dan dapat melanjutkan pendidikan Profesi Nutrisionis atau Profesi Dietisien.",
+      "jejaringKemitraan": [
+        "Program Studi Gizi Universitas Dr.Soekardjo didukung jejaring kemitraan resmi (MoU) dengan berbagai institusi terkemuka dari sektor layanan kesehatan, hospitality, dan industri sebagai lahan praktik profesional. Mitra tersebut meliputi:",
+        "Dinas Kesehatan Kab. Banyuwangi",
+        "RSUD Dr. Saiful Anwar Malang",
+        "RSUD Bangil Kabupaten Pasuruan",
+        "RSUD Blambangan",
+        "Aerofood ACS Garuda Indonesia Group",
+        "Aston Banyuwangi Hotel & Conference Center"
+      ],
+      "competence": "Perhitungan Dietetika Pasien Penyakit Dalam, Inovasi Food Processing, Analisa Kualitas Gizi.",
+      "prospects": "Ahli Gizi RSUD/RS Swasta, Katering Diet, Food Quality Control di Industri Pangan Nasional.",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692ba4",
+          "name": "Duvita Rahma Purwaningsih, S.Gz",
+          "position": "Ahli Gizi",
+          "place": "Rumah Sakit Bergerak Distrik Mindiptana Kab.Boven Digoel, Papua Selatan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba5",
+          "name": "Ropita Ramadani, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Banyuwangi Songgon Bayu"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba6",
+          "name": "Dian Dewi Utami, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Sumbersari"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba7",
+          "name": "Amanda Eka Setyawati, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Situbondo Bungatan Pasir Putih"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba8",
+          "name": "Mayka Ayuning Putri, S.Gz",
+          "position": "–",
+          "place": "Bank BTN Surabaya"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692ba9",
+          "name": "Ajeng Lufita Sari, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Kelir 2"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692baa",
+          "name": "Milla Handita Putri, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Ketapang"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bab",
+          "name": "Adhila Putri Daniesa, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Sumber Anyar"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bac",
+          "name": "Evita Rosida W, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Kepiting"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bad",
+          "name": "Trisna Maulida, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Kebalenan 2"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bae",
+          "name": "Anisa Fitria, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Pakis"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692baf",
+          "name": "Christi Titi Agustina, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Tamansari Licin"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb0",
+          "name": "Dwi Merlisa A, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": "SPPG Glagah Banjarsari"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb1",
+          "name": "Sheila Nanda Ardana, S.Gz",
+          "position": "Pengawas Gizi/Ahli Gizi",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692bb2",
+          "question": "Apa yang membedakan Program Studi Gizi Unidsoe dengan kampus lain?",
+          "answer": "Program Studi Gizi Unidsoe ini merupakan satu-satunya di Banyuwangi dengan keunggulan pada bidang gizi dan kuliner pariwisata yang tentu sangat tepat dengan lokasi Prodi. Mahasiswa bukan hanya mempelajari ilmu gizi klinis dan gizi masyarakat, tetapi juga manajemen food service."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb3",
+          "question": "Apa mahasiswa akan mendapatkan banyak praktik?",
+          "answer": "Ya, pembelajaran di Program Studi Gizi Unidsoe dirancang sangat aplikatif melalui praktikum laboratorium, teaching kitchen, projek inovasi pangan, serta praktik langsung di lapangan seperti puskesmas, rumah sakit, hotel, dan industri katering profesional."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb4",
+          "question": "Lulusan bisa bekerja di mana saja?",
+          "answer": "Lulusan Program Studi Gizi Unidsoe dapat berkarir sebagai ahli gizi puskesmas, industri pangan, pengawas gizi satuan pelayanan pemenuhan gizi (SPPG) BGN, hotel, katering profesional, quality control, food service manager, hingga entrepreneur kuliner sehat."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "S1 Kebidanan",
+      "slug": "s1-kebidanan",
+      "faculty": "FIKES",
+      "level": "S1",
+      "degree": "S.Keb",
+      "accreditation": "Baik",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/s1-kebidanan-768x512.jpg",
+      "shortDescription": "Bidan sahabat perempuan, Profesional, Unggul, dan Berakhlak Mulia.",
+      "profilProgramStudi": "Program studi berbasis pada asuhan kebidanan yang komprehensif , berbasis bukti dengan keunggulan berpusat pada asuhan kebidanan komplementer berlandsakan aspek spiritualitas\nIntegrasi evidence-based practice dalam pembelajaran\nDosen kompeten dengan latar belakang akademik dan klinis\nFasilitas laboratorium kebidanan yang lengkap\nProgram praktik klinik di berbagai institusi kesehatan\nPeluang kerja sama nasional dan internasional\nPenguatan soft skills: komunikasi terapeutik, empati, dan spiritual care,.\nPendekatan pembelajaran student-centered learning\nKegiatan pengabdian masyarakat berbasis komunitas pada perempuan di sepanjang siklus kehidupan.\nPersiapan menghadapi uji kompetensi nasional (UKOM Profesi Bidan)",
+      "visi": "Menjadi Program Studi Pendidikan Bidan yang menghasilkan bidan profesi berdaya saing global, dengan keunggulan di bidang asuhan kebidanan komplementer berlandaskan pada aspek spiritualitas",
+      "misi": [
+        "Menyelenggarakan proses pendidikan akademik dan profesi bidan sesuai dengan perkembangan keilmuan dan teknologi berlandaskan nilai spiritualitas serta asuhan kebidanan komplementer;",
+        "Melaksanakan penelitian di bidang kesehatan berbasis bukti ilmiah dan berorientasi pada kebutuhan masyarakat di bidang kebidanan komplementer;",
+        "Menyelenggarakan kegiatan pengabdian masyarakat yang berkontribusi dalam pembangunan kesehatan dengan mengacu kepada hasil penelitian dan kebidanan komplementer;",
+        "Melakukan kerja sama dengan institusi dan lembaga tingkat nasional dan internasional serta wahana praktik sebagai optimalisasi kegiatan Tridarma Perguruan Tinggi."
+      ],
+      "tujuan": [],
+      "keunggulan": "asuhan kebidanan komplementer berlandaskan spiritualitas",
+      "pembelajaran": "Mahasiswa memulai dengan tahap akademik (Sarjana Kebidanan) yang berfokus pada teori dasar fundamental bidan, ilmu biomedik, dan keterampilan klinik dasar melalui pembelajaran kelas dan praktikum laboratorium. Setelah menyelesaikan tahap ini, mahasiswa melanjutkan ke tahap profesi Bidan, di mana mereka menjalani praktik klinik secara langsung di rumah sakit dan fasilitas kesehatan lainnya. Selama proses ini, mahasiswa akan mengaplikasikan ilmu secara nyata, mengasah keterampilan klinis, serta mengembangkan sikap profesional dan spiritual dalam memberikan asuhan kebidanan.",
+      "masaStudiDetail": "Total SKS: ± 148 SKS (Sarjana) + ± 38 SKS (Profesi Bidan)\nLama Studi Sarjana: 8 semester (4 tahun)\nLama Studi Profesi Bidan: 2 semester (1 tahun)\nTotal Lama Studi: ± 5 tahun\nProgram percepatan (akselerasi) opsional jika tersedia\nPeluang pertukaran mahasiswa (student exchange)",
+      "saranaAkademik": "Laboratorium Keterampilan Dasar Praktik Kebidanan\nLaboratorium Asuhan Pranikah Prakonsepsi\nLaboratorium Asuhan Kehamilan\nLaboratorium Asuhan Persalinan\nLaboratorium Asuhan Bayi Balita dan Anak Prasekolah\nLaboratorium Asuhan pelayanan KB dan Kontrasepsi\nLaboratorium Kesehatan Reproduksi\nLaboratorium Asuhan Gawat Darurat maternal neonatal\nLaboratorium Komunitas\nPerpustakaan digital & e-journal akses internasional\nSkill lab dengan manekin simulasi\nRuang OSCE (Objective Structured Clinical Examination)\nSistem e-learning kampus",
+      "praktikLapangan": "Mahasiswa mulai praktik klinik secara bertahap sejak semester awal di semester 2 dalam bentuk praktik dasar di Rumah Sakit untuk pengenalan dini keterampilan dasar bidan, dan berlanjut praktik di semester 3 , 4,5 diberbagainlahan praktik lainnya seperti Puseskmas, Rumah Sakit dan TPMB , Pada tahap profesi Bidan mahasiswa menjalani praktik intensif di berbagai stase untuk memberikan pelayanan kepada perempuan disepanjang siklus kehidupan. praktik dilakukan dengan sistem rotasi untuk memastikan pengalaman yang komprehensif.",
+      "profilLulusan": "Sarjana Kebidanan (S.Keb)\nProfesi Bidan (Bdn.)",
+      "jejaringKemitraan": [
+        "Rumah Sakit Umum Daerah (RSUD)",
+        "Rumah Sakit Swasta Nasional",
+        "Puskesmas dan Klinik",
+        "Institusi pelayanan kesehatan komunitas",
+        "Lembaga kesehatan internasional (jika ada MoU)",
+        "Dinas Kesehatan",
+        "AIPKIND",
+        "BKKBN Jatim",
+        "PD IBI Jatim dan PC IBI Jatim",
+        "Instansi Layanan Kesehatan di BUMN"
+      ],
+      "competence": "Asuhan Persalinan Normal (APN), Senam Hamil, Pijat Bayi, Kontrasepsi, Pengawalan Kehamilan Komprehensif Berisiko.",
+      "prospects": "Puskesmas, RSB, Bidan Delima Pribadi, Penyuluh Kesehatan Ibu dan Anak.",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692bb5",
+          "name": "Ketua IBI kabupaten Banyuwangi (Bd. Yulianingsih, S.ST.MM.Kes)",
+          "position": "",
+          "place": ""
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb6",
+          "name": "Kepala Puskesmas Sobo, PKM Benculuk, PKM Tegalsari, PK Parijatah kulon, PKM Tapanrejo",
+          "position": "",
+          "place": ""
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb7",
+          "name": "Kepala ruangan ruang bersalin RSUD Balmbangan",
+          "position": "",
+          "place": "RSUD Balmbangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb8",
+          "name": "Kepala ruangan ruang RG RSUD Blambangan",
+          "position": "",
+          "place": "RSUD Blambangan"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bb9",
+          "name": "Kepala ruangan ruang bersalin RSUD Genteng",
+          "position": "",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692bba",
+          "question": "–",
+          "answer": "–"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "S1 Keperawatan",
+      "slug": "s1-keperawatan",
+      "faculty": "FIKES",
+      "level": "S1",
+      "degree": "S.Kep",
+      "accreditation": "Baik Sekali",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/s1-keperawatan-768x512.jpg",
+      "shortDescription": "Holistic Nursing Excellence with Spiritual Integrity for Global Competitiveness | Perawat Holistik, Spiritual, dan Siap Bersaing di Asia.",
+      "profilProgramStudi": "Kurikulum berbasis keperawatan holistik dan spiritual\nIntegrasi evidence-based practice dalam pembelajaran\nDosen kompeten dengan latar belakang akademik dan klinis\nFasilitas laboratorium keperawatan yang lengkap\nProgram praktik klinik di berbagai institusi kesehatan\nPeluang kerja sama nasional dan internasional\nPenguatan soft skills: komunikasi terapeutik, empati, dan spiritual care\nPendekatan pembelajaran student-centered learning\nKegiatan pengabdian masyarakat berbasis komunitas\nPersiapan menghadapi uji kompetensi nasional (UKOM Ners)",
+      "visi": "Menjadi Program Studi Pendidikan Ners yang Unggul di Bidang Keperawatan Holistik Berbasis Spiritual Serta Berdaya Saing Asia Tahun 2025.",
+      "misi": [
+        "Menyelenggarakan pendidikan akademik dan profesi Ners dengan keunggulan keperawatan holistik berlandaskan spiritual.",
+        "Menyelenggarakan penelitian dan pengabdian kepada masyarakat dengan keunggulan keperawatan holistik berlandaskan spiritual.",
+        "Menyelenggarakan kerja sama dalam negeri dan luar negeri sebagai optimalisasi kegiatan tridharma perguruan tinggi."
+      ],
+      "tujuan": [
+        "Menghasilkan lulusan yang unggul dalam keperawatan holistik berlandaskan spiritual.",
+        "Menghasilkan penelitian dan pengabdian kepada masyarakat yang memiliki keunggulan keperawatan holistik berlandaskan spiritual.",
+        "Menghasilkan kerja sama dalam negeri dan luar negeri sebagai optimalisasi kegiatan tridharma perguruan tinggi."
+      ],
+      "keunggulan": "",
+      "pembelajaran": "Mahasiswa memulai dengan tahap akademik (Sarjana Keperawatan) yang berfokus pada teori dasar keperawatan, ilmu biomedik, dan keterampilan klinik dasar melalui pembelajaran kelas dan praktikum laboratorium. Setelah menyelesaikan tahap ini, mahasiswa melanjutkan ke tahap profesi Ners, di mana mereka menjalani praktik klinik secara langsung di rumah sakit dan fasilitas kesehatan lainnya. Selama proses ini, mahasiswa akan mengaplikasikan ilmu secara nyata, mengasah keterampilan klinis, serta mengembangkan sikap profesional dan spiritual dalam memberikan asuhan keperawatan.",
+      "masaStudiDetail": "Total SKS: ± 144 SKS (Sarjana) + ± 36 SKS (Profesi Ners)\nLama Studi Sarjana: 8 semester (4 tahun)\nLama Studi Profesi Ners: 2 semester (1 tahun)\nTotal Lama Studi: ± 5 tahun\nProgram percepatan (akselerasi) opsional jika tersedia\nPeluang pertukaran mahasiswa (student exchange)",
+      "saranaAkademik": "Laboratorium Keperawatan Dasar\nLaboratorium Keperawatan Medikal Bedah\nLaboratorium Keperawatan Maternitas\nLaboratorium Keperawatan Anak\nLaboratorium Keperawatan Jiwa\nLaboratorium Komunitas\nPerpustakaan digital & e-journal akses internasional\nSkill lab dengan manekin simulasi\nRuang OSCE (Objective Structured Clinical Examination)\nSistem e-learning kampus",
+      "praktikLapangan": "Mahasiswa mulai praktik klinik secara bertahap sejak semester menengah (semester 4–5) dalam bentuk praktik dasar. Pada tahap profesi Ners, mahasiswa menjalani praktik intensif di berbagai departemen seperti IGD, ICU, maternitas, anak, komunitas, dan keperawatan jiwa. Praktik dilakukan dengan sistem rotasi untuk memastikan pengalaman yang komprehensif.",
+      "profilLulusan": "Gelar Akademik: S.Kep (Sarjana Keperawatan)\nGelar Profesi: Ners (Ns.)\nPerawat klinis di rumah sakit\nPerawat komunitas\nPerawat home care\nPerawat kesehatan kerja (perusahaan)\nPeneliti keperawatan\nDosen (dengan studi lanjut)\nKonsultan keperawatan holistik & spiritual care",
+      "jejaringKemitraan": [
+        "Rumah Sakit Umum Daerah (RSUD)",
+        "Rumah Sakit Swasta Nasional",
+        "Puskesmas dan Klinik",
+        "Institusi pelayanan kesehatan komunitas",
+        "Lembaga kesehatan internasional (jika ada MoU)",
+        "Dinas Kesehatan",
+        "Instansi Layanan Kesehatan di BUMN"
+      ],
+      "competence": "Kompetensi Utama Lulusan:\n- Memberikan Asuhan Keperawatan Pasien Bedah, Penyakit Dalam, dll.\n- Berperan aktif dalam program pencegahan risiko penyakit menular maupun tidak menular.\n- Menjalankan fungsi manajerial perawatan tingkat dasar (PN/Kepala Ruang).\n- Mengembangkan penelitian evidence-based practice.",
+      "prospects": "Peluang Karir Lulusan kami dapat bekerja pada:\n- Rumah Sakit tipe A, B, C dan D Pemerintah maupun Swasta\n- Klinik Swasta mandiri atau Klinik Perusahaan\n- Dinas Kesehatan, Puskesmas, dan Asuransi Kesehatan\n- Menjadi Perawat Pekerja Migran di Jepang, Arab Saudi dan Kuwait\n- Peneliti",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692bbb",
+          "name": "Khomsariya",
+          "position": "Ketua PPNI DPLN Kuwait",
+          "place": "Rumah Sakit Pemerintah Kuwait"
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bbc",
+          "name": "Wahyu Danang",
+          "position": "Ka Diklat Rumah Sakit",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692bbd",
+          "question": "Apakah lulusan langsung bisa bekerja di rumah sakit?",
+          "answer": "Ya, setelah lulus profesi Ners dan mengikuti uji kompetensi, lulusan dapat bekerja sebagai perawat profesional."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bbe",
+          "question": "Apakah program ini sulit?",
+          "answer": "Program ini menantang karena menggabungkan teori dan praktik, tetapi didukung oleh dosen dan fasilitas yang memadai."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bbf",
+          "question": "Apakah ada praktik langsung ke pasien?",
+          "answer": "Ada. Mahasiswa akan menjalani praktik klinik di rumah sakit dan fasilitas kesehatan lainnya."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bc0",
+          "question": "Apakah bisa bekerja di luar negeri?",
+          "answer": "Bisa, dengan memenuhi persyaratan tambahan seperti sertifikasi internasional dan kemampuan bahasa."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692bc1",
+          "question": "Apa keunggulan dibanding kampus lain?",
+          "answer": "Fokus pada keperawatan holistik berbasis spiritual yang jarang dimiliki program lain."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "S1 Manajemen Bisnis Internasional",
+      "slug": "s1-manajemen-bisnis",
+      "faculty": "FISTEK",
+      "level": "S1",
+      "degree": "S.M",
+      "accreditation": "Baik",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/s1-manajemen-bisnis-768x1152.jpg",
+      "shortDescription": "Mencetak profesional bisnis global dengan keahlian dalam manajemen strategis, pemasaran internasional, keuangan global, dan kewirausahaan lintas batas.",
+      "profilProgramStudi": "Program Studi S1 Manajemen Bisnis Internasional UNIDSOE adalah program studi yang berfokus pada pengembangan kompetensi mahasiswa di bidang manajemen, bisnis internasional, kewirausahaan, pemasaran, pengelolaan usaha, serta pengembangan bisnis berbasis potensi pariwisata dan UMKM. Prodi ini dirancang untuk membekali mahasiswa dengan pemahaman teori, praktikum, studi kasus, praktik lapangan, serta wawasan global agar mampu menghadapi dinamika dunia bisnis modern. Dengan penciri utama tourism entrepreneur dan landasan nilai spiritualitas, Prodi MBI UNIDSOE bertujuan mencetak lulusan yang berdaya saing global, berkarakter, adaptif, beretika, serta siap menjadi profesional, entrepreneur, maupun pemimpin bisnis di tingkat nasional dan internasional.",
+      "visi": "Menjadi Program Studi Manajemen Bisnis Internasional yang berdaya saing global dan berkarakter tourism entrepreneur dengan berlandaskan pada aspek spiritualitas.",
+      "misi": [
+        "Menyelenggarakan pendidikan akademik di bidang manajemen bisnis internasional yang adaptif terhadap perkembangan zaman guna menghasilkan lulusan yang berdaya saing global dan berkarakter sebagai tourism entrepreneur yang mengedepankan aspek spiritual.",
+        "Melaksanakan penelitian di bidang manajemen bisnis internasional dan tata kelola pariwisata yang berorientasi pada kebutuhan masyarakat.",
+        "Melaksanakan pengabdian kepada masyarakat berbasis ilmu pengetahuan dan teknologi guna menumbuhkan karakter tourism entrepreneur.",
+        "Membangun kerja sama dengan mitra dalam negeri dan luar negeri guna mendukung pelaksanaan tri dharma perguruan tinggi."
+      ],
+      "tujuan": [],
+      "keunggulan": "Memiliki Penciri Tourism Entrepreneur\nProdi MBI UNIDSOE memiliki kekhasan pada bidang tourism entrepreneur, sehingga mahasiswa dibekali kemampuan untuk melihat peluang bisnis dari sektor pariwisata, ekonomi kreatif, UMKM, dan potensi lokal yang dapat dikembangkan ke pasar nasional maupun internasional.\nBerorientasi pada Bisnis Global\nMahasiswa tidak hanya belajar manajemen bisnis secara umum, tetapi juga diarahkan untuk memahami bisnis internasional, strategi pasar global, komunikasi lintas budaya, serta peluang kerja dan usaha di lingkungan bisnis yang lebih luas.\nPembelajaran Disertai Praktikum dan Studi Kasus\nProses pembelajaran tidak hanya berbasis teori, tetapi juga dilengkapi dengan praktikum, studi kasus, simulasi bisnis, dan project-based learning agar mahasiswa lebih siap menghadapi kebutuhan dunia kerja.\nPotensi Magang di Perusahaan Nasional dan Multinasional\nMahasiswa memiliki peluang untuk mendapatkan pengalaman langsung melalui kegiatan magang di perusahaan nasional, multinasional, instansi pemerintah, maupun mitra dunia usaha.\nPotensi Magang atau Student Exchange ke Luar Negeri\nProdi diarahkan untuk membuka peluang pengalaman internasional melalui kerja sama luar negeri, seperti student exchange, magang internasional, atau program kolaborasi akademik.\nKurikulum 144 SKS yang Relevan dengan Dunia Kerja\nDengan total 144 SKS, kurikulum disusun untuk membekali mahasiswa dengan kompetensi manajemen, pemasaran, SDM, keuangan, operasional, logistik, bisnis internasional, kewirausahaan, serta etika bisnis.\nMendukung Pengembangan UMKM dan Bisnis Lokal\nMelalui kerja sama sementara dengan Dinas Koperasi dan UMKM, mahasiswa memiliki ruang untuk belajar langsung tentang pengembangan usaha, pemberdayaan UMKM, strategi pemasaran, dan praktik bisnis berbasis kebutuhan masyarakat.\nMembentuk Lulusan Berkarakter dan Beretika\nKeunggulan MBI UNIDSOE tidak hanya pada aspek akademik, tetapi juga pada pembentukan karakter, spiritualitas, tanggung jawab sosial, dan etika bisnis.\nDekat dengan Potensi Banyuwangi sebagai Daerah Pariwisata dan Ekonomi Kreatif\nLokasi dan konteks daerah menjadi nilai tambah karena Banyuwangi memiliki potensi besar dalam pariwisata, UMKM, ekonomi kreatif, dan pengembangan bisnis berbasis lokalitas.\nMemiliki Arah Pengembangan Nasional dan Internasional\nSalah satu misi prodi adalah membangun kerja sama dengan mitra dalam negeri dan luar negeri untuk mendukung pelaksanaan tri dharma perguruan tinggi. Ini menjadi landasan penting dalam memperluas jejaring akademik, riset, pengabdian, dan peluang mahasiswa.",
+      "pembelajaran": "Mahasiswa Prodi S1 Manajemen Bisnis Internasional UNIDSOE mengikuti proses pembelajaran secara bertahap, dimulai dari penguatan dasar-dasar manajemen, bisnis, kewirausahaan, komunikasi, dan etika, kemudian berkembang pada pemahaman bisnis internasional, strategi pemasaran, pengelolaan SDM, keuangan, operasional, logistik, serta tata kelola pariwisata. Proses belajar tidak hanya dilakukan melalui teori di kelas, tetapi juga melalui praktikum, studi kasus, proyek bisnis, diskusi, pengabdian masyarakat, dan potensi magang di dunia industri agar mahasiswa mampu menghubungkan ilmu yang dipelajari dengan kebutuhan nyata di lapangan. Dengan pendekatan ini, mahasiswa diarahkan untuk menjadi lulusan yang adaptif, berdaya saing global, berkarakter tourism entrepreneur, serta memiliki nilai spiritualitas dan etika dalam menjalankan bisnis.",
+      "masaStudiDetail": "Mahasiswa Prodi S1 Manajemen Bisnis Internasional UNIDSOE menempuh beban studi sebanyak 144 SKS yang dirancang untuk diselesaikan dalam waktu normal 8 semester atau 4 tahun. Selama masa studi, mahasiswa akan mengikuti pembelajaran bertahap mulai dari mata kuliah dasar manajemen dan bisnis, penguatan kompetensi bisnis internasional, kewirausahaan, tourism entrepreneur, praktikum, studi kasus, hingga penyusunan tugas akhir/skripsi. Selain perkuliahan reguler, mahasiswa juga diarahkan untuk mengikuti program pengembangan kompetensi seperti magang di perusahaan nasional atau multinasional, kolaborasi dengan mitra seperti Dinas Koperasi UMKM, serta potensi program internasional seperti student exchange atau kegiatan akademik luar negeri sesuai pengembangan kerja sama prodi. Arah ini sejalan dengan misi prodi untuk membangun kerja sama dengan mitra dalam negeri dan luar negeri dalam mendukung pelaksanaan tri dharma perguruan tinggi.",
+      "saranaAkademik": "Ruang kelas representatif dan nyaman.\nLaboratorium komputer/bisnis digital.\nFasilitas praktikum kewirausahaan dan simulasi bisnis.\nPerpustakaan dan akses referensi akademik.\nAkses internet dan sistem informasi akademik.\nRuang diskusi, seminar, dan kegiatan mahasiswa.\nDukungan kerja sama dengan Diskop UMKM.\nMitra dunia usaha untuk praktik, magang, dan proyek bisnis.\nSarana pendukung pengembangan tourism entrepreneur.\nFasilitas penunjang kegiatan penelitian dan pengabdian masyarakat.",
+      "praktikLapangan": "Mahasiswa Prodi S1 Manajemen Bisnis Internasional UNIDSOE diarahkan untuk mengikuti praktik lapangan setelah memperoleh dasar-dasar keilmuan manajemen, bisnis internasional, kewirausahaan, dan tourism entrepreneur. Praktik lapangan dapat dilakukan melalui kegiatan magang, observasi bisnis, proyek kewirausahaan, kolaborasi dengan mitra, maupun pengabdian masyarakat yang relevan dengan dunia usaha dan kebutuhan industri. Melalui kerja sama dengan mitra seperti Diskop UMKM, mahasiswa berkesempatan memahami langsung proses pengelolaan usaha, pengembangan UMKM, strategi pemasaran, serta peluang bisnis berbasis potensi lokal dan pariwisata. Kegiatan ini menjadi bagian penting untuk menghubungkan teori perkuliahan dengan praktik nyata, sehingga mahasiswa lebih siap memasuki dunia kerja, membangun usaha, atau berkarier di lingkungan bisnis nasional maupun internasional.",
+      "profilLulusan": "Lulusan Program Studi S1 Manajemen Bisnis Internasional UNIDSOE umumnya akan memperoleh gelar Sarjana Manajemen (S.M.), dengan penyesuaian akhir mengikuti ketentuan resmi akademik universitas dan SK pembukaan program studi. Dengan bekal ilmu manajemen, bisnis internasional, kewirausahaan, tourism entrepreneur, praktikum, serta potensi magang, lulusan prodi ini dapat berkarier sebagai International Business Analyst, Business Development Officer, Export-Import Officer, Market Research Analyst, Marketing Officer/Manager, Entrepreneur, Tourism Business Entrepreneur, UMKM Business Consultant, Project Manager, Operations Officer, International Business Relation Officer, Consultant for Finance and Trade, International Business Planner, International Business Services Officer, serta staf atau manajer di perusahaan nasional maupun multinasional. Prospek karier ini sejalan dengan arah prodi yang menekankan daya saing global, tourism entrepreneur, kerja sama nasional-internasional, dan penguatan bisnis berbasis masyarakat.\nDaftar profesi spesifik:\nInternational Business Analyst\nBusiness Development Officer/Manager\nExport-Import Officer\nImport Export Coordinator\nMarket Research Analyst\nMarketing Officer/Manager\nInternational Business Planner\nInternational Business Services Officer\nInternational Business Relation Officer\nEntrepreneur/Wirausahawan\nTourism Business Entrepreneur\nUMKM Business Consultant\nBusiness Consultant\nProject Manager\nOperations Officer/Manager\nConsultant for Finance and Trade\nInternational Licensing/Franchising Officer\nJoint Venture Project Officer/Manager\nStaf/Manajer Perusahaan Nasional\nStaf/Manajer Perusahaan Multinasional",
+      "jejaringKemitraan": [],
+      "competence": "Manajemen Strategis Global, Pemasaran Internasional, Analisis Pasar Modal, Kewirausahaan, Supply Chain Management, Business Development.",
+      "prospects": "International Business Manager, Global Marketing Specialist, Financial Analyst, Entrepreneur, Supply Chain Manager, Business Development Manager.",
+      "prospekKerja": "",
+      "karierAlumni": [
+        {
+          "id": "6aa09f6de8768f08ef692b4d",
+          "name": "Belum ada",
+          "position": "",
+          "place": ""
+        }
+      ],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b4e",
+          "question": "Apa yang dipelajari di Prodi S1 Manajemen Bisnis Internasional?",
+          "answer": "Mahasiswa akan mempelajari dasar-dasar manajemen, bisnis internasional, pemasaran, kewirausahaan, keuangan, SDM, operasional, komunikasi bisnis, strategi bisnis global, serta pengembangan usaha berbasis pariwisata dan UMKM. Prodi ini juga memiliki penciri khusus tourism entrepreneur yang menjadi pembeda utama."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b4f",
+          "question": "Apa bedanya Manajemen Bisnis Internasional dengan Manajemen biasa?",
+          "answer": "Manajemen biasa umumnya fokus pada pengelolaan bisnis secara umum, sedangkan Manajemen Bisnis Internasional memiliki orientasi lebih luas pada bisnis global, pasar internasional, ekspor-impor, kerja sama lintas negara, komunikasi lintas budaya, serta peluang karier di perusahaan nasional maupun multinasional."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b50",
+          "question": "Apakah mahasiswa harus sudah jago Bahasa Inggris?",
+          "answer": "Tidak harus langsung mahir. Namun, karena prodi ini berorientasi pada bisnis internasional, kemampuan Bahasa Inggris akan menjadi nilai penting yang perlu dikembangkan selama kuliah. Mahasiswa akan diarahkan untuk meningkatkan kemampuan komunikasi bisnis agar lebih siap menghadapi dunia kerja global."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b51",
+          "question": "Apakah prodi ini cocok untuk mahasiswa yang ingin jadi pengusaha?",
+          "answer": "Sangat cocok. Selain mempelajari teori bisnis, mahasiswa juga diarahkan untuk memiliki karakter entrepreneur, khususnya dalam bidang pariwisata, UMKM, ekonomi kreatif, dan bisnis berbasis potensi lokal yang bisa dikembangkan ke pasar nasional maupun internasional."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b52",
+          "question": "Apa maksud dari penciri tourism entrepreneur?",
+          "answer": "Tourism entrepreneur berarti mahasiswa tidak hanya belajar bisnis secara umum, tetapi juga dibekali kemampuan melihat peluang usaha dari sektor pariwisata, hospitality, ekonomi kreatif, UMKM, event, kuliner, dan potensi daerah. Ini relevan karena Banyuwangi memiliki kekuatan besar di bidang pariwisata dan ekonomi lokal."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b53",
+          "question": "Berapa total SKS yang harus ditempuh?",
+          "answer": "Mahasiswa menempuh total 144 SKS dengan masa studi normal sekitar 8 semester atau 4 tahun. Selama masa studi, mahasiswa akan mengikuti perkuliahan teori, praktikum, proyek bisnis, praktik lapangan, hingga tugas akhir atau skripsi."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b54",
+          "question": "Apakah ada praktik lapangan atau magang?",
+          "answer": "Ada. Mahasiswa diarahkan untuk mengikuti praktik lapangan melalui kegiatan seperti magang, observasi bisnis, proyek kewirausahaan, kolaborasi dengan mitra, dan pengabdian masyarakat. Praktik ini bertujuan agar mahasiswa tidak hanya memahami teori, tetapi juga mampu menerapkannya dalam situasi bisnis nyata."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b55",
+          "question": "Apakah bisa magang di perusahaan nasional atau multinasional?",
+          "answer": "Prodi memiliki arah pengembangan untuk membuka peluang magang di perusahaan nasional maupun multinasional. Peluang ini akan menyesuaikan dengan kerja sama, kesiapan mahasiswa, dan kebutuhan mitra industri."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b56",
+          "question": "Apakah ada peluang student exchange atau pengalaman luar negeri?",
+          "answer": "Ada potensi ke arah tersebut. Salah satu misi prodi adalah membangun kerja sama dengan mitra dalam negeri dan luar negeri untuk mendukung pelaksanaan tri dharma perguruan tinggi. Jadi, pengembangan program seperti student exchange atau kolaborasi internasional menjadi bagian dari arah pengembangan prodi."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b57",
+          "question": "Kerja sama prodi saat ini dengan siapa?",
+          "answer": "Untuk sementara, kerja sama yang dapat dicantumkan adalah dengan Diskop UMKM. Kerja sama ini relevan untuk pengembangan kewirausahaan, pendampingan UMKM, praktik bisnis, pemasaran, dan kegiatan pengabdian masyarakat. Ke depan, prodi dapat terus memperluas mitra dengan perusahaan, industri pariwisata, startup, lembaga ekspor-impor, dan mitra luar negeri."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b58",
+          "question": "Setelah lulus dapat gelar apa?",
+          "answer": "Lulusan Prodi S1 Manajemen Bisnis Internasional umumnya memperoleh gelar Sarjana Manajemen (S.M.), dengan penyesuaian akhir mengikuti ketentuan resmi universitas dan SK pembukaan program studi."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b59",
+          "question": "Lulusan prodi ini bisa kerja sebagai apa?",
+          "answer": "Lulusan dapat berkarier sebagai International Business Analyst, Business Development Officer, Export-Import Officer, Market Research Analyst, Marketing Officer/Manager, Entrepreneur, Tourism Business Entrepreneur, UMKM Business Consultant, Project Manager, Operations Officer, serta staf atau manajer di perusahaan nasional maupun multinasional. Daftar karier ini juga selaras dengan referensi prospek karier program International Business Management dari BINUS."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b5a",
+          "question": "Apakah lulusan hanya bisa bekerja di perusahaan?",
+          "answer": "Tidak. Lulusan juga dapat membangun bisnis sendiri, menjadi entrepreneur, konsultan UMKM, pelaku bisnis pariwisata, digital business owner, atau mengembangkan usaha berbasis potensi lokal. Prodi ini justru dirancang agar mahasiswa tidak hanya siap bekerja, tetapi juga siap menciptakan peluang usaha."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b5b",
+          "question": "Apakah prodi ini cocok untuk yang belum punya pengalaman bisnis?",
+          "answer": "Cocok. Mahasiswa akan belajar dari dasar, mulai dari konsep manajemen, kewirausahaan, pemasaran, hingga strategi bisnis. Pengalaman bisnis dapat dibangun secara bertahap melalui tugas, praktikum, proyek, magang, dan kegiatan lapangan."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b5c",
+          "question": "Kenapa harus memilih MBI UNIDSOE?",
+          "answer": "Karena MBI UNIDSOE tidak hanya menawarkan pembelajaran bisnis, tetapi juga menggabungkan wawasan global, penciri tourism entrepreneur, praktikum, potensi magang, pengembangan UMKM, nilai spiritualitas, dan arah kerja sama nasional-internasional. Dengan kombinasi ini, mahasiswa dipersiapkan menjadi lulusan yang adaptif, profesional, beretika, dan siap bersaing di dunia bisnis modern."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "S1 Perdagangan Internasional",
+      "slug": "s1-perdagangan-internasional",
+      "faculty": "FISTEK",
+      "level": "S1",
+      "degree": "S.Bns",
+      "accreditation": "Baik",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/s1-perdagangan-internasional-768x512.jpg",
+      "shortDescription": "Mencetak Ahli Ekspor, Logistik, dan Perdagangan Internasional.",
+      "profilProgramStudi": "Program Studi S1 Perdagangan Internasional Universitas Dr. Soekardjo membekali mahasiswa dengan kompetensi ekspor-impor, logistik global, perdagangan global, kepabeanan, dan bisnis internasional melalui pembelajaran berbasis praktik, proyek, dan magang. Fokus utamanya adalah menghasilkan lulusan yang adaptif, kompeten, dan berintegritas serta mampu mengembangkan potensi lokal menjadi produk yang berdaya saing di pasar global.",
+      "visi": "“Menjadi Program Studi Perdagangan Internasional yang adaptif terhadap dinamika global dalam menghasilkan lulusan kompeten berlandaskan integritas dan berorientasi pada pemberdayaan potensi lokal.”",
+      "misi": [
+        "Menyelenggarakan pendidikan di bidang perdagangan internasional yang adaptif terhadap dinamika global.",
+        "Mengembangkan kompetensi dan integritas lulusan sesuai kebutuhan dunia usaha dan industri.",
+        "Melaksanakan penelitian yang aplikatif di bidang perdagangan internasional.",
+        "Melaksanakan pengabdian kepada masyarakat melalui pemberdayaan potensi lokal menuju pasar global.",
+        "Membangun kerja sama dengan mitra nasional dan global untuk mendukung tridharma perguruan tinggi.",
+        "Menumbuhkan jiwa kewirausahaan dan kemandirian berbasis potensi lokal dalam bidang perdagangan internasional."
+      ],
+      "tujuan": [],
+      "keunggulan": "Jaminan Kompetensi : Mahasiswa tidak hanya belajar ekonomi dan ekspor impor, tetapi menjadi ahli dalam regulasi global yang kini menjadi tantangan utama eksportir dunia.\nHilirisasi Potensi Lokal ke Pasar Dunia : Mahasiswa menjadi akselerator yang mampu menaikkan kelas UMKM lokal ke rantai pasok dan pasar global.\nLiterasi Digital Trade & Big Data : Di era ekonomi digital, mahasiswa dibekali keahlian mengelola e-commerce lintas negara dan analisis data pasar yang presisi.\nKoneksi Industri Nyata : Keunggulan kami adalah kerja sama aktif dengan instansi, perusahaan multinasional dan asosiasi profesi yang terwujud dalam magang bersertifikat dan kuliah pakar.\nEtika Bisnis sebagai Value Utama : Di tengah maraknya fraud global, prodi kami memosisikan integritas sebagai nilai jual utama lulusan yang sangat dicari perusahaan multinasional.",
+      "pembelajaran": "Mahasiswa memulai pembelajaran dari dasar perdagangan internasional dan bisnis global, lalu berlanjut pada penguasaan logistik, ekspor-impor, kepabeanan, serta perdagangan digital. Setelah itu, mahasiswa mengasah kemampuan melalui praktikum, proyek, dan magang industri. Pada tahap akhir, mahasiswa mampu merancang strategi ekspor untuk produk dan UMKM lokal agar dapat bersaing di pasar global secara kompetitif dan berkelanjutan.",
+      "masaStudiDetail": "Total Beban Studi: 144 SKS untuk meraih gelar sarjana (8 Semester / 4 Tahun).\nTersedia Akselerasi Kelulusan: Tersedia jalur khusus untuk lulus dalam 7 semester (3.5 Tahun)\nKonversi SKS : Manfaatkan program Full Block Conversion di Semester 5 di mana pengalaman magang atau bisnis mandiri selama 6 bulan dapat dikonversi langsung menjadi 20 SKS.\nProgram Akselerasi Karier: Mahasiswa memiliki peluang untuk mengikuti program magang bersertifikat di perusahaan eksportir global atau masuk ke dalam inkubator bisnis prodi untuk membangun startup ekspor sejak dini.\nKurikulum Berorientasi Aksi: Lulusan tidak hanya dibekali teori, tetapi dipersiapkan melalui proyek nyata dan simulasi operasional (seperti pengisian dokumen ekspor digital) yang memastikan Anda siap kerja sebelum lulus.",
+      "saranaAkademik": "Laboratorium Komputer: Pusat akses digital untuk menjalankan perangkat lunak operasional, sistem niaga digital, serta analisis data pasar global.\nLaboratorium Simulasi: Fasilitas untuk menjalankan simulasi prosedur kepabeanan dan teknis ekspor-impor secara virtual sebelum praktik lapangan.\nPraktikum Logistik & SCM: Fokus pada pengelolaan rantai pasok dan alur barang melalui integrasi perangkat lunak\nInkubator Bisnis: Ekosistem pengembangan startup mandiri yang mengintegrasikan pengadaan hingga distribusi produk ke pasar global.\nSarana Praktikum Lapangan: Meliputi kunjungan langsung ke wilayah pabean (port) untuk mempelajari alur fisik barang serta aktivitas pendampingan langsung pada pelaku UMKM lokal di bawah supervisi dosen pembimbing.",
+      "praktikLapangan": "Program magang atau PKL dilaksanakan secara intensif pada Semester 5 atau 6 melalui skema MBKM yang memungkinkan pengalaman praktis selama satu semester dikonversi langsung menjadi 20 SKS. Program ini memastikan Anda mendapatkan pengalaman kerja nyata di perusahaan mitra sebelum lulus tepat waktu.",
+      "profilLulusan": "Gelar untuk lulusan Perdagangan Internasional adalah  Sarjana Bisnis (S.Bns)\nProspek karir lulusan Perdagangan Internasional\n1. Perusahaan Jasa Logistik (Freight Forwarder)\nPeran: Export-Import Documentation, Customs Clearance Specialist, Freight Forwarding Operations.\n2. Sektor Swasta (Perusahaan Multinasional & Manufaktur)\nPeran: Procurement/Purchasing Staff (impor bahan baku), Export Sales/Marketing, Supply Chain Analyst, Trade Compliance Officer.\n3. Badan Usaha Milik Negara (BUMN)\nLogistik (Pelindo, Pos Indonesia): Supply Chain Analyst, Warehouse Management.\nPerdagangan (ID FOOD, PPI, Sarinah): Export-Import Specialist, International Procurement.\nPerbankan (Mandiri, BNI, BRI): Trade Finance Analyst (mengelola Letter of Credit dan instrumen pembayaran internasional).\nManufaktur (Krakatau Steel, Pupuk Indonesia): Global Sourcing & Procurement (pengadaan material internasional).\n4. Instansi Pemerintah\nDirektorat Jenderal Bea dan Cukai\nKementerian Perdagangan\n5. Wirausaha (Entrepreneur)\nEksportir & Cross-border Seller\nAgen Logistik/Broker\n6. Konsultan\nKonsultan Kepatuhan (Compliance):\nKonsultan Green Trade\nAnalis Riset Pasar",
+      "jejaringKemitraan": [],
+      "competence": "Regulasi Ekspor-Impor, Manajemen Rantai Pasok Global, Negosiasi Bisnis Lintas Negara, Hukum Perdagangan Global, Customs Clearance, Freight Forwarding, Trade Finance.",
+      "prospects": "Export-Import Specialist, Supply Chain Analyst, Customs Officer, Trade Consultant, Freight Forwarder, Trade Finance Analyst, Procurement Staff.",
+      "prospekKerja": "Perusahaan Jasa Logistik (Freight Forwarder): Export-Import Documentation, Customs Clearance Specialist, Freight Forwarding Operations.\nSektro Swasta (Perusahaan Multinasional & Manufaktur): Procurement/Purchasing Staff, Export Sales/Marketing, Supply Chain Analyst, Trade Compliance Officer.\nBadan Usaha Milik Negara (BUMN): Logistik (Pelindo, Pos Indonesia), Perdagangan (ID FOOD, PPI, Sarinah), Perbankan (Mandiri, BNI, BRI): Trade Finance Analyst, Manufaktur (Krakatau Steel, Pupuk Indonesia): Global Sourcing & Procurement.\nInstansi Pemerintah: Direktorat Jenderal Bea dan Cukai, Kementerian Perdagangan.\nWirausaha (Entrepreneur): Eksportir & Cross-border Seller, Agen Logistik/Broker.\nKonsultan: Konsultan Kepatuhan (Compliance), Konsultan Green Trade, Analis Riset Pasar.",
+      "karierAlumni": [],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b5d",
+          "question": "Apa perbedaan utama antara Perdagangan Internasional dengan Manajemen umum?",
+          "answer": "Jawaban: Manajemen mempelajari pengelolaan perusahaan secara general. Sebaliknya, Perdagangan Internasional bersifat spesifik dan teknis. Kami mendalami alur barang lintas negara, regulasi kepabeanan, prosedur ekspor-impor yang kompleks, hukum dagang internasional, serta manajemen rantai pasok global. Lulusan kami memiliki kompetensi teknis yang spesifik yang tidak didapatkan secara mendalam di program studi manajemen umum."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b5e",
+          "question": "Apakah saya harus sudah mahir berbahasa Inggris sebelum mendaftar?",
+          "answer": "Jawaban: Tidak wajib mahir saat mendaftar, namun Anda harus memiliki kemauan untuk belajar. Kurikulum kami terintegrasi dengan pelatihan bahasa Inggris bisnis, korespondensi internasional, dan terminologi perdagangan global. Anda akan dilatih secara bertahap agar memiliki kepercayaan diri tinggi dalam berkomunikasi dengan mitra bisnis internasional saat lulus nanti."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b5f",
+          "question": "Apakah program studi ini hanya berfokus pada teori di dalam kelas?",
+          "answer": "Jawaban: Sama sekali tidak. Fokus kami adalah link and match dengan dunia industri. Anda akan belajar menggunakan software kepabeanan yang dipakai di lapangan, melakukan simulasi transaksi ekspor-impor, serta mengikuti kunjungan industri ke pelabuhan dan gudang berikat. Program magang di semester 6 juga diwajibkan agar Anda mendapatkan pengalaman operasional nyata sebelum lulus."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b60",
+          "question": "Bagaimana prospek karier bagi lulusannya? Apakah mudah mendapatkan pekerjaan?",
+          "answer": "Jawaban: Sangat luas dan menjanjikan karena perdagangan internasional adalah roda penggerak utama ekonomi nasional. Lulusan kami sangat dibutuhkan di sektor freight forwarding (perusahaan logistik), perusahaan manufaktur ekspor-impor, divisi trade finance di perbankan, BUMN logistik, hingga instansi pemerintah seperti Bea Cukai dan Kementerian Perdagangan."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b61",
+          "question": "Apakah gelar Sarjana Bisnis (S.Bns.) diakui untuk melamar di instansi pemerintah dan BUMN?",
+          "answer": "Jawaban: Tentu saja. S.Bns, adalah gelar akademik resmi yang diakui pemerintah. Ijazah ini memenuhi kualifikasi untuk mengikuti seleksi ASN (CPNS/PPPK) di kementerian terkait, serta memenuhi persyaratan administratif dalam berbagai rekrutmen BUMN atau perusahaan multinasional berskala global."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b62",
+          "question": "Jika saya ingin menjadi wirausaha, apakah prodi ini bermanfaat?",
+          "answer": "Jawaban: Sangat bermanfaat. Anda tidak hanya belajar teori, tetapi juga cara mencari pembeli luar negeri, melakukan riset pasar global, memahami regulasi agar produk lolos ekspor, serta menguasai e-commerce cross-border. Kami menyiapkan Anda untuk menjadi eksportir mandiri yang mampu membaca peluang bisnis di pasar global dengan perhitungan risiko yang matang."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "S1 Sistem Informasi",
+      "slug": "s1-sistem-informasi",
+      "faculty": "FISTEK",
+      "level": "S1",
+      "degree": "S.Kom",
+      "accreditation": "Baik",
+      "duration": "8 Semester / 4 Tahun",
+      "image": "http://127.0.0.1:3000/api/media/file/s1-sistem-informasi-768x513.jpg",
+      "shortDescription": "Empowering Digital Health Innovation through Smart Information Systems.",
+      "profilProgramStudi": "Program Studi S1 Sistem Informasi merupakan program pendidikan yang berfokus pada pengembangan sistem informasi dengan spesialisasi di bidang Health Informatics (Sistem Informasi Kesehatan). Mahasiswa dibekali kemampuan analisis, perancangan, serta implementasi teknologi informasi modern untuk mendukung transformasi digital di sektor kesehatan.",
+      "visi": "Menjadi program studi Sistem Informasi yang unggul dan berdaya saing global di bidang analitik data kesehatan, telehealth, dan solusi berbasis kecerdasan buatan, menghasilkan lulusan inovatif, kompeten, dan berlandaskan keimanan serta ketakwaan pada tahun 2030.",
+      "misi": [
+        "Menghasilkan lulusan kompeten di bidang Sistem Informasi Kesehatan.",
+        "Melaksanakan penelitian inovatif berbasis kebutuhan masyarakat.",
+        "Berperan aktif dalam pengabdian masyarakat berbasis teknologi kesehatan.",
+        "Menyiapkan lulusan berintegritas dan berjiwa mandiri.",
+        "Membangun jejaring kerja sama dalam dan luar negeri.",
+        "Mendorong kewirausahaan dan wawasan kebangsaan di bidang health IT."
+      ],
+      "tujuan": [],
+      "keunggulan": "Program Studi Sistem Informasi UNIDSOE memiliki keunggulan unik dengan fokus pada bidang sistem informasi kesehatan (Health Informatics). Mahasiswa tidak hanya belajar konsep dasar sistem informasi, tetapi juga menerapkan teknologi mutakhir seperti AI diagnosis, Big Data Kesehatan, Telehealth, dan IoMT. Program ini mendukung MBKM melalui magang di rumah sakit, startup healthtech, dan riset kolaboratif berbasis teknologi kesehatan.",
+      "pembelajaran": "Alur belajar mahasiswa Program Studi S1 Sistem Informasi UNIDSOE secara umum dimulai dari penguatan dasar-dasar sistem informasi, pemrograman, analisis kebutuhan, perancangan sistem, pengelolaan data, hingga implementasi teknologi informasi untuk memecahkan berbagai persoalan organisasi. Mahasiswa tidak hanya diarahkan pada bidang Health Informatics atau sistem informasi kesehatan, tetapi juga dibekali kemampuan yang relevan untuk diterapkan di berbagai sektor, seperti industri, korporasi, bisnis digital, lembaga pelayanan publik, dan instansi pemerintahan. Selama masa studi 4 tahun dengan total 144 SKS, mahasiswa mengembangkan kompetensi melalui pembelajaran teori, praktik laboratorium, proyek kolaboratif, praktik lapangan, magang, serta riset berbasis kebutuhan nyata. Dengan alur tersebut, lulusan diharapkan mampu menjadi analis sistem, pengembang aplikasi, data analyst, konsultan IT, business analyst, maupun tenaga profesional teknologi informasi yang siap mendukung transformasi digital di berbagai bidang.",
+      "masaStudiDetail": "Total SKS: 144 SKS\nLama studi: 4 Tahun",
+      "saranaAkademik": "Program Studi S1 Sistem Informasi Universitas Dr. Soekardjo didukung sarana akademik modern yang lengkap, meliputi laboratorium komputer berteknologi tinggi, Virtual Reality (VR), akses internet berkecepatan tinggi, serta perpustakaan digital dengan koleksi referensi yang relevan. Tersedia juga ruang diskusi kolaboratif sebagai wadah mahasiswa mengembangkan kreativitas, inovasi, dan kerja tim dalam menyelesaikan proyek berbasis teknologi.\nSemua fasilitas ini merupakan wujud komitmen universitas dalam mencetak lulusan yang kompeten dan siap menghadapi tantangan industri teknologi informasi.",
+      "praktikLapangan": "Program Studi S1 Sistem Informasi Universitas Dr. Soekardjo memberikan kesempatan kepada mahasiswa untuk mengikuti praktek lapangan melalui program magang, kerja praktek, dan proyek kolaboratif di berbagai instansi dan industri teknologi. Kegiatan ini bertujuan meningkatkan kompetensi mahasiswa dalam penerapan sistem informasi, pengembangan aplikasi, analisis data, serta penguasaan teknologi digital sesuai kebutuhan dunia kerja. Selain keterampilan teknis, mahasiswa juga dibekali kemampuan komunikasi, kerja tim, dan etika profesi sehingga siap menghadapi tantangan industri di era transformasi digital.",
+      "profilLulusan": "Gelar: S.Kom\nLulusan memiliki kompetensi sebagai:\n1. Analis sistem informasi kesehatan\n2. Developer aplikasi telemedicine / IoMT\n3. Data scientist bidang kesehatan\n4. Konsultan IT kesehatan\n5. Health business analyst",
+      "jejaringKemitraan": [],
+      "competence": "Rekayasa Perangkat Lunak, Manajemen Database, Analisis Bisnis Digital, Tata Kelola IT, Health Informatics, AI Diagnosis, Big Data Kesehatan, Telehealth, IoMT.",
+      "prospects": "System Analyst, IT Consultant, Database Administrator, Tech Entrepreneur, Health Informatics Specialist, Telehealth Developer, Healthcare Data Analyst.",
+      "prospekKerja": "",
+      "karierAlumni": [],
+      "faq": [
+        {
+          "id": "6aa09f6de8768f08ef692b63",
+          "question": "Apa itu Program Studi Sistem Informasi?",
+          "answer": "Program studi yang mempelajari bagaimana merancang, mengembangkan, dan mengelola sistem informasi untuk mendukung kebutuhan organisasi, khususnya di bidang kesehatan."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b64",
+          "question": "Apa keunikan prodi ini?",
+          "answer": "Keunggulan utama terletak pada fokus Sistem Informasi Kesehatan (Health Informatics) yang menggabungkan teknologi IT modern dengan dunia medis."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b65",
+          "question": "Apakah harus jago coding untuk masuk?",
+          "answer": "Tidak harus. Kamu akan belajar dari dasar. Yang penting adalah kemauan belajar, logika, dan ketertarikan pada teknologi."
+        },
+        {
+          "id": "6aa09f6de8768f08ef692b66",
+          "question": "Apa perbedaan Sistem Informasi dengan Teknik Informatika?",
+          "answer": "– Sistem Informasi: fokus pada solusi bisnis dan implementasi teknologi\n– Teknik Informatika: fokus pada pengembangan software dan algoritma secara mendalam"
+        }
+      ]
+    }
+  ]
+}

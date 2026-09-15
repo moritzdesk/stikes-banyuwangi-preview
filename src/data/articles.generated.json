@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T09:13:23.898Z",
+  "generatedAt": "2026-09-15T07:28:27.400Z",
   "cmsUrl": "http://127.0.0.1:3000",
   "categories": [
     {
@@ -22,13 +22,6 @@
       "slug": "edukasi",
       "displayName": "Edukasi",
       "description": "edukasi"
-    },
-    {
-      "id": 9,
-      "name": "fsdfsa",
-      "slug": "fascia",
-      "displayName": "fads",
-      "description": "fasdf"
     },
     {
       "id": 4,
@@ -68,25 +61,42 @@
   ],
   "articles": [
     {
-      "id": 4,
-      "title": "test artikel",
-      "slug": "test-artikel",
-      "date": "8 September 2026",
-      "publishedDate": "2026-09-08T12:00:00.000Z",
-      "image": "http://127.0.0.1:3000/api/media/file/App_Store_phone_screenshot_showcase_202609021526.jpeg",
-      "excerpt": "bla bla bla",
-      "content": "<div class=\"payload-richtext\"><h1>bla bla bla</h1><p>fdsafasd</p><ol class=\"list-number\"><li\n          class=\"\"\n          style=\"\"\n          value=\"1\"\n        >fasadf</li><li\n          class=\"\"\n          style=\"\"\n          value=\"2\"\n        >fasdfa</li><li\n          class=\"\"\n          style=\"\"\n          value=\"3\"\n        >fasdfa</li></ol><p><br /></p><p>fsdfas fsdfasfa Catatan: cover masih di storage lokal (/media), pindah ke R2 nanti pas kredensial Cloudflare siap — tinggal upload ulang + ganti adapter, nggak ngubah kode koleksi.</p><p><br /></p><p>fasdfads fasdfasd fasdfasd fasdfas </p><p>fasdfafasdfa</p><p> fasdfadsf</p><p><br /></p><p><br /></p><picture>\n      <img\n        alt=\"tito desk\"\n        height=\"1254\"\n        src=\"/api/media/file/ChatGPT%20Image%20Sep%207%2C%202026%20at%2006_20_15%20PM.png\"\n        width=\"1254\"\n      />\n    </picture><p><br /></p><p><br /></p></div>",
-      "category": "Kegiatan",
-      "category_slug": "kegiatan",
+      "id": 6,
+      "title": "t4etf.  ",
+      "slug": "fasdfas",
+      "date": "11 September 2026",
+      "publishedDate": "2026-09-11T12:00:00.000Z",
+      "image": "http://127.0.0.1:3000/api/media/file/App_screenshot_showing_math_quiz_202609021548.jpeg",
+      "imagePosition": "50% 50%",
+      "excerpt": "fasdfsa",
+      "content": "<div class=\"payload-richtext\"><p>fasdfasdf</p></div>",
+      "category": "Highlight",
+      "category_slug": "highlight",
+      "author": "Humas UNIDSOE",
+      "tags": [],
+      "seoTitle": "t4etf.  ",
+      "seoDescription": "fasdfsa"
+    },
+    {
+      "id": 7,
+      "title": "fsdafas",
+      "slug": "fasdfasdfasdfa",
+      "date": "9 September 2026",
+      "publishedDate": "2026-09-09T12:00:00.000Z",
+      "image": "http://127.0.0.1:3000/api/media/file/App_screenshot_showing_math_quiz_202609021548.jpeg",
+      "imagePosition": "50% 50%",
+      "excerpt": "fasdfasdfas",
+      "content": "<div class=\"payload-richtext\"><p>fasdfas</p><p>fasdfa</p><p>fasdfas</p></div>",
+      "category": "Highlight",
+      "category_slug": "highlight",
       "author": "Humas UNIDSOE",
       "tags": [
-        "seo",
-        "seo",
-        "seol",
-        "sekso"
+        "fsdafa ",
+        "fasdfads",
+        "fasdfa"
       ],
-      "seoTitle": "Rektor UNIDSOE Raih TOP Creativity Choice Award 2026",
-      "seoDescription": "Rektor UNIDSOE Raih TOP Creativity Choice Award 2026"
+      "seoTitle": "fsdafas",
+      "seoDescription": "fasdfasdfas"
     },
     {
       "id": 1,
@@ -95,6 +105,7 @@
       "date": "21 Mei 2026",
       "publishedDate": "2026-05-21T01:01:00.000Z",
       "image": "http://127.0.0.1:3000/api/media/file/mitos-ai.webp",
+      "imagePosition": "50% 50%",
       "excerpt": "Mitos atau Fakta ?\nAI akan Menggantikan Pekerjaan Manusia",
       "content": "<div class=\"payload-richtext\"><p>Di tengah perkembangan teknologi yang semakin pesat, kecerdasan buatan atau <em>Artificial Intelligence</em> (AI) menjadi salah satu topik yang paling banyak diperbincangkan. Mulai dari media sosial, ruang kelas, hingga dunia kerja, muncul satu pertanyaan yang terus menjadi perdebatan: apakah AI akan menggantikan pekerjaan manusia?</p><p>Kekhawatiran tersebut tentu bukan tanpa alasan. Saat ini, AI sudah mampu menulis artikel, membuat desain, menganalisis data, menjawab pertanyaan pelanggan, bahkan membantu proses diagnosa di bidang kesehatan. Banyak pekerjaan yang sebelumnya dikerjakan manusia kini dapat dilakukan lebih cepat oleh sistem berbasis AI. Namun, di balik kekhawatiran itu, ada satu hal penting yang perlu dipahami, yakni <strong>AI tidak sepenuhnya menggantikan manusia</strong>. Justru, manusia yang mampu menggunakan AI akan menggantikan manusia yang tidak mau beradaptasi.</p><p>Fenomena ini sebenarnya bukan hal baru. Jika melihat sejarah, setiap revolusi teknologi selalu mengubah pola kerja manusia. Pada era revolusi industri, mesin mulai menggantikan pekerjaan manual demi meningkatkan efisiensi produksi. Saat komputer dan internet berkembang, banyak pekerjaan administratif berubah secara drastis. Kini, AI hadir sebagai fase lanjutan dari transformasi tersebut.</p><p>Perbedaannya, AI bekerja bukan hanya pada pekerjaan fisik, tetapi juga pada pekerjaan digital dan administratif yang bersifat repetitif. Tugas seperti memasukkan data, membuat laporan sederhana, menyusun jadwal, hingga pelayanan pelanggan dasar kini dapat dilakukan secara otomatis. Hal ini menyebabkan beberapa jenis pekerjaan berpotensi berkurang, terutama pekerjaan yang tidak membutuhkan analisis mendalam atau kreativitas tinggi.</p><p>Di sisi lain, AI justru membuka peluang baru yang sebelumnya tidak pernah ada. Saat ini, banyak perusahaan membutuhkan individu yang mampu mengoperasikan AI, memahami data, berpikir strategis, serta mampu mengambil keputusan yang tidak bisa dilakukan mesin. Dengan kata lain, kemampuan berpikir kritis (<em>critical thinking</em>), kreativitas (<em>creative thinking</em>), komunikasi, dan empati manusia menjadi semakin penting.</p><p>Indonesia termasuk negara yang perlu serius menghadapi perubahan ini. Sebab, sebagian besar pekerjaan masih didominasi aktivitas administratif dan rutinitas teknis yang mudah diotomatisasi. Jika kemampuan berpikir kritis, problem solving, dan inovasi tidak mulai diasah sejak sekarang, maka banyak tenaga kerja akan kesulitan bersaing di masa depan.</p><p>Namun, AI tidak harus dipandang sebagai ancaman. Sebaliknya, AI dapat menjadi alat bantu yang sangat powerful jika digunakan dengan tepat. Sama seperti internet yang dahulu sempat dianggap mengancam banyak profesi, AI pada akhirnya hanyalah teknologi yang bergantung pada cara manusia memanfaatkannya.</p><p>Lalu, bagaimana cara agar tetap relevan di era AI?</p><h2><strong>1. Gunakan AI untuk Belajar Lebih Cepat</strong></h2><h2>AI dapat menjadi “asisten belajar” yang membantu memahami berbagai hal dengan lebih praktis. Mulai dari mencari referensi, menjelaskan materi sulit, membuat rangkuman, hingga membantu belajar bahasa asing. Mahasiswa dan pelajar yang mampu memanfaatkan AI secara bijak akan memiliki keunggulan dalam memperoleh pengetahuan lebih cepat dibanding sebelumnya. Namun demikian, AI bukan pengganti proses berpikir. Informasi dari AI tetap harus diverifikasi dan dipahami secara kritis agar tidak menimbulkan kesalahan pemahaman.</h2><h2><strong>2. Fokus pada Produktivitas, Bukan Sekadar Kecepatan</strong></h2><p>Banyak pekerjaan yang menghabiskan waktu hanya untuk tugas berulang, seperti membuat format laporan, mengolah data sederhana, atau menyusun draf awal dokumen. AI dapat membantu menyelesaikan pekerjaan tersebut dalam hitungan menit. Dengan begitu, manusia dapat mengalihkan waktu dan energinya pada pekerjaan yang lebih strategis, seperti membuat keputusan, membangun relasi, berinovasi, dan menciptakan ide baru. Di era sekarang, produktivitas bukan lagi soal bekerja lebih lama, tetapi bekerja lebih cerdas dengan bantuan teknologi.</p><h2><strong>3. Latih Kemampuan Berpikir Kritis</strong></h2><p>Salah satu kesalahan terbesar adalah menerima semua jawaban AI tanpa proses analisis. Padahal, AI tidak selalu benar. Oleh karena itu, kemampuan berpikir kritis menjadi sangat penting. Gunakan AI sebagai alat diskusi untuk mempertajam ide, mencari sudut pandang berbeda, atau menguji argumen. Semakin baik kemampuan berpikir seseorang, semakin besar manfaat AI yang bisa diperoleh.</p><p>Selain itu, kemampuan yang bersifat manusiawi seperti empati, komunikasi interpersonal, kepemimpinan, dan etika tetap tidak dapat digantikan oleh mesin. Di bidang kesehatan misalnya, AI mungkin mampu membantu membaca data medis dengan cepat, tetapi sentuhan empati dan keputusan klinis tetap membutuhkan manusia.</p><p>Pada akhirnya, AI hanyalah alat. Dampaknya bisa sangat positif atau justru merugikan, tergantung siapa yang menggunakannya. Ibarat pisau bedah, teknologi tersebut dapat menyelamatkan nyawa ketika berada di tangan dokter yang tepat, tetapi bisa berbahaya jika digunakan tanpa pengetahuan dan tanggung jawab.</p><p>Karena itu, pilihan terbesar di era sekarang bukanlah melawan AI, melainkan belajar beradaptasi dengannya. Teknologi akan terus berkembang, dan dunia kerja akan terus berubah. Individu yang mampu belajar, beradaptasi, dan memanfaatkan teknologi secara bijak akan tetap relevan dan memiliki daya saing tinggi di masa depan.</p><p>AI tidak datang untuk menghentikan manusia bekerja. AI hadir untuk mengubah cara manusia bekerja. Dan mereka yang siap beradaptasi akan menjadi pihak yang memimpin perubahan tersebut. (*)</p><p> </p></div>",
       "category": "Edukasi",
@@ -113,6 +124,7 @@
       "date": "21 Mei 2026",
       "publishedDate": "2026-05-21T00:55:00.000Z",
       "image": "http://127.0.0.1:3000/api/media/file/ukom-bidan.webp",
+      "imagePosition": "50% 50%",
       "excerpt": "UNIDSOE kembali menorehkan capaian membanggakan pada pelaksanaan Ujian Kompetensi (UKOM) Nasional Tahun 2026",
       "content": "<div class=\"payload-richtext\"><p>Universitas Dr. Soekardjo (UNIDSOE) kembali menorehkan capaian membanggakan pada pelaksanaan Ujian Kompetensi (UKOM) Nasional Tahun 2026. Dalam hasil yang diumumkan secara resmi, Program Studi Profesi Bidan Kelas Transfer berhasil meraih tingkat kelulusan 100 persen untuk kategori <em>first taker</em>, sementara Program Studi Profesi Ners mencatat tingkat kelulusan sebesar 90 persen pada kategori yang sama.</p><p>Capaian ini menjadi bukti nyata komitmen UNIDSOE dalam menjaga kualitas pendidikan, khususnya dalam mencetak lulusan tenaga kesehatan yang kompeten, profesional, dan siap bersaing di dunia kerja. Hasil tersebut sekaligus memperkuat posisi UNIDSOE sebagai institusi pendidikan tinggi kesehatan yang terus berkembang dan berorientasi pada mutu akademik.</p><p>Kelulusan UKOM memiliki peran penting bagi mahasiswa profesi kesehatan karena menjadi salah satu indikator kompetensi lulusan sebelum memasuki dunia kerja. Oleh karena itu, capaian kelulusan yang tinggi tidak hanya menjadi kebanggaan institusi, tetapi juga mencerminkan kesiapan mahasiswa dalam menghadapi tantangan di dunia kerja dan pelayanan masyarakat.</p><p>Wakil Rektor I Bidang Akademik, Ns. M Al Amin, S.Kep., M.Kes, menyampaikan apresiasi atas kerja keras seluruh mahasiswa, dosen, dan tim akademik yang telah berkontribusi dalam pencapaian tersebut.</p><p><em>“Alhamdulillah, hasil UKOM tahun ini menjadi capaian yang sangat membanggakan bagi institusi. Hasil yang keluar menunjukkan bahwa proses pembelajaran, pendampingan akademik, serta kesiapan mahasiswa berjalan dengan baik. Ini adalah hasil dari kerja bersama, kedisiplinan mahasiswa, serta komitmen institusi dalam menjaga kualitas pendidikan,”</em> ujarnya.</p><p>Ia juga menegaskan bahwa keberhasilan tersebut bukan menjadi titik akhir, melainkan motivasi untuk terus meningkatkan kualitas akademik dan layanan pendidikan di lingkungan kampus. “<em>Kami akan terus melakukan evaluasi dan penguatan sistem pembelajaran agar capaian ini dapat dipertahankan bahkan ditingkatkan. Sehingga kami mampu menyiapkan lulusan yang tidak hanya kompeten secara akademik, tetapi juga memiliki etika profesi, kemampuan komunikasi, dan kesiapan menghadapi kebutuhan masyarakat,”</em> tambahnya.</p><p>Dengan dukungan tenaga pendidik yang kompeten, fasilitas pembelajaran yang terus berkembang, serta budaya akademik yang kuat, UNIDSOE berkomitmen mencetak lulusan berkualitas yang mampu memberikan kontribusi nyata bagi dunia kesehatan maupun sektor lainnya. Prestasi kelulusan UKOM Nasional 2026 ini diharapkan dapat menjadi motivasi bagi seluruh mahasiswa untuk terus meningkatkan semangat belajar dan profesionalisme. Sejalan dengan semangat <em>“We Create Graduates Who Serve The World”</em>, UNIDSOE terus berupaya menghadirkan lulusan yang unggul, siap mengabdi, dan mampu memberikan dampak positif bagi masyarakat di tingkat nasional maupun internasional. (Humas)</p><p> </p></div>",
       "category": "Berita",
@@ -135,6 +147,7 @@
       "date": "21 Mei 2026",
       "publishedDate": "2026-05-21T00:48:00.000Z",
       "image": "http://127.0.0.1:3000/api/media/file/rektor-award.webp",
+      "imagePosition": "50% 50%",
       "excerpt": "Rektor UNIDSOE, Dr. Drs. H. Soekardjo, S.Kep., MM., MBA, berhasil meraih penghargaan bergengsi TOP Creativity Choice Award 2026",
       "content": "<div class=\"payload-richtext\"><p>Prestasi membanggakan kembali ditorehkan oleh Universitas Dr. Soekardjo (UNIDSOE). Rektor UNIDSOE, Dr. Drs. H. Soekardjo, S.Kep., MM., MBA, berhasil meraih penghargaan bergengsi TOP Creativity Choice Award 2026 dalam kategori <em>“The Most Innovative and Advantage University in Quality Health Programs of The Year 2026”</em>. Penghargaan ini menjadi bukti nyata atas komitmen UNIDSOE dalam menghadirkan inovasi berkelanjutan di bidang pendidikan kesehatan.</p><p><strong>Sertifikat dan tropi penghargaan kategori </strong><em><strong>“The Most Innovative and Advantage University in Quality Health Programs of The Year 2026”</strong></em><strong>.</strong></p><p>Penghargaan tersebut merupakan ajang berskala nasional yang diselenggarakan oleh 5 Pilar Media Communication bekerja sama dengan National Awarding Research Center. Ajang ini memberikan apresiasi kepada individu maupun institusi yang dinilai memiliki kontribusi signifikan dalam menciptakan inovasi, khususnya dalam pengembangan produk, layanan, dan sistem yang berdampak luas bagi masyarakat.</p><p>Dalam proses penilaiannya, sejumlah aspek menjadi pertimbangan utama, di antaranya kinerja, prestasi, kredibilitas, dedikasi, serta integritas. Selain itu, dampak nyata yang dihasilkan bagi masyarakat juga menjadi indikator penting dalam menentukan penerima penghargaan. Pencapaian ini menunjukkan bahwa kepemimpinan Rektor UNIDSOE dinilai berhasil menghadirkan transformasi positif, terutama dalam peningkatan mutu program pendidikan kesehatan.</p><p>Keberhasilan ini tidak terlepas dari berbagai langkah strategis yang telah dilakukan UNIDSOE dalam beberapa tahun terakhir. Mulai dari penguatan kurikulum berbasis kebutuhan industri kesehatan, peningkatan kualitas sumber daya manusia, hingga pengembangan fasilitas pendidikan yang modern dan representatif. Di sisi lain, kolaborasi dengan berbagai mitra, baik di tingkat nasional maupun internasional, turut memperkuat posisi UNIDSOE sebagai institusi pendidikan kesehatan yang adaptif dan progresif.</p><p>Dalam keterangannya, Rektor UNIDSOE, Dr. Drs, H. Soekardjo, S.Kep., MM. MBA,  menyampaikan rasa syukur dan apresiasi atas penghargaan yang diraih. Ia menegaskan bahwa pencapaian ini merupakan hasil kerja kolektif seluruh civitas akademika.</p><p>Bangga : Rektor Unidsoe menerima penghargaan Top Creativity Award 2026 dari 5 Pilar Media</p><p><em>“Penghargaan ini bukan hanya untuk saya secara pribadi, tetapi untuk seluruh keluarga besar UNIDSOE yang telah bekerja keras, berinovasi, dan menjaga integritas dalam setiap langkah. Ini menjadi motivasi bagi kami untuk terus meningkatkan kualitas pendidikan dan memberikan kontribusi terbaik bagi masyarakat,”</em> ujarnya.</p><p>Lebih lanjut, ia juga menekankan pentingnya inovasi dalam dunia pendidikan, khususnya di sektor kesehatan yang terus berkembang secara dinamis.</p><p><em>“Di era saat ini, dunia kesehatan menghadapi tantangan yang semakin kompleks. Oleh karena itu, institusi pendidikan harus mampu beradaptasi dan menghadirkan solusi inovatif. UNIDSOE berkomitmen untuk terus mencetak lulusan yang tidak hanya kompeten secara akademik, tetapi juga memiliki daya saing global dan kepekaan sosial,”</em> tambahnya.</p><p>Di tengah perkembangan teknologi dan kebutuhan layanan kesehatan yang semakin meningkat, inovasi menjadi kunci utama dalam menciptakan sistem pendidikan yang relevan. UNIDSOE pun terus mendorong pengembangan riset, pemanfaatan teknologi digital dalam pembelajaran, serta peningkatan kolaborasi lintas sektor sebagai bagian dari strategi jangka panjang.</p><p>Penghargaan TOP Creativity Choice Award 2026 ini diharapkan menjadi momentum bagi UNIDSOE untuk terus berkembang dan memberikan kontribusi nyata bagi pembangunan bangsa, khususnya dalam bidang kesehatan. UNIDSOE semakin optimis melangkah menuju visi besarnya sebagai universitas unggul yang berdaya saing global, serta terus menghadirkan pendidikan berkualitas yang berdampak luas bagi masyarakat Indonesia maupun dunia. (Humas)</p><p> </p></div>",
       "category": "Berita",

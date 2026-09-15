@@ -1,6 +1,7 @@
 import { useHead } from '@unhead/vue'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useLocale } from '../i18n'
 
 const siteName = 'Unidsoe - Universitas Dr. Soekardjo'
 const siteUrl = 'https://unidsoe.ac.id' // Update dengan domain actual
@@ -8,6 +9,7 @@ const defaultImage = `${siteUrl}/og-image.jpg` // Update dengan OG image actual
 
 export function useSEO(options = {}) {
   const route = useRoute()
+  const { locale } = useLocale()
   
   const {
     title,
@@ -68,7 +70,7 @@ export function useSEO(options = {}) {
       },
       {
         name: 'language',
-        content: 'id-ID'
+        content: () => locale.value === 'en' ? 'en-US' : 'id-ID'
       },
 
       // Open Graph
@@ -98,7 +100,7 @@ export function useSEO(options = {}) {
       },
       {
         property: 'og:locale',
-        content: 'id_ID'
+        content: () => locale.value === 'en' ? 'en_US' : 'id_ID'
       },
 
       // Twitter Card

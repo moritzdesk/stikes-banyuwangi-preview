@@ -19,7 +19,7 @@
           />
         </div>
         <div class="md:col-span-7 space-y-4">
-          <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block">Komitmen Pendidikan</span>
+          <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block">{{ $t('beasiswa.commitment') }}</span>
           <h2 class="text-3xl font-bold text-[#0b2b42] leading-tight">
             {{ data.introTitle }}
           </h2>
@@ -40,7 +40,7 @@
       <!-- Scholarships Section -->
       <div class="mb-12">
         <div class="text-center mb-10">
-          <span class="text-[#195682] font-bold uppercase tracking-wider text-sm block mb-2">Program Unggulan</span>
+          <span class="text-[#195682] font-bold uppercase tracking-wider text-sm block mb-2">{{ $t('beasiswa.featured') }}</span>
           <h2 class="text-3xl font-bold text-[#0b2b42]">
             Pilihan Skema Beasiswa Tersedia
           </h2>
@@ -59,7 +59,8 @@
               <!-- Header with Icon -->
               <div class="flex items-center space-x-4 mb-4">
                 <div class="w-12 h-12 bg-blue-50 text-[#195682] rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
-                  {{ scholarship.icon }}
+                  <i v-if="isHgiIcon(scholarship.icon)" :class="`hgi-icon hgi-stroke hgi-${scholarship.icon}`"></i>
+                  <span v-else>{{ scholarship.icon }}</span>
                 </div>
                 <h3 class="text-lg font-bold text-[#0b2b42] group-hover:text-[#195682] transition-colors leading-tight">
                   {{ scholarship.name }}
@@ -72,7 +73,7 @@
 
               <!-- Benefits List -->
               <div class="border-t border-gray-100 pt-4 space-y-2">
-                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-1">Manfaat & Cakupan:</span>
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-1">{{ $t('beasiswa.benefits') }}</span>
                 <div 
                   v-for="(benefit, bIdx) in scholarship.benefits" 
                   :key="bIdx"
@@ -93,7 +94,7 @@
                 target="_blank"
                 class="w-full text-center py-2.5 px-4 bg-gray-50 text-gray-700 group-hover:bg-[#195682] group-hover:text-white font-bold rounded-xl text-sm transition-all duration-300 flex items-center justify-center space-x-1.5"
               >
-                <span>Daftar Sekarang</span>
+                <span>{{ $t('beasiswa.applyNow') }}</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
@@ -111,7 +112,7 @@
           <div class="absolute bottom-0 left-0 w-48 h-48 bg-white rounded-full translate-y-20 -translate-x-20"></div>
         </div>
 
-        <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block mb-2 relative z-10">Penerimaan Mahasiswa Baru</span>
+        <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block mb-2 relative z-10">{{ $t('beasiswa.admission') }}</span>
         <h2 class="text-3xl font-bold mb-4 relative z-10 leading-tight">
           Segera Daftarkan Diri Anda Sebelum Kuota Terpenuhi!
         </h2>
@@ -141,7 +142,13 @@
 <script setup>
 import { onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
-import data from '../data/beasiswa.json'
+import { getBeasiswa } from '../composables/useSite'
+
+// Data lokal hasil prebuild Payload (tanpa JSON statis)
+const data = getBeasiswa()
+
+// Nilai ikon HugeIcons (slug ascii) vs emoji legacy
+const isHgiIcon = (v) => typeof v === 'string' && /^[a-z0-9-]+$/.test(v)
 
 onMounted(() => {
   document.title = `${data.title} | Universitas Dr. Soekardjo`

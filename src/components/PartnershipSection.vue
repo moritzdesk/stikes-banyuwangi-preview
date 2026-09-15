@@ -140,12 +140,63 @@
           </svg>
         </router-link>
       </div>
+
+      <!-- Mitra Kerja Sama (logo wall dari CMS) -->
+      <div v-if="partners.length > 0" class="mt-20 pt-12 border-t border-gray-100">
+        <p class="text-center text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">
+          Mitra Kerja Sama
+        </p>
+        <p class="text-center text-gray-500 text-sm mb-10">
+          Institusi yang bermitra dengan UNIDSOE
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          <div
+            v-for="(partner, idx) in partners"
+            :key="idx"
+            class="group bg-white border border-gray-100 rounded-2xl px-6 py-8 flex flex-col items-center justify-center gap-4 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#195682]/20 transition-all duration-300 min-h-[190px]"
+          >
+            <div class="h-20 md:h-24 flex items-center justify-center">
+              <img
+                v-if="partner.logo"
+                :src="partner.logo"
+                :alt="partner.name"
+                class="h-20 md:h-24 w-auto max-w-full object-contain drop-shadow-sm transform group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+              <span
+                v-else
+                class="w-20 h-20 rounded-2xl bg-[#195682] text-white flex items-center justify-center text-3xl font-black shadow-md"
+              >
+                {{ (partner.name || '?').trim().charAt(0).toUpperCase() }}
+              </span>
+            </div>
+            <span class="font-bold text-gray-700 text-sm text-center leading-snug">{{ partner.name }}</span>
+            <span v-if="partner.category" class="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+              {{ partner.category }}
+            </span>
+          </div>
+        </div>
+        <div class="mt-10 text-center">
+          <router-link
+            to="/kerja-sama"
+            class="inline-flex items-center px-8 py-3.5 bg-[#195682] text-white font-bold rounded-full hover:bg-black transition-all duration-300 text-sm tracking-wider uppercase shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group focus:outline-none"
+          >
+            Lihat Semua Mitra
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </router-link>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import globalSettings from '../data/settings.json'
+import { getAssociations, getPartners } from '../composables/useSite'
+
+// Asosiasi dari prebuild Payload (tanpa JSON statis)
+const globalSettings = { associationsSettings: getAssociations() }
 
 const associations = globalSettings.associationsSettings?.items || [
   { name: "Pemkab Banyuwangi", url: "https://banyuwangikab.go.id", iconType: "pemkab" },
@@ -153,6 +204,9 @@ const associations = globalSettings.associationsSettings?.items || [
   { name: "IBI", url: "https://ibi.or.id", iconType: "ibi" },
   { name: "PAFI", url: "https://pafi.or.id", iconType: "pafi" }
 ]
+
+// Mitra (logo wall) dari prebuild Payload — maksimal 6 di homepage, sisanya di /kerja-sama
+const partners = getPartners().slice(0, 6)
 </script>
 
 <style scoped>

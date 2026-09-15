@@ -9,12 +9,12 @@
     <div class="container-custom relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <!-- Section Title -->
       <div class="text-center mb-16">
-        <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">Statistik & Keunggulan</span>
+        <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">{{ $t('home.stats.eyebrow') }}</span>
         <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
-          Komitmen Kami untuk Keunggulan
+          {{ $t('home.stats.title') }}
         </h2>
         <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-          Dipercaya ribuan mahasiswa dan mitra institusi untuk menghasilkan tenaga kesehatan profesional
+          {{ $t('home.stats.subtitle') }}
         </p>
       </div>
 
@@ -23,29 +23,29 @@
         <!-- Stat 1 -->
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 border border-white/20">
           <div class="text-5xl md:text-6xl font-bold text-[#58d1fd] mb-2">11</div>
-          <div class="text-sm md:text-base font-medium text-gray-200">Program Studi</div>
-          <div class="text-xs text-gray-400 mt-1">Terakreditasi</div>
+          <div class="text-sm md:text-base font-medium text-gray-200">{{ $t('home.stats.prodi') }}</div>
+          <div class="text-xs text-gray-400 mt-1">{{ $t('home.stats.prodiSub') }}</div>
         </div>
 
         <!-- Stat 2 -->
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 border border-white/20">
           <div class="text-5xl md:text-6xl font-bold text-[#f9ac42] mb-2">3000+</div>
-          <div class="text-sm md:text-base font-medium text-gray-200">Mahasiswa Aktif</div>
-          <div class="text-xs text-gray-400 mt-1">Dari berbagai daerah</div>
+          <div class="text-sm md:text-base font-medium text-gray-200">{{ $t('home.stats.students') }}</div>
+          <div class="text-xs text-gray-400 mt-1">{{ $t('home.stats.studentsSub') }}</div>
         </div>
 
         <!-- Stat 3 -->
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 border border-white/20">
           <div class="text-5xl md:text-6xl font-bold text-[#58d1fd] mb-2">150+</div>
-          <div class="text-sm md:text-base font-medium text-gray-200">Dosen Berkualitas</div>
-          <div class="text-xs text-gray-400 mt-1">S2 & S3</div>
+          <div class="text-sm md:text-base font-medium text-gray-200">{{ $t('home.stats.lecturers') }}</div>
+          <div class="text-xs text-gray-400 mt-1">{{ $t('home.stats.lecturersSub') }}</div>
         </div>
 
         <!-- Stat 4 -->
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300 border border-white/20">
           <div class="text-5xl md:text-6xl font-bold text-[#f9ac42] mb-2">5000+</div>
-          <div class="text-sm md:text-base font-medium text-gray-200">Alumni Sukses</div>
-          <div class="text-xs text-gray-400 mt-1">Tersebar di Indonesia</div>
+          <div class="text-sm md:text-base font-medium text-gray-200">{{ $t('home.stats.alumni') }}</div>
+          <div class="text-xs text-gray-400 mt-1">{{ $t('home.stats.alumniSub') }}</div>
         </div>
       </div>
 
@@ -53,10 +53,10 @@
       <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl overflow-hidden">
         <div class="text-center mb-12">
           <h3 class="text-3xl md:text-4xl font-extrabold text-[#333333] mb-2">
-            Kerjasama Universitas Dr. Soekardjo Banyuwangi
+            {{ $t('home.stats.partnersTitle') }}
           </h3>
           <p class="text-gray-500 font-medium">
-            Instansi yang bekerjasama dengan Universitas Dr. Soekardjo Banyuwangi
+            {{ $t('home.stats.partnersSub') }}
           </p>
         </div>
 
@@ -170,7 +170,10 @@
 </template>
 
 <script setup>
-import globalSettings from '../data/settings.json'
+import { getAchievements } from '../composables/useSite'
+
+// Prestasi dari prebuild Payload (tanpa JSON statis)
+const globalSettings = { achievementsSettings: getAchievements() }
 
 const achievements = globalSettings.achievementsSettings?.items || [
   {

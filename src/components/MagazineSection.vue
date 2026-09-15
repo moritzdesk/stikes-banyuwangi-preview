@@ -3,16 +3,18 @@
     <div class="container-custom px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <!-- Section Header -->
       <div class="text-center mb-12">
-        <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">Majalah Kampus</span>
+        <span class="text-[#f9ac42] font-bold tracking-wider uppercase text-sm mb-2 block">{{ $t('home.magazine.eyebrow') }}</span>
         <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-          Majalah UNIDSOE
+          {{ $t('home.magazine.title') }}
         </h2>
         <p class="text-gray-600 text-lg max-w-3xl mx-auto">
-          Baca edisi terbaru majalah kampus kami yang penuh dengan artikel inspiratif, prestasi mahasiswa, dan informasi terkini
+          {{ $t('home.magazine.subtitle') }}
         </p>
       </div>
 
-      <!-- Magazine Grid -->
+      <!-- Magazine Grid: kartu seragam 3:4, cover tampil UTUH tanpa crop.
+           Trik blur-fill: cover yang sama dipasang 2x — belakang blur penuh,
+           depan contain. Rasio apapun tetap rapi full-width, tidak bolong. -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
         <div 
           v-for="magazine in magazines" 
@@ -21,17 +23,25 @@
           class="group cursor-pointer"
         >
           <!-- Magazine Cover -->
-          <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-[#195682] to-[#0b2b42]">
-            <!-- Cover Image Placeholder -->
+          <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-[#0b2b42]">
             <div class="aspect-[3/4] relative">
+              <img
+                v-if="magazine.cover"
+                :src="magazine.cover"
+                alt=""
+                aria-hidden="true"
+                class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-60"
+                loading="lazy"
+              />
               <img 
                 v-if="magazine.cover"
                 :src="magazine.cover" 
                 :alt="magazine.title"
-                class="w-full h-full object-cover"
+                class="absolute inset-0 w-full h-full object-contain drop-shadow-xl"
+                loading="lazy"
                 @error="handleImageError"
               />
-              <div v-else class="w-full h-full flex flex-col items-center justify-center text-white p-6">
+              <div v-else class="absolute inset-0 flex flex-col items-center justify-center text-white p-6 bg-gradient-to-br from-[#195682] to-[#0b2b42]">
                 <svg class="w-16 h-16 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                 </svg>
@@ -46,7 +56,7 @@
                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
                     <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <p class="font-bold">Baca Majalah</p>
+                  <p class="font-bold">{{ $t('home.magazine.read') }}</p>
                 </div>
               </div>
             </div>
@@ -67,7 +77,7 @@
           to="/majalah" 
           class="inline-flex items-center px-8 py-4 bg-[#195682] text-white font-bold rounded-full hover:bg-[#0b2b42] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 group"
         >
-          Lihat Semua Majalah
+          {{ $t('home.magazine.seeAll') }}
           <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
@@ -141,10 +151,12 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import initialMagazines from '../data/magazines.json'
+import { getMagazines } from '../composables/useSite'
 
+// Data lokal hasil prebuild Payload (tanpa JSON statis)
+// Urutan CMS: terlama -> terbaru, jadi 4 TERBAWAH = edisi terbaru (otomatis ikut row baru)
 const selectedMagazine = ref(null)
-const magazines = computed(() => (initialMagazines.magazines || []).slice(0, 4))
+const magazines = computed(() => (getMagazines().magazines || []).slice(-4).reverse())
 
 const openMagazine = (magazine) => {
   selectedMagazine.value = magazine

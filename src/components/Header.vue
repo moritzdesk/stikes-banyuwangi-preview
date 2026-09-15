@@ -11,15 +11,15 @@
           <span><i class="fas fa-envelope mr-1"></i> {{ settings.contact.email }}</span>
         </div>
         <div class="flex items-center space-x-4">
-          <router-link to="/kontak" class="hover:text-blue-200">Staff</router-link>
-          <router-link to="/akademik" class="hover:text-blue-200">Mahasiswa</router-link>
-          <router-link to="/kontak" class="hover:text-blue-200">Alumni</router-link>
+          <router-link to="/kontak" class="hover:text-blue-200">{{ $t('nav.staff') }}</router-link>
+          <router-link to="/akademik" class="hover:text-blue-200">{{ $t('nav.student') }}</router-link>
+          <router-link to="/kontak" class="hover:text-blue-200">{{ $t('nav.alumni') }}</router-link>
           <span class="mx-2">|</span>
           <!-- Language Switcher -->
           <div class="flex items-center space-x-2">
-            <button @click="currentLang = 'id'" :class="currentLang === 'id' ? 'font-bold text-[#f9ac42]' : 'hover:text-blue-200'" class="transition-colors">ID</button>
+            <button @click="setLocale('id')" :class="locale === 'id' ? 'font-bold text-[#f9ac42]' : 'hover:text-blue-200'" class="transition-colors">ID</button>
             <span>/</span>
-            <button @click="currentLang = 'en'" :class="currentLang === 'en' ? 'font-bold text-[#f9ac42]' : 'hover:text-blue-200'" class="transition-colors">EN</button>
+            <button @click="setLocale('en')" :class="locale === 'en' ? 'font-bold text-[#f9ac42]' : 'hover:text-blue-200'" class="transition-colors">EN</button>
           </div>
           <span class="mx-2">|</span>
           <a :href="settings.contact.pmbLink" target="_blank" class="font-bold hover:text-[#f9ac42] transition-colors">PMB 2026</a>
@@ -42,16 +42,16 @@
         <!-- Profil (Tentang Kami) -->
         <div class="relative group">
           <router-link to="/profil" class="nav-item flex items-center">
-            Profil
+            {{ $t('nav.profile') }}
             <svg class="w-3 h-3 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </router-link>
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
-              <li><router-link to="/profil?tab=sejarah" class="nav-link-sub">Sejarah dan Profil</router-link></li>
-              <li><router-link to="/profil?tab=visi-misi" class="nav-link-sub">Visi & Misi</router-link></li>
-              <li><router-link to="/profil?tab=struktur" class="nav-link-sub">Struktur Organisasi</router-link></li>
-              <li><router-link to="/profil?tab=sambutan" class="nav-link-sub">Sambutan Rektor</router-link></li>
-              <li><router-link to="/identitas" class="nav-link-sub">Identitas</router-link></li>
+              <li><router-link to="/profil?tab=sejarah" class="nav-link-sub">{{ $t('nav.history') }}</router-link></li>
+              <li><router-link to="/profil?tab=visi-misi" class="nav-link-sub">{{ $t('nav.visionMission') }}</router-link></li>
+              <li><router-link to="/profil?tab=struktur" class="nav-link-sub">{{ $t('nav.orgStructure') }}</router-link></li>
+              <li><router-link to="/profil?tab=sambutan" class="nav-link-sub">{{ $t('nav.rectorGreeting') }}</router-link></li>
+              <li><router-link to="/identitas" class="nav-link-sub">{{ $t('nav.identity') }}</router-link></li>
             </ul>
           </div>
         </div>
@@ -59,7 +59,7 @@
         <!-- Fakultas & Program Studi (Spacious nested Mega Menu) -->
         <div class="relative group">
           <router-link to="/program-studi" class="nav-item flex items-center">
-            Fakultas & Program Studi
+            {{ $t('nav.facultyPrograms') }}
             <svg class="w-3 h-3 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </router-link>
           <!-- Mega Menu Container -->
@@ -73,7 +73,7 @@
                 </span>
                 <div>
                   <h3 class="font-bold text-[#0b2b42] text-sm uppercase tracking-wider">FISTEK</h3>
-                  <p class="text-[10px] text-gray-500 font-semibold">Ilmu Sosial & Teknologi</p>
+                  <p class="text-[10px] text-gray-500 font-semibold">{{ $t('nav.fistekDesc') }}</p>
                 </div>
               </div>
               
@@ -85,8 +85,8 @@
                       <svg class="w-3 h-3 ml-1.5 opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-1 transition-all text-[#195682]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </div>
                     <div class="flex items-center justify-between mt-1 text-[11px] text-gray-500">
-                      <span>Gelar: S.Kom</span>
-                      <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[9px]">Akreditasi Baik</span>
+                      <span>{{ $t('nav.degree') }}: S.Kom</span>
+                      <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[9px]">{{ $t('nav.accreditedGood') }}</span>
                     </div>
                   </router-link>
                 </li>
@@ -97,8 +97,8 @@
                       <svg class="w-3 h-3 ml-1.5 opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-1 transition-all text-[#195682]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </div>
                     <div class="flex items-center justify-between mt-1 text-[11px] text-gray-500">
-                      <span>Gelar: S.M</span>
-                      <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[9px]">Akreditasi Baik</span>
+                      <span>{{ $t('nav.degree') }}: S.M</span>
+                      <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[9px]">{{ $t('nav.accreditedGood') }}</span>
                     </div>
                   </router-link>
                 </li>
@@ -109,8 +109,8 @@
                       <svg class="w-3 h-3 ml-1.5 opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-1 transition-all text-[#195682]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </div>
                     <div class="flex items-center justify-between mt-1 text-[11px] text-gray-500">
-                      <span>Gelar: S.Bns</span>
-                      <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[9px]">Akreditasi Baik</span>
+                      <span>{{ $t('nav.degree') }}: S.Bns</span>
+                      <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[9px]">{{ $t('nav.accreditedGood') }}</span>
                     </div>
                   </router-link>
                 </li>
@@ -125,7 +125,7 @@
                 </span>
                 <div>
                   <h3 class="font-bold text-[#0b2b42] text-sm uppercase tracking-wider">FIKES</h3>
-                  <p class="text-[10px] text-gray-500 font-semibold">Fakultas Ilmu Kesehatan</p>
+                  <p class="text-[10px] text-gray-500 font-semibold">{{ $t('nav.fikesDesc') }}</p>
                 </div>
               </div>
               
@@ -138,7 +138,7 @@
                     </span>
                     <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded font-bold text-[8px] uppercase tracking-wider shadow-sm">Baik Sekali</span>
                   </div>
-                  <div class="text-[10px] text-gray-500 mt-1">Gelar: S.Kep & Ns. <span class="mx-1">|</span> Kurikulum Unggulan Riset Medis</div>
+                  <div class="text-[10px] text-gray-500 mt-1">{{ $t('nav.degree') }}: S.Kep & Ns. <span class="mx-1">|</span> Kurikulum Unggulan Riset Medis</div>
                 </router-link>
 
                 <router-link to="/program-studi/s1-kebidanan" class="mega-item group/item">
@@ -149,7 +149,7 @@
                     </span>
                     <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[8px] uppercase tracking-wider shadow-sm">Baik</span>
                   </div>
-                  <div class="text-[10px] text-gray-500 mt-1">Gelar: S.Keb & Bdn <span class="mx-1">|</span> Profesi Asuhan Persalinan Paripurna</div>
+                  <div class="text-[10px] text-gray-500 mt-1">{{ $t('nav.degree') }}: S.Keb & Bdn <span class="mx-1">|</span> Profesi Asuhan Persalinan Paripurna</div>
                 </router-link>
 
                 <router-link to="/program-studi/s1-gizi" class="mega-item group/item">
@@ -171,7 +171,7 @@
                     </span>
                     <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold text-[8px] uppercase tracking-wider shadow-sm">Baik</span>
                   </div>
-                  <div class="text-[10px] text-gray-500 mt-1">Gelar: S.Tr.Kes <span class="mx-1">|</span> Diagnosis Laboratorium & Riset Bio-Sains</div>
+                  <div class="text-[10px] text-gray-500 mt-1">{{ $t('nav.degree') }}: S.Tr.Kes <span class="mx-1">|</span> Diagnosis Laboratorium & Riset Bio-Sains</div>
                 </router-link>
 
                 <router-link to="/program-studi/d3-keperawatan" class="mega-item group/item">
@@ -182,7 +182,7 @@
                     </span>
                     <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded font-bold text-[8px] uppercase tracking-wider shadow-sm">Baik Sekali</span>
                   </div>
-                  <div class="text-[10px] text-gray-500 mt-1">Gelar: A.Md.Kep <span class="mx-1">|</span> Vokasi Keperawatan Tangguh Siap Kerja</div>
+                  <div class="text-[10px] text-gray-500 mt-1">{{ $t('nav.degree') }}: A.Md.Kep <span class="mx-1">|</span> Vokasi Keperawatan Tangguh Siap Kerja</div>
                 </router-link>
 
                 <router-link to="/program-studi/d3-farmasi" class="mega-item group/item">
@@ -193,7 +193,7 @@
                     </span>
                     <span class="bg-green-100 text-green-800 px-1.5 py-0.5 rounded font-bold text-[8px] uppercase tracking-wider shadow-sm">Baik Sekali</span>
                   </div>
-                  <div class="text-[10px] text-gray-500 mt-1">Gelar: A.Md.Farm <span class="mx-1">|</span> Layanan Kefarmasian & Manajemen Apotek</div>
+                  <div class="text-[10px] text-gray-500 mt-1">{{ $t('nav.degree') }}: A.Md.Farm <span class="mx-1">|</span> Layanan Kefarmasian & Manajemen Apotek</div>
                 </router-link>
               </div>
             </div>
@@ -203,14 +203,14 @@
               <div>
                 <h4 class="font-bold text-[#0b2b42] text-[11px] uppercase tracking-wider mb-4 flex items-center">
                   <svg class="w-4 h-4 mr-1.5 text-[#f9ac42]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  Informasi Pendaftaran
+                  {{ $t('nav.regInfo') }}
                 </h4>
                 
                 <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 mb-4">
                   <div class="text-[10px] font-bold text-[#195682] uppercase mb-1">PMB T.A 2025/2026</div>
-                  <p class="text-[11px] text-gray-600 leading-relaxed mb-3">Telah dibuka pendaftaran mahasiswa baru gelombang utama. Daftar secara online dengan cepat & mudah.</p>
+                  <p class="text-[11px] text-gray-600 leading-relaxed mb-3">{{ $t('nav.pmbDesc') }}</p>
                   <a href="https://pmb.unidsoe.ac.id" target="_blank" class="inline-flex items-center text-xs font-bold text-[#f9ac42] hover:text-orange-600 transition-colors">
-                    Daftar PMB Online 
+                    {{ $t('nav.applyPmb') }} 
                     <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                   </a>
                 </div>
@@ -218,18 +218,18 @@
                 <div class="space-y-2">
                   <div class="flex items-center space-x-2 text-[11px] text-gray-600">
                     <svg class="w-4 h-4 text-[#195682] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <span>Institusi Terakreditasi <b>BAIK</b></span>
+                    <span>{{ $t('nav.accreditedInst') }} <b>BAIK</b></span>
                   </div>
                   <div class="flex items-center space-x-2 text-[11px] text-gray-600">
                     <svg class="w-4 h-4 text-[#195682] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                    <span>Kurikulum Standar Kompetensi</span>
+                    <span>{{ $t('nav.stdCurriculum') }}</span>
                   </div>
                 </div>
               </div>
 
               <div class="pt-4 border-t border-gray-200/50 mt-4">
                 <router-link to="/program-studi" class="block w-full text-center py-2 bg-[#195682] hover:bg-[#0b2b42] text-white font-bold text-xs rounded-lg transition-colors shadow-sm">
-                  Lihat Semua Prodi
+                  {{ $t('nav.allPrograms') }}
                 </router-link>
               </div>
             </div>
@@ -240,15 +240,16 @@
         <!-- Akademik -->
         <div class="relative group">
           <router-link to="/akademik" class="nav-item flex items-center">
-            Akademik
+            {{ $t('nav.academic') }}
             <svg class="w-3 h-3 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </router-link>
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
-              <li><a href="https://unidsoe.siakadcloud.com/gate/login" target="_blank" class="nav-link-sub">Sistem Informasi Akademik</a></li>
-              <li><a href="https://edlink.id/" target="_blank" class="nav-link-sub">E-Learning</a></li>
-              <li><router-link to="/akademik" class="nav-link-sub">Kalender Akademik</router-link></li>
-              <li><router-link to="/akademik" class="nav-link-sub">Dokumen & Formulir</router-link></li>
+              <li><a href="https://unidsoe.siakadcloud.com/gate/login" target="_blank" class="nav-link-sub">{{ $t('nav.sia') }}</a></li>
+              <li><a href="https://edlink.id/" target="_blank" class="nav-link-sub">{{ $t('nav.elearning') }}</a></li>
+              <li><router-link to="/akademik" class="nav-link-sub">{{ $t('nav.academicCalendar') }}</router-link></li>
+              <li><router-link to="/dokumen" class="nav-link-sub">{{ $t('nav.documents') }}</router-link></li>
+              <li><router-link to="/formulir" class="nav-link-sub">{{ $t('nav.forms') }}</router-link></li>
             </ul>
           </div>
         </div>
@@ -256,13 +257,13 @@
         <!-- Penelitian & Pengabdian -->
         <div class="relative group">
           <router-link to="/akademik" class="nav-item flex items-center">
-            Penelitian & Pengabdian
+            {{ $t('nav.research') }}
             <svg class="w-3 h-3 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </router-link>
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
-              <li><router-link to="/artikel" class="nav-link-sub">Berita & Prestasi</router-link></li>
-              <li><router-link to="/akademik" class="nav-link-sub">KKN</router-link></li>
+              <li><router-link to="/artikel" class="nav-link-sub">{{ $t('nav.newsAchievements') }}</router-link></li>
+              <li><router-link to="/akademik" class="nav-link-sub">{{ $t('nav.kkn') }}</router-link></li>
             </ul>
           </div>
         </div>
@@ -270,21 +271,24 @@
         <!-- Layanan -->
         <div class="relative group">
           <router-link to="/fasilitas" class="nav-item flex items-center">
-            Layanan
+            {{ $t('nav.services') }}
             <svg class="w-3 h-3 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </router-link>
           <div class="mega-menu w-56">
             <ul class="p-4 space-y-2">
-              <li><router-link to="/fasilitas" class="nav-link-sub">Perpustakaan</router-link></li>
-              <li><router-link to="/fasilitas" class="nav-link-sub">Laboratorium</router-link></li>
-              <li><router-link to="/fasilitas" class="nav-link-sub">Klinik</router-link></li>
-              <li><router-link to="/fasilitas" class="nav-link-sub">Beasiswa</router-link></li>
+              <li><router-link to="/fasilitas" class="nav-link-sub">{{ $t('nav.allFacilities') }}</router-link></li>
+              <li><router-link to="/fasilitas?kategori=Laboratorium Terpadu" class="nav-link-sub">{{ $t('nav.lab') }}</router-link></li>
+              <li><router-link to="/fasilitas?kategori=Fasilitas Umum" class="nav-link-sub">{{ $t('nav.publicFacilities') }}</router-link></li>
+              <li><router-link to="/fasilitas?kategori=Layanan Mahasiswa" class="nav-link-sub">{{ $t('nav.studentServices') }}</router-link></li>
+              <li><router-link to="/beasiswa" class="nav-link-sub">{{ $t('nav.scholarships') }}</router-link></li>
+              <li><router-link to="/kerja-sama" class="nav-link-sub">{{ $t('nav.cooperation') }}</router-link></li>
+              <li><router-link to="/asosiasi" class="nav-link-sub">{{ $t('nav.association') }}</router-link></li>
             </ul>
           </div>
         </div>
 
         <!-- Kontak -->
-        <router-link to="/kontak" class="nav-item">Kontak</router-link>
+        <router-link to="/kontak" class="nav-item">{{ $t('nav.contact') }}</router-link>
 
       </div>
       <!-- CTA & Mobile Toggle -->
@@ -311,13 +315,13 @@
       class="xl:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 max-h-[80vh] overflow-y-auto z-50"
     >
       <div class="p-4 space-y-4">
-        <router-link @click="isMobileMenuOpen = false" to="/" class="block py-2 text-gray-800 font-medium border-b border-gray-100">Beranda</router-link>
+        <router-link @click="isMobileMenuOpen = false" to="/" class="block py-2 text-gray-800 font-medium border-b border-gray-100">{{ $t('nav.home') }}</router-link>
         
         <div class="space-y-2">
-          <div class="font-bold text-[#195682] uppercase text-xs tracking-wider">Tentang Kami</div>
-          <router-link @click="isMobileMenuOpen = false" to="/profil?tab=sejarah" class="block pl-4 py-1 text-sm text-gray-600">Selayang Pandang</router-link>
-          <router-link @click="isMobileMenuOpen = false" to="/profil?tab=sambutan" class="block pl-4 py-1 text-sm text-gray-600">Pimpinan</router-link>
-          <router-link @click="isMobileMenuOpen = false" to="/identitas" class="block pl-4 py-1 text-sm text-gray-600">Identitas Kampus</router-link>
+          <div class="font-bold text-[#195682] uppercase text-xs tracking-wider">{{ $t('nav.aboutUs') }}</div>
+          <router-link @click="isMobileMenuOpen = false" to="/profil?tab=sejarah" class="block pl-4 py-1 text-sm text-gray-600">{{ $t('nav.overview') }}</router-link>
+          <router-link @click="isMobileMenuOpen = false" to="/profil?tab=sambutan" class="block pl-4 py-1 text-sm text-gray-600">{{ $t('nav.leadership') }}</router-link>
+          <router-link @click="isMobileMenuOpen = false" to="/identitas" class="block pl-4 py-1 text-sm text-gray-600">{{ $t('nav.campusIdentity') }}</router-link>
         </div>
 
         <!-- Mobile FISTEK -->
@@ -366,13 +370,13 @@
           </router-link>
         </div>
 
-        <router-link @click="isMobileMenuOpen = false" to="/fasilitas" class="block py-2 text-gray-800 font-medium border-b border-gray-100">Fasilitas</router-link>
-        <router-link @click="isMobileMenuOpen = false" to="/kerja-sama" class="block py-2 text-gray-800 font-medium border-b border-gray-100">Kerja Sama</router-link>
-        <router-link @click="isMobileMenuOpen = false" to="/artikel" class="block py-2 text-gray-800 font-medium border-b border-gray-100">Riset & Publikasi</router-link>
-        <router-link @click="isMobileMenuOpen = false" to="/kontak" class="block py-2 text-gray-800 font-medium border-b border-gray-100">Kontak</router-link>
+        <router-link @click="isMobileMenuOpen = false" to="/fasilitas" class="block py-2 text-gray-800 font-medium border-b border-gray-100">{{ $t('nav.facilities') }}</router-link>
+        <router-link @click="isMobileMenuOpen = false" to="/kerja-sama" class="block py-2 text-gray-800 font-medium border-b border-gray-100">{{ $t('nav.cooperation') }}</router-link>
+        <router-link @click="isMobileMenuOpen = false" to="/artikel" class="block py-2 text-gray-800 font-medium border-b border-gray-100">{{ $t('nav.researchPub') }}</router-link>
+        <router-link @click="isMobileMenuOpen = false" to="/kontak" class="block py-2 text-gray-800 font-medium border-b border-gray-100">{{ $t('nav.contact') }}</router-link>
         
         <a :href="settings.contact.pmbLink" target="_blank" class="block w-full text-center py-3 bg-[#195682] text-white font-bold rounded-lg mt-4">
-          Daftar PMB Sekarang
+          {{ $t('nav.applyNow') }}
         </a>
       </div>
     </div>
@@ -381,11 +385,15 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import settings from '../data/settings.json'
+import { getContact } from '../composables/useSite'
+import { useLocale } from '../i18n'
+
+// Kontak dari prebuild Payload (tanpa JSON statis)
+const settings = { contact: getContact() }
 
 const isMobileMenuOpen = ref(false)
 const isScrolled = ref(false)
-const currentLang = ref('id') // Default to Indonesian
+const { locale, setLocale } = useLocale() // ID default, persist di localStorage
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
