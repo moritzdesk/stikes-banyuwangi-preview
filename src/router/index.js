@@ -9,6 +9,9 @@ import AkademikView from '../views/AkademikView.vue'
 import FasilitasView from '../views/FasilitasView.vue'
 import KerjaSamaView from '../views/KerjaSamaView.vue'
 import KontakView from '../views/KontakView.vue'
+import DokumenView from '../views/DokumenView.vue'
+import FormulirIndex from '../views/FormulirIndex.vue'
+import FormulirView from '../views/FormulirView.vue'
 import BeasiswaView from '../views/BeasiswaView.vue'
 import InfoPmbView from '../views/InfoPmbView.vue'
 import AsosiasiView from '../views/AsosiasiView.vue'
@@ -92,6 +95,41 @@ const routes = [
     name: 'ArticleDetail',
     component: ArticleDetail,
     props: true
+  },
+  {
+    // Live preview draf dari Payload (tombol Preview di CMS, butuh login CMS)
+    path: '/pratinjau/:slug',
+    name: 'ArticlePreview',
+    component: ArticleDetail,
+    props: { preview: true }
+  },
+  {
+    path: '/dokumen',
+    name: 'DokumenIndex',
+    component: DokumenView
+  },
+  {
+    // Daftar formulir dinamis dari CMS (form baru otomatis muncul)
+    path: '/formulir',
+    name: 'FormulirIndex',
+    component: FormulirIndex
+  },
+  {
+    path: '/formulir/:slug',
+    name: 'FormulirDetail',
+    component: FormulirView,
+    props: true
+  },
+  {
+    // /admin web dialihkan ke Payload CMS (Tina pindah ke /tina-admin selama transisi)
+    path: '/admin/:pathMatch(.*)*',
+    name: 'AdminRedirect',
+    beforeEnter: () => {
+      const cmsUrl = (import.meta.env.VITE_CMS_URL || 'http://127.0.0.1:3000').replace(/\/$/, '')
+      window.location.href = `${cmsUrl}/admin`
+      return false
+    },
+    component: () => import('../views/NotFound.vue')
   },
   {
     path: '/:pathMatch(.*)*',

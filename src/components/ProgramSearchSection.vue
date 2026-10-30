@@ -91,31 +91,28 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { getAllPrograms, searchPrograms } from '../composables/usePrograms'
 
 const searchQuery = ref('')
-const modules = import.meta.glob('../data/programs/**/*.json', { eager: true, import: 'default' })
 
 const programs = computed(() => {
-  return Object.keys(modules).map(key => {
-    const slug = key.split('/').pop().replace('.json', '')
-    const data = modules[key]
-    return {
-      slug,
-      name: data.title || '',
-      level: data.level || '',
-      description: data.shortDescription || '',
-      accreditation: data.accreditation || null
-    }
-  })
+  // Data lokal hasil prebuild Payload (tanpa glob JSON)
+  return getAllPrograms().map((data) => ({
+    slug: data.slug,
+    name: data.title || '',
+    level: data.levelLabel || '',
+    description: data.shortDescription || '',
+    accreditation: data.accreditation || null
+  }))
 })
 
 const filteredPrograms = computed(() => {
   if (!searchQuery.value) {
     return programs.value
   }
-  
+
   const query = searchQuery.value.toLowerCase()
-  return programs.value.filter(program => 
+  return programs.value.filter(program =>
     program.name.toLowerCase().includes(query) ||
     program.level.toLowerCase().includes(query) ||
     program.description.toLowerCase().includes(query)

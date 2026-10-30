@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen bg-gray-50">
     <PageHeader 
-      title="Berita & Artikel" 
-      :breadcrumbs="[{ label: 'Artikel' }]"
-      bgImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+      :title="$t('articles.indexTitle')" 
+      :breadcrumbs="[{ label: $t('articles.indexTitle') }]"
+      bgImage="/assets/site/pexels-3184291.jpg"
     />
 
     <section class="py-16">
@@ -17,7 +17,7 @@
               : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'"
             class="px-8 py-3 rounded-full font-bold transition-all duration-300"
           >
-            Semua
+            {{ $t('articles.all') }}
           </button>
           <button 
             v-for="category in activeCategories"
@@ -81,7 +81,7 @@
                   :to="`/artikel/${article.slug}`"
                   class="text-[#f9ac42] hover:text-orange-600 font-bold text-sm flex items-center group/link"
                 >
-                  Baca
+                  {{ $t('articles.read') }}
                   <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                   </svg>
@@ -99,8 +99,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2v6h6"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-2">Belum Ada Artikel</h3>
-          <p class="text-gray-500">Tidak ada artikel di kategori ini untuk saat ini.</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $t('articles.emptyTitle') }}</h3>
+          <p class="text-gray-500">{{ $t('articles.emptyDesc') }}</p>
         </div>
       </div>
     </section>

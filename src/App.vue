@@ -22,6 +22,9 @@
     
     <!-- WhatsApp Widget -->
     <WhatsAppWidget />
+
+    <!-- Admin bar (hanya muncul bila login CMS) -->
+    <AdminBar />
   </div>
 </template>
 
@@ -29,6 +32,7 @@
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import WhatsAppWidget from './components/WhatsAppWidget.vue'
+import AdminBar from './components/AdminBar.vue'
 </script>
 
 <style>

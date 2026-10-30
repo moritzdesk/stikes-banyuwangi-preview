@@ -40,10 +40,10 @@ export function useOrganizationSchema() {
   }
 }
 
-export function useArticleSchema(article) {
+export function useArticleSchema(article, url) {
   if (!article) return null
   
-  const route = useRoute()
+  const pageUrl = url || (typeof window !== 'undefined' ? window.location.href : siteUrl)
 
   return {
     '@context': 'https://schema.org',
@@ -67,7 +67,7 @@ export function useArticleSchema(article) {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${siteUrl}${route.path}`
+      '@id': pageUrl,
     },
     articleSection: article.category,
     keywords: article.tags?.join(', ') || ''
@@ -84,6 +84,22 @@ export function useBreadcrumbSchema(items) {
       name: item.name,
       item: item.url
     }))
+  }
+}
+
+export function useItemListSchema(items, name) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: name || 'Related articles',
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: typeof item === 'string' ? item : item.url,
+      name: typeof item === 'string' ? undefined : item.name,
+      image: typeof item === 'string' ? undefined : item.image,
+    })),
   }
 }
 

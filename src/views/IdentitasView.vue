@@ -2,9 +2,9 @@
   <div class="bg-gray-50 min-h-screen font-sans">
     <!-- Page Header -->
     <PageHeader 
-      title="Identitas Universitas" 
-      :breadcrumbs="[{ label: 'Profil', path: '/profil' }, { label: 'Identitas' }]"
-      bgImage="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+      :title="$t('identitas.title')" 
+      :breadcrumbs="[{ label: $t('nav.profile'), path: '/profil' }, { label: $t('nav.identity') }]"
+      bgImage="/assets/site/pexels-256490.jpg"
     />
 
     <!-- Main Content -->
@@ -18,8 +18,8 @@
               1
             </span>
             <div>
-              <h2 class="text-3xl font-extrabold text-[#0b2b42] tracking-tight">Logo Resmi UNIDSOE</h2>
-              <p class="text-gray-500 text-sm">Identitas visual resmi Universitas Dr. Soekardjo Banyuwangi</p>
+              <h2 class="text-3xl font-extrabold text-[#0b2b42] tracking-tight">{{ $t('identitas.logoTitle') }}</h2>
+              <p class="text-gray-500 text-sm">{{ $t('identitas.logoDesc') }}</p>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
 
           <!-- Logo Philosophy & Arti (Right) -->
           <div class="lg:col-span-7 p-8 sm:p-12 lg:p-16 flex flex-col justify-center bg-gray-50/50">
-            <h3 class="text-xl font-bold text-[#0b2b42] mb-4">Filosofi & Arti Logo</h3>
+            <h3 class="text-xl font-bold text-[#0b2b42] mb-4">{{ $t('identitas.philosophy') }}</h3>
             <p class="text-gray-600 leading-relaxed mb-8">
               {{ identitasData.logoDescription }}
             </p>
@@ -140,7 +140,7 @@
               <span class="inline-block px-4 py-1.5 bg-orange-100 text-orange-800 text-xs font-bold rounded-full uppercase tracking-wider mb-3">
                 KUMBA
               </span>
-              <h3 class="text-2xl font-extrabold text-[#0b2b42]">Filosofi Nama KUMBA</h3>
+              <h3 class="text-2xl font-extrabold text-[#0b2b42]">{{ $t('identitas.kumba') }}</h3>
             </div>
 
             <!-- Acronym Grid -->
@@ -186,8 +186,8 @@
           <span class="px-4 py-1.5 bg-blue-50 text-[#195682] text-xs font-bold rounded-full uppercase tracking-wider mb-3 inline-block">
             Karya Seni & Lagu
           </span>
-          <h2 class="text-3xl font-extrabold text-[#0b2b42]">Lagu Wajib & Mars UNIDSOE</h2>
-          <p class="text-gray-500 mt-2">Dinyanyikan pada upacara akademik resmi, wisuda, dan kegiatan penting universitas.</p>
+          <h2 class="text-3xl font-extrabold text-[#0b2b42]">{{ $t('identitas.anthem') }}</h2>
+          <p class="text-gray-500 mt-2">{{ $t('identitas.anthemDesc') }}</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -211,11 +211,11 @@
               <!-- Creative credits block -->
               <div class="grid grid-cols-3 gap-2 bg-white/5 rounded-xl p-4 mb-6 border border-white/5 text-center text-xs text-blue-100/80">
                 <div>
-                  <span class="block text-[10px] text-white/40 uppercase tracking-wider">Lagu</span>
+                  <span class="block text-[10px] text-white/40 uppercase tracking-wider">{{ $t('identitas.song') }}</span>
                   <span class="font-bold">{{ identitasData.hymneLagu }}</span>
                 </div>
                 <div class="border-x border-white/10">
-                  <span class="block text-[10px] text-white/40 uppercase tracking-wider">Lirik</span>
+                  <span class="block text-[10px] text-white/40 uppercase tracking-wider">{{ $t('identitas.lyrics') }}</span>
                   <span class="font-bold">{{ identitasData.hymneLirik }}</span>
                 </div>
                 <div>
@@ -254,11 +254,11 @@
               <!-- Creative credits block -->
               <div class="grid grid-cols-3 gap-2 bg-gray-50 rounded-xl p-4 mb-6 border border-gray-200/60 text-center text-xs text-gray-500">
                 <div>
-                  <span class="block text-[10px] text-gray-400 uppercase tracking-wider">Lagu</span>
+                  <span class="block text-[10px] text-gray-400 uppercase tracking-wider">{{ $t('identitas.song') }}</span>
                   <span class="font-bold text-gray-700">{{ identitasData.marsLagu }}</span>
                 </div>
                 <div class="border-x border-gray-200">
-                  <span class="block text-[10px] text-gray-400 uppercase tracking-wider">Lirik</span>
+                  <span class="block text-[10px] text-gray-400 uppercase tracking-wider">{{ $t('identitas.lyrics') }}</span>
                   <span class="font-bold text-gray-700">{{ identitasData.marsLirik }}</span>
                 </div>
                 <div>
@@ -295,7 +295,7 @@
         <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-video max-w-4xl mx-auto border border-white/10 ring-4 ring-black/40 z-10">
           <iframe 
             :src="identitasData.videoUrl" 
-            title="Video Profil UNIDSOE"
+            :title="$t('identitas.videoTitle')"
             class="absolute inset-0 w-full h-full"
             style="border: 0;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -310,7 +310,10 @@
 
 <script setup>
 import PageHeader from '../components/PageHeader.vue'
-import identitasData from '../data/identitas.json'
+import { getIdentitas } from '../composables/useSite'
+
+// Data lokal hasil prebuild Payload (tanpa JSON statis)
+const identitasData = getIdentitas()
 </script>
 
 <style scoped>

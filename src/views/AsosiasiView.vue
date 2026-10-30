@@ -2,9 +2,9 @@
   <div class="bg-gray-50 min-h-screen">
     <!-- Page Header component -->
     <PageHeader 
-      title="Asosiasi & Mitra Praktik" 
-      :breadcrumbs="[{ label: 'Asosiasi & Mitra' }]"
-      bgImage="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80"
+      :title="$t('asosiasi.title')" 
+      :breadcrumbs="[{ label: $t('asosiasi.crumb') }]"
+      bgImage="/assets/site/unsplash-1576091160550.jpg"
     />
 
     <!-- Main Content Area -->
@@ -13,13 +13,13 @@
       <div class="bg-white rounded-xl shadow-md p-8 md:p-10 border border-gray-100 grid md:grid-cols-12 gap-8 items-center mb-12 animate-fade-in-up">
         <div class="md:col-span-5 relative group overflow-hidden rounded-xl shadow-sm">
           <img 
-            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80" 
+            src="/assets/site/unsplash-1582213782179.jpg" 
             alt="Kolaborasi Universitas Dr. Soekardjo" 
             class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-700 rounded-xl"
           />
         </div>
         <div class="md:col-span-7 space-y-4">
-          <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block">Jejaring Karir & Praktik</span>
+          <span class="text-[#f9ac42] font-bold uppercase tracking-wider text-sm block">{{ $t('asosiasi.networkBadge') }}</span>
           <h2 class="text-3xl font-bold text-[#0b2b42] leading-tight">
             Membangun Masa Depan Melalui Kolaborasi Unggul
           </h2>
@@ -40,7 +40,7 @@
       <!-- Associations Grid -->
       <div class="mb-12">
         <div class="text-center mb-10">
-          <span class="text-[#195682] font-bold uppercase tracking-wider text-sm block mb-2">Mitra Resmi</span>
+          <span class="text-[#195682] font-bold uppercase tracking-wider text-sm block mb-2">{{ $t('asosiasi.partnersBadge') }}</span>
           <h2 class="text-3xl font-bold text-[#0b2b42]">
             Daftar Asosiasi Pendidikan & Praktik
           </h2>
@@ -121,7 +121,10 @@
 <script setup>
 import { onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
-import globalSettings from '../data/settings.json'
+import { getAssociations } from '../composables/useSite'
+
+// Asosiasi dari prebuild Payload (tanpa JSON statis)
+const globalSettings = { associationsSettings: getAssociations() }
 
 const associations = globalSettings.associationsSettings?.items || [
   { name: "Pemkab Banyuwangi", url: "https://banyuwangikab.go.id", iconType: "pemkab", desc: "Kemitraan strategis dalam penyediaan sarana rumah sakit daerah dan pusat kesehatan masyarakat di seluruh Kabupaten Banyuwangi." },

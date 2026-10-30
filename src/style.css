@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+  font-family: 'hgi-stroke-rounded';
+  src: url('/fonts/hgi-stroke-rounded.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hgi-icon {
+  font-family: 'hgi-stroke-rounded' !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -144,3 +159,17 @@ html {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+/* HugeIcons terpakai (font lokal di /fonts) */
+.hgi-graduate-male::before { content: '\40ef'; }
+.hgi-book-open-02::before { content: '\3c64'; }
+.hgi-hospital-02::before { content: '\416f'; }
+.hgi-doctor-02::before { content: '\3f5c'; }
+.hgi-briefcase-dollar::before { content: '\3caa'; }
+.hgi-award-02::before { content: '\3bbb'; }
+.hgi-medal-01::before { content: '\4341'; }
+.hgi-diploma::before { content: '\3f36'; }
+.hgi-coins-01::before { content: '\3e2b'; }
+.hgi-bank::before { content: '\3bd0'; }
+.hgi-certificate-01::before { content: '\3d76'; }
+.hgi-mosque-01::before { content: '\440c'; }
+.hgi-globe-02::before { content: '\40ca'; }

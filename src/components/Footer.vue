@@ -12,7 +12,7 @@
             </div>
           </div>
           <p class="text-gray-300 leading-relaxed mb-6 text-sm">
-            Institusi pendidikan tinggi berdaya saing global, berlandaskan spiritualitas. Menyediakan pendidikan berkualitas berwawasan dunia, penelitian inovatif, pengabdian transformatif, serta tata kelola prima dengan jejaring strategis nasional-internasional.
+            {{ $t('footer.about') }}
           </p>
           <div class="flex space-x-4">
             <a href="https://www.instagram.com/unidsoe" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-[#195682] rounded-lg flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 transition-all duration-300" title="Instagram">
@@ -35,21 +35,21 @@
         
         <!-- Quick Links -->
         <div>
-          <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">Menu Utama</h4>
+          <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">{{ $t('footer.mainMenu') }}</h4>
           <ul class="space-y-3 font-medium">
-            <li><router-link to="/profil" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Tentang Kami</router-link></li>
-            <li><router-link to="/identitas" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Identitas Kampus</router-link></li>
-            <li><router-link to="/program-studi" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Program Studi</router-link></li>
-            <li><router-link to="/fasilitas" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Fasilitas Kampus</router-link></li>
-            <li><router-link to="/kerja-sama" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Kerja Sama</router-link></li>
-            <li><router-link to="/akademik" class="text-gray-300 hover:text-[#58d1fd] transition-colors">Akademik</router-link></li>
+            <li><router-link to="/profil" class="text-gray-300 hover:text-[#58d1fd] transition-colors">{{ $t('footer.aboutUs') }}</router-link></li>
+            <li><router-link to="/identitas" class="text-gray-300 hover:text-[#58d1fd] transition-colors">{{ $t('footer.campusIdentity') }}</router-link></li>
+            <li><router-link to="/program-studi" class="text-gray-300 hover:text-[#58d1fd] transition-colors">{{ $t('footer.studyPrograms') }}</router-link></li>
+            <li><router-link to="/fasilitas" class="text-gray-300 hover:text-[#58d1fd] transition-colors">{{ $t('footer.campusFacilities') }}</router-link></li>
+            <li><router-link to="/kerja-sama" class="text-gray-300 hover:text-[#58d1fd] transition-colors">{{ $t('footer.cooperation') }}</router-link></li>
+            <li><router-link to="/akademik" class="text-gray-300 hover:text-[#58d1fd] transition-colors">{{ $t('footer.academic') }}</router-link></li>
             <li><a :href="settings.contact.pmbLink" target="_blank" class="text-gray-300 hover:text-[#58d1fd] transition-colors">PMB 2025</a></li>
           </ul>
         </div>
         
         <!-- Contact Info -->
         <div>
-          <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">Kontak Kami</h4>
+          <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">{{ $t('footer.contactUs') }}</h4>
           <div class="space-y-4">
             <div class="flex items-start">
               <svg class="w-6 h-6 text-[#58d1fd] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
@@ -70,7 +70,7 @@
         
         <!-- Google Maps -->
         <div>
-          <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">Lokasi Kampus</h4>
+          <h4 class="text-lg font-bold mb-6 text-[#f9ac42]">{{ $t('footer.campusLocation') }}</h4>
           <div class="rounded-xl overflow-hidden shadow-lg">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.834771239857!2d114.3575275!3d-8.2064118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145395a7b1b69%3A0x5be904a98d74cbb6!2sKampus+STIKes+Banyuwangi!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
@@ -89,7 +89,7 @@
       <!-- Bottom Bar -->
       <div class="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
         <p class="text-gray-400">
-          © 2025 Universitas Dr. Soekardjo. All Rights Reserved.
+          {{ $t('footer.rights') }}
         </p>
         <div class="flex items-center space-x-6 mt-4 md:mt-0">
 
@@ -100,5 +100,8 @@
 </template>
 
 <script setup>
-import settings from '../data/settings.json'
+import { getContact } from '../composables/useSite'
+
+// Kontak dari prebuild Payload (tanpa JSON statis)
+const settings = { contact: getContact() }
 </script>

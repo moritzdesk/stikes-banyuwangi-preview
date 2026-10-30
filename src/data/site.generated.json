@@ -1,0 +1,799 @@
+{
+  "generatedAt": "2026-09-15T07:28:27.400Z",
+  "cmsUrl": "http://127.0.0.1:3000",
+  "home": {
+    "slides": [
+      {
+        "id": "6aa8ab9bb6d82c0ac39d9b04",
+        "tag": "Penerimaan Mahasiswa Baru 2026/2027",
+        "tagBgColor": "#f9ac42",
+        "headlineLine1": "Universitas Dr. Soekardjo Banyuwangi (UNIDSOE)",
+        "headlineHighlight": "",
+        "headlineHighlightColor": "#f9ac42",
+        "headlineLine2": "",
+        "headlineBreak": true,
+        "headline": "Universitas Dr. Soekardjo Banyuwangi (UNIDSOE)",
+        "subheadline": "Saatnya jadi bagian dari generasi unggul di Universitas Dr. Soekardjo (UNIDSOE). Dibuka PMB Tahun Ajaran 2026/2027",
+        "image": "/media/pexels-3184287-768x432.jpg",
+        "buttonText": "Daftar PMB 2026/2027",
+        "buttonLink": "https://pmb.unidsoe.ac.id",
+        "isExternal": true
+      },
+      {
+        "id": "6aa8ab9bb6d82c0ac39d9b05",
+        "tag": "Prestasi Internasional",
+        "tagBgColor": "#c01c0c",
+        "headlineLine1": "Rektor UNIDSOE Raih",
+        "headlineHighlight": "TOP Creativity Choice Award 2026",
+        "headlineHighlightColor": "#f9ac42",
+        "headlineLine2": "",
+        "headlineBreak": true,
+        "headline": "Rektor UNIDSOE Raih<br/><span class=\"text-[#f9ac42]\" style=\"color:#f9ac42\">TOP Creativity Choice Award 2026</span>",
+        "subheadline": "Dr. Drs. H. Soekardjo, S.Kep., MM., MBA berhasil meraih penghargaan bergengsi TOP Creativity Choice Award 2026 — bukti nyata kepemimpinan inovatif di dunia pendidikan kesehatan.",
+        "image": "/media/rektor-award.webp",
+        "buttonText": "Baca Berita Selengkapnya",
+        "buttonLink": "/artikel/rektor-unidsoe-raih-top-creativity-choice-award-2026",
+        "isExternal": false
+      },
+      {
+        "id": "6aa8ab9bb6d82c0ac39d9b06",
+        "tag": "test slide",
+        "tagBgColor": "#f9ac42",
+        "headlineLine1": "Test HTML headline",
+        "headlineHighlight": "",
+        "headlineHighlightColor": "#f9ac42",
+        "headlineLine2": "",
+        "headlineBreak": true,
+        "headline": "Test HTML headline",
+        "subheadline": "subheading",
+        "image": "/media/pexels-1181395-768x1150.jpg",
+        "buttonText": "goo",
+        "buttonLink": "https://google.com",
+        "isExternal": true
+      }
+    ],
+    "about": {
+      "badge": "Tentang Kami",
+      "title": "Universitas Dr. Soekardjo",
+      "image": "/media/unsplash-1576091160550-768x512.jpg",
+      "paragraph1": "Universitas Dr. Soekardjo (UNIDSOE) merupakan transformasi dari STIKES Banyuwangi, sebuah langkah strategis untuk memperluas keilmuan dan memperkuat dampak bagi masyarakat. Berawal dari kekuatan di bidang kesehatan, UNIDSOE kini berkembang dengan mengintegrasikan ilmu kesehatan, sosial, dan teknologi dalam sistem pendidikan yang adaptif dan relevan dengan kebutuhan global.",
+      "paragraph2": "Didukung fasilitas pembelajaran yang lengkap dan modern, serta program studi terakreditasi dengan mayoritas meraih predikat Baik Sekali, UNIDSOE berkomitmen menjaga kualitas pendidikan yang unggul. Berbagai prestasi telah diraih hingga tingkat internasional, dan para alumni telah berkiprah di berbagai sektor, baik nasional maupun global.",
+      "quote": "“We Create Graduates Who Serve The World” — UNIDSOE hadir untuk mencetak lulusan yang kompeten, profesional, dan siap memberi dampak nyata bagi dunia.",
+      "points": [
+        {
+          "id": "tk-p1",
+          "icon": "graduate-male",
+          "title": "11 Program Studi",
+          "subtitle": "Terakreditasi"
+        },
+        {
+          "id": "tk-p2",
+          "icon": "award-02",
+          "title": "100+ Prestasi",
+          "subtitle": "Nasional & Internasional"
+        },
+        {
+          "id": "tk-p3",
+          "icon": "coins-01",
+          "title": "Beasiswa Lengkap",
+          "subtitle": "KIP, Yayasan, & Mitra"
+        },
+        {
+          "id": "tk-p4",
+          "icon": "globe-02",
+          "title": "Alumni Mendunia",
+          "subtitle": "Kiprah Nasional & Global"
+        }
+      ]
+    },
+    "cta": [
+      {
+        "variant": "hijau",
+        "badge": "TERBATAS!",
+        "titleLine1": "Ingin Kuliah",
+        "titleLine2": "GRATIS?",
+        "description": "Dapatkan kesempatan beasiswa menarik melalui program Tahfidz Qur’an, BHC, BAKENAKES, BISKO, dan masih banyak lainnya.",
+        "stats": [
+          {
+            "id": "6aa360d6ad7aaa4b8acb77d8",
+            "value": "4+",
+            "label": "Program"
+          },
+          {
+            "id": "6aa360d6ad7aaa4b8acb77d9",
+            "value": "100%",
+            "label": "Beasiswa"
+          },
+          {
+            "id": "6aa360d6ad7aaa4b8acb77da",
+            "value": "∞",
+            "label": "Peluang"
+          }
+        ],
+        "primaryText": "Info Beasiswa",
+        "primaryLink": "/beasiswa",
+        "secondaryText": "Referensi Resmi",
+        "secondaryLink": "https://stikesbanyuwangi.ac.id/beasiswa/",
+        "image": "/media/DSCF9959-768x969.png"
+      },
+      {
+        "variant": "biru",
+        "badge": "PMB 2026/2027",
+        "titleLine1": "Sudah Siap",
+        "titleLine2": "Untuk Kuliah?",
+        "description": "Bergabunglah dengan ribuan mahasiswa yang telah mempercayakan masa depan mereka di Universitas Dr. Soekardjo.",
+        "stats": [
+          {
+            "id": "6aa360d6ad7aaa4b8acb77dc",
+            "value": "8+",
+            "label": "Program"
+          },
+          {
+            "id": "6aa360d6ad7aaa4b8acb77dd",
+            "value": "100%",
+            "label": "Akreditasi"
+          },
+          {
+            "id": "6aa360d6ad7aaa4b8acb77de",
+            "value": "∞",
+            "label": "Peluang"
+          }
+        ],
+        "primaryText": "Info Pendaftaran",
+        "primaryLink": "/infopmb",
+        "secondaryText": "Referensi Resmi",
+        "secondaryLink": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
+        "image": "/media/DSCF9968-768x1302.png"
+      }
+    ]
+  },
+  "profil": {
+    "sejarah": "Universitas Dr. Soekardjo (UNIDSOE) merupakan hasil transformasi dari STIKES Banyuwangi, sebuah institusi pendidikan tinggi kesehatan yang telah berkiprah selama hampir dua dekade dalam mencetak tenaga profesional di bidang kesehatan. Berangkat dari komitmen untuk terus berkembang dan menjawab tantangan zaman, institusi ini memasuki babak baru dengan memperluas cakupan keilmuan serta memperkuat peran strategisnya di tingkat regional maupun nasional.\n\nPerubahan bentuk menjadi universitas ini dikukuhkan melalui Surat Keputusan resmi dari Menteri Pendidikan Tinggi, Sains dan Teknologi Republik Indonesia Nomor 950/B/O/2025, sebagai bentuk pengakuan atas kesiapan institusi dalam meningkatkan mutu pendidikan, penelitian, dan pengabdian kepada masyarakat. Transformasi ini tidak hanya bersifat administratif, tetapi juga mencerminkan visi besar untuk menghadirkan pendidikan tinggi yang lebih inklusif, adaptif, dan berdampak luas, sejalan dengan arah pembangunan sumber daya manusia Indonesia.\n\nDi bawah kepemimpinan Rektor pertama, Dr. Drs. H. Soekardjo, S.Kep., MM., MBA, UNIDSOE berkomitmen untuk memperkuat tata kelola kelembagaan, mendorong inovasi riset lintas disiplin, serta memperluas kontribusi nyata bagi masyarakat. Dengan fondasi kuat di bidang kesehatan serta pengembangan ilmu sosial dan teknologi, UNIDSOE hadir sebagai institusi pendidikan tinggi yang siap melahirkan lulusan unggul, berdaya saing global, serta berintegritas tinggi.\n\nSaat ini, UNIDSOE memiliki dua fakultas utama yang menjadi pilar pengembangan akademik, yaitu Fakultas Kesehatan (FKes) dan Fakultas Ilmu Sosial dan Teknologi (FISTEK). Fakultas Kesehatan (FKes) menyelenggarakan program studi S1 Keperawatan, Profesi Ners, S1 Kebidanan, Profesi Bidan, S1 Gizi, D4 Teknologi Laboratorium Medis, D3 Keperawatan, serta D3 Farmasi. Sementara itu, Fakultas Ilmu Sosial dan Teknologi (FISTEK) menaungi program studi S1 Perdagangan Internasional, S1 Manajemen Bisnis Internasional, dan S1 Sistem Informasi, sebagai bentuk pengembangan keilmuan yang adaptif terhadap kebutuhan global dan transformasi digital.\n\nSebagai kampus yang berakar di Banyuwangi ujung timur Pulau Jawa UNIDSOE membawa semangat lokal yang berpadu dengan perspektif global. Melalui pengembangan program studi yang relevan dengan kebutuhan industri dan masyarakat, universitas ini terus berupaya menjadi pusat pendidikan dan inovasi yang berkontribusi aktif dalam pembangunan bangsa.\n\nDengan semangat “We Create Graduates Who Serve The World”, UNIDSOE menegaskan komitmennya untuk mencetak lulusan yang tidak hanya unggul secara akademik, tetapi juga memiliki kepedulian sosial, profesionalisme tinggi, serta kesiapan untuk berkontribusi di tingkat global. Transformasi ini menjadi pijakan untuk terus tumbuh, berinovasi, dan memberikan dampak nyata bagi dunia.",
+    "visi": "Menjadi Institusi Pendidikan Tinggi yang unggul dalam pemberdayaan masyarakat, berdaya saing global, dan berlandaskan pada spiritualitas.",
+    "misi": [
+      "Menyelenggarakan pendidikan yang berkualitas, berwawasan global, berintegritas dan berdasarkan nilai-nilai spiritual.",
+      "Menyelenggarakan penelitian yang inovatif dan kolaboratif untuk menghasilkan IPTEK yang berorientasi pada kebutuhan masyarakat.",
+      "Melaksanakan pengabdian kepada masyarakat yang transformatif untuk meningkatkan kualitas hidup masyarakat.",
+      "Mengembangkan tata kelola universitas yang baik (Good University Governance), menjunjung tinggi etika dan nilai-nilai spiritual serta memperluas jejaring kemitraan strategis di tingkat nasional maupun internasional."
+    ],
+    "tujuan": [
+      {
+        "bidang": "Bidang Pendidikan (Mencetak SDM Global)",
+        "poin": [
+          "Menghasilkan lulusan yang memiliki keahlian yang berwawasan global (global competitiveness).",
+          "Membentuk profil lulusan yang profesional dan berintegritas.",
+          "Mengembangkan sistem pembelajaran yang adaptif terhadap perkembangan teknologi serta kebutuhan dunia usaha, dunia industri, dan dunia kerja."
+        ]
+      },
+      {
+        "bidang": "Bidang Penelitian (Inovasi dan Keunggulan)",
+        "poin": [
+          "Menghasilkan inovasi dan karya ilmiah yang mendapatkan pengakuan di tingkat nasional dan internasional.",
+          "Penelitian yang berfokus pada pengembangan riset yang berdampak nyata bagi peningkatan kualitas hidup masyarakat."
+        ]
+      },
+      {
+        "bidang": "Bidang Pengabdian (Pemberdayaan Masyarakat)",
+        "poin": [
+          "Mewujudkan masyarakat yang mandiri melalui program pemberdayaan transformatif berbasis ilmu pengetahuan.",
+          "Menerapkan hasil penelitian menjadi produk atau rekomendasi kebijakan yang dapat diaplikasikan oleh masyarakat.",
+          "Membangun kerjasama yang sinergis dengan lembaga (nasional maupun internasional) untuk memperluas jangkauan dampak pemberdayaan."
+        ]
+      },
+      {
+        "bidang": "Bidang Tata Kelola (Institusi yang Akuntabel)",
+        "poin": [
+          "Mewujudkan tata kelola perguruan tinggi yang berbasis Good University Governance.",
+          "Menciptakan lingkungan kampus yang berlandaskan nilai-nilai etika dan spiritual dalam interaksi serta layanan akademik.",
+          "Meningkatkan rekognisi institusi melalui akreditasi dan kemitraan global yang berkelanjutan."
+        ]
+      }
+    ],
+    "sasaran": [
+      {
+        "bidang": "Sasaran Bidang Akademik & Daya Saing Global",
+        "poin": [
+          "Tercapainya akreditasi unggul minimal 25% program studi dalam 5 tahun.",
+          "Tercapainya kegiatan penelitian dan PKM antara dosen dan mahasiswa lebih dari 80% dalam 5 tahun.",
+          "Ketercapaian lulusan lebih dari 90% dalam dunia kerja dalam 6 bulan masa tunggu."
+        ]
+      },
+      {
+        "bidang": "Sasaran Bidang Riset & Inovasi",
+        "poin": [
+          "Tercapainya peningkatan publikasi ilmiah pada jurnal internasional minimal 20% dari jumlah dosen.",
+          "HKI dosen dan mahasiswa lebih dari 50 dalam 1 tahun."
+        ]
+      },
+      {
+        "bidang": "Sasaran Bidang Pemberdayaan Masyarakat",
+        "poin": [
+          "Terbentuknya desa binaan lebih dari 9 desa dalam 5 tahun.",
+          "Terciptanya produk teknologi tepat guna hasil dari penelitian yang dimanfaatkan oleh masyarakat minimal 20% dari jumlah program studi dalam 5 tahun."
+        ]
+      },
+      {
+        "bidang": "Sasaran Bidang Spiritualitas & Karakter",
+        "poin": [
+          "Terintegrasinya nilai etika dan spiritualitas dalam pelaksanaan pendidikan.",
+          "Tercapainya survei kepuasan stakeholder terhadap kualitas lulusan dengan nilai Sangat Baik.",
+          "Tercapainya budaya organisasi yang berlandaskan nilai-nilai spiritual."
+        ]
+      },
+      {
+        "bidang": "Sasaran Tata Kelola & SDM",
+        "poin": [
+          "Tercapainya jumlah dosen Doktoral 40% dari total dosen tetap dalam 5 tahun.",
+          "Terimplementasinya sistem informasi kampus untuk meningkatkan efisiensi pelayanan dalam waktu 5 tahun."
+        ]
+      }
+    ],
+    "namaKetua": "Dr. Drs. H. Soekardjo, S.Kep., MM., MBA",
+    "sambutan": "Assalamu’alaikum warahmatullahi wabarakatuh\n\nSalam sejahtera bagi kita semua,\n\nSelamat datang di Universitas Dr. Soekardjo (UNIDSOE).\n\nDengan penuh rasa syukur, kami menyambut kehadiran Anda di laman resmi UNIDSOE, sebuah institusi pendidikan tinggi yang lahir dari transformasi STIKES Banyuwangi. Perubahan ini merupakan langkah strategis untuk memperluas kontribusi kami dalam dunia pendidikan, tidak hanya di bidang kesehatan, tetapi juga pada ranah ilmu sosial dan teknologi yang terus berkembang.\n\nSebagai universitas yang berkomitmen pada mutu dan relevansi, UNIDSOE terus menguatkan tata kelola kelembagaan, meningkatkan kualitas pembelajaran, serta mendorong budaya riset dan inovasi. Kami percaya bahwa perguruan tinggi memiliki peran penting dalam mencetak generasi yang tidak hanya cerdas secara intelektual, tetapi juga memiliki integritas, empati, dan kesiapan menghadapi tantangan global.\n\nMelalui Fakultas Kesehatan (FKes) dan Fakultas Ilmu Sosial dan Teknologi (FISTEK), kami menghadirkan program-program studi yang dirancang untuk menjawab kebutuhan zaman. Kami berupaya memastikan bahwa setiap lulusan UNIDSOE memiliki kompetensi unggul, keterampilan adaptif, serta semangat pengabdian yang tinggi kepada masyarakat.\n\nSejalan dengan semangat “We Create Graduates Who Serve The World”, kami berkomitmen untuk mencetak lulusan yang mampu berkontribusi tidak hanya di tingkat lokal dan nasional, tetapi juga di panggung global. Kami ingin setiap insan UNIDSOE menjadi bagian dari solusi, menghadirkan manfaat, dan memberi dampak nyata bagi dunia.\n\nAkhir kata, kami mengundang seluruh pemangku kepentingan mahasiswa, orang tua, mitra, dan masyarakat luas untuk bersama-sama bertumbuh dan berkolaborasi dengan UNIDSOE dalam membangun masa depan yang lebih baik.\n\nWassalamu’alaikum warahmatullahi wabarakatuh.",
+    "fotoKetua": "/media/foto-rektor-768x1152.jpg"
+  },
+  "identitas": {
+    "logoTitle": "Logo Resmi Universitas Dr. Soekardjo",
+    "logoDescription": "Logo Universitas Dr. Soekardjo (UNIDSOE) merepresentasikan visi besar sebagai institusi pendidikan tinggi berdaya saing global yang berlandaskan spiritualitas, inovasi iptek, dan pengabdian tanpa batas untuk kemanusiaan.",
+    "logoImage": "/media/LOGO%20UNIDSOE%202025-768x666.png",
+    "logoPhilosophyImage": "/media/arti%20logo-768x765.png",
+    "logoDriveUrl": "https://drive.google.com/drive/folders/1E5kN8Y-NWvCsIK10kR4pzT9ccQ7FH2xQ?usp=drive_link",
+    "mascotTitle": "KUMBA",
+    "mascotImage": "/media/KUMBA-768x1152.png",
+    "mascotDriveUrl": "https://drive.google.com/drive/folders/1uFLeD6oyMHn-onzQzoIwpXwQhzW5pCr4?usp=drive_link",
+    "videoTitle": "Video Profil Kampus Utama UNIDSOE",
+    "videoUrl": "",
+    "hymneTitle": "Hymne UNIDSOE",
+    "hymneLagu": "Arif Mulyadi",
+    "hymneLirik": "El Faraby",
+    "hymnePenggubah": "Endah Kusuma W",
+    "hymneLyrics": "Diujung Timur Pulau Nan Subur Kau Berdiri\nKala Fajar Terbit Beriring Sinar Sang Mentari\nSiap Bersatu Dengan Harapan Suci Bangsa\nMembawa Kebanggan Panji-Panji Pendidikan\n\nKokoh Tancapkan Tekad Harumkan Nama\nJunjung Tinggi Nilai Luhur Manusia\nGabungkan Ilmu dan Seni Keprofesian\nMenyambut Tantangan Hari Depan\n\nUniversitas Dr. Soekardjo Banyuwangi\nBerjiwa Besar Rendah Hati Selalu\nDukung Pendidikan Bangsa\nUnidsoe Banyuwangi Beriman dan Berahmat\nNamamu Abadi di Hatiku",
+    "marsTitle": "Mars UNIDSOE",
+    "marsLagu": "Arif Mulyadi",
+    "marsLirik": "El Faraby",
+    "marsPenggubah": "Endah Kusuma W",
+    "marsLyrics": "Wahai Kau Para Insan Cendekia\nKuatkan Niat Sucimu pada Ilahi\nBerjuang Berkorban Tuk Meraih Ilmu\nDisiplin Tanggung Jawab pada Profesi\n\nKibarkan Bendera Almamater Kita\nKobarkan Terus Semangat di Hati Semua\nAbdikan Sgala Daya Seiring Doa\nBerdakti Bagi Nusa dan Bangsa\n\nBersatu Padulah dalam Melangkah\nTempa Diri Demi Raih Cita\nUnidsoe Banyuwangi Mari Bersama\nBelajarlah Demi Masa Depan",
+    "globalType": "identitas"
+  },
+  "beasiswa": {
+    "title": "Program Beasiswa Pendidikan Unggulan",
+    "subtitle": "Mewujudkan mimpi kuliah tanpa hambatan finansial dengan beragam program beasiswa unggulan di Universitas Dr. Soekardjo.",
+    "heroImage": "/media/pexels-3184287-768x432.jpg",
+    "introTitle": "Akses Pendidikan Tinggi Seluas-Luasnya",
+    "introText": "Kami percaya bahwa keterbatasan finansial tidak boleh menjadi penghalang bagi mimpi besar Anda. Universitas Dr. Soekardjo menyediakan berbagai jalur beasiswa penuh maupun parsial untuk mendukung perjalanan akademik Anda dan melahirkan generasi berprestasi.",
+    "scholarships": [
+      {
+        "id": "6aa0a0b950ae3f1269de319a",
+        "name": "Beasiswa KIP Kuliah",
+        "icon": "graduate-male",
+        "description": "Program bantuan biaya pendidikan dari pemerintah bagi lulusan SMA/SMK/MA sederajat yang memiliki potensi akademik baik tetapi memiliki keterbatasan ekonomi.",
+        "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
+        "benefits": [
+          "Pembebasan biaya kuliah 100% (SPP & UKT)",
+          "Bantuan biaya hidup bulanan langsung ke rekening mahasiswa",
+          "Pembinaan karakter dan kepemimpinan berkala"
+        ]
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de319b",
+        "name": "Beasiswa Tahfidz Qur'an",
+        "icon": "book-open-02",
+        "description": "Apresiasi khusus bagi penghafal Al-Qur'an (minimal 5 juz) untuk melanjutkan studi tinggi di prodi manapun di lingkungan universitas.",
+        "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
+        "benefits": [
+          "Bebas biaya kuliah penuh (100% SPP) hingga lulus",
+          "Kesempatan menjadi mentor kajian keagamaan kampus",
+          "Akses prioritas asrama mahasiswa"
+        ]
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de319c",
+        "name": "Beasiswa BHC (Banyuwangi Health Center)",
+        "icon": "hospital-02",
+        "description": "Jalur beasiswa prestasi khusus untuk program studi kesehatan, bekerja sama dengan jejaring fasilitas kesehatan dan rumah sakit mitra.",
+        "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
+        "benefits": [
+          "Subsidi biaya SPP & praktikum laboratorium",
+          "Jaminan magang klinis di rumah sakit & klinik jejaring",
+          "Peluang ikatan dinas setelah lulus"
+        ]
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de319d",
+        "name": "Beasiswa BAKENAKES",
+        "icon": "doctor-02",
+        "description": "Beasiswa Bakti Kader Kesehatan Nasional untuk mencetak tenaga medis profesional di daerah terpencil dan perbatasan.",
+        "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
+        "benefits": [
+          "Bantuan uang kuliah tunggal (UKT) setiap semester",
+          "Program mentoring klinis eksklusif dari praktisi senior",
+          "Penempatan pengabdian kesehatan di akhir studi"
+        ]
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de319e",
+        "name": "Beasiswa BISKO (Bisnis & Ekonomi)",
+        "icon": "briefcase-dollar",
+        "description": "Beasiswa pengembangan kewirausahaan untuk melahirkan inovator bisnis muda yang siap bersaing secara global.",
+        "link": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
+        "benefits": [
+          "Subsidi biaya pendidikan jalur FISTEK",
+          "Pendampingan intensif dari Inkubator Bisnis Universitas",
+          "Peluang pendanaan proyek startup mahasiswa"
+        ]
+      }
+    ]
+  },
+  "infoPmb": {
+    "title": "Penerimaan Mahasiswa Baru 2026/2027",
+    "subtitle": "Bergabunglah bersama Universitas Dr. Soekardjo (UNIDSOE) untuk menjadi profesional unggul, inovatif, dan berakhlak mulia.",
+    "heroImage": "/media/pexels-1438072-768x513.jpg",
+    "openDate": "1 Desember 2025 - 31 Agustus 2026",
+    "contactPhone": "(0333) 424-123",
+    "contactWhatsapp": "0812-3456-7890",
+    "requirements": [
+      "Warga Negara Indonesia (WNI)",
+      "Lulusan SMA/SMK/MA/Sederajat (semua jurusan)",
+      "Fotokopi Ijazah / SKL yang telah dilegalisir (2 lembar)",
+      "Fotokopi Kartu Keluarga (KK) & KTP (2 lembar)",
+      "Pas Foto terbaru ukuran 3x4 & 4x6 berlatar merah (masing-masing 3 lembar)",
+      "Surat Keterangan Sehat & tidak buta warna dari fasilitas kesehatan resmi (khusus program studi kesehatan)"
+    ],
+    "steps": [
+      {
+        "id": "6aa0a0b950ae3f1269de319f",
+        "stepNumber": "01",
+        "title": "Pendaftaran Online",
+        "description": "Mengisi formulir registrasi awal secara online melalui portal resmi PMB UNIDSOE."
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de31a0",
+        "stepNumber": "02",
+        "title": "Pembayaran Biaya",
+        "description": "Melakukan pembayaran biaya pendaftaran sebesar Rp 250.000 melalui transfer bank mitra."
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de31a1",
+        "stepNumber": "03",
+        "title": "Unggah Berkas",
+        "description": "Melengkapi biodata dan mengunggah pindaian (scan) berkas administrasi pendukung."
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de31a2",
+        "stepNumber": "04",
+        "title": "Ujian Seleksi (CBT)",
+        "description": "Mengikuti ujian berbasis komputer secara online atau offline sesuai jadwal yang dipilih."
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de31a3",
+        "stepNumber": "05",
+        "title": "Pengumuman & Daftar Ulang",
+        "description": "Melihat hasil kelulusan dan melakukan daftar ulang administrasi serta keuangan."
+      }
+    ],
+    "registrationPaths": [
+      {
+        "id": "6aa0a0b950ae3f1269de31a4",
+        "name": "Jalur Reguler (CBT)",
+        "badge": "Jalur Tes",
+        "description": "Jalur penerimaan mahasiswa baru menggunakan ujian tertulis berbasis komputer (Computer Based Test)."
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de31a5",
+        "name": "Jalur Kemitraan & Prestasi",
+        "badge": "Non-Tes",
+        "description": "Jalur masuk bebas tes tertulis bagi siswa berprestasi di bidang akademik, olahraga, seni, keagamaan, atau utusan mitra."
+      },
+      {
+        "id": "6aa0a0b950ae3f1269de31a6",
+        "name": "Jalur Beasiswa Penuh",
+        "badge": "Bebas Biaya",
+        "description": "Jalur seleksi khusus bagi calon mahasiswa penerima Beasiswa KIP Kuliah, Tahfidz Qur'an, dan beasiswa unggulan yayasan."
+      }
+    ]
+  },
+  "magazines": {
+    "title": "Majalah & Tabloid Kampus",
+    "subtitle": "Kumpulan edisi majalah dan tabloid kampus resmi. Temukan artikel inspiratif, liputan prestasi mahasiswa, laporan kegiatan, serta informasi akademik terkini.",
+    "magazines": [
+      {
+        "id": "tabloid",
+        "title": "TABLOID SMART",
+        "edition": "Edisi Tabloid Khusus",
+        "date": "Edisi Khusus",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20TABLOID%20SMART.pdf"
+      },
+      {
+        "id": "1",
+        "title": "SMART Magazine 1",
+        "edition": "Edisi Ke-1",
+        "date": "2022",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%201.pdf"
+      },
+      {
+        "id": "2",
+        "title": "SMART Magazine 2",
+        "edition": "Edisi Ke-2",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%202.pdf"
+      },
+      {
+        "id": "3",
+        "title": "SMART Magazine 3",
+        "edition": "Edisi Ke-3",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%203.pdf"
+      },
+      {
+        "id": "4",
+        "title": "SMART Magazine 4",
+        "edition": "Edisi Ke-4",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%204.pdf"
+      },
+      {
+        "id": "6",
+        "title": "SMART Magazine 6",
+        "edition": "Edisi Ke-6",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%206.pdf"
+      },
+      {
+        "id": "7",
+        "title": "SMART Magazine 7",
+        "edition": "Edisi Ke-7",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%207.pdf"
+      },
+      {
+        "id": "8",
+        "title": "SMART Magazine 8",
+        "edition": "Edisi Ke-8",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%208.pdf"
+      },
+      {
+        "id": "9",
+        "title": "SMART Magazine 9",
+        "edition": "Edisi Ke-9",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%209.pdf"
+      },
+      {
+        "id": "10",
+        "title": "SMART Magazine 10",
+        "edition": "Edisi Ke-10",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2010.pdf"
+      },
+      {
+        "id": "11",
+        "title": "SMART Magazine 11",
+        "edition": "Edisi Ke-11",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2011.pdf"
+      },
+      {
+        "id": "12",
+        "title": "SMART Magazine 12",
+        "edition": "Edisi Ke-12",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2012.pdf"
+      },
+      {
+        "id": "13",
+        "title": "SMART Magazine 13",
+        "edition": "Edisi Ke-13",
+        "date": "2023",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2013.pdf"
+      },
+      {
+        "id": "14",
+        "title": "SMART Magazine 14",
+        "edition": "Edisi Ke-14",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2014.pdf"
+      },
+      {
+        "id": "15",
+        "title": "SMART Magazine 15",
+        "edition": "Edisi Ke-15",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2015.pdf"
+      },
+      {
+        "id": "16",
+        "title": "SMART Magazine 16",
+        "edition": "Edisi Ke-16",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2016.pdf"
+      },
+      {
+        "id": "17",
+        "title": "SMART Magazine 17",
+        "edition": "Edisi Ke-17",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2017.pdf"
+      },
+      {
+        "id": "18",
+        "title": "SMART Magazine 18",
+        "edition": "Edisi Ke-18",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2018.pdf"
+      },
+      {
+        "id": "19",
+        "title": "SMART Magazine 19",
+        "edition": "Edisi Ke-19",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2019.pdf"
+      },
+      {
+        "id": "20",
+        "title": "SMART Magazine 20",
+        "edition": "Edisi Ke-20",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2020.pdf"
+      },
+      {
+        "id": "21",
+        "title": "SMART Magazine 21",
+        "edition": "Edisi Ke-21",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2021.pdf"
+      },
+      {
+        "id": "22",
+        "title": "SMART Magazine 22",
+        "edition": "Edisi Ke-22",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2022.pdf"
+      },
+      {
+        "id": "23",
+        "title": "SMART Magazine 23",
+        "edition": "Edisi Ke-23",
+        "date": "2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2023.pdf"
+      },
+      {
+        "id": "25",
+        "title": "SMART Magazine 25",
+        "edition": "Edisi Ke-25",
+        "date": "Desember 2024",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2025.pdf"
+      },
+      {
+        "id": "27",
+        "title": "SMART Magazine 27",
+        "edition": "Edisi Ke-27",
+        "date": "2025",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2027.pdf"
+      },
+      {
+        "id": "28",
+        "title": "SMART Magazine 28",
+        "edition": "Edisi Ke-28",
+        "date": "2025",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2028.pdf"
+      },
+      {
+        "id": "29",
+        "title": "SMART Magazine 29",
+        "edition": "Edisi Ke-29",
+        "date": "2025",
+        "cover": "",
+        "pdfUrl": "/media/Salinan%20SMART%2029.pdf"
+      },
+      {
+        "id": "30",
+        "title": "SMART Magazine 30",
+        "edition": "Edisi Ke-30",
+        "date": "2025",
+        "cover": "/media/smart%2030-1-768x768.jpg",
+        "pdfUrl": "/media/Salinan%20MART%2030.pdf"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "title": "test dari lik internal",
+      "category": "Umum",
+      "file": "/media/Laporan_Inspeksi_Hyundai_Atoz_2001-2.pptx.pdf",
+      "driveUrl": "",
+      "date": "2026-09-15T12:00:00.000Z"
+    },
+    {
+      "title": "test dari Google Drive link ",
+      "category": "Kemahasiswaan",
+      "file": "",
+      "driveUrl": "https://drive.google.com/file/d/11zNEN0840qmFz5Zy8sNqgF5MpT0dXPHI/view",
+      "date": "2026-09-15T12:00:00.000Z"
+    },
+    {
+      "title": "laporan inspeksi",
+      "category": "Umum",
+      "file": "/media/Laporan%20Inspeksi%20Honda%20Civic%20FD1%202006-1.pdf",
+      "driveUrl": "",
+      "date": "2026-09-11T12:00:00.000Z"
+    },
+    {
+      "title": "Materi E-learning",
+      "category": "Akademik",
+      "file": "/media/school_cover_page_202604060248-768x573.jpg",
+      "driveUrl": "",
+      "date": "2026-09-03T17:00:00.000Z"
+    }
+  ],
+  "siteSettings": {
+    "contact": {
+      "phone": "(0333) 424-123",
+      "email": "info@unidsoe.ac.id",
+      "address": "Jl. Letkol Istiqlah No. 40, Lingkungan Mojoroto, Penataban, Kec. Giri, Kabupaten Banyuwangi, Jawa Timur 68422",
+      "pmbLink": "https://unidsoe.ac.id/infopmb"
+    },
+    "achievements": {
+      "sectionTitle": "🏆 Sertifikasi & Prestasi Unggul",
+      "items": [
+        {
+          "id": "6aa0a0b950ae3f1269de31c3",
+          "category": "Regional",
+          "title": "Pengabdian Masyarakat",
+          "icon": "fas fa-map-marked-alt",
+          "description": "Menjadi pusat rujukan kesehatan di wilayah Tapal Kuda melalui inovasi keperawatan dan pemberdayaan kesehatan komunitas."
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31c4",
+          "category": "Nasional",
+          "title": "Prestasi PKM Nasional",
+          "icon": "fas fa-trophy",
+          "description": "Meraih pendanaan Program Kreativitas Mahasiswa (PKM) secara konsisten oleh Kemdikbudristek RI setiap tahunnya."
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31c5",
+          "category": "Internasional",
+          "title": "Jejaring Kerja Global",
+          "icon": "fas fa-globe-americas",
+          "description": "Sukses menyalurkan lulusan bekerja di Kyoto Hospital Jepang serta kerjasama riset dengan institusi global."
+        }
+      ]
+    },
+    "associations": {
+      "sectionTitle": "Assurance of Practice",
+      "description": "Jaminan Lokasi Praktik Belajar Klinik. Kami bermitra dengan pemerintah daerah dan organisasi profesi untuk memastikan setiap mahasiswa mendapatkan pengalaman praktik terbaik dan kompetensi yang diakui.",
+      "items": [
+        {
+          "id": "6aa0a0b950ae3f1269de31c6",
+          "name": "Pemkab Banyuwangi",
+          "url": "https://banyuwangikab.go.id",
+          "logo": null,
+          "iconType": "pemkab"
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31c7",
+          "name": "PPNI",
+          "url": "https://ppni-inna.org",
+          "logo": null,
+          "iconType": "ppni"
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31c8",
+          "name": "IBI",
+          "url": "https://ibi.or.id",
+          "logo": null,
+          "iconType": "ibi"
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31c9",
+          "name": "PAFI",
+          "url": "https://pafi.or.id",
+          "logo": null,
+          "iconType": "pafi"
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31ca",
+          "name": "IDI",
+          "url": "https://idionline.org",
+          "logo": null,
+          "iconType": "idi"
+        },
+        {
+          "id": "6aa0a0b950ae3f1269de31cb",
+          "name": "Kemenkes RI",
+          "url": "https://kemkes.go.id",
+          "logo": null,
+          "iconType": "kemenkes"
+        }
+      ]
+    },
+    "facilities": [
+      {
+        "id": "6aa0f5edbc8f68abf3c27099",
+        "name": "Laboratorium Keperawatan Gawat Darurat",
+        "description": "Fasilitas simulasi dengan manekin canggih berstandar internasional.",
+        "category": "Laboratorium Terpadu",
+        "image": "/media/pexels-3825586-768x1075.jpg",
+        "showOnHomepage": true
+      },
+      {
+        "id": "6aa0f5edbc8f68abf3c2709a",
+        "name": "Perpustakaan Digital",
+        "description": "Koleksi e-book medis dan ruang baca yang nyaman.",
+        "category": "Fasilitas Umum",
+        "image": "/media/pexels-1181395-768x1150.jpg",
+        "showOnHomepage": true
+      },
+      {
+        "id": "6aa0f5edbc8f68abf3c2709b",
+        "name": "Asrama Mahasiswa",
+        "description": "Akomodasi dengan pengawasan 24 jam dan fasilitas lengkap.",
+        "category": "Layanan Mahasiswa",
+        "image": "/media/pexels-2070033-768x512.jpg",
+        "showOnHomepage": true
+      }
+    ],
+    "partners": [
+      {
+        "id": "6aa0f5edbc8f68abf3c2709c",
+        "name": "RSUD Blambangan",
+        "category": "Nasional",
+        "logo": ""
+      },
+      {
+        "id": "6aa0f5edbc8f68abf3c2709d",
+        "name": "RSUD Siloam Hospital",
+        "category": "Nasional",
+        "logo": "/media/pexels-208502.jpg"
+      },
+      {
+        "id": "6aa0f5edbc8f68abf3c2709e",
+        "name": "Kyoto Medical Center Japan",
+        "category": "Internasional",
+        "logo": "/media/pexels-4145153.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": "6aa0f5edbc8f68abf3c2709f",
+        "name": "Maria Susanti",
+        "job": "Perawat Klinis, Kyoto Hospital Jepang",
+        "quote": "Banyak soft-skill dan ketekunan yang saya pelajari dari sini.",
+        "avatar": "/media/pexels-3714743-400x300.jpg"
+      },
+      {
+        "id": "6aa0f5edbc8f68abf3c270a0",
+        "name": "Rudi Hartono",
+        "job": "Analis Kesehatan RSUD Blambangan",
+        "quote": "Fasilitas lab yang sangat memadai mendukung langsung di dunia kerja nyata.",
+        "avatar": "/media/pexels-3825529.jpg"
+      }
+    ]
+  }
+}

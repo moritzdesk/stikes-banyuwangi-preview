@@ -5,14 +5,14 @@
       <div class="flex flex-col md:flex-row justify-between items-end mb-12">
         <div class="max-w-2xl">
           <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4 text-shadow-sm">
-            Berita &amp; Artikel
+            {{ $t('home.news.title') }}
           </h2>
           <p class="text-gray-600 text-lg">
-            Kumpulan berita terkini, artikel edukasi, dan opini dari UNIDSOE.
+            {{ $t('home.news.subtitle') }}
           </p>
         </div>
         <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-extrabold hover:text-orange-600 transition-colors mt-4 md:mt-0 uppercase tracking-widest text-xs">
-          Semua Artikel
+          {{ $t('home.news.allArticles') }}
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </router-link>
       </div>
@@ -43,7 +43,7 @@
               {{ news.excerpt }}
             </p>
             <router-link :to="`/artikel/${news.slug}`" class="inline-flex items-center text-[#195682] font-bold text-sm hover:text-[#f9ac42] transition-colors mt-auto">
-              Baca Selengkapnya
+              {{ $t('home.news.readMore') }}
               <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </router-link>
           </div>
@@ -52,21 +52,21 @@
 
       <!-- Empty State for Section 1 -->
       <div v-else class="py-12 bg-gray-100/50 rounded-2xl text-center border-2 border-dashed border-gray-200 mb-20">
-         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Belum ada artikel terbaru</p>
+         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">{{ $t('home.news.empty') }}</p>
       </div>
 
       <!-- Section 2: Prestasi, Pengumuman, Kegiatan -->
       <div class="flex flex-col md:flex-row justify-between items-end mb-12 pt-16 border-t border-gray-200">
         <div class="max-w-2xl">
           <h2 class="text-3xl md:text-4xl font-bold text-[#195682] mb-4 text-shadow-sm">
-            Informasi Kampus
+            {{ $t('home.news.campusTitle') }}
           </h2>
           <p class="text-gray-600 text-lg">
-            Prestasi membanggakan, pengumuman penting, dan agenda kegiatan mahasiswa.
+            {{ $t('home.news.campusSubtitle') }}
           </p>
         </div>
         <router-link to="/artikel" class="hidden md:inline-flex items-center text-[#f9ac42] font-extrabold hover:text-orange-600 transition-colors mt-4 md:mt-0 uppercase tracking-widest text-xs">
-          Lihat Semua
+          {{ $t('home.news.seeAll') }}
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
         </router-link>
       </div>
@@ -97,7 +97,7 @@
               {{ info.excerpt }}
             </p>
             <router-link :to="`/artikel/${info.slug}`" class="inline-flex items-center text-[#195682] font-bold text-sm hover:text-[#f9ac42] transition-colors mt-auto">
-              Baca Selengkapnya
+              {{ $t('home.news.readMore') }}
               <svg class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </router-link>
           </div>
@@ -106,7 +106,7 @@
 
       <!-- Empty State for Section 2 -->
       <div v-else class="py-12 bg-gray-100/50 rounded-2xl text-center border-2 border-dashed border-gray-200">
-         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Belum ada berita prestasi, pengumuman, atau kegiatan</p>
+         <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">{{ $t('home.news.emptyCampus') }}</p>
       </div>
 
       <!-- Full Portal Button -->
@@ -115,7 +115,7 @@
           to="/artikel" 
           class="inline-flex items-center px-10 py-5 bg-[#195682] text-white font-bold rounded-full hover:bg-black transition-all duration-500 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 group"
         >
-          Masuk ke Portal Berita & Pengumuman
+          {{ $t('home.news.portal') }}
           <svg class="w-6 h-6 ml-3 group-hover:translate-x-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
@@ -128,6 +128,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { getArticlesBySlugs } from '../composables/useArticles'
+import globalSettings from '../data/settings.json'
 
 const blogNews = ref([])
 const campusInfo = ref([])

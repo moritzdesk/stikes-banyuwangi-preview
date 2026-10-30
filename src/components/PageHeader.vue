@@ -3,7 +3,7 @@
     <!-- Background Pattern/Image -->
     <div 
       class="absolute inset-0 opacity-20 bg-cover bg-center"
-      :style="bgImage ? `background-image: url('${bgImage}')` : 'background-image: url(\'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop\')'"
+      :style="bgImage ? `background-image: url('${bgImage}')` : 'background-image: url(\'/assets/site/pexels-3184287.jpg\')'"
     ></div>
     
     <!-- Gradient Overlay -->

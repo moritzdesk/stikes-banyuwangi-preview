@@ -58,6 +58,48 @@ export function getActiveCategories() {
     .map((c) => ({ slug: c.slug, displayName: c.displayName }))
 }
 
+/** Artikel terbaru, kecuali current (untuk section "Terbaru" di detail). */
+export function getLatestArticles(excludeId, limit = 4) {
+  return getAllArticles()
+    .filter((a) => String(a.id) !== String(excludeId))
+    .slice(0, limit)
+}
+
+/**
+ * Artikel terkait: skor = kategori sama (+10) + irisan tag (+3 per tag).
+ * Kalau skor seri, yang terbaru dulu. Fallback isi dari terbaru bila related < limit.
+ */
+export function getRelatedArticles(current, limit = 4) {
+  if (!current) return []
+  const curCat = current.category_slug
+  const curTags = new Set((current.tags || []).map((t) => t.toLowerCase().trim()))
+  const candidates = getAllArticles().filter((a) => String(a.id) !== String(current.id))
+  const scored = candidates.map((a) => {
+    let score = 0
+    if (a.category_slug === curCat) score += 10
+    const overlap = (a.tags || []).filter((t) => curTags.has(t.toLowerCase().trim())).length
+    score += overlap * 3
+    return { a, score }
+  })
+  scored.sort((x, y) => {
+    if (y.score !== x.score) return y.score - x.score
+    const dy = new Date(y.a.publishedDate || 0).getTime()
+    const dx = new Date(x.a.publishedDate || 0).getTime()
+    return dy - dx
+  })
+  // hanya yang ada skor (>0); bila kosong tetap fallback ke terbaru agar section tidak bolong
+  const related = scored.filter((s) => s.score > 0).map((s) => s.a)
+  if (related.length >= limit) return related.slice(0, limit)
+  // isi sisa dari terbaru yang belum masuk
+  const seen = new Set(related.map((a) => String(a.id)))
+  seen.add(String(current.id))
+  for (const a of getAllArticles()) {
+    if (related.length >= limit) break
+    if (!seen.has(String(a.id))) related.push(a)
+  }
+  return related.slice(0, limit)
+}
+
 /** Info siraman build (debug). */
 export function getArticlesMeta() {
   return { generatedAt: generated.generatedAt, cmsUrl: generated.cmsUrl }

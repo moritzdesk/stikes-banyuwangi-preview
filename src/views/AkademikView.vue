@@ -3,7 +3,7 @@
     <PageHeader 
       title="Informasi Akademik" 
       :breadcrumbs="[{ label: 'Akademik' }]"
-      bgImage="https://images.pexels.com/photos/5905700/pexels-photo-5905700.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+      bgImage="/assets/site/pexels-5905700.jpg"
     />
 
     <div class="container-custom mt-12">
@@ -14,7 +14,7 @@
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
           </div>
           <h3 class="font-bold text-lg text-gray-900 mb-2">SIAKAD</h3>
-          <p class="text-sm text-gray-500">Sistem Informasi Akademik Mahasiswa Terpadu.</p>
+          <p class="text-sm text-gray-500">{{ $t('akademik.siakadDesc') }}</p>
         </a>
 
         <a href="https://edlink.id/" target="_blank" class="bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#f9ac42] hover:shadow-xl transition-all transform hover:-translate-y-2 group text-center">
@@ -22,7 +22,7 @@
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
           </div>
           <h3 class="font-bold text-lg text-gray-900 mb-2">E-Learning</h3>
-          <p class="text-sm text-gray-500">Materi daring, tugas, dan ujian CBT (Computer Based Test).</p>
+          <p class="text-sm text-gray-500">{{ $t('akademik.elearningDesc') }}</p>
         </a>
 
 
@@ -35,8 +35,8 @@
           <!-- News Section (data lokal prebuild Payload) -->
           <div class="bg-white rounded-2xl shadow-md p-8">
             <div class="flex items-center justify-between mb-8 border-b pb-4">
-              <h2 class="text-2xl font-bold text-[#0b2b42]">Berita & Pengumuman Akademik</h2>
-              <router-link to="/artikel" class="text-sm font-bold text-[#195682] hover:text-[#f9ac42] transition-colors">Lihat Semua →</router-link>
+              <h2 class="text-2xl font-bold text-[#0b2b42]">{{ $t('akademik.newsTitle') }}</h2>
+              <router-link to="/artikel" class="text-sm font-bold text-[#195682] hover:text-[#f9ac42] transition-colors">{{ $t('akademik.seeAll') }}</router-link>
             </div>
             
             <div v-if="newsLoading" class="space-y-6">
@@ -99,6 +99,7 @@
 import { ref, onMounted } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
 import { getArticlesBySlugs } from '../composables/useArticles'
+import { getDocuments } from '../composables/useSite'
 
 const academicNews = ref([])
 const newsLoading = ref(true)
@@ -116,20 +117,12 @@ const loadAcademicNews = async () => {
   }
 }
 
-// 2. Load Documents uploaded via Decap CMS
+// 2. Dokumen dari data lokal prebuild Payload
 const loadUploadedDocuments = async () => {
   try {
-    // In Vite/Vue, we can use import.meta.glob to read JSON files from a folder
-    const modules = import.meta.glob('../data/documents/*.json')
-    const docs = []
-    
-    for (const path in modules) {
-      const mod = await modules[path]()
-      docs.push(mod.default || mod)
-    }
-    
+    const docs = getDocuments()
     // Sort by date if available
-    uploadedDocuments.value = docs.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
+    uploadedDocuments.value = [...docs].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
   } catch (error) {
     console.error('Error docs:', error)
   }

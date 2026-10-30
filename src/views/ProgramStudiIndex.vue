@@ -1,16 +1,16 @@
 <template>
   <div class="bg-gray-50 min-h-screen">
     <PageHeader 
-      title="Fakultas & Program Studi" 
-      :breadcrumbs="[{ label: 'Akademik', path: '/' }, { label: 'Program Studi' }]"
-      bgImage="https://images.pexels.com/photos/5212687/pexels-photo-5212687.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+      :title="$t('prodi.indexTitle')" 
+      :breadcrumbs="[{ label: $t('prodi.crumbAcademic'), path: '/' }, { label: $t('prodi.crumbProdi') }]"
+      bgImage="/assets/site/pexels-5212687.jpg"
     />
 
     <div class="container-custom py-16">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold text-[#0b2b42] mb-4">Program Pendidikan Unggulan Kami</h2>
+        <h2 class="text-3xl font-bold text-[#0b2b42] mb-4">{{ $t('prodi.listTitle') }}</h2>
         <p class="text-gray-600 text-lg">
-          Mencetak lulusan profesional yang andal, berwawasan global, dan siap berdaya saing di kancah nasional maupun internasional.
+          {{ $t('prodi.listSubtitle') }}
         </p>
       </div>
 
@@ -21,7 +21,7 @@
           :class="[activeFaculty === 'ALL' ? 'bg-[#195682] text-white' : 'bg-white text-[#195682] border border-[#195682]/20 hover:bg-gray-50']"
           class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm"
         >
-          Semua Program Studi
+          {{ $t('prodi.all') }}
         </button>
         <button 
           @click="activeFaculty = 'FIKES'"
@@ -29,7 +29,7 @@
           class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm flex items-center"
         >
           <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-          Fakultas Ilmu Kesehatan (FIKES)
+          {{ $t('prodi.fikes') }}
         </button>
         <button 
           @click="activeFaculty = 'FISTEK'"
@@ -37,7 +37,7 @@
           class="px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-sm flex items-center"
         >
           <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          Fakultas Sosial & Teknologi (FISTEK)
+          {{ $t('prodi.fistek') }}
         </button>
       </div>
 
@@ -61,7 +61,7 @@
             
             <div class="absolute top-4 right-4">
               <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm shadow-black/20 flex items-center">
-                Akreditasi: {{ program.accreditation }}
+                {{ $t('prodi.accreditation') }}: {{ program.accreditation }}
               </span>
             </div>
 
@@ -74,7 +74,7 @@
             <div>
               <div class="mb-3">
                 <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md" :class="[program.faculty === 'FIKES' ? 'bg-red-50 text-red-700' : 'bg-blue-50 text-blue-700']">
-                  {{ program.faculty === 'FIKES' ? 'Fakultas Ilmu Kesehatan' : 'Fakultas Ilmu Sosial & Teknologi' }}
+                  {{ program.faculty === 'FIKES' ? $t('prodi.fikesFull') : $t('prodi.fistekFull') }}
                 </span>
               </div>
               <p class="text-gray-600 mb-4 line-clamp-3 text-sm leading-relaxed">
@@ -84,11 +84,11 @@
               <ul class="space-y-2 mb-6 text-sm">
                 <li class="flex items-center text-gray-500">
                   <svg class="w-4 h-4 mr-2 text-[#f9ac42]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  Masa Studi: {{ program.duration }}
+                  {{ $t('prodi.studyPeriod') }}: {{ program.duration }}
                 </li>
                 <li class="flex items-center text-gray-500">
                   <svg class="w-4 h-4 mr-2 text-[#f9ac42]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                  Gelar: {{ program.degree }}
+                  {{ $t('prodi.degree') }}: {{ program.degree }}
                 </li>
               </ul>
             </div>
@@ -97,7 +97,7 @@
               :to="`/program-studi/${program.slug}`" 
               class="w-full inline-flex items-center justify-center font-bold px-4 py-2.5 bg-[#eaf4fe] text-[#195682] hover:bg-[#195682] hover:text-white rounded-lg transition-colors group-hover:shadow-md"
             >
-              Lihat Profil Prodi
+              {{ $t('prodi.viewProfile') }}
               <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </router-link>
           </div>
@@ -108,14 +108,14 @@
       <div class="mt-20 bg-[#195682] rounded-3xl p-10 text-center relative overflow-hidden shadow-xl">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="relative z-10 w-full max-w-2xl mx-auto">
-          <h3 class="text-3xl font-bold text-white mb-4">Siap Memulai Langkah Anda?</h3>
-          <p class="text-blue-100 mb-8 text-lg">Pendaftaran Mahasiswa Baru Tahun Akademik 2025/2026 telah dibuka. Raih masa depan cemerlang bersama kami.</p>
+          <h3 class="text-3xl font-bold text-white mb-4">{{ $t('prodi.ctaTitle') }}</h3>
+          <p class="text-blue-100 mb-8 text-lg">{{ $t('prodi.ctaSubtitle') }}</p>
           <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a href="https://pmb.unidsoe.ac.id" target="_blank" class="px-8 py-3 bg-[#f9ac42] text-white font-bold rounded-lg hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30 transform hover:-translate-y-1">
-              Daftar Sekarang
+              {{ $t('prodi.applyNow') }}
             </a>
             <router-link to="/kontak" class="px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[#195682] transition-colors">
-              Hubungi Kami
+              {{ $t('prodi.contactUs') }}
             </router-link>
           </div>
         </div>
@@ -127,34 +127,23 @@
 <script setup>
 import { ref, computed } from 'vue'
 import PageHeader from '../components/PageHeader.vue'
+import { getAllPrograms } from '../composables/usePrograms'
 
 const activeFaculty = ref('ALL')
 
-const levelMap = {
-  'S1': 'Sarjana (S1)',
-  'D3': 'Ahli Madya (D3)',
-  'D4': 'Sarjana Terapan (D4)',
-  'Profesi': 'Profesi'
-}
-
-const modules = import.meta.glob('../data/programs/**/*.json', { eager: true, import: 'default' })
-
 const programs = computed(() => {
-  return Object.keys(modules).map(key => {
-    const data = modules[key]
-    const slug = key.split('/').pop().replace('.json', '')
-    return {
-      title: data.title,
-      slug,
-      level: levelMap[data.level] || data.level,
-      faculty: data.faculty,
-      accreditation: data.accreditation,
-      duration: data.duration,
-      degree: data.degree,
-      image: data.image,
-      description: data.shortDescription
-    }
-  })
+  // Data lokal hasil prebuild Payload (tanpa glob JSON)
+  return getAllPrograms().map((data) => ({
+    title: data.title,
+    slug: data.slug,
+    level: data.levelLabel,
+    faculty: data.faculty,
+    accreditation: data.accreditation,
+    duration: data.duration,
+    degree: data.degree,
+    image: data.image,
+    description: data.shortDescription
+  }))
 })
 
 const filteredPrograms = computed(() => {
