@@ -75,6 +75,40 @@
                 <p class="text-gray-700 leading-relaxed mt-1">{{ misiItem }}</p>
               </li>
             </ul>
+
+            <template v-if="profilData.tujuan && profilData.tujuan.length">
+              <h3 class="text-2xl font-bold text-[#0b2b42] mb-2 mt-12 flex items-center">
+                <span class="w-8 h-8 rounded-lg bg-[#f9ac42] text-white flex items-center justify-center mr-3 text-lg">T</span> TUJUAN
+              </h3>
+              <div class="space-y-8 mt-6">
+                <div v-for="(t, ti) in profilData.tujuan" :key="'t'+ti" class="border border-gray-200 rounded-xl p-6">
+                  <h4 class="font-bold text-lg text-[#195682] mb-3">{{ t.bidang }}</h4>
+                  <ul class="space-y-2">
+                    <li v-for="(p, pi) in t.poin" :key="'tp'+pi" class="flex items-start text-gray-700 leading-relaxed">
+                      <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#195682] text-white flex items-center justify-center font-bold mr-3 text-xs">{{ pi + 1 }}</span>
+                      <span>{{ p }}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </template>
+
+            <template v-if="profilData.sasaran && profilData.sasaran.length">
+              <h3 class="text-2xl font-bold text-[#0b2b42] mb-2 mt-12 flex items-center">
+                <span class="w-8 h-8 rounded-lg bg-[#f9ac42] text-white flex items-center justify-center mr-3 text-lg">S</span> SASARAN
+              </h3>
+              <div class="space-y-8 mt-6">
+                <div v-for="(s, si) in profilData.sasaran" :key="'s'+si" class="border border-gray-200 rounded-xl p-6">
+                  <h4 class="font-bold text-lg text-[#195682] mb-3">{{ s.bidang }}</h4>
+                  <ul class="space-y-2">
+                    <li v-for="(p, pi) in s.poin" :key="'sp'+pi" class="flex items-start text-gray-700 leading-relaxed">
+                      <span class="flex-shrink-0 w-6 h-6 rounded-full bg-[#195682] text-white flex items-center justify-center font-bold mr-3 text-xs">{{ pi + 1 }}</span>
+                      <span>{{ p }}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </template>
           </section>
 
           <!-- Struktur Organisasi -->
@@ -83,9 +117,61 @@
             <p class="text-gray-600 mb-8">Bagan struktural fungsional kepemimpinan di lingkungan Universitas Dr. Soekardjo Banyuwangi.</p>
             
             <div class="relative rounded-2xl overflow-hidden border-2 border-gray-100 bg-gray-50 p-4 group cursor-zoom-in">
-              <img src="/assets/site/pexels-7414925.jpg" alt="Bagan Struktur Organisasi" class="w-full h-auto object-contain max-h-[600px] mix-blend-multiply opacity-80" />
-              
+              <img src="/assets/site/struktur-organisasi.jpeg" alt="Bagan Struktur Organisasi" class="w-full h-auto object-contain max-h-[600px]" />
+            </div>
 
+            <div class="mt-10">
+              <h4 class="font-bold text-xl text-[#195682] mb-6">KETERANGAN UNIT/BIRO</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BKM</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO KEMAHASISWAAN</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BDI</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO DATA DAN INFORMASI</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BHK</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO HUMAS DAN KERJASAMA</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">PMB</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">PENERIMAAN MAHASISWA BARU</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">PPM</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">PUSAT PENJAMIN MUTU</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">PPPM</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">PUSAT PENELITIAN DAN PENGABDIAN MASYARAKAT</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BAUM</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO UMUM</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BAKEU</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO ADMINISTRASI KEUANGAN</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BAKEP</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO ADMINISTRASI KEPEGAWAIAN</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">BAAK</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">BIRO ADMINISTRASI AKADEMIK</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">PPK</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">PUSAT PENGEMBANGAN KURIKULUM</p>
+                </div>
+                <div class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <span class="flex-shrink-0 w-12 rounded-lg bg-[#195682] text-white text-center font-bold text-sm px-2 py-1 mr-3">PPPU</span>
+                  <p class="text-gray-700 leading-relaxed mt-1">PUSAT PERENCANAAN DAN PENGEMBANGAN UNIVERSITAS</p>
+                </div>
+              </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">

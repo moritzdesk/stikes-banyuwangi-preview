@@ -20,7 +20,7 @@ export function getHomeAbout() {
 
 export function getProfil() {
   return (
-    generated.profil || { sejarah: '', visi: '', misi: [], namaKetua: '', sambutan: '', fotoKetua: '' }
+    generated.profil || { sejarah: '', visi: '', misi: [], tujuan: [], sasaran: [], namaKetua: '', sambutan: '', fotoKetua: '' }
   )
 }
 

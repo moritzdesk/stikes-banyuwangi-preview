@@ -14,7 +14,7 @@
         "headlineBreak": true,
         "headline": "Universitas Dr. Soekardjo Banyuwangi (UNIDSOE)",
         "subheadline": "Saatnya jadi bagian dari generasi unggul di Universitas Dr. Soekardjo (UNIDSOE). Dibuka PMB Tahun Ajaran 2026/2027",
-        "image": "http://127.0.0.1:3000/api/media/file/pexels-3184287-768x432.jpg",
+        "image": "/media/pexels-3184287-768x432.jpg",
         "buttonText": "Daftar PMB 2026/2027",
         "buttonLink": "https://pmb.unidsoe.ac.id",
         "isExternal": true
@@ -30,7 +30,7 @@
         "headlineBreak": true,
         "headline": "Rektor UNIDSOE Raih<br/><span class=\"text-[#f9ac42]\" style=\"color:#f9ac42\">TOP Creativity Choice Award 2026</span>",
         "subheadline": "Dr. Drs. H. Soekardjo, S.Kep., MM., MBA berhasil meraih penghargaan bergengsi TOP Creativity Choice Award 2026 — bukti nyata kepemimpinan inovatif di dunia pendidikan kesehatan.",
-        "image": "http://127.0.0.1:3000/api/media/file/rektor-award.webp",
+        "image": "/media/rektor-award.webp",
         "buttonText": "Baca Berita Selengkapnya",
         "buttonLink": "/artikel/rektor-unidsoe-raih-top-creativity-choice-award-2026",
         "isExternal": false
@@ -46,7 +46,7 @@
         "headlineBreak": true,
         "headline": "Test HTML headline",
         "subheadline": "subheading",
-        "image": "http://127.0.0.1:3000/api/media/file/pexels-1181395-768x1150.jpg",
+        "image": "/media/pexels-1181395-768x1150.jpg",
         "buttonText": "goo",
         "buttonLink": "https://google.com",
         "isExternal": true
@@ -55,7 +55,7 @@
     "about": {
       "badge": "Tentang Kami",
       "title": "Universitas Dr. Soekardjo",
-      "image": "http://127.0.0.1:3000/api/media/file/unsplash-1576091160550-768x512.jpg",
+      "image": "/media/unsplash-1576091160550-768x512.jpg",
       "paragraph1": "Universitas Dr. Soekardjo (UNIDSOE) merupakan transformasi dari STIKES Banyuwangi, sebuah langkah strategis untuk memperluas keilmuan dan memperkuat dampak bagi masyarakat. Berawal dari kekuatan di bidang kesehatan, UNIDSOE kini berkembang dengan mengintegrasikan ilmu kesehatan, sosial, dan teknologi dalam sistem pendidikan yang adaptif dan relevan dengan kebutuhan global.",
       "paragraph2": "Didukung fasilitas pembelajaran yang lengkap dan modern, serta program studi terakreditasi dengan mayoritas meraih predikat Baik Sekali, UNIDSOE berkomitmen menjaga kualitas pendidikan yang unggul. Berbagai prestasi telah diraih hingga tingkat internasional, dan para alumni telah berkiprah di berbagai sektor, baik nasional maupun global.",
       "quote": "“We Create Graduates Who Serve The World” — UNIDSOE hadir untuk mencetak lulusan yang kompeten, profesional, dan siap memberi dampak nyata bagi dunia.",
@@ -114,7 +114,7 @@
         "primaryLink": "/beasiswa",
         "secondaryText": "Referensi Resmi",
         "secondaryLink": "https://stikesbanyuwangi.ac.id/beasiswa/",
-        "image": "http://127.0.0.1:3000/api/media/file/DSCF9959-768x969.png"
+        "image": "/media/DSCF9959-768x969.png"
       },
       {
         "variant": "biru",
@@ -143,31 +143,103 @@
         "primaryLink": "/infopmb",
         "secondaryText": "Referensi Resmi",
         "secondaryLink": "https://stikesbanyuwangi.ac.id/penerimaan-mahasiswa-baru/",
-        "image": "http://127.0.0.1:3000/api/media/file/DSCF9968-768x1302.png"
+        "image": "/media/DSCF9968-768x1302.png"
       }
     ]
   },
   "profil": {
     "sejarah": "Universitas Dr. Soekardjo (UNIDSOE) merupakan hasil transformasi dari STIKES Banyuwangi, sebuah institusi pendidikan tinggi kesehatan yang telah berkiprah selama hampir dua dekade dalam mencetak tenaga profesional di bidang kesehatan. Berangkat dari komitmen untuk terus berkembang dan menjawab tantangan zaman, institusi ini memasuki babak baru dengan memperluas cakupan keilmuan serta memperkuat peran strategisnya di tingkat regional maupun nasional.\n\nPerubahan bentuk menjadi universitas ini dikukuhkan melalui Surat Keputusan resmi dari Menteri Pendidikan Tinggi, Sains dan Teknologi Republik Indonesia Nomor 950/B/O/2025, sebagai bentuk pengakuan atas kesiapan institusi dalam meningkatkan mutu pendidikan, penelitian, dan pengabdian kepada masyarakat. Transformasi ini tidak hanya bersifat administratif, tetapi juga mencerminkan visi besar untuk menghadirkan pendidikan tinggi yang lebih inklusif, adaptif, dan berdampak luas, sejalan dengan arah pembangunan sumber daya manusia Indonesia.\n\nDi bawah kepemimpinan Rektor pertama, Dr. Drs. H. Soekardjo, S.Kep., MM., MBA, UNIDSOE berkomitmen untuk memperkuat tata kelola kelembagaan, mendorong inovasi riset lintas disiplin, serta memperluas kontribusi nyata bagi masyarakat. Dengan fondasi kuat di bidang kesehatan serta pengembangan ilmu sosial dan teknologi, UNIDSOE hadir sebagai institusi pendidikan tinggi yang siap melahirkan lulusan unggul, berdaya saing global, serta berintegritas tinggi.\n\nSaat ini, UNIDSOE memiliki dua fakultas utama yang menjadi pilar pengembangan akademik, yaitu Fakultas Kesehatan (FKes) dan Fakultas Ilmu Sosial dan Teknologi (FISTEK). Fakultas Kesehatan (FKes) menyelenggarakan program studi S1 Keperawatan, Profesi Ners, S1 Kebidanan, Profesi Bidan, S1 Gizi, D4 Teknologi Laboratorium Medis, D3 Keperawatan, serta D3 Farmasi. Sementara itu, Fakultas Ilmu Sosial dan Teknologi (FISTEK) menaungi program studi S1 Perdagangan Internasional, S1 Manajemen Bisnis Internasional, dan S1 Sistem Informasi, sebagai bentuk pengembangan keilmuan yang adaptif terhadap kebutuhan global dan transformasi digital.\n\nSebagai kampus yang berakar di Banyuwangi ujung timur Pulau Jawa UNIDSOE membawa semangat lokal yang berpadu dengan perspektif global. Melalui pengembangan program studi yang relevan dengan kebutuhan industri dan masyarakat, universitas ini terus berupaya menjadi pusat pendidikan dan inovasi yang berkontribusi aktif dalam pembangunan bangsa.\n\nDengan semangat “We Create Graduates Who Serve The World”, UNIDSOE menegaskan komitmennya untuk mencetak lulusan yang tidak hanya unggul secara akademik, tetapi juga memiliki kepedulian sosial, profesionalisme tinggi, serta kesiapan untuk berkontribusi di tingkat global. Transformasi ini menjadi pijakan untuk terus tumbuh, berinovasi, dan memberikan dampak nyata bagi dunia.",
-    "visi": "Menjadi Universitas yang unggul dan inovatif di bidang kesehatan, teknologi dan bisnis yang berwawasan global berlandaskan kultural dan moral agama.",
+    "visi": "Menjadi Institusi Pendidikan Tinggi yang unggul dalam pemberdayaan masyarakat, berdaya saing global, dan berlandaskan pada spiritualitas.",
     "misi": [
-      "Menyelenggarakan pendidikan akademik, profesi, dan vokasi yang bermutu dengan keunggulan bidang kesehatan dan teknologi sebagai bagian implementasi Tridharma Perguruan Tinggi dalam rangka menghasilkan tenaga kesehatan yang profesional, memiliki kemandirian, religius, serta memiliki jiwa nasionalisme.",
-      "Menyelenggarakan penelitian berorientasi kebutuhan masyarakat yang menghasilkan publikasi bereputasi nasional dan internasional, hak atas kekayaan intelektual (HAKI), dan buku ajar.",
-      "Melaksanakan pengabdian masyarakat yang berkontribusi dalam pembangunan kesehatan masyarakat dengan mengacu pada hasil penelitian dan kearifan lokal.",
-      "Mengembangkan kerjasama institusional di dalam dan luar negeri sebagai upaya meningkatkan reputasi institusi di tingkat Asia."
+      "Menyelenggarakan pendidikan yang berkualitas, berwawasan global, berintegritas dan berdasarkan nilai-nilai spiritual.",
+      "Menyelenggarakan penelitian yang inovatif dan kolaboratif untuk menghasilkan IPTEK yang berorientasi pada kebutuhan masyarakat.",
+      "Melaksanakan pengabdian kepada masyarakat yang transformatif untuk meningkatkan kualitas hidup masyarakat.",
+      "Mengembangkan tata kelola universitas yang baik (Good University Governance), menjunjung tinggi etika dan nilai-nilai spiritual serta memperluas jejaring kemitraan strategis di tingkat nasional maupun internasional."
+    ],
+    "tujuan": [
+      {
+        "bidang": "Bidang Pendidikan (Mencetak SDM Global)",
+        "poin": [
+          "Menghasilkan lulusan yang memiliki keahlian yang berwawasan global (global competitiveness).",
+          "Membentuk profil lulusan yang profesional dan berintegritas.",
+          "Mengembangkan sistem pembelajaran yang adaptif terhadap perkembangan teknologi serta kebutuhan dunia usaha, dunia industri, dan dunia kerja."
+        ]
+      },
+      {
+        "bidang": "Bidang Penelitian (Inovasi dan Keunggulan)",
+        "poin": [
+          "Menghasilkan inovasi dan karya ilmiah yang mendapatkan pengakuan di tingkat nasional dan internasional.",
+          "Penelitian yang berfokus pada pengembangan riset yang berdampak nyata bagi peningkatan kualitas hidup masyarakat."
+        ]
+      },
+      {
+        "bidang": "Bidang Pengabdian (Pemberdayaan Masyarakat)",
+        "poin": [
+          "Mewujudkan masyarakat yang mandiri melalui program pemberdayaan transformatif berbasis ilmu pengetahuan.",
+          "Menerapkan hasil penelitian menjadi produk atau rekomendasi kebijakan yang dapat diaplikasikan oleh masyarakat.",
+          "Membangun kerjasama yang sinergis dengan lembaga (nasional maupun internasional) untuk memperluas jangkauan dampak pemberdayaan."
+        ]
+      },
+      {
+        "bidang": "Bidang Tata Kelola (Institusi yang Akuntabel)",
+        "poin": [
+          "Mewujudkan tata kelola perguruan tinggi yang berbasis Good University Governance.",
+          "Menciptakan lingkungan kampus yang berlandaskan nilai-nilai etika dan spiritual dalam interaksi serta layanan akademik.",
+          "Meningkatkan rekognisi institusi melalui akreditasi dan kemitraan global yang berkelanjutan."
+        ]
+      }
+    ],
+    "sasaran": [
+      {
+        "bidang": "Sasaran Bidang Akademik & Daya Saing Global",
+        "poin": [
+          "Tercapainya akreditasi unggul minimal 25% program studi dalam 5 tahun.",
+          "Tercapainya kegiatan penelitian dan PKM antara dosen dan mahasiswa lebih dari 80% dalam 5 tahun.",
+          "Ketercapaian lulusan lebih dari 90% dalam dunia kerja dalam 6 bulan masa tunggu."
+        ]
+      },
+      {
+        "bidang": "Sasaran Bidang Riset & Inovasi",
+        "poin": [
+          "Tercapainya peningkatan publikasi ilmiah pada jurnal internasional minimal 20% dari jumlah dosen.",
+          "HKI dosen dan mahasiswa lebih dari 50 dalam 1 tahun."
+        ]
+      },
+      {
+        "bidang": "Sasaran Bidang Pemberdayaan Masyarakat",
+        "poin": [
+          "Terbentuknya desa binaan lebih dari 9 desa dalam 5 tahun.",
+          "Terciptanya produk teknologi tepat guna hasil dari penelitian yang dimanfaatkan oleh masyarakat minimal 20% dari jumlah program studi dalam 5 tahun."
+        ]
+      },
+      {
+        "bidang": "Sasaran Bidang Spiritualitas & Karakter",
+        "poin": [
+          "Terintegrasinya nilai etika dan spiritualitas dalam pelaksanaan pendidikan.",
+          "Tercapainya survei kepuasan stakeholder terhadap kualitas lulusan dengan nilai Sangat Baik.",
+          "Tercapainya budaya organisasi yang berlandaskan nilai-nilai spiritual."
+        ]
+      },
+      {
+        "bidang": "Sasaran Tata Kelola & SDM",
+        "poin": [
+          "Tercapainya jumlah dosen Doktoral 40% dari total dosen tetap dalam 5 tahun.",
+          "Terimplementasinya sistem informasi kampus untuk meningkatkan efisiensi pelayanan dalam waktu 5 tahun."
+        ]
+      }
     ],
     "namaKetua": "Dr. Drs. H. Soekardjo, S.Kep., MM., MBA",
     "sambutan": "Assalamu’alaikum warahmatullahi wabarakatuh\n\nSalam sejahtera bagi kita semua,\n\nSelamat datang di Universitas Dr. Soekardjo (UNIDSOE).\n\nDengan penuh rasa syukur, kami menyambut kehadiran Anda di laman resmi UNIDSOE, sebuah institusi pendidikan tinggi yang lahir dari transformasi STIKES Banyuwangi. Perubahan ini merupakan langkah strategis untuk memperluas kontribusi kami dalam dunia pendidikan, tidak hanya di bidang kesehatan, tetapi juga pada ranah ilmu sosial dan teknologi yang terus berkembang.\n\nSebagai universitas yang berkomitmen pada mutu dan relevansi, UNIDSOE terus menguatkan tata kelola kelembagaan, meningkatkan kualitas pembelajaran, serta mendorong budaya riset dan inovasi. Kami percaya bahwa perguruan tinggi memiliki peran penting dalam mencetak generasi yang tidak hanya cerdas secara intelektual, tetapi juga memiliki integritas, empati, dan kesiapan menghadapi tantangan global.\n\nMelalui Fakultas Kesehatan (FKes) dan Fakultas Ilmu Sosial dan Teknologi (FISTEK), kami menghadirkan program-program studi yang dirancang untuk menjawab kebutuhan zaman. Kami berupaya memastikan bahwa setiap lulusan UNIDSOE memiliki kompetensi unggul, keterampilan adaptif, serta semangat pengabdian yang tinggi kepada masyarakat.\n\nSejalan dengan semangat “We Create Graduates Who Serve The World”, kami berkomitmen untuk mencetak lulusan yang mampu berkontribusi tidak hanya di tingkat lokal dan nasional, tetapi juga di panggung global. Kami ingin setiap insan UNIDSOE menjadi bagian dari solusi, menghadirkan manfaat, dan memberi dampak nyata bagi dunia.\n\nAkhir kata, kami mengundang seluruh pemangku kepentingan mahasiswa, orang tua, mitra, dan masyarakat luas untuk bersama-sama bertumbuh dan berkolaborasi dengan UNIDSOE dalam membangun masa depan yang lebih baik.\n\nWassalamu’alaikum warahmatullahi wabarakatuh.",
-    "fotoKetua": "http://127.0.0.1:3000/api/media/file/foto-rektor-768x1152.jpg"
+    "fotoKetua": "/media/foto-rektor-768x1152.jpg"
   },
   "identitas": {
     "logoTitle": "Logo Resmi Universitas Dr. Soekardjo",
     "logoDescription": "Logo Universitas Dr. Soekardjo (UNIDSOE) merepresentasikan visi besar sebagai institusi pendidikan tinggi berdaya saing global yang berlandaskan spiritualitas, inovasi iptek, dan pengabdian tanpa batas untuk kemanusiaan.",
-    "logoImage": "http://127.0.0.1:3000/api/media/file/LOGO%20UNIDSOE%202025-768x666.png",
-    "logoPhilosophyImage": "http://127.0.0.1:3000/api/media/file/arti%20logo-768x765.png",
+    "logoImage": "/media/LOGO%20UNIDSOE%202025-768x666.png",
+    "logoPhilosophyImage": "/media/arti%20logo-768x765.png",
     "logoDriveUrl": "https://drive.google.com/drive/folders/1E5kN8Y-NWvCsIK10kR4pzT9ccQ7FH2xQ?usp=drive_link",
     "mascotTitle": "KUMBA",
-    "mascotImage": "http://127.0.0.1:3000/api/media/file/KUMBA-768x1152.png",
+    "mascotImage": "/media/KUMBA-768x1152.png",
     "mascotDriveUrl": "https://drive.google.com/drive/folders/1uFLeD6oyMHn-onzQzoIwpXwQhzW5pCr4?usp=drive_link",
     "videoTitle": "Video Profil Kampus Utama UNIDSOE",
     "videoUrl": "",
@@ -186,7 +258,7 @@
   "beasiswa": {
     "title": "Program Beasiswa Pendidikan Unggulan",
     "subtitle": "Mewujudkan mimpi kuliah tanpa hambatan finansial dengan beragam program beasiswa unggulan di Universitas Dr. Soekardjo.",
-    "heroImage": "http://127.0.0.1:3000/api/media/file/pexels-3184287-768x432.jpg",
+    "heroImage": "/media/pexels-3184287-768x432.jpg",
     "introTitle": "Akses Pendidikan Tinggi Seluas-Luasnya",
     "introText": "Kami percaya bahwa keterbatasan finansial tidak boleh menjadi penghalang bagi mimpi besar Anda. Universitas Dr. Soekardjo menyediakan berbagai jalur beasiswa penuh maupun parsial untuk mendukung perjalanan akademik Anda dan melahirkan generasi berprestasi.",
     "scholarships": [
@@ -255,7 +327,7 @@
   "infoPmb": {
     "title": "Penerimaan Mahasiswa Baru 2026/2027",
     "subtitle": "Bergabunglah bersama Universitas Dr. Soekardjo (UNIDSOE) untuk menjadi profesional unggul, inovatif, dan berakhlak mulia.",
-    "heroImage": "http://127.0.0.1:3000/api/media/file/pexels-1438072-768x513.jpg",
+    "heroImage": "/media/pexels-1438072-768x513.jpg",
     "openDate": "1 Desember 2025 - 31 Agustus 2026",
     "contactPhone": "(0333) 424-123",
     "contactWhatsapp": "0812-3456-7890",
@@ -330,7 +402,7 @@
         "edition": "Edisi Tabloid Khusus",
         "date": "Edisi Khusus",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20TABLOID%20SMART.pdf"
+        "pdfUrl": "/media/Salinan%20TABLOID%20SMART.pdf"
       },
       {
         "id": "1",
@@ -338,7 +410,7 @@
         "edition": "Edisi Ke-1",
         "date": "2022",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%201.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%201.pdf"
       },
       {
         "id": "2",
@@ -346,7 +418,7 @@
         "edition": "Edisi Ke-2",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%202.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%202.pdf"
       },
       {
         "id": "3",
@@ -354,7 +426,7 @@
         "edition": "Edisi Ke-3",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%203.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%203.pdf"
       },
       {
         "id": "4",
@@ -362,7 +434,7 @@
         "edition": "Edisi Ke-4",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%204.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%204.pdf"
       },
       {
         "id": "6",
@@ -370,7 +442,7 @@
         "edition": "Edisi Ke-6",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%206.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%206.pdf"
       },
       {
         "id": "7",
@@ -378,7 +450,7 @@
         "edition": "Edisi Ke-7",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%207.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%207.pdf"
       },
       {
         "id": "8",
@@ -386,7 +458,7 @@
         "edition": "Edisi Ke-8",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%208.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%208.pdf"
       },
       {
         "id": "9",
@@ -394,7 +466,7 @@
         "edition": "Edisi Ke-9",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%209.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%209.pdf"
       },
       {
         "id": "10",
@@ -402,7 +474,7 @@
         "edition": "Edisi Ke-10",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2010.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2010.pdf"
       },
       {
         "id": "11",
@@ -410,7 +482,7 @@
         "edition": "Edisi Ke-11",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2011.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2011.pdf"
       },
       {
         "id": "12",
@@ -418,7 +490,7 @@
         "edition": "Edisi Ke-12",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2012.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2012.pdf"
       },
       {
         "id": "13",
@@ -426,7 +498,7 @@
         "edition": "Edisi Ke-13",
         "date": "2023",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2013.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2013.pdf"
       },
       {
         "id": "14",
@@ -434,7 +506,7 @@
         "edition": "Edisi Ke-14",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2014.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2014.pdf"
       },
       {
         "id": "15",
@@ -442,7 +514,7 @@
         "edition": "Edisi Ke-15",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2015.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2015.pdf"
       },
       {
         "id": "16",
@@ -450,7 +522,7 @@
         "edition": "Edisi Ke-16",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2016.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2016.pdf"
       },
       {
         "id": "17",
@@ -458,7 +530,7 @@
         "edition": "Edisi Ke-17",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2017.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2017.pdf"
       },
       {
         "id": "18",
@@ -466,7 +538,7 @@
         "edition": "Edisi Ke-18",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2018.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2018.pdf"
       },
       {
         "id": "19",
@@ -474,7 +546,7 @@
         "edition": "Edisi Ke-19",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2019.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2019.pdf"
       },
       {
         "id": "20",
@@ -482,7 +554,7 @@
         "edition": "Edisi Ke-20",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2020.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2020.pdf"
       },
       {
         "id": "21",
@@ -490,7 +562,7 @@
         "edition": "Edisi Ke-21",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2021.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2021.pdf"
       },
       {
         "id": "22",
@@ -498,7 +570,7 @@
         "edition": "Edisi Ke-22",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2022.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2022.pdf"
       },
       {
         "id": "23",
@@ -506,7 +578,7 @@
         "edition": "Edisi Ke-23",
         "date": "2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2023.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2023.pdf"
       },
       {
         "id": "25",
@@ -514,7 +586,7 @@
         "edition": "Edisi Ke-25",
         "date": "Desember 2024",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2025.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2025.pdf"
       },
       {
         "id": "27",
@@ -522,7 +594,7 @@
         "edition": "Edisi Ke-27",
         "date": "2025",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2027.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2027.pdf"
       },
       {
         "id": "28",
@@ -530,7 +602,7 @@
         "edition": "Edisi Ke-28",
         "date": "2025",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2028.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2028.pdf"
       },
       {
         "id": "29",
@@ -538,15 +610,15 @@
         "edition": "Edisi Ke-29",
         "date": "2025",
         "cover": "",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20SMART%2029.pdf"
+        "pdfUrl": "/media/Salinan%20SMART%2029.pdf"
       },
       {
         "id": "30",
         "title": "SMART Magazine 30",
         "edition": "Edisi Ke-30",
         "date": "2025",
-        "cover": "http://127.0.0.1:3000/api/media/file/smart%2030-1-768x768.jpg",
-        "pdfUrl": "http://127.0.0.1:3000/api/media/file/Salinan%20MART%2030.pdf"
+        "cover": "/media/smart%2030-1-768x768.jpg",
+        "pdfUrl": "/media/Salinan%20MART%2030.pdf"
       }
     ]
   },
@@ -554,7 +626,7 @@
     {
       "title": "test dari lik internal",
       "category": "Umum",
-      "file": "http://127.0.0.1:3000/api/media/file/Laporan_Inspeksi_Hyundai_Atoz_2001-2.pptx.pdf",
+      "file": "/media/Laporan_Inspeksi_Hyundai_Atoz_2001-2.pptx.pdf",
       "driveUrl": "",
       "date": "2026-09-15T12:00:00.000Z"
     },
@@ -568,14 +640,14 @@
     {
       "title": "laporan inspeksi",
       "category": "Umum",
-      "file": "http://127.0.0.1:3000/api/media/file/Laporan%20Inspeksi%20Honda%20Civic%20FD1%202006-1.pdf",
+      "file": "/media/Laporan%20Inspeksi%20Honda%20Civic%20FD1%202006-1.pdf",
       "driveUrl": "",
       "date": "2026-09-11T12:00:00.000Z"
     },
     {
       "title": "Materi E-learning",
       "category": "Akademik",
-      "file": "http://127.0.0.1:3000/api/media/file/school_cover_page_202604060248-768x573.jpg",
+      "file": "/media/school_cover_page_202604060248-768x573.jpg",
       "driveUrl": "",
       "date": "2026-09-03T17:00:00.000Z"
     }
@@ -667,7 +739,7 @@
         "name": "Laboratorium Keperawatan Gawat Darurat",
         "description": "Fasilitas simulasi dengan manekin canggih berstandar internasional.",
         "category": "Laboratorium Terpadu",
-        "image": "http://127.0.0.1:3000/api/media/file/pexels-3825586-768x1075.jpg",
+        "image": "/media/pexels-3825586-768x1075.jpg",
         "showOnHomepage": true
       },
       {
@@ -675,7 +747,7 @@
         "name": "Perpustakaan Digital",
         "description": "Koleksi e-book medis dan ruang baca yang nyaman.",
         "category": "Fasilitas Umum",
-        "image": "http://127.0.0.1:3000/api/media/file/pexels-1181395-768x1150.jpg",
+        "image": "/media/pexels-1181395-768x1150.jpg",
         "showOnHomepage": true
       },
       {
@@ -683,7 +755,7 @@
         "name": "Asrama Mahasiswa",
         "description": "Akomodasi dengan pengawasan 24 jam dan fasilitas lengkap.",
         "category": "Layanan Mahasiswa",
-        "image": "http://127.0.0.1:3000/api/media/file/pexels-2070033-768x512.jpg",
+        "image": "/media/pexels-2070033-768x512.jpg",
         "showOnHomepage": true
       }
     ],
@@ -698,13 +770,13 @@
         "id": "6aa0f5edbc8f68abf3c2709d",
         "name": "RSUD Siloam Hospital",
         "category": "Nasional",
-        "logo": "http://127.0.0.1:3000/api/media/file/pexels-208502.jpg"
+        "logo": "/media/pexels-208502.jpg"
       },
       {
         "id": "6aa0f5edbc8f68abf3c2709e",
         "name": "Kyoto Medical Center Japan",
         "category": "Internasional",
-        "logo": "http://127.0.0.1:3000/api/media/file/pexels-4145153.jpg"
+        "logo": "/media/pexels-4145153.jpg"
       }
     ],
     "testimonials": [
@@ -713,14 +785,14 @@
         "name": "Maria Susanti",
         "job": "Perawat Klinis, Kyoto Hospital Jepang",
         "quote": "Banyak soft-skill dan ketekunan yang saya pelajari dari sini.",
-        "avatar": "http://127.0.0.1:3000/api/media/file/pexels-3714743-400x300.jpg"
+        "avatar": "/media/pexels-3714743-400x300.jpg"
       },
       {
         "id": "6aa0f5edbc8f68abf3c270a0",
         "name": "Rudi Hartono",
         "job": "Analis Kesehatan RSUD Blambangan",
         "quote": "Fasilitas lab yang sangat memadai mendukung langsung di dunia kerja nyata.",
-        "avatar": "http://127.0.0.1:3000/api/media/file/pexels-3825529.jpg"
+        "avatar": "/media/pexels-3825529.jpg"
       }
     ]
   }

@@ -32,20 +32,37 @@ async function fetchAll(base, params = {}) {
   return out
 }
 
+// Media Payload disalin ke public/media -> URL jadi relatif /media/<file> agar
+// build production tidak bergantung pada server CMS (127.0.0.1:3000).
 function absUrl(url) {
   if (!url) return ''
-  if (/^https?:\/\//.test(url)) return url
+  // Path media CMS -> relatif ke /media/<file> (sudah disalin ke public/media)
+  if (url.startsWith('/api/media/file/')) {
+    return `/media/${url.slice('/api/media/file/'.length)}`
+  }
+  if (/^https?:\/\//.test(url)) {
+    // URL media absolut lama dari CMS -> ubah ke /media/<file>
+    const m = url.match(/\/api\/media\/file\/(.+)$/)
+    if (m) return `/media/${m[1]}`
+    return url
+  }
   return `${CMS_URL}${url.startsWith('/') ? '' : '/'}${url}`
 }
 
-// URL media relatif di dalam HTML -> absolut (kalau tidak, 404 di domain web)
+// URL media di dalam HTML -> relatif /media/<file> (media sudah disalin ke public/media)
 function absolutizeMediaUrls(html) {
   if (!html || typeof html !== 'string') return html || ''
   // Normalisasi sisa URL relatif dokumen lama (../../../api/media/...) dulu
   const normalized = html.replace(/(?:\.\.\/)+(api\/media\/)/g, '/$1')
-  return normalized.replace(
-    /((?:src|srcset|href)=["'])\/(api\/media\/[^"']*)/g,
-    `$1${CMS_URL}/$2`,
+  // URL absolut lama dari CMS
+  const withoutAbs = normalized.replace(
+    /((?:src|srcset|href)=["'])(?:https?:\/\/[^"']*)?\/api\/media\/file\/([^"']*)/g,
+    `$1/media/$2`,
+  )
+  // URL relatif /api/media/file/...
+  return withoutAbs.replace(
+    /((?:src|srcset|href)=["'])\/api\/media\/file\/([^"']*)/g,
+    `$1/media/$2`,
   )
 }
 
@@ -79,7 +96,7 @@ async function fetchGlobal(slug) {
 
 function mediaImage(file) {
   if (!file) return ''
-  if (typeof file === 'string') return file.startsWith('http') ? file : file
+  if (typeof file === 'string') return absUrl(file)
   if (typeof file === 'object') {
     const sizes = file.sizes || {}
     return absUrl(sizes?.card?.url || sizes?.thumbnail?.url || file.url || '')
@@ -190,6 +207,8 @@ async function main() {
       sejarah: profil.sejarah || '',
       visi: profil.visi || '',
       misi: profil.misi || [],
+      tujuan: profil.tujuan || [],
+      sasaran: profil.sasaran || [],
       namaKetua: profil.namaKetua || '',
       sambutan: profil.sambutan || '',
       // fotoKetua bisa relasi Media (objek) atau path lama (string)
