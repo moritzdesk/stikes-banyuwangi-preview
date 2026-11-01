@@ -94,7 +94,7 @@ const faqs = [
         <li>Jalur Beasiswa</li>
         <li>Jalur Prestasi</li>
       </ul>
-      <p class="mt-2">Pendaftaran dapat dilakukan secara online melalui website resmi Unidsoe (Universitas Dr. Soekardjo) atau menghubungi panitia PMB di nomor (0333) 424-123.</p>
+      <p class="mt-2">Pendaftaran dapat dilakukan secara online melalui website resmi Unidsoe (Universitas Dr. Soekardjo) atau menghubungi panitia PMB di nomor (0333) 421610.</p>
     `
   },
   {
@@ -120,9 +120,10 @@ const faqs = [
     question: 'Dimana lokasi kampus Unidsoe?',
     answer: `
       <p>Kampus Unidsoe (Universitas Dr. Soekardjo) berlokasi di:</p>
-      <p class="mt-2 font-semibold">Jl. Letkol Istiqlah No. 109<br>
-      Singojuruh, Banyuwangi<br>
-      Jawa Timur 68464</p>
+      <p class="mt-2 font-semibold">STIKES BANYUWANGI<br>
+      Jl. Letkol Istiqlah No 109<br>
+      Banyuwangi – Jawa Timur,<br>
+      Indonesia – 68400</p>
     `
   },
   {

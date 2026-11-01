@@ -303,6 +303,7 @@ async function main() {
   sitePayload.siteSettings = {
     contact: {
       phone: siteContact.phone || '',
+      phones: siteContact.phones || [],
       email: siteContact.email || '',
       address: siteContact.address || '',
       pmbLink: siteContact.pmbLink || '',

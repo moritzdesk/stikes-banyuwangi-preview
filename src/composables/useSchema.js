@@ -14,17 +14,17 @@ export function useOrganizationSchema() {
     description: 'Unidsoe (Universitas Dr. Soekardjo) adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Jl. Letkol Istiqlah No. 109',
-      addressLocality: 'Singojuruh',
-      addressRegion: 'Banyuwangi',
-      postalCode: '68464',
+      streetAddress: 'Jl. Letkol Istiqlah No 109',
+      addressLocality: 'Banyuwangi',
+      addressRegion: 'Jawa Timur',
+      postalCode: '68400',
       addressCountry: 'ID'
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+62-333-424-123',
+      telephone: '+62-333-421610',
       contactType: 'Customer Service',
-      email: 'info@unidsoe.ac.id'
+      email: 'info@stikesbanyuwangi.ac.id'
     },
     sameAs: [
       // Social media links jika ada
@@ -158,10 +158,10 @@ export function useLocalBusinessSchema() {
     description: 'Unidsoe (Universitas Dr. Soekardjo) adalah institusi pendidikan tinggi kesehatan yang berkomitmen menghasilkan tenaga kesehatan profesional berkualitas dengan akreditasi institusi "Baik" dan program studi S1 Keperawatan terakreditasi "Baik Sekali".',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Jl. Letkol Istiqlah No. 109',
-      addressLocality: 'Singojuruh',
-      addressRegion: 'Banyuwangi',
-      postalCode: '68464',
+      streetAddress: 'Jl. Letkol Istiqlah No 109',
+      addressLocality: 'Banyuwangi',
+      addressRegion: 'Jawa Timur',
+      postalCode: '68400',
       addressCountry: 'ID'
     },
     geo: {
@@ -169,8 +169,8 @@ export function useLocalBusinessSchema() {
       latitude: '-8.2195',
       longitude: '114.3694'
     },
-    telephone: '+62-333-424-123',
-    email: 'info@unidsoe.ac.id',
+    telephone: '+62-333-421610',
+    email: 'info@stikesbanyuwangi.ac.id',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: [
@@ -215,10 +215,10 @@ export function useEventSchema(event) {
       name: event.location?.name || 'Unidsoe',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: event.location?.address || 'Jl. Letkol Istiqlah No. 109',
-        addressLocality: event.location?.city || 'Singojuruh',
-        addressRegion: event.location?.region || 'Banyuwangi',
-        postalCode: event.location?.postalCode || '68464',
+        streetAddress: event.location?.address || 'Jl. Letkol Istiqlah No 109',
+        addressLocality: event.location?.city || 'Banyuwangi',
+        addressRegion: event.location?.region || 'Jawa Timur',
+        postalCode: event.location?.postalCode || '68400',
         addressCountry: 'ID'
       }
     },

@@ -2,7 +2,7 @@
   <div class="fixed bottom-6 right-6 z-50">
     <!-- WhatsApp Button -->
     <a 
-      href="https://wa.me/6281234567890?text=Halo%20STIKES%20Banyuwangi%2C%20saya%20ingin%20bertanya%20tentang%20pendaftaran"
+      href="https://wa.me/628113785556?text=Halo%20STIKES%20Banyuwangi%2C%20saya%20ingin%20bertanya%20tentang%20pendaftaran"
       target="_blank"
       rel="noopener noreferrer"
       class="group flex items-center bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 transform hover:scale-105 p-4 pr-6"

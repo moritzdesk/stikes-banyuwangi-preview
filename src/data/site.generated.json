@@ -329,8 +329,8 @@
     "subtitle": "Bergabunglah bersama Universitas Dr. Soekardjo (UNIDSOE) untuk menjadi profesional unggul, inovatif, dan berakhlak mulia.",
     "heroImage": "/media/pexels-1438072-768x513.jpg",
     "openDate": "1 Desember 2025 - 31 Agustus 2026",
-    "contactPhone": "(0333) 424-123",
-    "contactWhatsapp": "0812-3456-7890",
+    "contactPhone": "(0333) 421610",
+    "contactWhatsapp": "+62 811-3785-556",
     "requirements": [
       "Warga Negara Indonesia (WNI)",
       "Lulusan SMA/SMK/MA/Sederajat (semua jurusan)",
@@ -654,9 +654,14 @@
   ],
   "siteSettings": {
     "contact": {
-      "phone": "(0333) 424-123",
-      "email": "info@unidsoe.ac.id",
-      "address": "Jl. Letkol Istiqlah No. 40, Lingkungan Mojoroto, Penataban, Kec. Giri, Kabupaten Banyuwangi, Jawa Timur 68422",
+      "phone": "(0333) 421610",
+      "phones": [
+        "(0333) 421610",
+        "(0333) 425270",
+        "(WA) +62 811-3785-556"
+      ],
+      "email": "info@stikesbanyuwangi.ac.id",
+      "address": "STIKES BANYUWANGI\nJl. Letkol Istiqlah No 109\nBanyuwangi – Jawa Timur,\nIndonesia – 68400",
       "pmbLink": "https://unidsoe.ac.id/infopmb"
     },
     "achievements": {
